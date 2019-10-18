@@ -74,7 +74,7 @@
 	},
 	"MessagesDirs": {
 		"BlueSpiceReminder": [
-			"i18n", "i18n/notifications"
+			"i18n"
 		]
 	},
 	"ExtensionMessagesFiles": {
@@ -94,7 +94,6 @@
 			"scripts": "bluespice.reminder.special.js",
 			"styles": "bluespice.reminder.css",
 			"messages": [
-				"bs-reminder-label-delete",
 				"bs-reminder-header-pagename",
 				"bs-reminder-header-username",
 				"bs-reminder-header-date",
@@ -121,7 +120,6 @@
 		"ext.bluespice.reminder.flyout": {
 			"scripts": "bluespice.reminder.flyout.js",
 			"messages": [
-				"bs-reminder-repeat-label",
 				"bs-reminder-header-pagename",
 				"bs-reminder-header-username",
 				"bs-reminder-header-date",

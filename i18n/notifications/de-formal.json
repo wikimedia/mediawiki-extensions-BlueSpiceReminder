@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": []
-	},
-	"notification-bs-reminder-one-week-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nIhr Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
-	"notification-bs-reminder-today-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nIhr Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen."
-}
