@@ -1,0 +1,12 @@
+{
+  "name": "bluespice/reminder",
+  "type": "mediawiki-extension",
+  "description": "Pages can be marked as expired.",
+  "license": "GPL-3.0-only",
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-name": "BlueSpiceReminder"
+  }
+}

@@ -1,0 +1,298 @@
+<?php
+
+class ApiReminderTasks extends BSApiTasksBase {
+	protected $aTasks = array( 'deleteReminder', 'saveReminder', 'getDetailsForReminder' );
+	protected $aReadTasks = array( 'getDetailsForReminder' );
+
+	public function task_getDetailsForReminder( $oTaskData, $aParams ) {
+		$oResult = $this->makeStandardReturn();
+		$oUser = $this->getUser();
+		if ( $oUser->isAnon() ) {
+			$oResult->message = $oResult->errors['permissionError'] = wfMessage( 'bs-permissionerror' )->plain();
+			return $oResult;
+		}
+
+		$iArticleId = isset( $oTaskData->articleId )
+			? (int) $oTaskData->articleId
+			: 0
+		;
+
+		$oTitle = Title::newFromID( $iArticleId );
+
+		if ( is_null( $oTitle ) || !$oTitle->exists() ) {
+			$oResult->message = $oResult->errors['reminderId'] = wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
+			return $oResult;
+		}
+		$aConds = [ 'rem_page_id' => $oTitle->getArticleID() ];
+		if ( !$oUser->isAllowed( "remindereditall" ) ) {
+			$aConds['rem_user_id'] = $oUser->getId();
+		}
+		try {
+			$dbr = wfGetDB( DB_REPLICA );
+			$res = $dbr->select(
+				array("bs_reminder"),
+				"rem_date, rem_id, rem_user_id, rem_page_id, rem_comment",
+				$aConds,
+				__METHOD__,
+				array()
+			);
+		} catch( DBError $e ) {
+			$oResult->message = $oResult->errors['reminderId'] = wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
+			return $oResult;
+		}
+		$row = $res->fetchObject();
+		$aReturnData = array();
+		if ( $row ) {
+			$aReturnData['date'] = $row->rem_date;
+			$aReturnData['id'] = $row->rem_id;
+			$aReturnData['userId'] = $row->rem_user_id;
+			$aReturnData['articleId'] = $row->rem_page_id;
+			$aReturnData['comment'] = $row->rem_comment;
+		}
+		$oResult->success = true;
+		$oResult->payload = $aReturnData;
+		return $oResult;
+	}
+
+	public function task_deleteReminder( $oTaskData, $aParams ) {
+		$oResult = $this->makeStandardReturn();
+		$oUser = $this->getUser();
+		if ( $oUser->isAnon() ) {
+			$oResult->message = $oResult->errors['permissionError'] = wfMessage( 'bs-permissionerror' )->plain();
+			return $oResult;
+		}
+
+		$iReminderId = false;
+		if ( isset( $oTaskData->reminderId ) ) {
+			$iReminderId = (int)$oTaskData->reminderId;
+		}
+
+		if ( !$iReminderId ) {
+			$oResult->message = $oResult->errors['reminderId'] =
+				wfMessage( 'bs-reminder-error-valid-reminder' )->text();
+			return $oResult;
+		}
+
+		// check if user has right to delete reminders for other users
+		$aConds = array( 'rem_id' => $iReminderId );
+		if ( !$oUser->isAllowed( "remindereditall" ) ) {
+			$aConds['rem_user_id'] = $oUser->getId();
+		}
+
+		$dbr = wfGetDB( DB_REPLICA );
+		try {
+			$res = $dbr->select(
+				'bs_reminder',
+				'rem_id, rem_user_id',
+				$aConds,
+				__METHOD__
+			);
+		} catch( DBError $e ) {
+			$res = false;
+			$oResult->message = $oResult->errors['saving'] =
+				wfMessage( 'bs-reminder-delete-error-unkown' )->text();
+			return $oResult;
+		}
+
+		if ( !$res || !$res->valid() || $res->numRows() < 1 ) {
+			$oResult->message = $oResult->errors['reminderId'] = wfMessage( 'bs-reminder-error-owner-reminder' )->plain();
+			return $oResult;
+		}
+
+		$oResult->success = true;
+
+		Hooks::run( 'BsReminderDeleteReminder', array( $iReminderId, &$oResult ) );
+		if ( !$oResult->success ) {
+			return $oResult;
+		}
+
+		try {
+			$dbw = wfGetDB( DB_MASTER );
+			$dbw->delete(
+				'bs_reminder',
+				$aConds,
+				__METHOD__
+			);
+		} catch( DBError $e ) {
+			// @codeCoverageIgnoreStart
+			// This code block is only reached in the unlikely case that a db connection is
+			// present in the check query above and not present here a few lines down. This case cannot be reproduced
+			// in unit tests, but it is ok not to check. Thus ignoring in code coverage
+			$oResult->success = false;
+			$oResult->message = $oResult->errors['saving'] =
+				wfMessage( 'bs-reminder-delete-error-unkown' )->text();
+			wfDebugLog(
+				'BS::Reminder',
+				'SpecialReminder::ApiReminderManage::deleteReminder: '.$dbw->lastQuery()
+			);
+			return $oResult;
+			// @codeCoverageIgnoreEnd
+		}
+		$oResult->message = wfMessage( 'bs-reminder-delete-success' )->plain();
+		$oResult->payload = array( 'id' => $iReminderId );
+
+		return $oResult;
+	}
+
+	public function task_saveReminder( $oTaskData, $aParams ) {
+		$oResult = $this->makeStandardReturn();
+		$oUser = $this->getUser();
+		$sComment = '';
+		$bIsUpdate = false;
+		if ( $oUser->isAnon() ) {
+			$oResult->message = $oResult->errors['permissionError'] = wfMessage( 'bs-permissionerror' )->plain();
+			return $oResult;
+		}
+
+		$iDate = isset( $oTaskData->date )
+			? wfTimestamp( TS_UNIX, $oTaskData->date )
+			: 0;
+
+		$iReminderId = false;
+		$dbr = wfGetDB( DB_REPLICA );
+		// this is normally the case when clicking the reminder on a normal page
+		// (not the overview specialpage) or the edit button on the specialpage
+		// and data needs to be prefilled
+		if ( !empty( $oTaskData->id ) ) {
+			try {
+				$res = $dbr->select(
+					'bs_reminder',
+					'rem_page_id',
+					array(
+						'rem_id' => (int)$oTaskData->id
+					),
+					__METHOD__
+				);
+			} catch( DBError $e ) {
+				$res = false;
+			}
+			if ( !$res ) {
+				$oResult->message = $oResult->errors['noactions'] =
+					wfMessage( 'bs-reminder-create-no-actions' )->text();
+				return $oResult;
+			}
+			$row = $res->fetchRow();
+			if ( empty( $row['rem_page_id'] ) ) {
+				$oResult->message = $oResult->errors['noactions'] =
+					wfMessage( 'bs-reminder-create-no-actions' )->text();
+				return $oResult;
+			}
+			$bIsUpdate = true;
+			$iReminderId = (int) $oTaskData->id;
+		}		
+		$iArticleId = isset( $oTaskData->articleId )
+			? (int) $oTaskData->articleId
+			: 0
+		;
+		$oTitle = Title::newFromID( $iArticleId );
+		if ( !$oTitle instanceof Title || !$oTitle->exists() ) {
+			$oResult->message = $oResult->errors['unknown-page'] =
+				wfMessage( 'bs-reminder-unknown-page-msg' )->text();
+			return $oResult;
+		}
+		//TODO: is valid date?
+		$sFormattedFieldValue = date( "Y-m-d", $iDate );
+
+		$iUserId = $oUser->getId();
+
+		if ( isset( $oTaskData->comment ) ) {
+			$sComment = addslashes( $oTaskData->comment );
+		}
+
+		if ( isset( $oTaskData->userName ) && $oTaskData->userName != '' ) {
+			$iTargetUserId = User::newFromName( $oTaskData->userName )->getId();
+
+			if ( !$iTargetUserId > 0 ) {
+				$oResult->message = $oResult->errors['unknown-user'] =
+					wfMessage( 'bs-reminder-unknown-user-msg' )->text();
+				return $oResult;
+			}
+
+			if ( !$oUser->isAllowed( 'remindereditall' ) && ( $iUserId !== $iTargetUserId ) ) {
+				$oResult->message = $oResult->errors['user'] =
+					wfMessage( 'bs-reminder-other-user-not-allowed' )->text();
+				return $oResult;
+			}
+
+			$iUserId = $iTargetUserId;
+
+		}
+
+		$aData = array (
+			'rem_user_id' => $iUserId,
+			'rem_page_id' => $oTaskData->articleId,
+			'rem_date' => $sFormattedFieldValue,
+			'rem_comment' => $sComment
+		);
+
+		$dbw = wfGetDB( DB_MASTER );
+		if ( !$iReminderId ) {
+			try {
+				$res = $dbw->insert( 'bs_reminder', $aData, __METHOD__ );
+			} catch( DBError $e ) {
+				$res = false;
+			}
+			if ( !$res ) {
+				$oResult->message = $oResult->errors['createerror'] =
+					wfMessage( 'bs-reminder-create-error' )->text();
+				return $oResult;
+			}
+
+			$iReminderId = $dbw->insertId();
+
+			try {
+				Hooks::run( 'BsReminderOnSave', array (
+					$oTaskData,
+					$iReminderId,
+					$oTaskData->articleId, $iUserId
+				) );
+			} catch ( Exception $e ) {
+				$oResult->message = $oResult->errors['createerror'] =
+					$e->getMessage();
+				return $oResult;
+			}
+		} else {
+			try {
+				$res = $dbw->update(
+					'bs_reminder',
+					$aData,
+					[ 'rem_id' => $iReminderId ],
+					__METHOD__
+				);
+			} catch( DBError $e ) {
+				$res = false;
+			}
+			if ( !$res ) {
+				$oResult->message = $oResult->errors['updateerror'] =
+					wfMessage( 'bs-reminder-update-error' )->text();
+				return $oResult;
+			}
+
+			try {
+				Hooks::run( 'BsReminderOnUpdate', array ( $oTaskData, $iReminderId ) );
+			} catch ( Exception $e ) {
+				$oResult->message = $oResult->errors['createerror'] =
+					$e->getMessage();
+				return $oResult;
+			}
+		}
+
+		$oResult->success = true;
+		$oResult->payload = array( 'id' => $iReminderId );
+		if ( $bIsUpdate ) {
+			$oResult->message = wfMessage( "bs-reminder-update-success" )->plain();
+		} else {
+			$oResult->message = wfMessage( "bs-reminder-save-success" )->plain();
+		}
+
+		return $oResult;
+	}
+
+	protected function getRequiredTaskPermissions() {
+		return array(
+			'deleteReminder' => array( 'read' ),
+			'saveReminder' => array( 'read' ),
+			'getDetailsForReminder' => array( 'read' )
+		);
+	}
+}
