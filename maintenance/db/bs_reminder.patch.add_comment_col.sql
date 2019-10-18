@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_reminder ADD COLUMN `rem_comment` VARBINARY(255);
