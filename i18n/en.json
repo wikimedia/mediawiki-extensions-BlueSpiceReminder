@@ -47,8 +47,6 @@
 	"bs-reminder-pref-DisableReminderForNS" : "Do not create reminder for the following namespaces:",
 	"bs-reminder-navigation-link-title": "Reminder",
 	"bs-reminder-navigation-link-text": "Reminder",
-	"bs-reminder-count": "It's time to review $1 {{PLURAL:$1|page|pages}}.",
-	"bs-reminder-remind-this-article": "You set up a reminder for this page.",
 	"bs-reminder-nav-link-title-reminder": "Reminder",
 	"bs-reminder-flyout-title": "Reminder",
 	"bs-reminder-flyout-intro": "You can set a reminder for this page here. On the specified date, you will get notified according to your notification settings.",
@@ -59,5 +57,16 @@
 	"bs-reminder-flyout-grid-title": "Other user's reminder",
 	"bs-reminder-flyout-manager-btn-label": "Manage reminders",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "My reminders",
-	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Reminder for page $1 on $2 with comment: $3"
+	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Reminder for page $1 on $2 with comment: $3",
+	"echo-category-title-notification-bs-reminder-cat": "Reminders",
+	"notification-bs-reminder-one-week-subject": "Remember article \"$1\"",
+	"notification-bs-reminder-one-week-email-body": "You have set reminder on article \"$1\". This reminder is comming up in one week.\n\nYour comment:\n$2",
+	"notification-bs-reminder-one-week-web-body": "You have set reminder on article \"$1\". This reminder is comming up in one week.",
+	"notification-bs-reminder-today-subject": "Remember article \"$1\" today",
+	"notification-bs-reminder-today-email-body": "You have set reminder on article \"$1\". This reminder is due today.\n\nYour comment:\n$2",
+	"notification-bs-reminder-today-web-body": "You have set reminder on article \"$1\". This reminder is due today.",
+	"apihelp-bs-reminder-store-summary": "Provides a store for reminders, that can be queried",
+	"apihelp-bs-reminder-tasks-summary": "Provides tasks such as editing or deleting reminders",
+	"right-remindereditall": "Edit others reminders",
+	"action-remindereditall": "edit others reminders"
 }

@@ -12,10 +12,11 @@
 	"bs-reminder-text-delete": "Sind Sie sicher, dass Sie {{PLURAL:$1|diese Erinnerung|diese $1 Erinnerungen}} löschen wollen?",
 	"bs-reminder-error-valid-reminder": "Sie versuchen eine ungültige Erinnerung zu löschen.",
 	"bs-reminder-error-owner-reminder": "Sie können nur Ihre eigenen Erinnerungen löschen.",
-	"notification-bs-reminder-one-week-body": "Sie haben eine Erinnerung für die Seite \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nIhr Kommentar:\n$3\n\nSie können die Seite unter dieser URL aufrufen:\n$2",
-	"notification-bs-reminder-today-body": "Sie haben eine Erinnerung für die Seite \"$1\" angelegt. Heute ist es an der Zeit, sich diese Seite anzusehen.\n\nIhr Kommentar:\n$3\n\nSie können die Seite unter dieser URL aufrufen:\n$2",
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuchen Sie es erneut.",
 	"bs-reminder-other-user-not-allowed" : "Sie können keine Erinnerung für einen anderen Nutzer erstellen",
-	"bs-reminder-remind-this-article": "Sie haben eine Erinnerung for diese Seite eingestellt.",
-	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angengebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt."
+	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angengebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt.",
+	"notification-bs-reminder-one-week-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nIhr Kommentar:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
+	"notification-bs-reminder-today-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nIhr Kommentar:\n$2",
+	"notification-bs-reminder-today-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen."
 }
