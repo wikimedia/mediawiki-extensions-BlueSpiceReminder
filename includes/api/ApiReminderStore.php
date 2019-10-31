@@ -2,14 +2,25 @@
 
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
-	public function __construct($mainModule, $moduleName, $modulePrefix = '') {
-		parent::__construct($mainModule, $moduleName, $modulePrefix);
+	/**
+	 *
+	 * @param string $mainModule
+	 * @param string $moduleName
+	 * @param string $modulePrefix
+	 */
+	public function __construct( $mainModule, $moduleName, $modulePrefix = '' ) {
+		parent::__construct( $mainModule, $moduleName, $modulePrefix );
 	}
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isAnon() ) {
-			return array();
+			return [];
 		}
 
 		$requestedUser = null;
@@ -31,73 +42,82 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			$requestedUser
 		);
 
-		$aOutput = array();
+		$aOutput = [];
 
 		foreach ( $aReminders['results'] as $aReminder ) {
-			$oReminder = (object) $aReminder;
+			$oReminder = (object)$aReminder;
 			$aOutput[] = $oReminder;
 		}
 
 		return $aOutput;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	public function isReadMode() {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeMetaData( $sQuery = '' ) {
 		$oUser = RequestContext::getMain()->getUser();
 		if ( $oUser->isAnon() ) {
-			return array();
+			return [];
 		}
 
-		$aMetadata = array(
+		$aMetadata = [
 			'idProperty' => 'id',
 			'root' => 'results',
 			'totalProperty' => 'total',
 			'successProperty' => 'success',
-			'fields' => array(
-				array( 'name' => 'page_title' ),
-				array( 'name' => 'page_link' ),
-				array( 'name' => 'user_name' ),
-				array ( 'name' => 'rem_date' ),
-				array ( 'name' => 'article_id' ),
-				array ( 'name' => 'rem_comment' )
-			),
-			'sortInfo' => array(
+			'fields' => [
+				[ 'name' => 'page_title' ],
+				[ 'name' => 'page_link' ],
+				[ 'name' => 'user_name' ],
+				[ 'name' => 'rem_date' ],
+				[ 'name' => 'article_id' ],
+				[ 'name' => 'rem_comment' ]
+			],
+			'sortInfo' => [
 				'field' => 'rem_date',
 				'direction' => 'DESC'
-			)
-		);
+			]
+		];
 
 		if ( $oUser->isAllowed( "remindereditall" ) ) {
-			$aMetadata['columns'][] = array (
+			$aMetadata['columns'][] = [
 				'header' => wfMessage( 'bs-reminder-header-username' )->plain(),
 				'dataIndex' => 'user_name',
 				'render' => 'raw',
 				'sortable' => true
-			);
+			];
 		}
-		$aMetadata['columns'][] = array (
+		$aMetadata['columns'][] = [
 			'header' => wfMessage( 'bs-reminder-header-pagename' )->plain(),
 			'dataIndex' => 'page_title',
 			'render' => 'page',
 			'sortable' => true
-		);
-		$aMetadata['columns'][] = array (
+		];
+		$aMetadata['columns'][] = [
 			'header' => wfMessage( 'bs-reminder-header-date' )->plain(),
 			'dataIndex' => 'rem_date',
 			'render' => 'date',
 			'sortable' => true
-		);
-		$aMetadata['columns'][] = array (
-			'header' => wfMessage( 'bs-reminder-header-comment')->plain(),
+		];
+		$aMetadata['columns'][] = [
+			'header' => wfMessage( 'bs-reminder-header-comment' )->plain(),
 			'dataIndex' => 'rem_comment',
 			'render' => 'comment',
 			'sortable' => false
-		);
+		];
 
-		\Hooks::run( 'BsReminderBuildOverviewMetadata', array( &$aMetadata ) );
+		\Hooks::run( 'BsReminderBuildOverviewMetadata', [ &$aMetadata ] );
 
 		return $aMetadata;
 	}

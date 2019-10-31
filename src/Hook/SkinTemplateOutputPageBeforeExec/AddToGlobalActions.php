@@ -9,7 +9,7 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialReminder = \SpecialPageFactory::getPage( 'Reminder' );
 
-		if( !$oSpecialReminder ) {
+		if ( !$oSpecialReminder ) {
 			return true;
 		}
 

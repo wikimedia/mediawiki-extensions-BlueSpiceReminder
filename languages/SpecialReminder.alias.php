@@ -12,11 +12,11 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-$specialPageAliases = array(
-	'en' => array(
-		'Reminder' => array( 'Reminder' )
-	),
-	'de' => array(
-		'Reminder' => array( 'Erinnerung' )
-	)
-);
+$specialPageAliases = [
+	'en' => [
+		'Reminder' => [ 'Reminder' ]
+	],
+	'de' => [
+		'Reminder' => [ 'Erinnerung' ]
+	]
+];

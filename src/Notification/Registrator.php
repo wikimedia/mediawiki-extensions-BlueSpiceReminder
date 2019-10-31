@@ -7,6 +7,10 @@ use BlueSpice\Reminder\Notification\PresentationModel\Today;
 use BlueSpice\Reminder\Notification\PresentationModel\OneWeek;
 
 class Registrator {
+	/**
+	 *
+	 * @param NotificationManager $manager
+	 */
 	public static function registerNotifications( NotificationManager $manager ) {
 		$notifier = $manager->getNotifier();
 

@@ -16,7 +16,7 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 	 * @var string
 	 */
 	protected $notificationClass;
-	
+
 	protected function doRun() {
 		$status = \Status::newGood();
 
@@ -27,13 +27,13 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 			$this->queryConds
 		);
 
-		if( $res && $res->numRows() ) {
-			while( $row = $res->fetchRow() ) {
-				$user = \User::newFromId( $row['rem_user_id'] );
-				$title = \Title::newFromID( $row['rem_page_id'] );
-				$comment = $row['rem_comment'];
+		if ( $res && $res->numRows() ) {
+			foreach ( $res as $row ) {
+				$user = \User::newFromId( $row->rem_user_id );
+				$title = \Title::newFromID( $row->rem_page_id );
+				$comment = $row->rem_comment;
 
-				if( $user && $title ) {
+				if ( $user && $title ) {
 					$titleText = $title->getPrefixedText();
 					$notification = new $this->notificationClass( $user, $title, $comment );
 
