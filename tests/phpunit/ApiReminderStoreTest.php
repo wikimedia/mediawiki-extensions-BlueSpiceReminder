@@ -10,7 +10,6 @@
  *
  * @covers ApiReminderStore
  */
-
 class ApiReminderStoreTest extends ApiTestCase {
 
 	protected function setUp() {

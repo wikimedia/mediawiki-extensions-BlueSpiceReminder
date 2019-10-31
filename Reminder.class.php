@@ -40,7 +40,6 @@ class Reminder extends BsExtensionMW {
 
 	/**
 	 * Init Method of Reminder class
-	 * @global Array $wgHooks
 	 */
 	protected function initExt() {
 		// register extension hooks
@@ -53,9 +52,9 @@ class Reminder extends BsExtensionMW {
 
 	/**
 	 * Creates Reminder link in personal urls and icon in personal info
-	 * @param SkinTemplate $sktemplate
-	 * @param BaseTemplate $tpl
-	 * @return boolean Always true to keep hook running
+	 * @param SkinTemplate &$sktemplate
+	 * @param BaseTemplate &$tpl
+	 * @return bool Always true to keep hook running
 	 */
 	public function onSkinTemplateOutputPageBeforeExec( &$sktemplate, &$tpl ) {
 		$oSpecialPageReminder = SpecialPage::getTitleFor( 'Reminder' );
@@ -65,28 +64,28 @@ class Reminder extends BsExtensionMW {
 			return true;
 		}
 
-		$tpl->data['personal_urls']['my_reminder'] = array (
+		$tpl->data['personal_urls']['my_reminder'] = [
 			'id' => 'pt-reminder',
 			'text' => wfMessage( 'bs-reminder-menu_entry-show' )->plain(),
 			'href' => $oSpecialPageReminder->getLocalURL() . '/' . $oUser->getName(),
 			'active' => true
-		);
+		];
 
 		$iTotal = 0;
 		$sFormattedFieldValue = date( "Y-m-d", time() );
 		$aData = $this->getReminders( $oUser, 0, 0, 'rem_date', 'DESC', $sFormattedFieldValue );
-		if( !empty( $aData['total'] ) ) {
-			$iTotal = (int) $aData['total'];
+		if ( !empty( $aData['total'] ) ) {
+			$iTotal = (int)$aData['total'];
 		}
 
-		if( $iTotal > 0 ) {
-			$tpl->data['bs_personal_info'][15] = array(
+		if ( $iTotal > 0 ) {
+			$tpl->data['bs_personal_info'][15] = [
 				'id' => 'pi-reminder',
 				'text' => $iTotal,
 				'href' => $oSpecialPageReminder->getLocalURL() . '/' . $oUser->getName(),
 				'class' => 'icon-flag',
 				'active' => true
-			);
+			];
 		}
 
 		return true;
@@ -98,14 +97,15 @@ class Reminder extends BsExtensionMW {
 	 * @param User $oUser
 	 * @param string $sText
 	 * @param string $sSummary
-	 * @param boolean $bMinorEdit
-	 * @param boolean $bWatchThis
+	 * @param bool $bMinorEdit
+	 * @param bool $bWatchThis
 	 * @param null $nSectionanchor
-	 * @param int $iFlags
+	 * @param int &$iFlags
 	 * @param Revision $oRevision
-	 * @return boolean
+	 * @return bool
 	 */
-	public function onArticleInsertComplete( $oWikiPage, $oUser, $sText, $sSummary, $bMinorEdit, $bWatchThis, $nSectionanchor, &$iFlags, $oRevision ) {
+	public function onArticleInsertComplete( $oWikiPage, $oUser, $sText, $sSummary,
+		$bMinorEdit, $bWatchThis, $nSectionanchor, &$iFlags, $oRevision ) {
 		if ( $this->getUser()->getOption( 'bs-reminder-oncreate' ) ) {
 			$iPageNS = $oWikiPage->getTitle()->getNamespace();
 			$aDisabledNamespaces = explode(
@@ -126,11 +126,11 @@ class Reminder extends BsExtensionMW {
 			$dbw = wfGetDB( DB_MASTER );
 			$res = $dbw->insert(
 				'bs_reminder',
-				array(
+				[
 					'rem_user_id' => $iUserId,
 					'rem_page_id' => $iPageId,
 					'rem_date' => $sFormattedFieldValue
-			) );
+			] );
 
 			if ( !$res ) {
 				return wfMessage( 'bs-reminder-create-error' )->plain();
@@ -139,7 +139,7 @@ class Reminder extends BsExtensionMW {
 			$iReminderId = $dbw->insertId();
 
 			try {
-				Hooks::run( 'BsReminderOnSave', array( array(), $iReminderId, $iPageId, $iUserId ) );
+				Hooks::run( 'BsReminderOnSave', [ [], $iReminderId, $iPageId, $iUserId ] );
 			} catch ( Exception $e ) {
 				return true;
 			}
@@ -148,11 +148,23 @@ class Reminder extends BsExtensionMW {
 		return true;
 	}
 
-	public function getReminders( User $oUser, $iOffset = 0, $iLimit = 25, $sSortField = 'rem_date', $sSortDirection = 'ASC', $iDate = 0, \User $requestedUser = null ) {
-		$aData = array (
-			'results' => array (),
+	/**
+	 *
+	 * @param User $oUser
+	 * @param int $iOffset
+	 * @param int $iLimit
+	 * @param string $sSortField
+	 * @param string $sSortDirection
+	 * @param string $iDate
+	 * @param \User|null $requestedUser
+	 * @return int
+	 */
+	public function getReminders( User $oUser, $iOffset = 0, $iLimit = 25, $sSortField = 'rem_date',
+		$sSortDirection = 'ASC', $iDate = 0, \User $requestedUser = null ) {
+		$aData = [
+			'results' => [],
 			'total' => 0
-		);
+		];
 		if ( BsCore::checkAccessAdmission( 'read' ) === false || $oUser->isAnon() ) {
 			return $aData;
 		}
@@ -171,23 +183,23 @@ class Reminder extends BsExtensionMW {
 				break;
 		}
 
-		$aTables = array(
+		$aTables = [
 			'bs_reminder', 'user', 'page'
-		);
-		$aFields = array(
+		];
+		$aFields = [
 			"{$sTblPrfx}bs_reminder.rem_id",
 			"{$sTblPrfx}bs_reminder.rem_page_id",
 			"{$sTblPrfx}bs_reminder.rem_date",
 			"{$sTblPrfx}user.user_name",
 			"{$sTblPrfx}page.page_title",
 			"{$sTblPrfx}bs_reminder.rem_comment"
-		);
-		$aConditions = array();
-		$aOptions = array(
+		];
+		$aConditions = [];
+		$aOptions = [
 			'ORDER BY' => "{$sSortField} {$sSortDirection}",
 			'GROUP BY' => "{$sTblPrfx}bs_reminder.rem_id",
 			'SORT BY' => "{$sTblPrfx}bs_reminder.rem_date DESC"
-		);
+		];
 
 		if ( !empty( $iOffset ) ) {
 			$aOptions['OFFSET'] = $iOffset;
@@ -197,15 +209,15 @@ class Reminder extends BsExtensionMW {
 			$aOptions['LIMIT'] = $iLimit;
 		}
 
-		$aJoinConditions = array(
-			"user" => array( 'JOIN', "{$sTblPrfx}bs_reminder.rem_user_id = {$sTblPrfx}user.user_id" ),
-			"page" => array( 'JOIN', "{$sTblPrfx}bs_reminder.rem_page_id = {$sTblPrfx}page.page_id" )
-		);
+		$aJoinConditions = [
+			"user" => [ 'JOIN', "{$sTblPrfx}bs_reminder.rem_user_id = {$sTblPrfx}user.user_id" ],
+			"page" => [ 'JOIN', "{$sTblPrfx}bs_reminder.rem_page_id = {$sTblPrfx}page.page_id" ]
+		];
 
 		// give other extensions the opportunity to modify the query
 		Hooks::run(
 			'BsReminderBeforeBuildOverviewQuery',
-			array(
+			[
 				$this,
 				&$aTables,
 				&$aFields,
@@ -214,7 +226,7 @@ class Reminder extends BsExtensionMW {
 				&$aJoinConditions,
 				&$sSortField,
 				&$sSortDirection
-			)
+			]
 		);
 
 		if ( $oUser->isAllowed( 'remindereditall' ) ) {
@@ -232,12 +244,12 @@ class Reminder extends BsExtensionMW {
 			$aTables, $aFields, $aConditions, __METHOD__, $aOptions, $aJoinConditions
 		);
 
-		$baseurl=\SpecialPage::getTitleFor( 'Reminder' )->getLocalURL() . '/' ;
+		$baseurl = \SpecialPage::getTitleFor( 'Reminder' )->getLocalURL() . '/';
 
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rem_page_id );
-				$aResultSet = array(
+				$aResultSet = [
 					'id' => $row->rem_id,
 					'user_name' => $row->user_name,
 					'user_page' => $row->user_name,
@@ -246,8 +258,8 @@ class Reminder extends BsExtensionMW {
 					'reminder_date' => $row->rem_date,
 					'article_id' => $row->rem_page_id,
 					'rem_comment' => $row->rem_comment
-				);
-				Hooks::run( 'BsReminderBuildOverviewResultSet', array( $this, &$aResultSet, $row ) );
+				];
+				Hooks::run( 'BsReminderBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;
 			}
 		}
@@ -258,7 +270,7 @@ class Reminder extends BsExtensionMW {
 			"COUNT({$sTblPrfx}bs_reminder.rem_id) AS total",
 			$aConditions,
 			__METHOD__,
-			array (),
+			[],
 			$aJoinConditions
 		);
 		if ( $res ) {
@@ -269,22 +281,29 @@ class Reminder extends BsExtensionMW {
 		return $aData;
 	}
 
+	/**
+	 *
+	 * @param \SkinTemplate $oSkinTemplate
+	 * @param array &$links
+	 * @return bool
+	 */
 	public function onSkinTemplateNavigation( $oSkinTemplate, &$links ) {
 		$oTitle = $this->getTitle();
 		$oUser = $this->getUser();
 
-		if ( !$oUser->isLoggedIn() ) return true;
+		if ( !$oUser->isLoggedIn() ) { return true;
+		}
 		if ( $oTitle->exists() === false || $oTitle->isSpecialPage() ) {
 			return true;
 		}
 
 		if ( $oTitle->userCan( 'read' ) ) {
-			$links['actions']['reminderCreate'] = array(
+			$links['actions']['reminderCreate'] = [
 				"class" => '',
 				"text" => wfMessage( 'bs-reminder-menu_entry-create' )->plain(),
 				"href" => "#",
 				"bs-group" => "hidden"
-			);
+			];
 		}
 		return true;
 	}
@@ -293,12 +312,13 @@ class Reminder extends BsExtensionMW {
 	 * Delete all personal reminders when a user is deleted
 	 * @param UserManager $oSender
 	 * @param User $oUser User that was deleted
-	 * @return boolean Always true to keep Hook running
+	 * @param \Status &$aAnswer
+	 * @return bool Always true to keep Hook running
 	 */
 	public function onBSUserManagerAfterDeleteUser( $oSender, $oUser, &$aAnswer ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$res = $dbw->delete( 'bs_reminder',
-			array( 'rem_user_id' => $oUser->getId() )
+			[ 'rem_user_id' => $oUser->getId() ]
 		);
 		return true;
 	}
@@ -324,6 +344,11 @@ class Reminder extends BsExtensionMW {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param array &$paths
+	 * @return bool
+	 */
 	public static function onUnitTestsList( &$paths ) {
 		$paths[] = __DIR__ . '/tests/phpunit/';
 		return true;

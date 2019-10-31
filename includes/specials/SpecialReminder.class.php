@@ -32,7 +32,8 @@ class SpecialReminder extends ManagerBase {
 
 	/**
 	 * Renders special page output.
-	 * @param string $param Name of the article, who's review should be edited, or user whos review should be displayed.
+	 * @param string $param Name of the article, who's review should be edited, or
+	 * user whos review should be displayed.
 	 * @return bool Allow other hooked methods to be executed. always true.
 	 */
 	public function execute( $param ) {
@@ -42,12 +43,15 @@ class SpecialReminder extends ManagerBase {
 		return true;
 	}
 
+	/**
+	 *
+	 * @param string $username
+	 */
 	protected function showRemindersOverview( $username = '' ) {
 		$this->getOutput()->addJsConfigVars(
 			'BSReminderUsername',
 			empty( $username ) ? false : $username
 		);
-
 	}
 
 	/**

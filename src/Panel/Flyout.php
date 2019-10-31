@@ -35,10 +35,18 @@ class Flyout extends BasePanel implements IFlyout {
 		return '';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getTriggerCallbackFunctionName() {
 		return 'bs.reminder.flyoutCallback';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getTriggerRLDependencies() {
 		return [ 'ext.bluespice.reminder.flyout' ];
 	}
