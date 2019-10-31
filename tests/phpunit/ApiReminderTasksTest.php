@@ -1,6 +1,7 @@
 <?php /** @noinspection LongInheritanceChainInspection */
 /**
  * Class ApiReminderTasksTest
+ * @group Broken
  * @group medium
  * @group API
  * @group Database

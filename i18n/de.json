@@ -47,8 +47,6 @@
 	"bs-reminder-pref-DisableReminderForNS" : "Erstelle keine Erinnerungen für folgende Namensräume:",
 	"bs-reminder-navigation-link-title": "Erinnerungen",
 	"bs-reminder-navigation-link-text": "Erinnerungen",
-	"bs-reminder-count": "Es {{PLURAL:$1|muss|müssen}} $1 {{PLURAL:$1|Seite|Seiten}} überpüft werden.",
-	"bs-reminder-remind-this-article": "Du hast eine Erinnerung for diese Seite eingestellt.",
 	"bs-reminder-nav-link-title-reminder": "Erinnerungen",
 	"bs-reminder-flyout-title": "Erinnerungen",
 	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angengebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
@@ -58,5 +56,12 @@
 	"bs-reminder-flyout-form-title": "Erinnerung erstellen",
 	"bs-reminder-flyout-grid-title": "Erinnerungen anderer Benutzer",
 	"bs-reminder-flyout-manager-btn-label": "Erinnerungen verwalten",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meine Erinnerungen"
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meine Erinnerungen",
+	"echo-category-title-notification-bs-reminder-cat": "Erinnerungen",
+	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel \"$1\"",
+	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
+	"notification-bs-reminder-today-subject": "Erinnerung an Artikel \"$1\" heute",
+	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen."
 }
