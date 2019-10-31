@@ -2,7 +2,6 @@
 
 namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 
-use BlueSpice\Reminder\RunJobsTriggerHandler\SendNotificationBase;
 use BlueSpice\Reminder\Notification\TodayNotification;
 
 class SendTodayReminderNotification extends SendNotificationBase {

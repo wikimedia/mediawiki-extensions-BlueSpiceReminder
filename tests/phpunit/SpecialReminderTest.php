@@ -1,13 +1,12 @@
 <?php
+
 /**
  * Class SpecialReminderTest
  * @group Database
  * @group BlueSpice
  * @group BlueSpiceReminder
-  *
  * @covers SpecialReminder
  */
-
 class SpecialReminderTest extends SpecialPageTestBase {
 
 	protected function setUp() : void {
