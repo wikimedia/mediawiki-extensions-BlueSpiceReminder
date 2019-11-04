@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"reminder": "Erënnerung",
+	"prefs-reminder": "Erënnerung",
+	"bs-reminder-create-title": "Erënnerung",
+	"bs-reminder-header-pagename": "Säit",
+	"bs-reminder-header-username": "Benotzer",
+	"bs-reminder-title-delete": "Erënnerung läschen",
+	"bs-reminder-comment-label": "Bemierkung",
+	"bs-reminder-header-comment": "Bemierkung",
+	"bs-reminder-article-label": "Säit",
+	"bs-reminder-navigation-link-title": "Erënnerung",
+	"bs-reminder-navigation-link-text": "Erënnerung",
+	"bs-reminder-nav-link-title-reminder": "Erënnerung",
+	"bs-reminder-flyout-title": "Erënnerung",
+	"echo-category-title-notification-bs-reminder-cat": "Erënnerungen",
+	"notification-bs-reminder-one-week-subject": "Erënnerung un den Artikel \"$1\""
+}

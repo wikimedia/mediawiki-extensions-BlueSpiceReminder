@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tomasdd"
+		]
+	},
+	"reminder": "Priminimas",
+	"specialreminder": "Priminimas",
+	"prefs-reminder": "Priminimas",
+	"bs-reminder-menu_entry-create": "Sukurkite priminimą",
+	"bs-reminder-menu_entry-show": "Priminimai",
+	"bs-reminder-create-reminder-label": "Sukurkite priminimą",
+	"bs-reminder-header-pagename": "Puslapis",
+	"bs-reminder-header-username": "Naudotojas",
+	"bs-reminder-save-error": "Įvyko klaida: $1",
+	"bs-reminder-date-format": "MMMM-mm-dd",
+	"bs-reminder-article-label": "Puslapis",
+	"bs-reminder-dlg-btn-manager-label": "Tvarkyti priminimus",
+	"bs-reminder-navigation-link-title": "Priminimas",
+	"bs-reminder-navigation-link-text": "Priminimas",
+	"bs-reminder-nav-link-title-reminder": "Priminimas",
+	"bs-reminder-flyout-title": "Priminimas",
+	"bs-reminder-flyout-form-title": "Sukurkite priminimą",
+	"bs-reminder-flyout-manager-btn-label": "Tvarkyti priminimus",
+	"echo-category-title-notification-bs-reminder-cat": "Priminimai"
+}

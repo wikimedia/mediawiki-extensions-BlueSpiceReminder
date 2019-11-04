@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"reminder": "Recordatori",
+	"specialreminder": "Recordatori",
+	"prefs-reminder": "Recordatori",
+	"bs-reminder-menu_entry-show": "Recordatoris",
+	"bs-reminder-create-reminder-label": "Crea un recordatori",
+	"bs-reminder-create-title": "Recordatori",
+	"bs-reminder-header-pagename": "Pàgina",
+	"bs-reminder-header-username": "Usuari/a",
+	"bs-reminder-title-delete": "Suprimeix el recordatori",
+	"bs-reminder-error-owner-reminder": "Podeu suprimir només els vostres propis recordatoris.",
+	"bs-reminder-delete-error-unkown": "No s’ha pogut suprimir el recordatori.",
+	"bs-reminder-save-error": "S’ha produït un error: $1",
+	"bs-reminder-comment-label": "Comentari",
+	"bs-reminder-header-comment": "Comentari",
+	"bs-reminder-article-label": "Pàgina",
+	"bs-reminder-dlg-btn-manager-label": "Gestiona els recordatoris",
+	"bs-reminder-navigation-link-title": "Recordatori",
+	"bs-reminder-navigation-link-text": "Recordatori",
+	"bs-reminder-nav-link-title-reminder": "Recordatori",
+	"bs-reminder-flyout-title": "Recordatori",
+	"bs-reminder-flyout-form-title": "Crea un recordatori",
+	"bs-reminder-flyout-manager-btn-label": "Gestiona els recordatoris",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Els meus recordatoris",
+	"echo-category-title-notification-bs-reminder-cat": "Recordatoris",
+	"notification-bs-reminder-one-week-subject": "Recordeu l’article «$1»"
+}
