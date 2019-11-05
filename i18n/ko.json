@@ -4,5 +4,12 @@
 			"Ykhwong"
 		]
 	},
-	"bs-reminder-date-format": "Y-m-d"
+	"bs-reminder-header-pagename": "문서",
+	"bs-reminder-header-username": "사용자",
+	"bs-reminder-delete-error": "오류가 발생했습니다: $1",
+	"bs-reminder-save-error": "오류가 발생했습니다: $1",
+	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-user-label": "사용자에 할당",
+	"bs-reminder-article-label": "문서",
+	"notification-bs-reminder-today-subject": "오늘 \"$1\" 문서를 기억하기"
 }

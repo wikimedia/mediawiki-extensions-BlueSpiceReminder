@@ -4,5 +4,20 @@
 			"Mirzali"
 		]
 	},
-	"bs-reminder-save-error": "Yew xeta biye: $1"
+	"reminder": "Virardış",
+	"specialreminder": "Virardış",
+	"prefs-reminder": "Virardış",
+	"bs-reminder-menu_entry-show": "Virardışi",
+	"bs-reminder-create-title": "Virardış",
+	"bs-reminder-header-pagename": "Pele",
+	"bs-reminder-header-username": "Karber",
+	"bs-reminder-delete-error": "Yew xeta biye: $1",
+	"bs-reminder-save-error": "Yew xeta biye: $1",
+	"bs-reminder-comment-label": "Mışewre",
+	"bs-reminder-header-comment": "Mışewre",
+	"bs-reminder-article-label": "Pele",
+	"bs-reminder-navigation-link-title": "Virardış",
+	"bs-reminder-navigation-link-text": "Virardış",
+	"bs-reminder-nav-link-title-reminder": "Virardış",
+	"bs-reminder-flyout-title": "Virardış"
 }
