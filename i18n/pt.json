@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansil alfalb"
+		]
+	},
+	"reminder": "Lembrete",
+	"specialreminder": "Lembrete",
+	"prefs-reminder": "Lembrete",
+	"bs-reminder-menu_entry-create": "Criar lembrete",
+	"bs-reminder-menu_entry-show": "Lembretes",
+	"bs-reminder-create-reminder-label": "Criar lembrete",
+	"bs-reminder-create-title": "Lembrete",
+	"bs-reminder-header-pagename": "Página",
+	"bs-reminder-header-username": "Utilizador",
+	"bs-reminder-header-date": "Lembrar em",
+	"bs-reminder-title-delete": "Eliminar lembrete",
+	"bs-reminder-date-format": "A-m-d",
+	"bs-reminder-comment-label": "Comentário",
+	"bs-reminder-header-comment": "Comentário",
+	"bs-reminder-article-label": "Página",
+	"bs-reminder-navigation-link-title": "Lembrete",
+	"bs-reminder-navigation-link-text": "Lembrete",
+	"bs-reminder-nav-link-title-reminder": "Lembrete",
+	"bs-reminder-flyout-title": "Lembrete",
+	"bs-reminder-flyout-form-title": "Criar um lembrete",
+	"bs-reminder-flyout-manager-btn-label": "Gerir lembretes",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meus lembretes",
+	"echo-category-title-notification-bs-reminder-cat": "Lembretes"
+}

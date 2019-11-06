@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Madamebiblio"
+		]
+	},
+	"reminder": "Recordatorio",
+	"specialreminder": "Recordatorio",
+	"prefs-reminder": "Recordatorio",
+	"bs-reminder-menu_entry-create": "Crear recordatorio",
+	"bs-reminder-menu_entry-show": "Recordatorios",
+	"bs-reminder-create-reminder-label": "Crear recordatorio",
+	"bs-reminder-create-title": "Recordatorio",
+	"bs-reminder-header-pagename": "Página",
+	"bs-reminder-header-username": "Usuario/a",
+	"bs-reminder-title-delete": "Eliminar recordatorio",
+	"bs-reminder-delete-error-unkown": "No se pudo eliminar el recordatorio.",
+	"bs-reminder-save-error": "Se produjo un error: $1",
+	"bs-reminder-comment-label": "Comentario",
+	"bs-reminder-header-comment": "Comentario",
+	"bs-reminder-article-label": "Página",
+	"bs-reminder-dlg-btn-manager-label": "Gestionar recordatorios",
+	"bs-reminder-navigation-link-title": "Recordatorio",
+	"bs-reminder-navigation-link-text": "Recordatorio",
+	"bs-reminder-nav-link-title-reminder": "Recordatorio",
+	"bs-reminder-flyout-title": "Recordatorio",
+	"bs-reminder-flyout-form-title": "Crear un recordatorio",
+	"bs-reminder-flyout-manager-btn-label": "Gestionar recordatorios",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
+	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
+	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»"
+}

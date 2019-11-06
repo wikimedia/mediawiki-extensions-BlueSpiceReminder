@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"reminder": "Потсетник",
+	"specialreminder": "Потсетник",
+	"prefs-reminder": "Потсетник",
+	"bs-reminder-menu_entry-create": "Создај потсетник",
+	"bs-reminder-create-reminder-label": "Создај потсетник",
+	"bs-reminder-create-title": "Потсетник",
+	"bs-reminder-header-pagename": "Страница",
+	"bs-reminder-header-username": "Корисник",
+	"bs-reminder-title-delete": "Избриши го потсетникот",
+	"bs-reminder-delete-error": "Се појави грешка: $1",
+	"bs-reminder-delete-error-unkown": "Потсетникот не можеше да биде избришан.",
+	"bs-reminder-save-error": "Се појави грешка: $1",
+	"bs-reminder-save-error-unkown": "Потсетникот не можеше да биде зачуван.",
+	"bs-reminder-comment-label": "Коментар",
+	"bs-reminder-header-comment": "Коментар",
+	"bs-reminder-article-label": "Страница",
+	"bs-reminder-navigation-link-title": "Потсетник",
+	"bs-reminder-navigation-link-text": "Потсетник",
+	"bs-reminder-nav-link-title-reminder": "Потсетник",
+	"bs-reminder-flyout-title": "Потсетник",
+	"bs-reminder-flyout-form-title": "Создај потсетник"
+}
