@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"KaleemBhatti"
+		]
+	},
+	"bs-reminder-create-reminder-label": "يادگار ٺاهڻ",
+	"bs-reminder-save-error": "ڪا خرابي پيش آئي $1",
+	"bs-reminder-comment-label": "تبصرو",
+	"bs-reminder-article-label": "صفحو",
+	"echo-category-title-notification-bs-reminder-cat": "ياد ڏياريندڙ"
+}

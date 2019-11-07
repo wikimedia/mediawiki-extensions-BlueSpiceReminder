@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Papuass"
+		]
+	},
+	"reminder": "Atgādinājums",
+	"specialreminder": "Atgādinājums",
+	"prefs-reminder": "Atgādinājums",
+	"bs-reminder-menu_entry-create": "Izveidot atgādinājumu",
+	"bs-reminder-menu_entry-show": "Atgādinājumi",
+	"bs-reminder-create-reminder-label": "Izveidot atgādinājumu",
+	"bs-reminder-create-title": "Atgādinājums",
+	"bs-reminder-header-pagename": "Lapa",
+	"bs-reminder-header-username": "Dalībnieks",
+	"bs-reminder-title-delete": "Dzēst atgādinājumu",
+	"bs-reminder-text-delete": "Vai tiešām vēlies dzēst {{PLURAL:$1|1=šo atgādinājumu|šos $1 atgādinājumus|šo $1 atgādinājumu|šos $1 atgādinājumus}}?",
+	"bs-reminder-save-error": "Notika kļūda: $1",
+	"bs-reminder-comment-label": "Komentārs",
+	"bs-reminder-header-comment": "Komentārs",
+	"bs-reminder-article-label": "Lapa",
+	"bs-reminder-navigation-link-title": "Atgādinājums",
+	"bs-reminder-navigation-link-text": "Atgādinājums",
+	"bs-reminder-nav-link-title-reminder": "Atgādinājums",
+	"bs-reminder-flyout-title": "Atgādinājums",
+	"bs-reminder-flyout-form-title": "Izveidot atgādinājumu",
+	"bs-reminder-flyout-manager-btn-label": "Pārvaldīt atgādinājumus",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mani atgādinājumi",
+	"echo-category-title-notification-bs-reminder-cat": "Atgādinājumi"
+}

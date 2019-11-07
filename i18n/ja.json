@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"そらたこ"
+		]
+	},
+	"reminder": "リマインダー",
+	"bs-reminder-header-username": "利用者",
+	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-header-comment": "コメント",
+	"bs-reminder-article-label": "ページ",
+	"bs-reminder-navigation-link-title": "リマインダー",
+	"action-remindereditall": "他のリマインダーを編集"
+}
