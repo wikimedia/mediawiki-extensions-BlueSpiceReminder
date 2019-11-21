@@ -5,9 +5,13 @@ namespace BlueSpice\Reminder\Notification\PresentationModel;
 use BlueSpice\EchoConnector\EchoEventPresentationModel;
 
 class Today extends EchoEventPresentationModel {
+	/**
+	 *
+	 * @return array
+	 */
 	public function getHeaderMessageContent() {
 		$headerKey = 'notification-bs-reminder-today-subject';
-		$headerParams = ['title'];
+		$headerParams = [ 'title' ];
 
 		return [
 			'key' => $headerKey,
@@ -23,11 +27,11 @@ class Today extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-reminder-today-web-body';
-		$bodyParams = ['title'];
+		$bodyParams = [ 'title' ];
 
-		if( $this->distributionType == 'email' ) {
+		if ( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-reminder-today-email-body';
-			$bodyParams = ['title', 'comment'];
+			$bodyParams = [ 'title', 'comment' ];
 		}
 
 		return [
@@ -36,6 +40,10 @@ class Today extends EchoEventPresentationModel {
 		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getIcon() {
 		return 'reminder';
 	}

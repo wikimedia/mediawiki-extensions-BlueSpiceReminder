@@ -9,9 +9,7 @@
  * @group BlueSpiceReminder
  *
  * @covers ApiReminderTasks
- */
-
-/*
+ *
  * IDEAS
  * - create a standard test set, eg. isAnon, all task parameters set etc.
  * - convention: catch for unknown parameters
@@ -27,7 +25,7 @@
  *
  * TODO
  * - check results of working examples
- * 
+ *
  */
 class ApiReminderTasksTest extends ApiTestCase {
 
@@ -64,11 +62,12 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @throws Exception
 	 */
 	public function testSaveReminder_catchAnonUser() {
-		// You could also retrieve the edit toke for an anonymous user via Api. This seems unneccessary right now,
-		// but might be useful in the future. So leaving this code here for reference.
-		//self::$users['anonymous'] = new stdClass();
-		//self::$users['anonymous']->user = new User;
-		//$tokens = $this->getTokenList( self::$users['anonymous'] ); // returns   'edittoken' => '+\\',
+		// You could also retrieve the edit toke for an anonymous user via Api.
+		// This seems unneccessary right now, but might be useful in the future.
+		// So leaving this code here for reference.
+		// self::$users['anonymous'] = new stdClass();
+		// self::$users['anonymous']->user = new User;
+		// $tokens = $this->getTokenList( self::$users['anonymous'] ); // returns   'edittoken' => '+\\',
 		$data = $this->doApiRequest( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
@@ -111,7 +110,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				],
 				'expectedError' => 'unknown-page'
 			],
-			//undefined comment should result in empty comment
+			// undefined comment should result in empty comment
 /*            'undefinedComment' => [
 				'taskData' => [
 					'articleId' => 1,
@@ -210,8 +209,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @throws Exception
 	 */
 	public function testSaveReminder_checksSaveHookFailure() {
-		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnSave'] )?$GLOBALS['wgHooks']['BsReminderOnSave']:[];
-		$GLOBALS['wgHooks']['BsReminderOnSave'][] = 'ApiReminderTasksTest::onBsReminderOnSave';
+		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnSave'] )
+			? $GLOBALS['wgHooks']['BsReminderOnSave']
+			: [];
+		$GLOBALS['wgHooks']['BsReminderOnSave'][]
+			= 'ApiReminderTasksTest::onBsReminderOnSave';
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
@@ -228,8 +230,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @throws Exception
 	 */
 	public function testSaveReminder_checksUpdateHookFailure() {
-		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnUpdate'] )?$GLOBALS['wgHooks']['BsReminderOnUpdate']:[];
-		$GLOBALS['wgHooks']['BsReminderOnUpdate'][] = 'ApiReminderTasksTest::onBsReminderOnUpdate';
+		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnUpdate'] )
+			? $GLOBALS['wgHooks']['BsReminderOnUpdate']
+			: [];
+		$GLOBALS['wgHooks']['BsReminderOnUpdate'][]
+			= 'ApiReminderTasksTest::onBsReminderOnUpdate';
 		$this->db->insert(
 			'bs_reminder',
 			[
@@ -258,7 +263,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @throws Exception
 	 */
 	public function testSaveReminder_checksDbExistenceCheckFailure() {
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
@@ -269,7 +278,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'id' => 3
 			] )
 		],  null, null );
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$this->assertTrue( isset( $data[0]['errors']['noactions'] ) );
 	}
 
@@ -277,7 +290,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @throws Exception
 	 */
 	public function testSaveReminder_checksDbInsertFailure() {
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
+		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
@@ -287,7 +304,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'userName' => 'Apitestsysop'
 			] )
 		],  null, null );
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
+		);
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
 
@@ -305,7 +326,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_comment' => 'Testing Reminder'
 			]
 		);
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
+		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
@@ -316,7 +341,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'id' => 3
 			] )
 		],  null, null );
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
+		);
 		$this->assertTrue( isset( $data[0]['errors']['updateerror'] ) );
 	}
 
@@ -333,14 +362,24 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'saveReminder',
 			'taskData' => json_encode( $aTaskData )
 		],  null, null );
-		$this->assertTrue( isset( $data[0]['success'] ), 'API did not report status "success"' );
-		$this->assertTrue( isset( $data[0]['payload']['id'] ), 'API returned no reminder ID' );
+		$this->assertTrue(
+			isset( $data[0]['success'] ),
+			'API did not report status "success"'
+		);
+		$this->assertTrue(
+			isset( $data[0]['payload']['id'] ),
+			'API returned no reminder ID'
+		);
 		$iReminderId = $data[0]['payload']['id'];
 		$this->assertSelect(
 			'bs_reminder',
 			[ 'rem_user_id', 'rem_page_id', 'rem_comment' ],
 			[ 'rem_id' => $iReminderId ],
-			[ [ static::$users[ $aExpected[0] ]->getUser()->getId(), $aExpected[1], $aExpected[2] ] ]
+			[ [
+				static::$users[ $aExpected[0] ]->getUser()->getId(),
+				$aExpected[1],
+				$aExpected[2]
+			] ]
 		);
 	}
 
@@ -351,7 +390,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'taskData' => [
 					'articleId' => 1
 				],
-				// Careful here: the first item is a key which identifies the testuser in self::$users
+				// Careful here: the first item is a key which identifies the testuser
+				// in self::$users
 				'expected' => [ 'sysop', '1', '' ]
 			],
 			'articleIdAndUser' => [
@@ -403,14 +443,24 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'saveReminder',
 			'taskData' => json_encode( $aTaskData )
 		],  null, null );
-		$this->assertTrue( isset( $data[0]['success'] ), 'API did not report status "success"' );
-		$this->assertTrue( isset( $data[0]['payload']['id'] ), 'API returned no reminder ID' );
+		$this->assertTrue(
+			isset( $data[0]['success'] ),
+			'API did not report status "success"'
+		);
+		$this->assertTrue(
+			isset( $data[0]['payload']['id'] ),
+			'API returned no reminder ID'
+		);
 		$iReminderId = $data[0]['payload']['id'];
 		$this->assertSelect(
 			'bs_reminder',
 			[ 'rem_user_id', 'rem_page_id', 'rem_comment' ],
 			[ 'rem_id' => $iReminderId ],
-			[ [ static::$users[ $aExpected[0] ]->getUser()->getId(), $aExpected[1], $aExpected[2] ] ]
+			[ [
+				static::$users[ $aExpected[0] ]->getUser()->getId(),
+				$aExpected[1],
+				$aExpected[2]
+			] ]
 		);
 	}
 
@@ -488,8 +538,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_comment' => 'Testing Reminder'
 			]
 		);
-		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderDeleteReminder'] )?$GLOBALS['wgHooks']['BsReminderDeleteReminder']:[];
-		$GLOBALS['wgHooks']['BsReminderDeleteReminder'][] = 'ApiReminderTasksTest::onBsReminderDeleteReminder';
+		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderDeleteReminder'] )
+			? $GLOBALS['wgHooks']['BsReminderDeleteReminder']
+			: [];
+		$GLOBALS['wgHooks']['BsReminderDeleteReminder'][]
+			= 'ApiReminderTasksTest::onBsReminderDeleteReminder';
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'deleteReminder',
@@ -517,16 +570,23 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_comment' => 'Testing Reminder'
 			]
 		);
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( [ 'reminderId' => 3 ] )
 		],  null, null );
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$this->assertTrue( isset( $data[0]['errors']['saving'] ) );
 	}
-
 
 	/**
 	 * @param $aTaskData
@@ -550,8 +610,14 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( $aTaskData )
 		],  null, null );
-		$this->assertTrue( isset( $data[0]['success'] ), 'API did not report status "success"' );
-		$this->assertTrue( isset( $data[0]['payload']['id'] ), 'API returned no reminder ID' );
+		$this->assertTrue(
+			isset( $data[0]['success'] ),
+			'API did not report status "success"'
+		);
+		$this->assertTrue(
+			isset( $data[0]['payload']['id'] ),
+			'API returned no reminder ID'
+		);
 		$iReminderId = $data[0]['payload']['id'];
 		$this->assertSelect(
 			'bs_reminder',
@@ -596,13 +662,21 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 */
 	public function testGetDetailsForReminder_checksDbReadFailure() {
 		$this->addTestReminderToDb();
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
 			'task' => 'getDetailsForReminder',
 			'taskData' => json_encode( [ 'articleId' => 1 ] )
 		],  null, null );
-		$this->db->query( 'ALTER TABLE `' . $this->dbPrefix() . 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;' );
+		$this->db->query(
+			'ALTER TABLE `'
+			. $this->dbPrefix()
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+		);
 		$this->assertTrue( isset( $data[0]['errors']['reminderId'] ) );
 	}
 
@@ -648,21 +722,57 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'taskData' => json_encode( $aTaskData )
 		],  null, null );
 
-		$this->assertTrue( isset( $aData[0]['success'] ), 'API did not report status "success"' );
-		$this->assertTrue( isset( $aData[0]['payload'] ), 'API did not return payload data' );
+		$this->assertTrue(
+			isset( $aData[0]['success'] ),
+			'API did not report status "success"'
+		);
+		$this->assertTrue(
+			isset( $aData[0]['payload'] ),
+			'API did not return payload data'
+		);
 
 		$aPayload = $aData[0]['payload'];
-		$this->assertTrue( isset( $aPayload['id'] ), 'Result does not contain id field' );
-		$this->assertTrue( isset( $aPayload['date'] ), 'Result does not contain date field' );
-		$this->assertTrue( isset( $aPayload['userId'] ), 'Result does not contain userId field' );
-		$this->assertTrue( isset( $aPayload['articleId'] ), 'Result does not contain articleId field' );
-		$this->assertTrue( isset( $aPayload['comment'] ), 'Result does not contain comment field' );
+		$this->assertTrue(
+			isset( $aPayload['id'] ),
+			'Result does not contain id field'
+		);
+		$this->assertTrue(
+			isset( $aPayload['date'] ),
+			'Result does not contain date field'
+		);
+		$this->assertTrue(
+			isset( $aPayload['userId'] ),
+			'Result does not contain userId field'
+		);
+		$this->assertTrue(
+			isset( $aPayload['articleId'] ),
+			'Result does not contain articleId field'
+		);
+		$this->assertTrue(
+			isset( $aPayload['comment'] ),
+			'Result does not contain comment field'
+		);
 
-		$this->assertEquals( $aPayload['id'], $aExpected['id'] );
-		$this->assertEquals( $aPayload['date'], $aExpected['date'] );
-		$this->assertEquals( $aPayload['userId'], static::$users[ $aExpected['userId'] ]->getUser()->getId() );
-		$this->assertEquals( $aPayload['articleId'], $aExpected['articleId'] );
-		$this->assertEquals( $aPayload['comment'], $aExpected['comment'] );
+		$this->assertEquals(
+			$aPayload['id'],
+			$aExpected['id']
+		);
+		$this->assertEquals(
+			$aPayload['date'],
+			$aExpected['date']
+		);
+		$this->assertEquals(
+			$aPayload['userId'],
+			static::$users[ $aExpected['userId'] ]->getUser()->getId()
+		);
+		$this->assertEquals(
+			$aPayload['articleId'],
+			$aExpected['articleId']
+		);
+		$this->assertEquals(
+			$aPayload['comment'],
+			$aExpected['comment']
+		);
 	}
 
 	public function provideGetDetailsForReminderData() {
@@ -671,7 +781,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'taskData' => [
 					'articleId' => 1
 				],
-				// Careful here: the first item is a key which identifies the testuser in self::$users
+				// Careful here: the first item is a key which identifies the testuser
+				// in self::$users
 				'expected' => [
 					'userId' => 'sysop',
 					'id' => '3',
