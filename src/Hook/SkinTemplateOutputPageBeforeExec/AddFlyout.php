@@ -9,10 +9,10 @@ use BlueSpice\Reminder\Panel\Flyout;
 class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 	protected function skipProcessing() {
 		$title = $this->skin->getTitle();
-		if( $this->skin->getUser()->isAnon() ) {
+		if ( $this->skin->getUser()->isAnon() ) {
 			return true;
 		}
-		if( !$title instanceof \Title || !$title->exists() || $title->isSpecialPage() ) {
+		if ( !$title instanceof \Title || !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
 		return false;
@@ -24,7 +24,7 @@ class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 			[
 				'reminder' => [
 					'position' => 30,
-					'callback' => function( $sktemplate ) {
+					'callback' => function ( $sktemplate ) {
 						return new Flyout( $sktemplate );
 					}
 				]
