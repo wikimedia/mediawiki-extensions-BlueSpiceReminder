@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mansil alfalb",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Mansil"
 		]
 	},
 	"reminder": "Aviso",
@@ -37,5 +38,7 @@
 	"bs-reminder-flyout-manager-btn-label": "Gerir avisos",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Avisos",
 	"echo-category-title-notification-bs-reminder-cat": "Avisos",
-	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\""
+	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\"",
+	"right-remindereditall": "Editar outros lembretes",
+	"action-remindereditall": "editar outros lembretes"
 }
