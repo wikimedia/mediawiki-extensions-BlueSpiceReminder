@@ -17,7 +17,7 @@
 	"bs-reminder-header-username": "Utilizador",
 	"bs-reminder-header-date": "Avisar a",
 	"bs-reminder-title-delete": "Eliminar aviso",
-	"bs-reminder-text-delete": "Pretende eliminar {{PLURAL:$1|este lembrete|estes $1 lembretes}}?",
+	"bs-reminder-text-delete": "Pretende eliminar {{PLURAL:$1|este aviso|estes $1 avisos}}?",
 	"bs-reminder-error-owner-reminder": "Só pode eliminar os seus próprios avisos.",
 	"bs-reminder-delete-error": "Ocorreu um erro: $1",
 	"bs-reminder-save-error": "Ocorreu um erro: $1",
@@ -26,7 +26,7 @@
 	"bs-reminder-comment-label": "Comentário",
 	"bs-reminder-header-comment": "Comentário",
 	"bs-reminder-article-label": "Página",
-	"bs-reminder-dlg-btn-manager-label": "Gerir lembretes",
+	"bs-reminder-dlg-btn-manager-label": "Gerir avisos",
 	"bs-reminder-other-user-not-allowed": "Não tem permissão de atribuir avisos a outro utilizador",
 	"bs-reminder-pref-DisableReminderForNS": "Não criar aviso para os seguintes espaços nominais:",
 	"bs-reminder-navigation-link-title": "Aviso",
@@ -34,11 +34,11 @@
 	"bs-reminder-nav-link-title-reminder": "Aviso",
 	"bs-reminder-flyout-title": "Aviso",
 	"bs-reminder-flyout-form-title": "Criar um aviso",
-	"bs-reminder-flyout-grid-title": "Lembrete de outro utilizador",
+	"bs-reminder-flyout-grid-title": "Aviso de outro utilizador",
 	"bs-reminder-flyout-manager-btn-label": "Gerir avisos",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Avisos",
 	"echo-category-title-notification-bs-reminder-cat": "Avisos",
 	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\"",
-	"right-remindereditall": "Editar outros lembretes",
-	"action-remindereditall": "editar outros lembretes"
+	"right-remindereditall": "Editar os avisos de outros",
+	"action-remindereditall": "editar os avisos de outros"
 }
