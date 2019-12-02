@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"reminder": "Нагадування",
+	"specialreminder": "Нагадування",
+	"prefs-reminder": "Нагадування",
+	"bs-reminder-menu_entry-show": "Нагадування",
+	"bs-reminder-date-label": "Нагадати",
+	"bs-reminder-create-reminder-label": "Створити нагадування",
+	"bs-reminder-create-title": "Нагадування",
+	"bs-reminder-create-success": "Ваше нагадування успішно створене.",
+	"bs-reminder-create-error": "Ваше нагадування ще не створене. Будь ласка, спробуйте ще раз.",
+	"bs-reminder-update-success": "Ваше нагадування успішно оновлене.",
+	"bs-reminder-update-error": "Ваше нагадування ще не оновлене. Будь ласка, спробуйте ще раз.",
+	"bs-reminder-header-pagename": "Сторінка",
+	"bs-reminder-header-username": "Користувач",
+	"bs-reminder-header-date": "Нагадати",
+	"bs-reminder-title-delete": "Вилучити нагадування",
+	"bs-reminder-text-delete": "Ви справді хочете вилучити {{PLURAL:$1|це нагадування|ці $1 нагадування|ці $1 нагадувань}}?",
+	"bs-reminder-error-valid-reminder": "Ви намагаєтеся вилучити недійсне нагадування.",
+	"bs-reminder-error-owner-reminder": "Ви можете вилучити лише власні нагадування.",
+	"bs-reminder-delete-success": "Нагадування успішно вилучене.",
+	"bs-reminder-delete-error": "Сталася помилка: $1",
+	"bs-reminder-delete-error-unkown": "Не вдалося вилучити нагадування.",
+	"bs-reminder-save-error": "Сталася помилка: $1",
+	"bs-reminder-save-error-unkown": "Не вдалося зберегти нагадування.",
+	"bs-reminder-comment-label": "Коментувати",
+	"bs-reminder-header-comment": "Коментар",
+	"bs-reminder-article-label": "Сторінка",
+	"bs-reminder-dlg-btn-manager-label": "Керувати нагадуваннями",
+	"bs-reminder-other-user-not-allowed": "Ви не можете створювати нагадування іншому користувачу",
+	"bs-reminder-pref-DisableReminderForNS": "Не створювати нагадувань для таких просторів назв:",
+	"bs-reminder-navigation-link-title": "Нагадування",
+	"bs-reminder-navigation-link-text": "Нагадування",
+	"bs-reminder-nav-link-title-reminder": "Нагадування",
+	"bs-reminder-flyout-title": "Нагадування"
+}
