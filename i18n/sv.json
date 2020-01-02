@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-reminder-extension-description": "Ger användaren möjligheten att skapa påminnelser.",
@@ -15,13 +16,16 @@
 	"bs-reminder-menu_entry-show": "Påminnelser",
 	"bs-reminder-unknown-page-msg": "Du försökte skapa en påminnelse för en sida som inte finns.",
 	"bs-reminder-unknown-user-msg": "Du försökte skapa en påminnelse för en användare som inte finns.",
+	"bs-reminder-date-label": "Påminnelse",
 	"bs-reminder-create-reminder-label": "Skapa påminnelse",
 	"bs-reminder-create-title": "Påminnelse",
 	"bs-reminder-create-success": "Din påminnelse har skapats.",
+	"bs-reminder-create-error": "Din påminnelse kunde ännu inte uppdateras. Försök igen.",
 	"bs-reminder-update-success": "Din påminnelse har uppdaterats.",
 	"bs-reminder-update-error": "Din påminnelse kunde ännu inte uppdateras. Försök igen.",
 	"bs-reminder-header-pagename": "Sida",
 	"bs-reminder-header-username": "Användare",
+	"bs-reminder-header-date": "Påminnelse",
 	"bs-reminder-title-delete": "Radera påminnelse",
 	"bs-reminder-error-owner-reminder": "Du kan endast radera dina egna påminnelser.",
 	"bs-reminder-delete-success": "Påminnelsen har raderats.",
