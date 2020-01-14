@@ -27,7 +27,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		$oTitle = Title::newFromID( $iArticleId );
 
-		if ( is_null( $oTitle ) || !$oTitle->exists() ) {
+		if ( $oTitle === null || !$oTitle->exists() ) {
 			$oResult->message = $oResult->errors['reminderId']
 				= wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
 			return $oResult;

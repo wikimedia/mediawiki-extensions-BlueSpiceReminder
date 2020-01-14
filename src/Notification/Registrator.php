@@ -3,8 +3,8 @@
 namespace BlueSpice\Reminder\Notification;
 
 use BlueSpice\NotificationManager;
-use BlueSpice\Reminder\Notification\PresentationModel\Today;
 use BlueSpice\Reminder\Notification\PresentationModel\OneWeek;
+use BlueSpice\Reminder\Notification\PresentationModel\Today;
 
 class Registrator {
 	/**

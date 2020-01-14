@@ -3,8 +3,8 @@
 namespace BlueSpice\Reminder\Hook\SkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
-use BlueSpice\SkinData;
 use BlueSpice\Reminder\Panel\Flyout;
+use BlueSpice\SkinData;
 
 class AddFlyout extends SkinTemplateOutputPageBeforeExec {
 	protected function skipProcessing() {

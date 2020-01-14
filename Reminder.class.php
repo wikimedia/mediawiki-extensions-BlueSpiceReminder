@@ -20,7 +20,7 @@
  * This file is part of BlueSpice MediaWiki
  * For further information visit https://bluespice.com
  *
-
+ *
  * @author     Sebastian Ulbricht <sebastian.ulbricht@dragon-network.hk>
  * @author     Tobias Weichart <weichart@hallowelt.com>
  * @version    2.23.1
@@ -60,7 +60,7 @@ class Reminder extends BsExtensionMW {
 		$oSpecialPageReminder = SpecialPage::getTitleFor( 'Reminder' );
 		$oUser = RequestContext::getMain()->getUser();
 		$oTitle = RequestContext::getMain()->getTitle();
-		if ( is_null( $oTitle ) || !$oUser->isLoggedIn() ) {
+		if ( $oTitle === null || !$oUser->isLoggedIn() ) {
 			return true;
 		}
 

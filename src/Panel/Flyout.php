@@ -2,8 +2,8 @@
 
 namespace BlueSpice\Reminder\Panel;
 
-use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Calumma\Panel\BasePanel;
 
 class Flyout extends BasePanel implements IFlyout {
 
