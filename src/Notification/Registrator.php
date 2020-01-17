@@ -14,7 +14,9 @@ class Registrator {
 	public static function registerNotifications( NotificationManager $manager ) {
 		$notifier = $manager->getNotifier();
 
-		$notifier->registerNotificationCategory( 'notification-bs-reminder-cat' );
+		$notifier->registerNotificationCategory( 'notification-bs-reminder-cat', [
+			'tooltip' => 'echo-pref-tooltip-bs-reminder-cat'
+		] );
 
 		$manager->registerNotification(
 			'notification-bs-reminder-today',
