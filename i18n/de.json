@@ -56,6 +56,7 @@
 	"bs-reminder-flyout-manager-btn-label": "Erinnerungen verwalten",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meine Erinnerungen",
 	"echo-category-title-notification-bs-reminder-cat": "Erinnerungen",
+	"echo-pref-tooltip-bs-reminder-cat": "Benachrichtigung wenn eine Erinnerung heute oder in einer Woche fällig wird",
 	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel \"$1\"",
 	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
 	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
