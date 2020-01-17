@@ -161,7 +161,8 @@
 			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
 			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
-		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback"
 	},
 	"manifest_version": 2
 }

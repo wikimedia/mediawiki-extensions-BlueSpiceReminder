@@ -43,7 +43,6 @@ class Reminder extends BsExtensionMW {
 	 */
 	protected function initExt() {
 		// register extension hooks
-		$this->setHook( 'SkinTemplateNavigation' );
 		$this->setHook( 'ArticleInsertComplete' );
 		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
 		$this->setHook( 'BSUserManagerAfterDeleteUser' );
@@ -279,33 +278,6 @@ class Reminder extends BsExtensionMW {
 		}
 
 		return $aData;
-	}
-
-	/**
-	 *
-	 * @param \SkinTemplate $oSkinTemplate
-	 * @param array &$links
-	 * @return bool
-	 */
-	public function onSkinTemplateNavigation( $oSkinTemplate, &$links ) {
-		$oTitle = $this->getTitle();
-		$oUser = $this->getUser();
-
-		if ( !$oUser->isLoggedIn() ) { return true;
-		}
-		if ( $oTitle->exists() === false || $oTitle->isSpecialPage() ) {
-			return true;
-		}
-
-		if ( $oTitle->userCan( 'read' ) ) {
-			$links['actions']['reminderCreate'] = [
-				"class" => '',
-				"text" => wfMessage( 'bs-reminder-menu_entry-create' )->plain(),
-				"href" => "#",
-				"bs-group" => "hidden"
-			];
-		}
-		return true;
 	}
 
 	/**
