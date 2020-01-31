@@ -62,6 +62,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mes rappels",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder : rappel pour la page $1 du $2 avec le commentaire : $3",
 	"echo-category-title-notification-bs-reminder-cat": "Rappels",
+	"echo-pref-tooltip-bs-reminder-cat": "Me notifier quand mes rappels tombent aujourd’hui ou dans une semaine",
 	"notification-bs-reminder-one-week-subject": "Souvenez-vous de l’article « $1 »",
 	"notification-bs-reminder-one-week-email-body": "Vous avez défini un rappel pour l’article « $1 ». Ce rappel va arriver dans une semaine.\n\nVotre commentaire :\n$2",
 	"notification-bs-reminder-one-week-web-body": "Vous avez défini un rappel pour l’article « $1 ». Ce rappel va arriver dans une semaine.",

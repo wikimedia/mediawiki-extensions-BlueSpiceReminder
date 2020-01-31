@@ -60,6 +60,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mine påminnelser",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Påminelse for siden $1 $2 med kommentar: $3",
 	"echo-category-title-notification-bs-reminder-cat": "Påminnelser",
+	"echo-pref-tooltip-bs-reminder-cat": "Varsle meg når påminnelsene mine går ut i dag eller om éi uke",
 	"notification-bs-reminder-one-week-subject": "Husk artikkelen «$1»",
 	"notification-bs-reminder-one-week-email-body": "Du har satt en påminnelse for artikkelen «$1». Denne påminnelsen kommer om éi uke.\n\nDin kommentar:\n$2",
 	"notification-bs-reminder-one-week-web-body": "Du har satt en påminnelse for artikkelen «$1». Denne påminnelsen kommer om éi uke.",

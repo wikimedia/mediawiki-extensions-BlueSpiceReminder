@@ -60,6 +60,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "我的提醒",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder：於$2帶有註釋$3的頁面$1提醒",
 	"echo-category-title-notification-bs-reminder-cat": "提醒",
+	"echo-pref-tooltip-bs-reminder-cat": "當我的提醒在今天或一週後到期時通知我",
 	"notification-bs-reminder-one-week-subject": "條目「$1」提醒",
 	"notification-bs-reminder-one-week-email-body": "您已在條目「$1」上設定提醒。此提醒將在一週內生效。\n\n您的註釋：\n$2",
 	"notification-bs-reminder-one-week-web-body": "您已在條目「$1」上設定提醒。此提醒將在一週內生效。",

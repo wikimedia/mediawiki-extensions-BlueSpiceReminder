@@ -60,6 +60,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meus lembretes",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Lembrete para a página $1 em $2 com comentário: $3",
 	"echo-category-title-notification-bs-reminder-cat": "Lembretes",
+	"echo-pref-tooltip-bs-reminder-cat": "Notificar-me quando meus lembretes chegarem hoje ou em uma semana",
 	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\"",
 	"notification-bs-reminder-one-week-email-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete será lançado em uma semana.\n\nSeu comentário:\n$2",
 	"notification-bs-reminder-one-week-web-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete será lançado em uma semana.",
