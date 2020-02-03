@@ -60,6 +60,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Hatırlatıcılarım",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Yorum ile $2 $1 sayfa için hatırlatma: $3",
 	"echo-category-title-notification-bs-reminder-cat": "Hatırlatmalar",
+	"echo-pref-tooltip-bs-reminder-cat": "Hatırlatıcılarımın zamanı geldiğinde veya bir hafta içinde bana bildir",
 	"notification-bs-reminder-one-week-subject": "\"$1\" makalesini hatırla",
 	"notification-bs-reminder-one-week-email-body": "\"$1\" makalesinde hatırlatıcı ayarladınız. Bu hatırlatma bir hafta içinde çıkacak.\n\nYorumunuz:\n$2",
 	"notification-bs-reminder-one-week-web-body": "\"$1\" makalesinde hatırlatıcı ayarladınız. Bu hatırlatma bir hafta içinde çıkacak.",
