@@ -28,5 +28,10 @@
 	"bs-reminder-flyout-manager-btn-label": "Gestiona els recordatoris",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Els meus recordatoris",
 	"echo-category-title-notification-bs-reminder-cat": "Recordatoris",
-	"notification-bs-reminder-one-week-subject": "Recordeu l’article «$1»"
+	"notification-bs-reminder-one-week-subject": "Recordeu l’article «$1»",
+	"bs-reminder-menu_entry-create": "Crea un recordatori",
+	"bs-reminder-create-success": "S’ha creat el recordatori correctament.",
+	"bs-reminder-delete-success": "S’ha suprimit el recordatori correctament.",
+	"bs-reminder-delete-error": "S’ha produït un error: $1",
+	"bs-reminder-save-error-unkown": "No s’ha pogut desar el recordatori."
 }

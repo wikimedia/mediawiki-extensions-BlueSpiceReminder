@@ -10,5 +10,8 @@
 	"bs-reminder-title-delete": "Slet påmindelse",
 	"bs-reminder-article-label": "Side",
 	"bs-reminder-navigation-link-title": "Påmindelse",
-	"echo-category-title-notification-bs-reminder-cat": "Påmindelser"
+	"echo-category-title-notification-bs-reminder-cat": "Påmindelser",
+	"bs-reminder-create-reminder-label": "Opret påmindelse",
+	"bs-reminder-flyout-title": "Påmindelse",
+	"bs-reminder-flyout-form-title": "Opret en påmindelse"
 }
