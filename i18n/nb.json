@@ -69,5 +69,6 @@
 	"apihelp-bs-reminder-store-summary": "Gir et lager for påminnelser som det kan spørres mot",
 	"apihelp-bs-reminder-tasks-summary": "Gir oppgaver som redigering eller sletting av påminnelser",
 	"right-remindereditall": "Redigere andres påminnelser",
-	"action-remindereditall": "redigere andres påminnelser"
+	"action-remindereditall": "redigere andres påminnelser",
+	"echo-pref-tooltip-bs-reminder-cat": "Varsle meg når påminnelsene mine går ut i dag eller om éi uke"
 }

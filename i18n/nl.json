@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elroy"
+			"Elroy",
+			"Mainframe98"
 		]
 	},
 	"bs-reminder-unknown-user-msg": "U kunt geen herinnering maken voor een gebruiker die niet bestaat.",
@@ -17,5 +18,8 @@
 	"bs-reminder-nav-link-title-reminder": "Herinnering",
 	"bs-reminder-flyout-title": "Herinnering",
 	"bs-reminder-flyout-form-title": "Herinnering maken",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Uw herinneringen"
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Uw herinneringen",
+	"bs-reminder-article-label": "Pagina",
+	"bs-reminder-flyout-manager-btn-label": "Herinneringen beheren",
+	"echo-category-title-notification-bs-reminder-cat": "Herinneringen"
 }

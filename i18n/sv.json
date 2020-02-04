@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-reminder-extension-description": "Ger användaren möjligheten att skapa påminnelser.",
@@ -56,5 +57,9 @@
 	"notification-bs-reminder-today-subject": "Kom ihåg artikeln \"$1\" idag",
 	"notification-bs-reminder-today-web-body": "Du har skapat en påminnelse på artikeln \"$1\". Denna påminnelse förfaller i dag.",
 	"right-remindereditall": "Redigera andras påminnelser",
-	"action-remindereditall": "redigera andras påminnelser"
+	"action-remindereditall": "redigera andras påminnelser",
+	"bs-reminder-date-label": "Påminnelse",
+	"bs-reminder-create-error": "Din påminnelse kunde ännu inte uppdateras. Försök igen.",
+	"bs-reminder-header-date": "Påminnelse",
+	"echo-pref-tooltip-bs-reminder-cat": "Avisera mig när mina påminnelser går ut idag eller om en vecka"
 }

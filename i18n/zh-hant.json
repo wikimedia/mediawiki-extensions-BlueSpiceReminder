@@ -69,5 +69,6 @@
 	"apihelp-bs-reminder-store-summary": "提供用於提醒的可查詢貯存",
 	"apihelp-bs-reminder-tasks-summary": "提供像是編輯或刪除提醒的任務",
 	"right-remindereditall": "編輯其它提醒",
-	"action-remindereditall": "編輯其它提醒"
+	"action-remindereditall": "編輯其它提醒",
+	"echo-pref-tooltip-bs-reminder-cat": "當我的提醒在今天或一週後到期時通知我"
 }
