@@ -32,7 +32,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	protected function setUp() : void {
 		parent::setUp();
 		$this->tablesUsed[] = 'bs_reminder';
-		$this->doLogin();
 	}
 
 	protected function getTokens() {
