@@ -20,6 +20,7 @@
 	"bs-reminder-delete-error": "Se produjo un error: $1",
 	"bs-reminder-delete-error-unkown": "No se pudo eliminar el recordatorio.",
 	"bs-reminder-save-error": "Se produjo un error: $1",
+	"bs-reminder-save-error-unkown": "No se pudo guardar el recordatorio.",
 	"bs-reminder-comment-label": "Comentario",
 	"bs-reminder-header-comment": "Comentario",
 	"bs-reminder-article-label": "Página",
