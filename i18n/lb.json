@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Soued031"
 		]
 	},
 	"reminder": "Erënnerung",
@@ -19,7 +20,7 @@
 	"bs-reminder-save-error": "Et ass e Feeler geschitt: $1",
 	"bs-reminder-save-error-unkown": "Erënnerung konnt net gespäichert ginn.",
 	"bs-reminder-date-format": "d.m.Y",
-	"bs-reminder-create-no-actions": "E puer Parametere feelen. Probéiert w.e.g. nach eng Kéier.",
+	"bs-reminder-create-no-actions": "E puer Parametere feelen. Probéiert wgl. nach eng Kéier.",
 	"bs-reminder-save-success": "D'Erënnerung gouf ugeluecht.",
 	"bs-reminder-comment-label": "Bemierkung",
 	"bs-reminder-header-comment": "Bemierkung",

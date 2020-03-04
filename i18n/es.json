@@ -32,5 +32,6 @@
 	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
 	"bs-reminder-create-success": "El recordatorio se creó correctamente.",
 	"bs-reminder-delete-success": "Se eliminó el recordatorio correctamente.",
-	"bs-reminder-delete-error": "Se produjo un error: $1"
+	"bs-reminder-delete-error": "Se produjo un error: $1",
+	"bs-reminder-save-error-unkown": "No se pudo guardar el recordatorio."
 }
