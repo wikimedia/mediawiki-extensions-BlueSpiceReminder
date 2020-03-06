@@ -7,7 +7,9 @@ use BlueSpice\SkinData;
 
 class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
-		$oSpecialReminder = \SpecialPageFactory::getPage( 'Reminder' );
+		$oSpecialReminder = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'Reminder' );
 
 		if ( !$oSpecialReminder ) {
 			return true;
