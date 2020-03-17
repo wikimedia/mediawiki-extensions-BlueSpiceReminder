@@ -70,6 +70,6 @@
 	"notification-bs-reminder-today-web-body": "У вас є нагадування щодо статті «$1». Це нагадування з'явилось сьогодні.",
 	"apihelp-bs-reminder-store-summary": "Надає сховок для нагадувань, до якого можна надсилати запити",
 	"apihelp-bs-reminder-tasks-summary": "Надає такі завдання, як редагування чи вилучення нагадувань",
-	"right-remindereditall": "редагування нагадувань інших",
+	"right-remindereditall": "Редагування нагадувань інших",
 	"action-remindereditall": "редагування нагадувань інших"
 }
