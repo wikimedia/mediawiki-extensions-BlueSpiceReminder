@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"reminder": "Нагадування",
@@ -36,5 +37,39 @@
 	"bs-reminder-navigation-link-title": "Нагадування",
 	"bs-reminder-navigation-link-text": "Нагадування",
 	"bs-reminder-nav-link-title-reminder": "Нагадування",
-	"bs-reminder-flyout-title": "Нагадування"
+	"bs-reminder-flyout-title": "Нагадування",
+	"bs-reminder-extension-description": "Дає користувачеві можливість створювати нагадування.",
+	"apihelp-bs-reminder-store-description": "Постачає дані для оглядової сітки на Special:Reminder",
+	"apihelp-bs-reminder-tasks-description": "Виконує завдання на кшталт оновлення та вилучення в оглядовій сітці на Special:Reminder",
+	"bs-reminder-pref-DefaultReminderPeriod": "Стандартний період нагадування",
+	"bs-reminder-pref-DefaultReminderPeriod-help": "Введіть кількість днів для періоду нагадування.",
+	"bs-reminder-pref-SetReminderOnCreate": "Встановити нагадування при створенні сторінки",
+	"bs-reminder-menu_entry-create": "Створити нагадування",
+	"bs-reminder-unknown-page-msg": "Ви намагаєтесь створити нагадування для сторінки, яка не існує.",
+	"bs-reminder-unknown-user-msg": "Ви намагаєтесь створити нагадування для користувача, який не існує.",
+	"bs-reminder-date-format": "Р-м-д",
+	"bs-reminder-create-no-actions": "Бракує деяких параметрів. Будь ласка, спробуйте ще раз.",
+	"bs-reminder-save-success": "Нагадування успішно створено.",
+	"bs-reminder-user-label": "Призначити користувачеві",
+	"bs-reminder-flyout-intro": "Ви можете встановити нагадування для цієї сторінки тут. Станом на вказану дату ви отримаєте сповіщення відповідно до ваших налаштувань сповіщень.",
+	"bs-reminder-flyout-upcoming": "Для цієї сторінки є нагадування, яке має з'явитися через {{PLURAL:$1|$1 день|$1 дні|$1 днів}}",
+	"bs-reminder-flyout-upcoming-due": "Для цієї сторінки є активне нагадування",
+	"bs-reminder-flyout-upcoming-none": "Для цієї сторінки не заплановано жодних нагадувань",
+	"bs-reminder-flyout-form-title": "Створити нагадування",
+	"bs-reminder-flyout-grid-title": "Нагадування іншого користувача",
+	"bs-reminder-flyout-manager-btn-label": "Керувати нагадуваннями",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мої нагадування",
+	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: нагадування для сторінки $1 станом на $2 з коментарем: $3",
+	"echo-category-title-notification-bs-reminder-cat": "Нагадування",
+	"echo-pref-tooltip-bs-reminder-cat": "Повідомляти мені, якщо я маю нагадування на сьогодні, чи рівно через тиждень",
+	"notification-bs-reminder-one-week-subject": "Згадайте про статтю «$1»",
+	"notification-bs-reminder-one-week-email-body": "У вас є нагадування щодо статті «$1». Це нагадування має з'явитись рівно через тиждень.\n\nВаш коментар:\n$2",
+	"notification-bs-reminder-one-week-web-body": "У вас є нагадування щодо статті «$1». Це нагадування має з'явитись рівно через тиждень.",
+	"notification-bs-reminder-today-subject": "Згадайте про статтю «$1» сьогодні",
+	"notification-bs-reminder-today-email-body": "У вас є нагадування щодо статті «$1». Це нагадування з'явилось сьогодні.\n\nВаш коментар:\n$2",
+	"notification-bs-reminder-today-web-body": "У вас є нагадування щодо статті «$1». Це нагадування з'явилось сьогодні.",
+	"apihelp-bs-reminder-store-summary": "Надає сховок для нагадувань, до якого можна надсилати запити",
+	"apihelp-bs-reminder-tasks-summary": "Надає такі завдання, як редагування чи вилучення нагадувань",
+	"right-remindereditall": "Редагування нагадувань інших",
+	"action-remindereditall": "редагування нагадувань інших"
 }

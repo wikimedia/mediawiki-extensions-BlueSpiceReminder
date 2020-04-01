@@ -33,5 +33,9 @@
 	"bs-reminder-create-success": "El recordatorio se creó correctamente.",
 	"bs-reminder-delete-success": "Se eliminó el recordatorio correctamente.",
 	"bs-reminder-delete-error": "Se produjo un error: $1",
-	"bs-reminder-save-error-unkown": "No se pudo guardar el recordatorio."
+	"bs-reminder-save-error-unkown": "No se pudo guardar el recordatorio.",
+	"bs-reminder-error-owner-reminder": "Solo pueden eliminarse los propios recordatorios.",
+	"bs-reminder-date-format": "d-m-Y",
+	"bs-reminder-save-success": "Se creó el recordatorio correctamente.",
+	"bs-reminder-pref-DisableReminderForNS": "No crear recordatorios para los espacios de nombres siguientes:"
 }
