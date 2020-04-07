@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Geben Sie hier die Anzahl der Tage ein.",
 	"bs-reminder-unknown-page-msg": "Sie versuchen eine Erinnerung für eine Seite anzulegen, welche nicht existiert.",
 	"bs-reminder-unknown-user-msg": "Sie versuchen eine Erinnerung für einen Benutzer anzulegen, der nicht existiert.",
