@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"FarsiNevis"
+		]
+	},
+	"bs-reminder-update-success": "یادآورتان با موفقیت روزآمد شد.",
+	"bs-reminder-update-error": "یادآورتان روزآمد نشد. لطفاً دوباره تلاش کنید."
+}
