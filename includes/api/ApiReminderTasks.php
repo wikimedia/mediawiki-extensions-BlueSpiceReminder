@@ -250,6 +250,26 @@ class ApiReminderTasks extends BSApiTasksBase {
 			'rem_comment' => $sComment
 		];
 
+		if ( $oTaskData->isRepeating === true && !empty( $oTaskData->repeatConfig ) ) {
+			$aData['rem_repeat_date_end'] = date( 'YmdHis',
+				wfTimestamp( TS_UNIX, $oTaskData->repeatDateEnd ) );
+
+			$startReminderDate = DateTime::createFromFormat( 'Y-m-d', $aData['rem_date'] );
+			$startReminderDate = \BlueSpice\Services::getInstance()
+				->getService( 'BSRepeatingReminderDateCalculator' )
+				->getStartDate( $startReminderDate, $oTaskData->repeatConfig );
+			$startReminderDate = $startReminderDate->format( 'YmdHis' );
+
+			if ( $startReminderDate > $aData['rem_repeat_date_end'] ) {
+				$oResult->message = $oResult->errors['createerror'] =
+					$this->msg( 'bs-reminder-start-date-greater-end-date' )->text();
+				return $oResult;
+			}
+			$aData['rem_date'] = $startReminderDate;
+			$aData['rem_is_repeating'] = true;
+			$aData['rem_repeat_config'] = FormatJson::encode( $oTaskData->repeatConfig );
+		}
+
 		$dbw = wfGetDB( DB_MASTER );
 		if ( !$iReminderId ) {
 			try {

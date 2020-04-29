@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_reminder ADD `rem_repeat_config` BLOB NOT NULL;
