@@ -24,7 +24,7 @@ use BlueSpice\Special\ManagerBase;
 class SpecialReminder extends ManagerBase {
 
 	/**
-	 * Constructor of SpecialReview class
+	 * Constructor of SpecialReminder class
 	 */
 	public function __construct() {
 		parent::__construct( 'Reminder', 'read' );

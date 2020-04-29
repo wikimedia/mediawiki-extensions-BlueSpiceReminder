@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_reminder ADD `rem_repeat_date_end` VARCHAR (14) NOT NULL default ''

@@ -32,6 +32,24 @@ class AddReminderTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 			'rem_comment',
 			"$dir/maintenance/db/bs_reminder.patch.add_comment_col.sql"
 		);
+
+		$this->updater->addExtensionField(
+			'bs_reminder',
+			'rem_is_repeating',
+			"$dir/maintenance/db/bs_reminder.patch.add_is_repeating_col.sql"
+		);
+
+		$this->updater->addExtensionField(
+			'bs_reminder',
+			'rem_repeat_date_end',
+			"$dir/maintenance/db/bs_reminder.patch.add_repeat_date_end_col.sql"
+		);
+
+		$this->updater->addExtensionField(
+			'bs_reminder',
+			'rem_repeat_config',
+			"$dir/maintenance/db/bs_reminder.patch.add_repeat_config_col.sql"
+		);
 	}
 
 	/**

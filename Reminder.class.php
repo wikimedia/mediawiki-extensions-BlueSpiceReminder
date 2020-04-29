@@ -191,7 +191,9 @@ class Reminder extends BsExtensionMW {
 			"{$sTblPrfx}bs_reminder.rem_date",
 			"{$sTblPrfx}user.user_name",
 			"{$sTblPrfx}page.page_title",
-			"{$sTblPrfx}bs_reminder.rem_comment"
+			"{$sTblPrfx}bs_reminder.rem_comment",
+			"{$sTblPrfx}bs_reminder.rem_is_repeating",
+			"{$sTblPrfx}bs_reminder.rem_repeat_date_end"
 		];
 		$aConditions = [];
 		$aOptions = [
@@ -256,7 +258,9 @@ class Reminder extends BsExtensionMW {
 					'page_link' => $oTitle->getLocalURL(),
 					'reminder_date' => $row->rem_date,
 					'article_id' => $row->rem_page_id,
-					'rem_comment' => $row->rem_comment
+					'rem_comment' => $row->rem_comment,
+					'rem_is_repeating' => $row->rem_is_repeating,
+					'rem_repeat_date_end' => $row->rem_repeat_date_end
 				];
 				Hooks::run( 'BsReminderBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;

@@ -15,12 +15,11 @@ Ext.define( 'BS.Reminder.Panel', {
 	extend: 'BS.CRUDGridPanel',
 	requires: [ 'BS.store.BSApi', 'BS.Reminder.PanelDialog' ],
 	initComponent: function() {
-
 		this.strMain = new BS.store.BSApi({
 			apiAction: 'bs-reminder-store',
 			autoLoad: true,
 			remoteSort: true,
-			fields: [ 'id', 'user_name', 'page_title', 'page_link', 'reminder_date', 'article_id', 'rem_comment' ],
+			fields: [ 'id', 'user_name', 'page_title', 'page_link', 'reminder_date', 'article_id', 'rem_comment', 'rem_is_repeating' ],
 			proxy: {
 				extraParams: {
 					query: mw.config.get( 'BSReminderUsername', false )
@@ -70,6 +69,24 @@ Ext.define( 'BS.Reminder.Panel', {
 			dataIndex: 'rem_comment',
 			filter: {
 				type: 'string'
+			}
+		});
+
+		this.colComment = Ext.create( 'Ext.grid.column.Column', {
+			id: 'reminder_is_repeating',
+			header: mw.message('bs-reminder-header-is-repeating').plain(),
+			sortable: false,
+			dataIndex: 'rem_is_repeating',
+			filter: {
+				type: 'string'
+			},
+			renderer: function(value, metaData, record, rowIndex, colIndex, store) {
+				if ( parseInt( value ) === 1) {
+					return mw.message('bs-reminder-date-repeat-ends-on-label') +
+						' ' + record.get( 'rem_repeat_date_end' );
+				} else {
+					return mw.message('bs-reminder-no').plain();
+				}
 			}
 		});
 
