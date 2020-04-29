@@ -10,4 +10,6 @@ class SendTodayReminderNotification extends SendNotificationBase {
 	];
 
 	protected $notificationClass = TodayNotification::class;
+
+	protected $doUpdateRepeatingRemindersDate = true;
 }
