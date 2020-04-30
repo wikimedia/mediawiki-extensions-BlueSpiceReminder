@@ -60,6 +60,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Le promemorie mije",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Promemorie pa pàgene $1 'u $2 cu 'u commende: $3",
 	"echo-category-title-notification-bs-reminder-cat": "Promemorie",
+	"echo-pref-tooltip-bs-reminder-cat": "Avvisame quanne le promemorie mije sò osce o 'mbrà 'na sumàne",
 	"notification-bs-reminder-one-week-subject": "Arrecuèrde 'a vôsce \"$1\"",
 	"notification-bs-reminder-one-week-email-body": "Tu è 'mbostate 'u promemorie sus 'a vôsce \"$1\". Stu promemorie arrive 'mbrà 'na sumàne.\n\n'U commende tune:\n$2",
 	"notification-bs-reminder-one-week-web-body": "Tu è 'mbostate 'u promemorie sus 'a vôsce \"$1\". Stu promemorie arrive 'mbrà 'na sumàne.",
