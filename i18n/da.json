@@ -4,14 +4,22 @@
 			"Saederup92"
 		]
 	},
+	"reminder": "Påmindelse",
+	"specialreminder": "Påmindelse",
 	"prefs-reminder": "Påmindelse",
+	"bs-reminder-menu_entry-create": "Opret påmindelse",
+	"bs-reminder-menu_entry-show": "Påmindelser",
 	"bs-reminder-create-reminder-label": "Opret påmindelse",
+	"bs-reminder-create-title": "Påmindelse",
 	"bs-reminder-header-pagename": "Side",
 	"bs-reminder-header-username": "Bruger",
 	"bs-reminder-title-delete": "Slet påmindelse",
 	"bs-reminder-article-label": "Side",
 	"bs-reminder-navigation-link-title": "Påmindelse",
+	"bs-reminder-navigation-link-text": "Påmindelse",
+	"bs-reminder-nav-link-title-reminder": "Påmindelse",
 	"bs-reminder-flyout-title": "Påmindelse",
 	"bs-reminder-flyout-form-title": "Opret en påmindelse",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mine påmindelser",
 	"echo-category-title-notification-bs-reminder-cat": "Påmindelser"
 }
