@@ -13,5 +13,13 @@
 	"echo-category-title-notification-bs-reminder-cat": "Påmindelser",
 	"bs-reminder-create-reminder-label": "Opret påmindelse",
 	"bs-reminder-flyout-title": "Påmindelse",
-	"bs-reminder-flyout-form-title": "Opret en påmindelse"
+	"bs-reminder-flyout-form-title": "Opret en påmindelse",
+	"reminder": "Påmindelse",
+	"specialreminder": "Påmindelse",
+	"bs-reminder-menu_entry-create": "Opret påmindelse",
+	"bs-reminder-menu_entry-show": "Påmindelser",
+	"bs-reminder-create-title": "Påmindelse",
+	"bs-reminder-navigation-link-text": "Påmindelse",
+	"bs-reminder-nav-link-title-reminder": "Påmindelse",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mine påmindelser"
 }

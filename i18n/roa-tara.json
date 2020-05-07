@@ -69,5 +69,6 @@
 	"apihelp-bs-reminder-store-summary": "Dèje 'na memorizzazzione pe le promemorie, ca ponne essere 'nderrogate",
 	"apihelp-bs-reminder-tasks-summary": "Dèje attivitate cumme 'u cangiamende o 'a scangellazione de le promemorie",
 	"right-remindereditall": "Cange le promemorie de l'otre",
-	"action-remindereditall": "cange le promemorie de l'otre"
+	"action-remindereditall": "cange le promemorie de l'otre",
+	"echo-pref-tooltip-bs-reminder-cat": "Avvisame quanne le promemorie mije sò osce o 'mbrà 'na sumàne"
 }
