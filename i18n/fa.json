@@ -1,9 +1,27 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amir1arch",
 			"FarsiNevis"
 		]
 	},
+	"reminder": "یادآور",
+	"specialreminder": "یادآور",
+	"prefs-reminder": "یادآور",
+	"bs-reminder-pref-DefaultReminderPeriod": "دوره پیش فرض یادآور",
+	"bs-reminder-menu_entry-create": "ساخت یادآور",
+	"bs-reminder-menu_entry-show": "یادآورها",
 	"bs-reminder-update-success": "یادآورتان با موفقیت روزآمد شد.",
-	"bs-reminder-update-error": "یادآورتان روزآمد نشد. لطفاً دوباره تلاش کنید."
+	"bs-reminder-update-error": "یادآورتان روزآمد نشد. لطفاً دوباره تلاش کنید.",
+	"bs-reminder-delete-error": "خطایی رخ داد: $1",
+	"bs-reminder-comment-label": "نظر",
+	"bs-reminder-header-comment": "نظر",
+	"bs-reminder-article-label": "صفحه",
+	"bs-reminder-dlg-btn-manager-label": "مدیریت یادآورها",
+	"bs-reminder-navigation-link-title": "یادآور",
+	"bs-reminder-navigation-link-text": "یادآور",
+	"bs-reminder-nav-link-title-reminder": "یادآور",
+	"bs-reminder-flyout-title": "یادآور",
+	"bs-reminder-flyout-form-title": "ساخت یک یادآور",
+	"bs-reminder-flyout-manager-btn-label": "مدیریت یادآورها"
 }
