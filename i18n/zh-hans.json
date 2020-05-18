@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nadine Siak"
+		]
+	},
+	"bs-reminder-repeat-label": "重复",
+	"bs-reminder-repeat-every-title": "重复每个",
+	"bs-reminder-ordinal-third": "第三",
+	"bs-reminder-ordinal-fourth": "第四",
+	"bs-reminder-repeat-interval-day": "天"
+}

@@ -3,7 +3,8 @@
 		"authors": [
 			"Gomoko",
 			"Thibaut120094",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"bs-reminder-extension-description": "Donne à l’utilisateur la possibilité de créer des rappels.",
@@ -72,5 +73,30 @@
 	"apihelp-bs-reminder-store-summary": "Fournit un stockage pour les rappel, qui peut être interrogé.",
 	"apihelp-bs-reminder-tasks-summary": "Fournir des tâches telles que modifier ou supprimer des rappels",
 	"right-remindereditall": "Modifier les rappels des autres",
-	"action-remindereditall": "modifier les rappels des autres"
+	"action-remindereditall": "modifier les rappels des autres",
+	"bs-reminder-repeat-label": "Répéter",
+	"bs-reminder-repeat-every-title": "Répéter chaque",
+	"bs-reminder-repeat-on-title": "Répéter le",
+	"bs-reminder-ordinal-first": "premier",
+	"bs-reminder-ordinal-second": "second",
+	"bs-reminder-ordinal-third": "troisième",
+	"bs-reminder-ordinal-fourth": "quatrième",
+	"bs-reminder-ordinal-last": "dernier",
+	"bs-reminder-monthly-on-the-prefix": "Chaque mois le",
+	"bs-reminder-monthly-on-day-prefix": "Chaque mois le",
+	"bs-reminder-repeat-interval-day": "jour(s)",
+	"bs-reminder-repeat-interval-week": "semaine(s)",
+	"bs-reminder-repeat-interval-month": "mois",
+	"bs-reminder-repeat-interval-year": "année(s)",
+	"bs-reminder-sunday-abbr": "d",
+	"bs-reminder-monday-abbr": "l",
+	"bs-reminder-tuesday-abbr": "m",
+	"bs-reminder-wednesday-abbr": "e",
+	"bs-reminder-thursday-abbr": "j",
+	"bs-reminder-friday-abbr": "v",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-date-repeat-ends-on-label": "La répétition se termine le",
+	"bs-reminder-start-date-greater-end-date": "La date finale rappelée ne peut être antérieure à la date de début",
+	"bs-reminder-header-is-repeating": "se répète",
+	"bs-reminder-no": "non"
 }

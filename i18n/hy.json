@@ -9,5 +9,15 @@
 	"bs-reminder-date-format": "Տ-ա-օ",
 	"bs-reminder-comment-label": "Մեկնաբանություն",
 	"bs-reminder-header-comment": "Մեկնաբանություն",
-	"bs-reminder-article-label": "Էջ"
+	"bs-reminder-article-label": "Էջ",
+	"bs-reminder-ordinal-first": "առաջին",
+	"bs-reminder-ordinal-third": "երրորդ",
+	"bs-reminder-ordinal-fourth": "չորրորդ",
+	"bs-reminder-ordinal-last": "վերջին",
+	"bs-reminder-repeat-interval-day": "օր(եր)",
+	"bs-reminder-repeat-interval-week": "շաբաթ (ներ)",
+	"bs-reminder-repeat-interval-month": "ամիս(ներ)",
+	"bs-reminder-repeat-interval-year": "տարի (ներ)",
+	"bs-reminder-sunday-abbr": "վ",
+	"bs-reminder-no": "ոչ"
 }
