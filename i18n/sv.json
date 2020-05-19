@@ -61,5 +61,19 @@
 	"notification-bs-reminder-today-subject": "Kom ihåg artikeln \"$1\" idag",
 	"notification-bs-reminder-today-web-body": "Du har skapat en påminnelse på artikeln \"$1\". Denna påminnelse förfaller i dag.",
 	"right-remindereditall": "Redigera andras påminnelser",
-	"action-remindereditall": "redigera andras påminnelser"
+	"action-remindereditall": "redigera andras påminnelser",
+	"bs-reminder-repeat-label": "Upprepa",
+	"bs-reminder-repeat-on-title": "Upprepas",
+	"bs-reminder-repeat-interval-day": "dag(ar)",
+	"bs-reminder-repeat-interval-week": "vecka(-or)",
+	"bs-reminder-repeat-interval-month": "månad(er)",
+	"bs-reminder-repeat-interval-year": "år",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "o",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-no": "nej"
 }
