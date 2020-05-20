@@ -334,9 +334,9 @@ Ext.define( 'BS.Reminder.flyout.form.Reminder', {
 		}
 	},
 	onDateSelect: function( field, value ) {
+		this.dfRepeatDateEnd.setMinValue( value );
 		if ( value > this.dfRepeatDateEnd.getValue() ) {
 			this.dfRepeatDateEnd.setValue( Ext.Date.add( value, Ext.Date.DAY, 1 ) );
-			this.dfRepeatDateEnd.setMinValue( value );
 		}
 		this.updateMonthlyRepeatIntervalStore( value );
 	}
