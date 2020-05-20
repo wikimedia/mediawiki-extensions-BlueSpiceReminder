@@ -45,10 +45,12 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		$aOutput = [];
 
 		foreach ( $aReminders['results'] as $aReminder ) {
+			$aReminder['rem_repeat_date_end'] = RequestContext::getMain()->getLanguage()
+				->userTimeAndDate( $aReminder['rem_repeat_date_end'], $oUser );
 			$oReminder = (object)$aReminder;
+
 			$aOutput[] = $oReminder;
 		}
-
 		return $aOutput;
 	}
 
