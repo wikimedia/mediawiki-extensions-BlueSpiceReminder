@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Killarnee",
 			"Mglaser"
 		]
 	},
@@ -71,5 +72,29 @@
 	"apihelp-bs-reminder-store-summary": "Stellt einen Suchspeicher für Erinnerungen bereit, die abgefragt werden können",
 	"apihelp-bs-reminder-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Erinnerungen bereit",
 	"right-remindereditall": "Erinnerungen anderer Benutzer bearbeiten",
-	"action-remindereditall": "Erinnerungen anderer Benutzer zu bearbeiten"
+	"action-remindereditall": "Erinnerungen anderer Benutzer zu bearbeiten",
+	"bs-reminder-repeat-label": "Wiederholen",
+	"bs-reminder-repeat-every-title": "Wiederhole jede",
+	"bs-reminder-repeat-on-title": "Wiederholen an",
+	"bs-reminder-ordinal-first": "Zuerst",
+	"bs-reminder-ordinal-second": "Sekunde",
+	"bs-reminder-ordinal-third": "dritte",
+	"bs-reminder-ordinal-fourth": "Vierte",
+	"bs-reminder-ordinal-last": "Letzte",
+	"bs-reminder-monthly-on-the-prefix": "Monatlich auf der",
+	"bs-reminder-monthly-on-day-prefix": "Monatlich am Tag",
+	"bs-reminder-repeat-interval-day": "Tag(e)",
+	"bs-reminder-repeat-interval-week": "Woche(n)",
+	"bs-reminder-repeat-interval-month": "Monat(e)",
+	"bs-reminder-repeat-interval-year": "Jahr(e)",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "w",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-date-repeat-ends-on-label": "Wiederholen endet am",
+	"bs-reminder-header-is-repeating": "Wiederholt sich",
+	"bs-reminder-no": "nein"
 }
