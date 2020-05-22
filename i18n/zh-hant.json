@@ -79,6 +79,8 @@
 	"bs-reminder-ordinal-third": "第三",
 	"bs-reminder-ordinal-fourth": "第四",
 	"bs-reminder-ordinal-last": "最末",
+	"bs-reminder-monthly-on-the-prefix": "每月在",
+	"bs-reminder-monthly-on-day-prefix": "每月一天",
 	"bs-reminder-repeat-interval-day": "天",
 	"bs-reminder-repeat-interval-week": "週",
 	"bs-reminder-repeat-interval-month": "月",
