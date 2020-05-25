@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Codenstory",
 			"Ykhwong"
 		]
 	},
@@ -11,5 +12,30 @@
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-user-label": "사용자에 할당",
 	"bs-reminder-article-label": "문서",
-	"notification-bs-reminder-today-subject": "오늘 \"$1\" 문서를 기억하기"
+	"notification-bs-reminder-today-subject": "오늘 \"$1\" 문서를 기억하기",
+	"bs-reminder-repeat-label": "반복",
+	"bs-reminder-repeat-every-title": "반복 주기:",
+	"bs-reminder-repeat-on-title": "반복",
+	"bs-reminder-ordinal-first": "첫째",
+	"bs-reminder-ordinal-second": "두 번째",
+	"bs-reminder-ordinal-third": "셋째",
+	"bs-reminder-ordinal-fourth": "넷째",
+	"bs-reminder-ordinal-last": "마지막",
+	"bs-reminder-monthly-on-the-prefix": "매달",
+	"bs-reminder-monthly-on-day-prefix": "매달",
+	"bs-reminder-repeat-interval-day": "일",
+	"bs-reminder-repeat-interval-week": "주",
+	"bs-reminder-repeat-interval-month": "월",
+	"bs-reminder-repeat-interval-year": "년",
+	"bs-reminder-sunday-abbr": "일",
+	"bs-reminder-monday-abbr": "월",
+	"bs-reminder-tuesday-abbr": "화",
+	"bs-reminder-wednesday-abbr": "수",
+	"bs-reminder-thursday-abbr": "목",
+	"bs-reminder-friday-abbr": "금",
+	"bs-reminder-saturday-abbr": "토",
+	"bs-reminder-date-repeat-ends-on-label": "반복 종료:",
+	"bs-reminder-start-date-greater-end-date": "리마인더 종료 날짜는 시작 날짜보다 앞설 수 없습니다",
+	"bs-reminder-header-is-repeating": "반복",
+	"bs-reminder-no": "아니오"
 }
