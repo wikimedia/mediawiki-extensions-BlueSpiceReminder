@@ -21,5 +21,9 @@
 	"bs-reminder-create-title": "Påmindelse",
 	"bs-reminder-navigation-link-text": "Påmindelse",
 	"bs-reminder-nav-link-title-reminder": "Påmindelse",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mine påmindelser"
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mine påmindelser",
+	"bs-reminder-repeat-interval-day": "dag(e)",
+	"bs-reminder-repeat-interval-week": "uge(r)",
+	"bs-reminder-repeat-interval-month": "måned(er)",
+	"bs-reminder-repeat-interval-year": "år"
 }

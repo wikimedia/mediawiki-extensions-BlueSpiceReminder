@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patriot Kur"
+		]
+	},
+	"bs-reminder-ordinal-first": "iminə",
+	"bs-reminder-ordinal-fourth": "çominə",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-no": "ne"
+}

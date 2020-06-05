@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nadine Siak",
+			"SomeyaMako"
+		]
+	},
+	"bs-reminder-repeat-label": "重复",
+	"bs-reminder-repeat-every-title": "重复每个",
+	"bs-reminder-repeat-on-title": "开启重复",
+	"bs-reminder-ordinal-first": "第一",
+	"bs-reminder-ordinal-second": "第二",
+	"bs-reminder-ordinal-third": "第三",
+	"bs-reminder-ordinal-fourth": "第四",
+	"bs-reminder-ordinal-last": "最后一个",
+	"bs-reminder-repeat-interval-day": "天",
+	"bs-reminder-repeat-interval-week": "周",
+	"bs-reminder-repeat-interval-month": "月",
+	"bs-reminder-repeat-interval-year": "年",
+	"bs-reminder-sunday-abbr": "日",
+	"bs-reminder-monday-abbr": "一",
+	"bs-reminder-tuesday-abbr": "二",
+	"bs-reminder-wednesday-abbr": "三",
+	"bs-reminder-thursday-abbr": "四",
+	"bs-reminder-friday-abbr": "五",
+	"bs-reminder-saturday-abbr": "六",
+	"bs-reminder-date-repeat-ends-on-label": "重复结束于",
+	"bs-reminder-start-date-greater-end-date": "提醒的结束日期不得小于起始日期",
+	"bs-reminder-no": "否"
+}

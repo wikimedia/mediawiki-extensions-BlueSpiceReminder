@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"bs-reminder-repeat-label": "Ripeti",
+	"bs-reminder-ordinal-first": "primo",
+	"bs-reminder-ordinal-second": "secondo",
+	"bs-reminder-ordinal-third": "terzo",
+	"bs-reminder-ordinal-fourth": "quarto",
+	"bs-reminder-ordinal-last": "ultimo",
+	"bs-reminder-repeat-interval-day": "giorno/i",
+	"bs-reminder-repeat-interval-week": "settimana/e",
+	"bs-reminder-repeat-interval-month": "mese/i",
+	"bs-reminder-repeat-interval-year": "anno/i",
+	"bs-reminder-sunday-abbr": "d",
+	"bs-reminder-monday-abbr": "l",
+	"bs-reminder-tuesday-abbr": "m",
+	"bs-reminder-wednesday-abbr": "m",
+	"bs-reminder-thursday-abbr": "g",
+	"bs-reminder-friday-abbr": "v",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-no": "no"
+}

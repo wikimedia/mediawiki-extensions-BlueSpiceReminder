@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"bs-reminder-repeat-interval-day": "రోజు(లు)",
+	"bs-reminder-repeat-interval-week": "వారము(లు)",
+	"bs-reminder-repeat-interval-month": "నెల(లు)",
+	"bs-reminder-repeat-interval-year": "సంవత్సరము(లు)"
+}

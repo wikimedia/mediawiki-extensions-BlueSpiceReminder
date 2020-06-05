@@ -97,5 +97,5 @@
 	"bs-reminder-date-repeat-ends-on-label": "Label for date when reminder ends field",
 	"bs-reminder-start-date-greater-end-date": "Error message when end date of repeating reminder less than start date",
 	"bs-reminder-header-is-repeating": "Label of the column for Is repeating\n{{Identical|Is repeating}}",
-	"bs-reminder-no": "Just no. Used for showing that reminder is not repeating"
+	"bs-reminder-no": "Just no. Used for showing that reminder is not repeating\n{{identical|No}}"
 }
