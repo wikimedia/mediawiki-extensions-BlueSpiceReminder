@@ -13,6 +13,13 @@ class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
 			return true;
 		}
 
+		if ( !$this->getContext()
+			->getUser()
+			->isAllowed( $oSpecialReminder->getRestriction() )
+		) {
+			return true;
+		}
+
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,
 			[
