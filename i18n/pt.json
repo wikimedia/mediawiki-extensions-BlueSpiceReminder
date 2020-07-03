@@ -40,5 +40,20 @@
 	"bs-reminder-flyout-grid-title": "Aviso de outro utilizador",
 	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\"",
 	"right-remindereditall": "Editar os avisos de outros",
-	"action-remindereditall": "editar os avisos de outros"
+	"action-remindereditall": "editar os avisos de outros",
+	"bs-reminder-date-label": "Lembrar em",
+	"bs-reminder-create-success": "O seu lembrete foi criado com sucesso.",
+	"bs-reminder-create-error": "Ainda não foi possível criar o seu lembrete. Por favor, tente novamente.",
+	"bs-reminder-update-success": "O seu lembrete foi atualziado com sucesso.",
+	"bs-reminder-update-error": "Ainda não foi possível atualizar o seu lembrete. Por favor, tente novamente.",
+	"bs-reminder-delete-success": "O seu lembrete foi eliminado com sucesso.",
+	"bs-reminder-delete-error-unkown": "Não foi possível eliminar o lembrete.",
+	"bs-reminder-save-error-unkown": "Não foi possível guardar o lembrete.",
+	"bs-reminder-create-no-actions": "Alguns parâmetros estão em falta. Por favor, tente novamente.",
+	"bs-reminder-save-success": "O «Lembrete» foi criado com sucesso.",
+	"bs-reminder-repeat-label": "Repetir",
+	"bs-reminder-repeat-every-title": "Repetir a cada",
+	"bs-reminder-repeat-on-title": "Repetir em",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m"
 }

@@ -25,5 +25,10 @@
 	"bs-reminder-repeat-interval-day": "dag(e)",
 	"bs-reminder-repeat-interval-week": "uge(r)",
 	"bs-reminder-repeat-interval-month": "måned(er)",
-	"bs-reminder-repeat-interval-year": "år"
+	"bs-reminder-repeat-interval-year": "år",
+	"bs-reminder-ordinal-first": "første",
+	"bs-reminder-ordinal-second": "anden",
+	"bs-reminder-ordinal-third": "tredje",
+	"bs-reminder-ordinal-fourth": "fjerde",
+	"bs-reminder-ordinal-last": "sidste"
 }
