@@ -109,7 +109,10 @@
 				"bs-reminder-date-repeat-ends-on-label",
 				"bs-reminder-header-type"
 			],
-			"dependencies": "ext.bluespice.extjs"
+			"dependencies": [
+				"mediawiki.user",
+				"ext.bluespice.extjs"
+			]
 		},
 		"ext.bluespice.reminder": {
 			"scripts": "bluespice.reminder.js",
