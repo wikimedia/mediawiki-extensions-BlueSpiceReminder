@@ -250,7 +250,8 @@ class ApiReminderTasks extends BSApiTasksBase {
 			'rem_comment' => $sComment
 		];
 
-		if ( $oTaskData->isRepeating === true && !empty( $oTaskData->repeatConfig ) ) {
+		if ( isset( $oTaskData->isRepeating ) && $oTaskData->isRepeating === true
+			&& !empty( $oTaskData->repeatConfig ) ) {
 			$aData['rem_repeat_date_end'] = date( 'YmdHis',
 				wfTimestamp( TS_UNIX, $oTaskData->repeatDateEnd ) );
 
