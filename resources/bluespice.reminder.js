@@ -26,34 +26,4 @@
 		});
 	} );
 
-	$(d).on( 'BSExpiryInitCreateForm', function( self, dlg ){
-		dlg.cbxCreateReminder = Ext.create( 'Ext.form.field.Checkbox', {
-			fieldLabel: mw.message( 'bs-reminder-create-reminder-label' ).plain()
-		});
-		dlg.items.push( dlg.cbxCreateReminder );
-	});
-	$(d).on( 'BSExpiryGetData', function( self, dlg, obj ){
-		var localObj = {
-			setReminder: dlg.cbxCreateReminder.getValue()
-		};
-		obj = Ext.merge( obj, localObj );
-	});
-	$(d).on( 'BSExpiryAddOk', function( self, panel, obj ) {
-		if ( obj.setReminder === true ) {
-			bs.api.tasks.exec(
-				'reminder',
-				'saveReminder',
-				obj
-			)
-		}
-	});
-	$(d).on( 'BSExpiryEditOk', function( self, panel, obj ) {
-		if ( obj.setReminder === true ) {
-			bs.api.tasks.exec(
-				'reminder',
-				'saveReminder',
-				obj
-			)
-		}
-	});
 })( mediaWiki, jQuery, document, blueSpice );

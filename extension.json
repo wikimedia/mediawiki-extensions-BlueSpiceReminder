@@ -49,6 +49,11 @@
 			"Handlers": [
 				"\\BlueSpice\\Reminder\\Privacy\\Handler"
 			]
+		},
+		"BlueSpiceReminder": {
+			"Registry": {
+				"page": "\\BlueSpice\\Reminder\\Reminder\\Page::factory"
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -101,7 +106,8 @@
 				"bs-reminder-title-delete",
 				"bs-reminder-header-is-repeating",
 				"bs-reminder-no",
-				"bs-reminder-date-repeat-ends-on-label"
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type"
 			],
 			"dependencies": "ext.bluespice.extjs"
 		},
@@ -138,7 +144,8 @@
 				"bs-reminder-thursday-abbr",
 				"bs-reminder-friday-abbr",
 				"bs-reminder-saturday-abbr",
-				"bs-reminder-date-repeat-ends-on-label"
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type"
 			],
 			"dependencies": "ext.bluespice"
 		},

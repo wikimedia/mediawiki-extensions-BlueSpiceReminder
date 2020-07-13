@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/bs_reminder (
   `rem_is_repeating`    TINYINT(1) NOT NULL DEFAULT '0' ,
   `rem_repeat_date_end` VARCHAR (14) NOT NULL DEFAULT '' ,
   `rem_repeat_config`   BLOB NOT NULL ,
+  `rem_type`            varchar(255) NOT NULL DEFAULT '',
 
   PRIMARY KEY (`rem_id`) ,
   INDEX `rem_user_id_idx` (`rem_user_id` ASC) ,

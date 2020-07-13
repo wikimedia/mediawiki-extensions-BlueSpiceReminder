@@ -1,0 +1,1 @@
+ALTER TABLE /*$wgDBprefix*/bs_reminder ADD `rem_type` VARCHAR( 255 ) NOT NULL DEFAULT '';

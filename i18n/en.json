@@ -94,5 +94,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "Repeat ends on",
 	"bs-reminder-start-date-greater-end-date": "Reminder end date can't be less than start date",
 	"bs-reminder-header-is-repeating": "Is repeating",
-	"bs-reminder-no": "no"
+	"bs-reminder-no": "no",
+	"bs-reminder-invalid-type": "Invalid Type",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Page"
 }

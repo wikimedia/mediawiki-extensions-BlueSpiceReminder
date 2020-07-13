@@ -50,6 +50,31 @@ Ext.define( 'BS.Reminder.Panel', {
 				type: 'string'
 			}
 		} );
+		var filter = [];
+		for( var idx in mw.config.get( 'bsgReminderRegisteredTypes' ) ) {
+			if ( idx === '' ) {
+				continue;
+			}
+			filter.push( idx );
+		}
+
+		this.colReminderType = Ext.create( 'Ext.grid.column.Column', {
+			id: 'reminder_type',
+			header: mw.message( 'bs-reminder-header-type' ).plain(),
+			sortable: true,
+			dataIndex: 'rem_type',
+			renderer: function( val ) {
+				if ( val === '' ) {
+					val = 'page';
+				}
+				return mw.config.get( 'bsgReminderRegisteredTypes' )[val].LabelMsg;
+			},
+			filter: {
+				type: 'list',
+				options: filter,
+				value: 'page'
+			}
+		});
 		this.colReminderDate = Ext.create( 'Ext.grid.column.Column', {
 			id: 'reminder_date',
 			header: mw.message('bs-reminder-header-date').plain(),
@@ -91,6 +116,7 @@ Ext.define( 'BS.Reminder.Panel', {
 		});
 
 		this.colMainConf.columns.push( this.colPageTitle );
+		this.colMainConf.columns.push( this.colReminderType );
 		this.colMainConf.columns.push( this.colReminderDate );
 		this.colMainConf.columns.push( this.colComment );
 
@@ -207,5 +233,15 @@ Ext.define( 'BS.Reminder.Panel', {
 	},
 	reloadStore: function() {
 		this.strMain.reload();
+	},
+	makeRowActions: function() {
+		var actions = this.callParent( arguments );
+		for( var i = 0; i < actions.length; i++ ) {
+			actions[i].isDisabled = function( view, rowIndex, colIndex, item, record  ) {
+				return record.get( 'rem_type' ) !== '' && !record.get( 'rem_type' ) !== 'page' ;
+			};
+		}
+
+		return actions;
 	}
 });
