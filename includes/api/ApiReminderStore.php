@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Reminder\Factory;
+
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
 	/**
@@ -10,6 +12,14 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	 */
 	public function __construct( $mainModule, $moduleName, $modulePrefix = '' ) {
 		parent::__construct( $mainModule, $moduleName, $modulePrefix );
+	}
+
+	/**
+	 *
+	 * @return Factory
+	 */
+	protected function getFactory() {
+		return $this->getServices()->getService( 'BSReminderFactory' );
 	}
 
 	/**
@@ -86,7 +96,9 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 				[ 'name' => 'article_id' ],
 				[ 'name' => 'rem_comment' ],
 				[ 'name' => 'rem_is_repeating' ],
-				[ 'name' => 'rem_repeat_date_end' ]
+				[ 'name' => 'rem_repeat_date_end' ],
+				[ 'name' => 'rem_type' ],
+				[ 'name' => 'type_display' ],
 			],
 			'sortInfo' => [
 				'field' => 'rem_date',
@@ -120,9 +132,36 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			'render' => 'comment',
 			'sortable' => false
 		];
+		$aMetadata['columns'][] = [
+			'header' => wfMessage( 'bs-reminder-header-type' )->plain(),
+			'dataIndex' => 'rem_type',
+			'render' => 'type',
+			'sortable' => false
+		];
 
 		\Hooks::run( 'BsReminderBuildOverviewMetadata', [ &$aMetadata ] );
 
 		return $aMetadata;
+	}
+
+	/**
+	 * Performs list filtering based on given filter of type array on a dataset
+	 * @param \stdClass $oFilter
+	 * @param \stdClass $aDataSet
+	 * @return bool true if filter applies, false if not
+	 */
+	public function filterList( $oFilter, $aDataSet ) {
+		if ( $oFilter->field !== 'rem_type' ) {
+			return parent::filterList( $oFilter, $aDataSet );
+		}
+		if ( !is_array( $oFilter->value ) ) {
+			 $oFilter->value = [ $oFilter->value ];
+		}
+		if ( in_array( 'page', $oFilter->value ) ) {
+			$oFilter->value[] = '';
+		}
+		$aFieldValues = $aDataSet->{$oFilter->field};
+		$aFilterValues = $oFilter->value;
+		return in_array( $aFieldValues, $aFilterValues );
 	}
 }

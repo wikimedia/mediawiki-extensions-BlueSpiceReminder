@@ -31,6 +31,9 @@
  * @filesource
  */
 
+use BlueSpice\Reminder\Factory;
+use MediaWiki\MediaWikiServices;
+
 /**
  * Main class for Reminder extension
  * @package BlueSpice_pro
@@ -150,6 +153,14 @@ class Reminder extends BsExtensionMW {
 
 	/**
 	 *
+	 * @return Factory
+	 */
+	private function getFactory() {
+		return MediaWikiServices::getInstance()->getService( 'BSReminderFactory' );
+	}
+
+	/**
+	 *
 	 * @param User $oUser
 	 * @param int $iOffset
 	 * @param int $iLimit
@@ -157,7 +168,7 @@ class Reminder extends BsExtensionMW {
 	 * @param string $sSortDirection
 	 * @param string $iDate
 	 * @param \User|null $requestedUser
-	 * @return int
+	 * @return array
 	 */
 	public function getReminders( User $oUser, $iOffset = 0, $iLimit = 25, $sSortField = 'rem_date',
 		$sSortDirection = 'ASC', $iDate = 0, \User $requestedUser = null ) {
@@ -166,6 +177,9 @@ class Reminder extends BsExtensionMW {
 			'total' => 0
 		];
 		if ( BsCore::checkAccessAdmission( 'read' ) === false || $oUser->isAnon() ) {
+			return $aData;
+		}
+		if ( empty( $this->getFactory()->getRegisteredTypes() ) ) {
 			return $aData;
 		}
 		$dbr = wfGetDB( DB_REPLICA );
@@ -194,9 +208,12 @@ class Reminder extends BsExtensionMW {
 			"{$sTblPrfx}page.page_title",
 			"{$sTblPrfx}bs_reminder.rem_comment",
 			"{$sTblPrfx}bs_reminder.rem_is_repeating",
-			"{$sTblPrfx}bs_reminder.rem_repeat_date_end"
+			"{$sTblPrfx}bs_reminder.rem_repeat_date_end",
+			"{$sTblPrfx}bs_reminder.rem_type"
 		];
-		$aConditions = [];
+		$aConditions = [
+			"{$sTblPrfx}bs_reminder.rem_type" => $this->getFactory()->getRegisteredTypes()
+		];
 		$aOptions = [
 			'ORDER BY' => "{$sSortField} {$sSortDirection}",
 			'GROUP BY' => "{$sTblPrfx}bs_reminder.rem_id",
@@ -261,7 +278,8 @@ class Reminder extends BsExtensionMW {
 					'article_id' => $row->rem_page_id,
 					'rem_comment' => $row->rem_comment,
 					'rem_is_repeating' => $row->rem_is_repeating,
-					'rem_repeat_date_end' => $row->rem_repeat_date_end
+					'rem_repeat_date_end' => $row->rem_repeat_date_end,
+					'rem_type' => $row->rem_type,
 				];
 				Hooks::run( 'BsReminderBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
 				$aData['results'][] = $aResultSet;

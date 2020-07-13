@@ -97,5 +97,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "Label for date when reminder ends field",
 	"bs-reminder-start-date-greater-end-date": "Error message when end date of repeating reminder less than start date",
 	"bs-reminder-header-is-repeating": "Label of the column for Is repeating\n{{Identical|Is repeating}}",
-	"bs-reminder-no": "Just no. Used for showing that reminder is not repeating\n{{identical|No}}"
+	"bs-reminder-no": "Just no. Used for showing that reminder is not repeating\n{{identical|No}}",
+	"bs-reminder-invalid-type": "Error message for when given data for the type field is not valid",
+	"bs-reminder-header-type": "Label for data field that holds the type of the reminder\n{{Identical|Type}}",
+	"bs-reminder-type-page": "Label for reminder of type \"page\"\n{{Identical|Page}}"
 }
