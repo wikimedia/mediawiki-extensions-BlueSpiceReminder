@@ -30,5 +30,12 @@
 	"bs-reminder-repeat-interval-day": "dag(e)",
 	"bs-reminder-repeat-interval-week": "uge(r)",
 	"bs-reminder-repeat-interval-month": "måned(er)",
-	"bs-reminder-repeat-interval-year": "år"
+	"bs-reminder-repeat-interval-year": "år",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "o",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "l"
 }
