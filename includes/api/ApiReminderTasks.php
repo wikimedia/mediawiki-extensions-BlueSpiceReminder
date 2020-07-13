@@ -1,10 +1,19 @@
 <?php
 
 use BlueSpice\Api\Response\Standard;
+use BlueSpice\Reminder\Factory;
 
 class ApiReminderTasks extends BSApiTasksBase {
 	protected $aTasks = [ 'deleteReminder', 'saveReminder', 'getDetailsForReminder' ];
 	protected $aReadTasks = [ 'getDetailsForReminder' ];
+
+	/**
+	 *
+	 * @return Factory
+	 */
+	protected function getFactory() {
+		return $this->getServices()->getService( 'BSReminderFactory' );
+	}
 
 	/**
 	 *
@@ -40,7 +49,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$dbr = wfGetDB( DB_REPLICA );
 			$res = $dbr->select(
 				[ "bs_reminder" ],
-				"rem_date, rem_id, rem_user_id, rem_page_id, rem_comment",
+				"rem_date, rem_id, rem_user_id, rem_page_id, rem_comment, rem_type",
 				$aConds,
 				__METHOD__,
 				[]
@@ -58,6 +67,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$aReturnData['userId'] = $row->rem_user_id;
 			$aReturnData['articleId'] = $row->rem_page_id;
 			$aReturnData['comment'] = $row->rem_comment;
+			$aReturnData['type'] = $row->rem_type;
 		}
 		$oResult->success = true;
 		$oResult->payload = $aReturnData;
@@ -169,6 +179,12 @@ class ApiReminderTasks extends BSApiTasksBase {
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
+		$type = !empty( $oTaskData->type ) ? $oTaskData->type : '';
+		if ( !$this->getFactory()->isRegisteredType( $type ) ) {
+			$oResult->message = $oResult->errors['invalidtype']
+				= $this->msg( 'bs-reminder-invalid-type' )->plain();
+			return $oResult;
+		}
 
 		$iDate = isset( $oTaskData->date )
 			? wfTimestamp( TS_UNIX, $oTaskData->date )
@@ -247,7 +263,8 @@ class ApiReminderTasks extends BSApiTasksBase {
 			'rem_user_id' => $iUserId,
 			'rem_page_id' => $oTaskData->articleId,
 			'rem_date' => $sFormattedFieldValue,
-			'rem_comment' => $sComment
+			'rem_comment' => $sComment,
+			'rem_type' => $type,
 		];
 
 		if ( isset( $oTaskData->isRepeating ) && $oTaskData->isRepeating === true
