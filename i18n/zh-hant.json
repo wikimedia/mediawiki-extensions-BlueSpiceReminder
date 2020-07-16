@@ -95,5 +95,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "結束重複在",
 	"bs-reminder-start-date-greater-end-date": "提醒結束日期不能早於開始日期",
 	"bs-reminder-header-is-repeating": "為重複",
-	"bs-reminder-no": "否"
+	"bs-reminder-no": "否",
+	"bs-reminder-invalid-type": "無效類型",
+	"bs-reminder-header-type": "類型",
+	"bs-reminder-type-page": "頁面"
 }

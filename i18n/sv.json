@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mjälten",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -64,6 +65,12 @@
 	"action-remindereditall": "redigera andras påminnelser",
 	"bs-reminder-repeat-label": "Upprepa",
 	"bs-reminder-repeat-on-title": "Upprepas",
+	"bs-reminder-ordinal-first": "första",
+	"bs-reminder-ordinal-second": "andra",
+	"bs-reminder-ordinal-third": "tredje",
+	"bs-reminder-ordinal-fourth": "fjärde",
+	"bs-reminder-ordinal-last": "sista",
+	"bs-reminder-monthly-on-the-prefix": "Månatligt varje",
 	"bs-reminder-repeat-interval-day": "dag(ar)",
 	"bs-reminder-repeat-interval-week": "vecka(-or)",
 	"bs-reminder-repeat-interval-month": "månad(er)",
@@ -75,5 +82,9 @@
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "l",
-	"bs-reminder-no": "nej"
+	"bs-reminder-header-is-repeating": "Upprepar",
+	"bs-reminder-no": "nej",
+	"bs-reminder-invalid-type": "Ogiltig typ",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Sida"
 }
