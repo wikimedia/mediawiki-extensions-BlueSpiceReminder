@@ -1,14 +1,14 @@
 {
 	"name": "BlueSpiceReminder",
-	"version": "3.3.0-alpha",
+	"version": "3.4.0-alpha",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:Reminder",
 	"author": ["Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm"],
 	"descriptionmsg": "bs-reminder-extension-description",
 	"license-name": "GPL-3.0-only",
 	"requires": {
-		"MediaWiki": ">= 1.35.0",
+		"MediaWiki": ">= 1.36.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 3.3"
+			"BlueSpiceFoundation": ">= 3.4"
 		}
 	},
 	"type": "bluespice",
