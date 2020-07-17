@@ -37,5 +37,7 @@
 	"bs-reminder-wednesday-abbr": "o",
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
-	"bs-reminder-saturday-abbr": "l"
+	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Side"
 }

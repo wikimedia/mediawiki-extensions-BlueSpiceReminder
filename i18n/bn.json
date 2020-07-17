@@ -7,5 +7,7 @@
 	"bs-reminder-delete-error": "একটি ত্রুটি ঘটেছে: $1",
 	"bs-reminder-comment-label": "মন্তব্য",
 	"bs-reminder-header-comment": "মন্তব্য",
-	"bs-reminder-article-label": "পাতা"
+	"bs-reminder-article-label": "পাতা",
+	"bs-reminder-header-type": "ধরন",
+	"bs-reminder-type-page": "পাতা"
 }

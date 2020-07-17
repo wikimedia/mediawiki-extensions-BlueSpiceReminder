@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tmv",
 			"そらたこ"
 		]
 	},
@@ -10,5 +11,7 @@
 	"bs-reminder-header-comment": "コメント",
 	"bs-reminder-article-label": "ページ",
 	"bs-reminder-navigation-link-title": "リマインダー",
-	"action-remindereditall": "他のリマインダーを編集"
+	"action-remindereditall": "他のリマインダーを編集",
+	"bs-reminder-header-type": "入力",
+	"bs-reminder-type-page": "ページ"
 }

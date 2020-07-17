@@ -21,5 +21,8 @@
 	"bs-reminder-thursday-abbr": "g",
 	"bs-reminder-friday-abbr": "v",
 	"bs-reminder-saturday-abbr": "s",
-	"bs-reminder-no": "no"
+	"bs-reminder-no": "no",
+	"bs-reminder-invalid-type": "Tipo non valido",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Pagina"
 }

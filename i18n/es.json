@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Madamebiblio"
+			"Madamebiblio",
+			"Suecarmol"
 		]
 	},
 	"reminder": "Recordatorio",
@@ -37,5 +38,7 @@
 	"bs-reminder-flyout-manager-btn-label": "Gestionar recordatorios",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
 	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
-	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»"
+	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Página"
 }
