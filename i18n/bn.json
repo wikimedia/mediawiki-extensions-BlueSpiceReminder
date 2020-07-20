@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Sibabrata Banerjee",
 			"আফতাবুজ্জামান"
 		]
 	},
@@ -8,6 +9,7 @@
 	"bs-reminder-comment-label": "মন্তব্য",
 	"bs-reminder-header-comment": "মন্তব্য",
 	"bs-reminder-article-label": "পাতা",
+	"bs-reminder-invalid-type": "অবৈধ ধরন",
 	"bs-reminder-header-type": "ধরন",
 	"bs-reminder-type-page": "পাতা"
 }

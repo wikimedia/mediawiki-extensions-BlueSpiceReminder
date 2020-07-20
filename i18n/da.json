@@ -38,6 +38,7 @@
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
 	"bs-reminder-type-page": "Side"
 }
