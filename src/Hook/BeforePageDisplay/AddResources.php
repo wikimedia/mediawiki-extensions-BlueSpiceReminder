@@ -27,7 +27,11 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 			"bsgReminderRegisteredTypes",
 			$remRegistry
 		);
-		if ( $this->out->getUser()->isAllowed( "remindereditall" ) ) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->out->getUser(),
+			'remindereditall'
+		);
+		if ( $isAllowed ) {
 			$this->out->addJsConfigVars( "BSReminderShowUserColumn", true );
 		}
 		$this->out->addModuleStyles( 'ext.bluespice.reminder' );

@@ -106,7 +106,11 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			]
 		];
 
-		if ( $oUser->isAllowed( "remindereditall" ) ) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$oUser,
+			'remindereditall'
+		);
+		if ( $isAllowed ) {
 			$aMetadata['columns'][] = [
 				'header' => wfMessage( 'bs-reminder-header-username' )->plain(),
 				'dataIndex' => 'user_name',
