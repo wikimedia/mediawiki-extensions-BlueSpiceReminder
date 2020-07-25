@@ -192,9 +192,9 @@
 			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddSetReminderOnCreate::callback",
 			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddDisableReminderForNS::callback"
 		],
-		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
-			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
+		"ChameleonSkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
+			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback"

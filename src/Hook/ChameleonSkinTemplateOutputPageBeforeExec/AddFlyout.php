@@ -1,12 +1,12 @@
 <?php
 
-namespace BlueSpice\Reminder\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Reminder\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\Reminder\Panel\Flyout;
 use BlueSpice\SkinData;
 
-class AddFlyout extends SkinTemplateOutputPageBeforeExec {
+class AddFlyout extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function skipProcessing() {
 		$title = $this->skin->getTitle();
 		if ( $this->skin->getUser()->isAnon() ) {

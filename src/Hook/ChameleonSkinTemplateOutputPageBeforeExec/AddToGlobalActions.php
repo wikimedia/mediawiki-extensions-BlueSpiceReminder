@@ -1,11 +1,11 @@
 <?php
 
-namespace BlueSpice\Reminder\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\Reminder\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddToGlobalActions extends SkinTemplateOutputPageBeforeExec {
+class AddToGlobalActions extends ChameleonSkinTemplateOutputPageBeforeExec {
 	protected function doProcess() {
 		$oSpecialReminder = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
