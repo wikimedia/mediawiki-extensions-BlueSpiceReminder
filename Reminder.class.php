@@ -47,7 +47,10 @@ class Reminder extends BsExtensionMW {
 	protected function initExt() {
 		// register extension hooks
 		$this->setHook( 'ArticleInsertComplete' );
-		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
+		$this->setHook(
+			'ChameleonSkinTemplateOutputPageBeforeExec',
+			'onSkinTemplateOutputPageBeforeExec'
+		);
 		$this->setHook( 'BSUserManagerAfterDeleteUser' );
 		$this->setHook( 'EchoGetDefaultNotifiedUsers' );
 	}
