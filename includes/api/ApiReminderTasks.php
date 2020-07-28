@@ -42,7 +42,11 @@ class ApiReminderTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 		$aConds = [ 'rem_page_id' => $oTitle->getArticleID() ];
-		if ( !$oUser->isAllowed( "remindereditall" ) ) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$oUser,
+			'remindereditall'
+		);
+		if ( !$isAllowed ) {
 			$aConds['rem_user_id'] = $oUser->getId();
 		}
 		try {
@@ -102,7 +106,11 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		// check if user has right to delete reminders for other users
 		$aConds = [ 'rem_id' => $iReminderId ];
-		if ( !$oUser->isAllowed( "remindereditall" ) ) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$oUser,
+			'remindereditall'
+		);
+		if ( !$isAllowed ) {
 			$aConds['rem_user_id'] = $oUser->getId();
 		}
 
@@ -249,7 +257,11 @@ class ApiReminderTasks extends BSApiTasksBase {
 				return $oResult;
 			}
 
-			if ( !$oUser->isAllowed( 'remindereditall' ) && ( $iUserId !== $iTargetUserId ) ) {
+			$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+				$oUser,
+				'remindereditall'
+			);
+			if ( !$isAllowed && $iUserId !== $iTargetUserId ) {
 				$oResult->message = $oResult->errors['user'] =
 					wfMessage( 'bs-reminder-other-user-not-allowed' )->text();
 				return $oResult;
