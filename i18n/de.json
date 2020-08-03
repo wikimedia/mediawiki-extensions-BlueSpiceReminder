@@ -96,8 +96,10 @@
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "s",
 	"bs-reminder-date-repeat-ends-on-label": "Wiederholen endet am",
+	"bs-reminder-start-date-greater-end-date": "Das Endedatum kann nicht vor dem Startdatum liegen",
 	"bs-reminder-header-is-repeating": "Wiederholt sich",
 	"bs-reminder-no": "nein",
+	"bs-reminder-invalid-type": "Ungültiger Typ",
 	"bs-reminder-header-type": "Typ",
 	"bs-reminder-type-page": "Seite"
 }
