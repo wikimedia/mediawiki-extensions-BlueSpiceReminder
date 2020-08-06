@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Madamebiblio"
+			"Madamebiblio",
+			"Suecarmol"
 		]
 	},
 	"reminder": "Recordatorio",
@@ -37,5 +38,7 @@
 	"bs-reminder-error-owner-reminder": "Solo pueden eliminarse los propios recordatorios.",
 	"bs-reminder-date-format": "d-m-Y",
 	"bs-reminder-save-success": "Se creó el recordatorio correctamente.",
-	"bs-reminder-pref-DisableReminderForNS": "No crear recordatorios para los espacios de nombres siguientes:"
+	"bs-reminder-pref-DisableReminderForNS": "No crear recordatorios para los espacios de nombres siguientes:",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Página"
 }

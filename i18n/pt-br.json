@@ -95,5 +95,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "A repetição termina em",
 	"bs-reminder-start-date-greater-end-date": "A data de término do lembrete não pode ser menor que a data de início",
 	"bs-reminder-header-is-repeating": "Mensalmente no",
-	"bs-reminder-no": "não"
+	"bs-reminder-no": "não",
+	"bs-reminder-invalid-type": "Tipo inválido",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Página"
 }

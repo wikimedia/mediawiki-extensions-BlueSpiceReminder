@@ -30,5 +30,15 @@
 	"bs-reminder-ordinal-second": "anden",
 	"bs-reminder-ordinal-third": "tredje",
 	"bs-reminder-ordinal-fourth": "fjerde",
-	"bs-reminder-ordinal-last": "sidste"
+	"bs-reminder-ordinal-last": "sidste",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "o",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-invalid-type": "Ugyldig type",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Side"
 }

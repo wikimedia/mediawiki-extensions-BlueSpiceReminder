@@ -98,5 +98,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "La répétition se termine le",
 	"bs-reminder-start-date-greater-end-date": "La date finale rappelée ne peut être antérieure à la date de début",
 	"bs-reminder-header-is-repeating": "se répète",
-	"bs-reminder-no": "non"
+	"bs-reminder-no": "non",
+	"bs-reminder-invalid-type": "Type non valide",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Page"
 }

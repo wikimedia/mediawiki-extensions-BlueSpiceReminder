@@ -96,5 +96,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "Повторювання закінчується",
 	"bs-reminder-start-date-greater-end-date": "Кінцева дата нагадувань не може бути раніша, ніж початкова дата",
 	"bs-reminder-header-is-repeating": "Повторюється",
-	"bs-reminder-no": "ні"
+	"bs-reminder-no": "ні",
+	"bs-reminder-invalid-type": "Недійсний тип",
+	"bs-reminder-header-type": "Тип",
+	"bs-reminder-type-page": "Сторінка"
 }

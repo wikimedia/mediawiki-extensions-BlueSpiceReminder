@@ -95,5 +95,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "Tekrarlama bitiş tarihi",
 	"bs-reminder-start-date-greater-end-date": "Hatırlatıcı bitiş tarihi, başlangıç tarihinden az olamaz",
 	"bs-reminder-header-is-repeating": "Tekrar ediyor",
-	"bs-reminder-no": "hayır"
+	"bs-reminder-no": "hayır",
+	"bs-reminder-invalid-type": "Geçersiz Tür",
+	"bs-reminder-header-type": "Tür",
+	"bs-reminder-type-page": "Sayfa"
 }
