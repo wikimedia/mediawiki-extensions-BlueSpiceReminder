@@ -38,7 +38,7 @@
 	"bs-reminder-save-error": "Message to display when an error occurred on save: $1\\n $1 is the text of the error",
 	"bs-reminder-save-error-unkown": "Message to display when the reminder could not be saved.",
 	"bs-reminder-date-format": "Date format in php notation",
-	"bs-reminder-specialpage-subtitle": "Backlink to $1\\n $1 is the title of the to link back to",
+	"bs-reminder-specialpage-subtitle": "{{optional}}\nBacklink to $1\\n $1 is the title of the to link back to",
 	"bs-reminder-create-no-actions": "Message to display when some parameters are missing.",
 	"bs-reminder-save-success": "Message to display when the Reminder has been created successfully.",
 	"bs-reminder-user-label": "Label for user field in create/edit dialoge",
