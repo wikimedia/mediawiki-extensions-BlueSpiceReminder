@@ -3,6 +3,7 @@
 		"authors": [
 			"Fitoschido",
 			"Madamebiblio",
+			"Nguyễn Mạnh An",
 			"Suecarmol"
 		]
 	},
@@ -39,6 +40,18 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
 	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
 	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
+	"bs-reminder-repeat-interval-day": "día(s)",
+	"bs-reminder-repeat-interval-week": "semana(s)",
+	"bs-reminder-repeat-interval-month": "mes(es)",
+	"bs-reminder-repeat-interval-year": "año(s)",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "x",
+	"bs-reminder-thursday-abbr": "j",
+	"bs-reminder-friday-abbr": "v",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-invalid-type": "Tipo no válido",
 	"bs-reminder-header-type": "Tipo",
 	"bs-reminder-type-page": "Página"
 }
