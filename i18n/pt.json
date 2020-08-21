@@ -6,9 +6,11 @@
 			"Mansil alfalb"
 		]
 	},
+	"bs-reminder-extension-description": "Dá ao utilizador a oportunidade de criar avisos.",
 	"reminder": "Aviso",
 	"specialreminder": "Aviso",
 	"prefs-reminder": "Aviso",
+	"apihelp-bs-reminder-store-description": "Fornece os dados para a grelha de resumo de Special:Reminder",
 	"bs-reminder-menu_entry-create": "Criar aviso",
 	"bs-reminder-menu_entry-show": "Avisos",
 	"bs-reminder-date-label": "Lembrar a",
