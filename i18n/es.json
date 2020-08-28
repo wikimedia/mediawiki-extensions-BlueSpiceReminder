@@ -40,6 +40,8 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
 	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
 	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
+	"bs-reminder-repeat-label": "Repetir",
+	"bs-reminder-repeat-every-title": "Repetir cada",
 	"bs-reminder-repeat-interval-day": "día(s)",
 	"bs-reminder-repeat-interval-week": "semana(s)",
 	"bs-reminder-repeat-interval-month": "mes(es)",
@@ -51,6 +53,8 @@
 	"bs-reminder-thursday-abbr": "j",
 	"bs-reminder-friday-abbr": "v",
 	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-header-is-repeating": "Se repite",
+	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo no válido",
 	"bs-reminder-header-type": "Tipo",
 	"bs-reminder-type-page": "Página"
