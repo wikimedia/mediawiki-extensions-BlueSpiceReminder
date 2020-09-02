@@ -178,7 +178,8 @@ class Reminder extends BsExtensionMW {
 			'results' => [],
 			'total' => 0
 		];
-		if ( BsCore::checkAccessAdmission( 'read' ) === false || $oUser->isAnon() ) {
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		if ( !$pm->userHasRight( $oUser, 'read' ) || $oUser->isAnon() ) {
 			return $aData;
 		}
 		if ( empty( $this->getFactory()->getRegisteredTypes() ) ) {
