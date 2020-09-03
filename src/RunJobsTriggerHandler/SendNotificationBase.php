@@ -5,6 +5,7 @@ namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler;
 use DateTime;
 use FormatJson;
+use MediaWiki\MediaWikiServices;
 
 class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
@@ -66,7 +67,7 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 		if ( count( $repeatingReminders ) > 0 ) {
 			foreach ( $repeatingReminders as $reminder ) {
 				$currentDate = new DateTime();
-				$nextReminderDate = \BlueSpice\Services::getInstance()
+				$nextReminderDate = MediaWikiServices::getInstance()
 					->getService( 'BSRepeatingReminderDateCalculator' )
 					->getNextReminderDateFromGivenDate(
 						$currentDate,

@@ -285,7 +285,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				wfTimestamp( TS_UNIX, $oTaskData->repeatDateEnd ) );
 
 			$startReminderDate = DateTime::createFromFormat( 'Y-m-d', $aData['rem_date'] );
-			$startReminderDate = \BlueSpice\Services::getInstance()
+			$startReminderDate = $this->getServices()
 				->getService( 'BSRepeatingReminderDateCalculator' )
 				->getStartDate( $startReminderDate, $oTaskData->repeatConfig );
 			$startReminderDate = $startReminderDate->format( 'YmdHis' );
