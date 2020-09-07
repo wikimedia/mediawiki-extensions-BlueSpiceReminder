@@ -3,7 +3,8 @@
 		"authors": [
 			"Ferdinand0101",
 			"Killarnee",
-			"Mglaser"
+			"Mglaser",
+			"Umherirrender"
 		]
 	},
 	"bs-reminder-extension-description": "Lässt den Benutzer Erinnerungen zu Seiten erstellen.",
@@ -63,12 +64,12 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meine Erinnerungen",
 	"echo-category-title-notification-bs-reminder-cat": "Erinnerungen",
 	"echo-pref-tooltip-bs-reminder-cat": "Benachrichtigung wenn eine Erinnerung heute oder in einer Woche fällig wird",
-	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel \"$1\"",
-	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
-	"notification-bs-reminder-today-subject": "Erinnerung an Artikel \"$1\" heute",
-	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
+	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel „$1“",
+	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
+	"notification-bs-reminder-today-subject": "Erinnerung an Artikel „$1“ heute",
+	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Erinnerung für Seite $1 am $2 mit dem Kommentar: $3",
 	"apihelp-bs-reminder-store-summary": "Stellt einen Suchspeicher für Erinnerungen bereit, die abgefragt werden können",
 	"apihelp-bs-reminder-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Erinnerungen bereit",

@@ -4,7 +4,7 @@
 			"BadDog"
 		]
 	},
-	"bs-reminder-invalid-type": "Неважећи тип",
-	"bs-reminder-header-type": "Тип",
+	"bs-reminder-invalid-type": "Неважећа врста",
+	"bs-reminder-header-type": "Врста",
 	"bs-reminder-type-page": "Страница"
 }
