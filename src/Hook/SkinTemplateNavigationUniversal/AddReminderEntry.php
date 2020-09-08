@@ -1,10 +1,10 @@
 <?php
 
-namespace BlueSpice\Reminder\Hook\SkinTemplateNavigation;
+namespace BlueSpice\Reminder\Hook\SkinTemplateNavigationUniversal;
 
-use BlueSpice\Hook\SkinTemplateNavigation;
+use BlueSpice\Hook\SkinTemplateNavigationUniversal;
 
-class AddReminderEntry extends SkinTemplateNavigation {
+class AddReminderEntry extends SkinTemplateNavigationUniversal {
 	/**
 	 *
 	 * @return bool
@@ -18,7 +18,7 @@ class AddReminderEntry extends SkinTemplateNavigation {
 		if ( !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
+		if ( !$this->getServices()
 			->getPermissionManager()
 			->userCan( 'read', $user, $title )
 		) {
