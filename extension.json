@@ -197,7 +197,7 @@
 			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback"
+		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
