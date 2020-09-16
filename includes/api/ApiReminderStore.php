@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Reminder\Factory;
+use MediaWiki\MediaWikiServices;
 
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
@@ -42,7 +43,8 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		}
 
 		// remindereditall permission is checked in getReminders
-		$aReminders = BsExtensionManager::getExtension( 'BlueSpiceReminder' )->getReminders(
+		$em = MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' );
+		$aReminders = $em->getExtension( 'BlueSpiceReminder' )->getReminders(
 			$oUser,
 			null,
 			null,
