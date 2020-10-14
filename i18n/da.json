@@ -14,6 +14,9 @@
 	"bs-reminder-header-pagename": "Side",
 	"bs-reminder-header-username": "Bruger",
 	"bs-reminder-title-delete": "Slet påmindelse",
+	"bs-reminder-user-label": "Tildel til bruger",
+	"bs-reminder-comment-label": "Kommentar",
+	"bs-reminder-header-comment": "Kommentar",
 	"bs-reminder-article-label": "Side",
 	"bs-reminder-navigation-link-title": "Påmindelse",
 	"bs-reminder-navigation-link-text": "Påmindelse",
@@ -38,6 +41,8 @@
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-header-is-repeating": "Gentages",
+	"bs-reminder-no": "nej",
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
 	"bs-reminder-type-page": "Side"
