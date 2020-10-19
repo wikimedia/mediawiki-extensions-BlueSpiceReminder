@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ferdinand0101",
+			"Fulla07",
 			"Killarnee",
 			"Mglaser",
 			"Umherirrender"
@@ -54,7 +55,7 @@
 	"bs-reminder-navigation-link-text": "Erinnerungen",
 	"bs-reminder-nav-link-title-reminder": "Erinnerungen",
 	"bs-reminder-flyout-title": "Erinnerungen",
-	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angengebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
+	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angegebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
 	"bs-reminder-flyout-upcoming": "Eine Erinnerung für diese Seite steht {{PLURAL:$1|morgen|in $1 Tagen}} an",
 	"bs-reminder-flyout-upcoming-due": "Es steht eine Erinnerung für diese Seite an",
 	"bs-reminder-flyout-upcoming-none": "Es gibt keine anstehenden Erinnerungen für diese Seite",
