@@ -27,11 +27,11 @@ class SpecialReminderTest extends SpecialPageTestBase {
 
 	public function testSpecialReminder_hasGridElement() {
 		list( $html, ) = $this->executeSpecialPage();
-		$this->assertContains( 'bs-reminder-overview-grid', $html );
+		$this->assertStringContainsString( 'bs-reminder-overview-grid', $html );
 	}
 
 	public function testSpecialReminder_hasBacklink() {
 		list( $html, $response ) = $this->executeSpecialPage( "TestBacklink" );
-		$this->assertContains( 'bs-reminder-overview-grid', $html );
+		$this->assertStringContainsString( 'bs-reminder-overview-grid', $html );
 	}
 }
