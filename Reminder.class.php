@@ -74,23 +74,6 @@ class Reminder extends BsExtensionMW {
 			'active' => true
 		];
 
-		$iTotal = 0;
-		$sFormattedFieldValue = date( "Y-m-d", time() );
-		$aData = $this->getReminders( $oUser, 0, 0, 'rem_date', 'DESC', $sFormattedFieldValue );
-		if ( !empty( $aData['total'] ) ) {
-			$iTotal = (int)$aData['total'];
-		}
-
-		if ( $iTotal > 0 ) {
-			$tpl->data['bs_personal_info'][15] = [
-				'id' => 'pi-reminder',
-				'text' => $iTotal,
-				'href' => $oSpecialPageReminder->getLocalURL() . '/' . $oUser->getName(),
-				'class' => 'icon-flag',
-				'active' => true
-			];
-		}
-
 		return true;
 	}
 
