@@ -1,32 +1,27 @@
 <?php
 
-namespace BlueSpice\Reminder\Hook\PageContentSaveComplete;
+namespace BlueSpice\Reminder\Hook\PageSaveComplete;
 
-use BlueSpice\Hook\PageContentSaveComplete;
+use BlueSpice\Hook\PageSaveComplete;
 use Exception;
 use Hooks;
 
 /**
  * Hook after Article is saved, sets up the reminder if user chose so
  */
-class SetReminderOnCreate extends PageContentSaveComplete {
+class SetReminderOnCreate extends PageSaveComplete {
 	/**
 	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
-		if ( $this->isMinor || !$this->revision ) {
+		if ( ( $this->flags & EDIT_MINOR ) || !$this->revisionRecord ) {
 			return true;
 		}
-		if ( !$this->status->isOK() || $this->status->hasMessage( 'edit-no-change' ) ) {
-			// ugly. we need to check the status object for the no edit warning,
-			// cause on this point in the code it ist - unfortunaltey -
-			// impossible to find out, if this edit changed something.
-			// '$article->getLatest()' is always the same as
-			// '$this->revision->getId()'. '$baseRevId' is always 'false' #5240
+		if ( $this->editResult->isNullEdit() ) {
 			return true;
 		}
-		$title = $this->wikipage->getTitle();
+		$title = $this->wikiPage->getTitle();
 		if ( !$title || !$title->exists() ) {
 			return true;
 		}
@@ -43,6 +38,10 @@ class SetReminderOnCreate extends PageContentSaveComplete {
 		return false;
 	}
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$sDefaultPeriod = $this->user->getOption( 'bs-reminder-period' );
 		$iDate = strtotime( "+$sDefaultPeriod days" );
@@ -53,11 +52,10 @@ class SetReminderOnCreate extends PageContentSaveComplete {
 			'bs_reminder',
 			[
 				'rem_user_id' => $this->user->getId(),
-				'rem_page_id' => $this->wikipage->getId(),
+				'rem_page_id' => $this->wikiPage->getId(),
 				'rem_date' => $sFormattedFieldValue
 		] );
 		if ( !$res ) {
-			$this->status->error( 'bs-reminder-create-error' );
 			return true;
 		}
 		$remID = $conn->insertId();
@@ -65,11 +63,10 @@ class SetReminderOnCreate extends PageContentSaveComplete {
 			Hooks::run( 'BsReminderOnSave', [
 				[],
 				$remID,
-				$this->wikipage->getId(),
+				$this->wikiPage->getId(),
 				$this->user->getId()
 			] );
 		} catch ( Exception $e ) {
-			$this->status->error( $e->getMessage() );
 		}
 		return true;
 	}
