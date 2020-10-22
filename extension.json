@@ -194,7 +194,8 @@
 			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback"
+		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback",
+		"PageContentSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageContentSaveComplete\\SetReminderOnCreate::callback"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
