@@ -46,7 +46,6 @@ class Reminder extends BsExtensionMW {
 	 */
 	protected function initExt() {
 		// register extension hooks
-		$this->setHook( 'ArticleInsertComplete' );
 		$this->setHook(
 			'ChameleonSkinTemplateOutputPageBeforeExec',
 			'onSkinTemplateOutputPageBeforeExec'
@@ -75,63 +74,6 @@ class Reminder extends BsExtensionMW {
 			'href' => $oSpecialPageReminder->getLocalURL() . '/' . $oUser->getName(),
 			'active' => true
 		];
-
-		return true;
-	}
-
-	/**
-	 * Hook after Article is saved, sets up the reminder if user chose so
-	 * @param WikiPage $oWikiPage
-	 * @param User $oUser
-	 * @param string $sText
-	 * @param string $sSummary
-	 * @param bool $bMinorEdit
-	 * @param bool $bWatchThis
-	 * @param null $nSectionanchor
-	 * @param int &$iFlags
-	 * @param Revision $oRevision
-	 * @return bool
-	 */
-	public function onArticleInsertComplete( $oWikiPage, $oUser, $sText, $sSummary,
-		$bMinorEdit, $bWatchThis, $nSectionanchor, &$iFlags, $oRevision ) {
-		if ( $this->getUser()->getOption( 'bs-reminder-oncreate' ) ) {
-			$iPageNS = $oWikiPage->getTitle()->getNamespace();
-			$aDisabledNamespaces = explode(
-				'|',
-				$this->getUser()->getOption( 'bs-reminder-forns' )
-			);
-			if ( in_array( $iPageNS, $aDisabledNamespaces ) ) {
-				return true;
-			}
-
-			$iPageId = $oWikiPage->getId();
-			$iUserId = $oUser->getId();
-
-			$sDefaultPeriod = $this->getUser()->getOption( 'bs-reminder-period' );
-			$iDate = strtotime( "+$sDefaultPeriod days" );
-			$sFormattedFieldValue = date( 'Y-m-d', $iDate );
-
-			$dbw = wfGetDB( DB_MASTER );
-			$res = $dbw->insert(
-				'bs_reminder',
-				[
-					'rem_user_id' => $iUserId,
-					'rem_page_id' => $iPageId,
-					'rem_date' => $sFormattedFieldValue
-			] );
-
-			if ( !$res ) {
-				return wfMessage( 'bs-reminder-create-error' )->plain();
-			}
-
-			$iReminderId = $dbw->insertId();
-
-			try {
-				Hooks::run( 'BsReminderOnSave', [ [], $iReminderId, $iPageId, $iUserId ] );
-			} catch ( Exception $e ) {
-				return true;
-			}
-		}
 
 		return true;
 	}
