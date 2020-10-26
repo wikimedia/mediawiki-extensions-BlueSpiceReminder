@@ -36,8 +36,15 @@ class SetReminderOnCreate extends PageContentSaveComplete {
 		if ( !$this->user->getOption( 'bs-reminder-oncreate' ) ) {
 			return true;
 		}
-		if ( in_array( $title->getNamespace(), $this->getNSBlacklist() ) ) {
-			return true;
+		foreach ( $this->getNSBlacklist() as $key => $id ) {
+			// workaround for maybe broken namespace selection stored in DB
+			// on upgraded systems
+			if ( $id === '' ) {
+				continue;
+			}
+			if ( $title->getNamespace() === (int)$id ) {
+				return true;
+			}
 		}
 
 		return false;
