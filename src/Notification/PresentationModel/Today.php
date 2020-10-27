@@ -11,7 +11,7 @@ class Today extends EchoEventPresentationModel {
 	 */
 	public function getHeaderMessageContent() {
 		$headerKey = 'notification-bs-reminder-today-subject';
-		$headerParams = [ 'title' ];
+		$headerParams = [ 'title', 'comment' ];
 
 		return [
 			'key' => $headerKey,
@@ -27,7 +27,7 @@ class Today extends EchoEventPresentationModel {
 	 */
 	public function getBodyMessageContent() {
 		$bodyKey = 'notification-bs-reminder-today-web-body';
-		$bodyParams = [ 'title' ];
+		$bodyParams = [ 'title', 'comment' ];
 
 		if ( $this->distributionType == 'email' ) {
 			$bodyKey = 'notification-bs-reminder-today-email-body';
