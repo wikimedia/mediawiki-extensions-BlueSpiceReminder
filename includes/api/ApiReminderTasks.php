@@ -236,9 +236,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		$iUserId = $oUser->getId();
 
-		if ( isset( $oTaskData->comment ) ) {
-			$sComment = addslashes( $oTaskData->comment );
-		}
+		$sComment = strip_tags( empty( $oTaskData->comment ) ? '' : (string)$oTaskData->comment );
 
 		if ( isset( $oTaskData->userName ) && $oTaskData->userName != '' ) {
 			$iTargetUserId = User::newFromName( $oTaskData->userName )->getId();
@@ -263,7 +261,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			'rem_user_id' => $iUserId,
 			'rem_page_id' => $oTaskData->articleId,
 			'rem_date' => $sFormattedFieldValue,
-			'rem_comment' => $sComment,
+			'rem_comment' => addslashes( $sComment ),
 			'rem_type' => $type,
 		];
 
