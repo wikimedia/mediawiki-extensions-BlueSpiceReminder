@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog"
+		]
+	},
+	"bs-reminder-invalid-type": "Неважећа врста",
+	"bs-reminder-header-type": "Врста",
+	"bs-reminder-type-page": "Страница"
+}

@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ferdinand0101",
+			"Fulla07",
 			"Killarnee",
-			"Mglaser"
+			"Mglaser",
+			"Umherirrender"
 		]
 	},
 	"bs-reminder-extension-description": "Lässt den Benutzer Erinnerungen zu Seiten erstellen.",
@@ -52,7 +55,7 @@
 	"bs-reminder-navigation-link-text": "Erinnerungen",
 	"bs-reminder-nav-link-title-reminder": "Erinnerungen",
 	"bs-reminder-flyout-title": "Erinnerungen",
-	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angengebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
+	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angegebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
 	"bs-reminder-flyout-upcoming": "Eine Erinnerung für diese Seite steht {{PLURAL:$1|morgen|in $1 Tagen}} an",
 	"bs-reminder-flyout-upcoming-due": "Es steht eine Erinnerung für diese Seite an",
 	"bs-reminder-flyout-upcoming-none": "Es gibt keine anstehenden Erinnerungen für diese Seite",
@@ -63,12 +66,12 @@
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Erinnerung für Seite $1 am $2 mit dem Kommentar: $3",
 	"echo-category-title-notification-bs-reminder-cat": "Erinnerungen",
 	"echo-pref-tooltip-bs-reminder-cat": "Benachrichtigung wenn eine Erinnerung heute oder in einer Woche fällig wird",
-	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel \"$1\"",
-	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
-	"notification-bs-reminder-today-subject": "Erinnerung an Artikel \"$1\" heute",
-	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
+	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel „$1“",
+	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
+	"notification-bs-reminder-today-subject": "Erinnerung an Artikel „$1“ heute",
+	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
+	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
 	"apihelp-bs-reminder-store-summary": "Stellt einen Suchspeicher für Erinnerungen bereit, die abgefragt werden können",
 	"apihelp-bs-reminder-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Erinnerungen bereit",
 	"right-remindereditall": "Erinnerungen anderer Benutzer bearbeiten",
@@ -96,5 +99,9 @@
 	"bs-reminder-saturday-abbr": "s",
 	"bs-reminder-date-repeat-ends-on-label": "Wiederholen endet am",
 	"bs-reminder-header-is-repeating": "Wiederholt sich",
-	"bs-reminder-no": "nein"
+	"bs-reminder-no": "nein",
+	"bs-reminder-start-date-greater-end-date": "Das Endedatum kann nicht vor dem Startdatum liegen",
+	"bs-reminder-invalid-type": "Ungültiger Typ",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Seite"
 }

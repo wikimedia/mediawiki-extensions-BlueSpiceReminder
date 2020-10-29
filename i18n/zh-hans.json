@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Nadine Siak",
+			"Shuiwater",
 			"SomeyaMako"
 		]
 	},
@@ -26,5 +27,8 @@
 	"bs-reminder-saturday-abbr": "六",
 	"bs-reminder-date-repeat-ends-on-label": "重复结束于",
 	"bs-reminder-start-date-greater-end-date": "提醒的结束日期不得小于起始日期",
-	"bs-reminder-no": "否"
+	"bs-reminder-no": "否",
+	"bs-reminder-invalid-type": "无效类型",
+	"bs-reminder-header-type": "类型",
+	"bs-reminder-type-page": "页面"
 }
