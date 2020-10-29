@@ -63,10 +63,10 @@
 	"echo-pref-tooltip-bs-reminder-cat": "Notificar-me quando meus lembretes chegarem hoje ou em uma semana",
 	"notification-bs-reminder-one-week-subject": "Lembrar artigo \"$1\"",
 	"notification-bs-reminder-one-week-email-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete será lançado em uma semana.\n\nSeu comentário:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete será lançado em uma semana.",
+	"notification-bs-reminder-one-week-web-body": "Você definiu um lembrete no artigo \"$1\" com o comentário \"$2\". Este lembrete chegará em uma semana.",
 	"notification-bs-reminder-today-subject": "Lembre-se do artigo \"$1\" hoje",
 	"notification-bs-reminder-today-email-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete está disponível hoje.\n\nSeu comentário:\n$2",
-	"notification-bs-reminder-today-web-body": "Você definiu um lembrete no artigo \"$1\". Este lembrete está disponível hoje.",
+	"notification-bs-reminder-today-web-body": "Você definiu um lembrete no artigo \"$1\" com o comentário \"$2\". Este lembrete vence hoje.",
 	"apihelp-bs-reminder-store-summary": "Fornece um repositório para lembretes, que podem ser consultados",
 	"apihelp-bs-reminder-tasks-summary": "Fornece tarefas como editar ou excluir lembretes",
 	"right-remindereditall": "Editar outros lembretes",
@@ -95,5 +95,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "A repetição termina em",
 	"bs-reminder-start-date-greater-end-date": "A data de término do lembrete não pode ser menor que a data de início",
 	"bs-reminder-header-is-repeating": "Mensalmente no",
-	"bs-reminder-no": "não"
+	"bs-reminder-no": "não",
+	"bs-reminder-invalid-type": "Tipo inválido",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Página"
 }

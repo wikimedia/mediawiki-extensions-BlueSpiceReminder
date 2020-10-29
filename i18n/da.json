@@ -37,5 +37,13 @@
 	"bs-reminder-wednesday-abbr": "o",
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
-	"bs-reminder-saturday-abbr": "l"
+	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-user-label": "Tildel til bruger",
+	"bs-reminder-comment-label": "Kommentar",
+	"bs-reminder-header-comment": "Kommentar",
+	"bs-reminder-header-is-repeating": "Gentages",
+	"bs-reminder-no": "nej",
+	"bs-reminder-invalid-type": "Ugyldig type",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Side"
 }

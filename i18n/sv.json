@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mjälten",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -75,5 +76,15 @@
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "l",
-	"bs-reminder-no": "nej"
+	"bs-reminder-no": "nej",
+	"bs-reminder-ordinal-first": "första",
+	"bs-reminder-ordinal-second": "andra",
+	"bs-reminder-ordinal-third": "tredje",
+	"bs-reminder-ordinal-fourth": "fjärde",
+	"bs-reminder-ordinal-last": "sista",
+	"bs-reminder-monthly-on-the-prefix": "Månatligt varje",
+	"bs-reminder-header-is-repeating": "Upprepar",
+	"bs-reminder-invalid-type": "Ogiltig typ",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Sida"
 }

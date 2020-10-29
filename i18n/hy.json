@@ -21,5 +21,7 @@
 	"bs-reminder-repeat-interval-month": "ամիս(ներ)",
 	"bs-reminder-repeat-interval-year": "տարի (ներ)",
 	"bs-reminder-sunday-abbr": "վ",
-	"bs-reminder-no": "ոչ"
+	"bs-reminder-no": "ոչ",
+	"bs-reminder-header-type": "Տեսակ",
+	"bs-reminder-type-page": "Էջ"
 }

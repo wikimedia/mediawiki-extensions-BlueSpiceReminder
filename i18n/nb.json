@@ -95,5 +95,8 @@
 	"bs-reminder-date-repeat-ends-on-label": "Gjentagelse avsluttes",
 	"bs-reminder-start-date-greater-end-date": "Sluttdatoen for påminnelser kan ikke være før startdatoen",
 	"bs-reminder-header-is-repeating": "Gjentas",
-	"bs-reminder-no": "nei"
+	"bs-reminder-no": "nei",
+	"bs-reminder-invalid-type": "Ugyldig type",
+	"bs-reminder-header-type": "Type",
+	"bs-reminder-type-page": "Side"
 }

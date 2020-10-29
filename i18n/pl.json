@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"bs-reminder-invalid-type": "Nieprawidłowy typ",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Strona"
+}
