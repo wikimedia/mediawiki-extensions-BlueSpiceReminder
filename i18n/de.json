@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ameisenigel",
 			"Ferdinand0101",
 			"Fulla07",
 			"Killarnee",
@@ -68,10 +69,10 @@
 	"echo-pref-tooltip-bs-reminder-cat": "Benachrichtigung wenn eine Erinnerung heute oder in einer Woche fällig wird",
 	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel „$1“",
 	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
+	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
 	"notification-bs-reminder-today-subject": "Erinnerung an Artikel „$1“ heute",
 	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
+	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
 	"apihelp-bs-reminder-store-summary": "Stellt einen Suchspeicher für Erinnerungen bereit, die abgefragt werden können",
 	"apihelp-bs-reminder-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Erinnerungen bereit",
 	"right-remindereditall": "Erinnerungen anderer Benutzer bearbeiten",
