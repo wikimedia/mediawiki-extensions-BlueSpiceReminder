@@ -4,7 +4,6 @@ namespace BlueSpice\Reminder\Hook\PageSaveComplete;
 
 use BlueSpice\Hook\PageSaveComplete;
 use Exception;
-use Hooks;
 
 /**
  * Hook after Article is saved, sets up the reminder if user chose so
@@ -67,7 +66,7 @@ class SetReminderOnCreate extends PageSaveComplete {
 		}
 		$remID = $conn->insertId();
 		try {
-			Hooks::run( 'BsReminderOnSave', [
+			$this->getServices()->getHookContainer()->run( 'BsReminderOnSave', [
 				[],
 				$remID,
 				$this->wikiPage->getId(),
