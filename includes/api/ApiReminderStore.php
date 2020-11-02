@@ -145,7 +145,9 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			'sortable' => false
 		];
 
-		\Hooks::run( 'BsReminderBuildOverviewMetadata', [ &$aMetadata ] );
+		$this->getServices()->getHookContainer()->run( 'BsReminderBuildOverviewMetadata', [
+			&$aMetadata
+		] );
 
 		return $aMetadata;
 	}

@@ -162,7 +162,7 @@ class Reminder extends BsExtensionMW {
 		];
 
 		// give other extensions the opportunity to modify the query
-		Hooks::run(
+		MediaWikiServices::getInstance()->getHookContainer()->run(
 			'BsReminderBeforeBuildOverviewQuery',
 			[
 				$this,
@@ -213,7 +213,14 @@ class Reminder extends BsExtensionMW {
 					'rem_repeat_date_end' => $row->rem_repeat_date_end,
 					'rem_type' => $row->rem_type,
 				];
-				Hooks::run( 'BsReminderBuildOverviewResultSet', [ $this, &$aResultSet, $row ] );
+				MediaWikiServices::getInstance()->getHookContainer()->run(
+					'BsReminderBuildOverviewResultSet',
+					[
+						$this,
+						&$aResultSet,
+						$row
+					]
+				);
 				$aData['results'][] = $aResultSet;
 			}
 		}
