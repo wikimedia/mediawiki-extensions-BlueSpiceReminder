@@ -16,9 +16,7 @@ class TodayNotification extends BaseNotification {
 			'comment' => $comment,
 			'notifyAgent' => true
 		];
-
-		$this->audience[] = $agent->getId();
-
 		parent::__construct( 'notification-bs-reminder-today', $agent, $title, $params );
+		$this->addAffectedUsers( [ $agent->getId() ] );
 	}
 }

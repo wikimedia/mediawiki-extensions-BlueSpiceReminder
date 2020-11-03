@@ -16,9 +16,7 @@ class OneWeekNotification extends BaseNotification {
 			'comment' => $comment,
 			'notifyAgent' => true
 		];
-
-		$this->audience[] = $agent->getId();
-
 		parent::__construct( 'notification-bs-reminder-one-week', $agent, $title, $params );
+		$this->addAffectedUsers( [ $agent->getId() ] );
 	}
 }

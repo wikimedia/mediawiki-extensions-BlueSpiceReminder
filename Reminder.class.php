@@ -49,7 +49,6 @@ class Reminder extends BsExtensionMW {
 		$this->setHook( 'SkinTemplateNavigation' );
 		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
 		$this->setHook( 'BSUserManagerAfterDeleteUser' );
-		$this->setHook( 'EchoGetDefaultNotifiedUsers' );
 	}
 
 	/**
@@ -267,27 +266,6 @@ class Reminder extends BsExtensionMW {
 		$res = $dbw->delete( 'bs_reminder',
 			[ 'rem_user_id' => $oUser->getId() ]
 		);
-		return true;
-	}
-
-	/**
-	 * Handler for EchoGetDefaultNotifiedUsers hook.
-	 * @param EchoEvent $event EchoEvent to get implicitly subscribed users for
-	 * @param array &$users Array to append implicitly subscribed users to.
-	 * @return bool true in all cases
-	 */
-	public function onEchoGetDefaultNotifiedUsers( $event, &$users ) {
-		switch ( $event->getType() ) {
-			case 'notification-bs-reminder-today':
-			case 'notification-bs-reminder-one-week':
-				$extra = $event->getExtra();
-				if ( !$extra || !isset( $extra['recipient-id'] ) ) {
-					break;
-				}
-				$recipientId = $extra['recipient-id'];
-				$users[$recipientId] = User::newFromId( $recipientId );
-				break;
-		}
 		return true;
 	}
 }
