@@ -50,7 +50,6 @@ class Reminder extends BsExtensionMW {
 			'ChameleonSkinTemplateOutputPageBeforeExec',
 			'onSkinTemplateOutputPageBeforeExec'
 		);
-		$this->setHook( 'BSUserManagerAfterDeleteUser' );
 	}
 
 	/**
@@ -232,20 +231,5 @@ class Reminder extends BsExtensionMW {
 		}
 
 		return $aData;
-	}
-
-	/**
-	 * Delete all personal reminders when a user is deleted
-	 * @param UserManager $oSender
-	 * @param User $oUser User that was deleted
-	 * @param \Status &$aAnswer
-	 * @return bool Always true to keep Hook running
-	 */
-	public function onBSUserManagerAfterDeleteUser( $oSender, $oUser, &$aAnswer ) {
-		$dbw = wfGetDB( DB_MASTER );
-		$res = $dbw->delete( 'bs_reminder',
-			[ 'rem_user_id' => $oUser->getId() ]
-		);
-		return true;
 	}
 }
