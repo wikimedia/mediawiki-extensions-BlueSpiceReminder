@@ -14,6 +14,7 @@
 	"bs-reminder-header-pagename": "Side",
 	"bs-reminder-header-username": "Bruger",
 	"bs-reminder-title-delete": "Slet påmindelse",
+	"bs-reminder-delete-error-unkown": "Påmindelsen kunne ikke blive slettet.",
 	"bs-reminder-user-label": "Tildel til bruger",
 	"bs-reminder-comment-label": "Kommentar",
 	"bs-reminder-header-comment": "Kommentar",
