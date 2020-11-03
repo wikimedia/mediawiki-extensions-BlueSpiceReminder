@@ -198,7 +198,8 @@
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback",
-		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback"
+		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
+		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
