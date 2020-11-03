@@ -194,7 +194,8 @@
 		],
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
-			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
+			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback",
+			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddToPersonal::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback",
