@@ -42,41 +42,6 @@ use MediaWiki\MediaWikiServices;
 class Reminder extends BsExtensionMW {
 
 	/**
-	 * Init Method of Reminder class
-	 */
-	protected function initExt() {
-		// register extension hooks
-		$this->setHook(
-			'ChameleonSkinTemplateOutputPageBeforeExec',
-			'onSkinTemplateOutputPageBeforeExec'
-		);
-	}
-
-	/**
-	 * Creates Reminder link in personal urls and icon in personal info
-	 * @param SkinTemplate &$sktemplate
-	 * @param BaseTemplate &$tpl
-	 * @return bool Always true to keep hook running
-	 */
-	public function onSkinTemplateOutputPageBeforeExec( &$sktemplate, &$tpl ) {
-		$oSpecialPageReminder = SpecialPage::getTitleFor( 'Reminder' );
-		$oUser = RequestContext::getMain()->getUser();
-		$oTitle = RequestContext::getMain()->getTitle();
-		if ( $oTitle === null || !$oUser->isLoggedIn() ) {
-			return true;
-		}
-
-		$tpl->data['personal_urls']['my_reminder'] = [
-			'id' => 'pt-reminder',
-			'text' => wfMessage( 'bs-reminder-menu_entry-show' )->plain(),
-			'href' => $oSpecialPageReminder->getLocalURL() . '/' . $oUser->getName(),
-			'active' => true
-		];
-
-		return true;
-	}
-
-	/**
 	 *
 	 * @return Factory
 	 */
