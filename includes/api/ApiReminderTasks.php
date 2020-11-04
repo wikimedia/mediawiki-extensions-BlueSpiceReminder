@@ -137,7 +137,10 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		$oResult->success = true;
 
-		Hooks::run( 'BsReminderDeleteReminder', [ $iReminderId, &$oResult ] );
+		$this->getServices()->getHookContainer()->run( 'BsReminderDeleteReminder', [
+			$iReminderId,
+			&$oResult
+		] );
 		if ( !$oResult->success ) {
 			return $oResult;
 		}
@@ -314,7 +317,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$iReminderId = $dbw->insertId();
 
 			try {
-				Hooks::run( 'BsReminderOnSave', [
+				$this->getServices()->getHookContainer()->run( 'BsReminderOnSave', [
 					$oTaskData,
 					$iReminderId,
 					$oTaskData->articleId, $iUserId
@@ -342,7 +345,10 @@ class ApiReminderTasks extends BSApiTasksBase {
 			}
 
 			try {
-				Hooks::run( 'BsReminderOnUpdate', [ $oTaskData, $iReminderId ] );
+				$this->getServices()->getHookContainer()->run( 'BsReminderOnUpdate', [
+					$oTaskData,
+					$iReminderId
+				] );
 			} catch ( Exception $e ) {
 				$oResult->message = $oResult->errors['createerror'] =
 					$e->getMessage();
