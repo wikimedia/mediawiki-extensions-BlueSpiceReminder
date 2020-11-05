@@ -40,5 +40,11 @@
 	"bs-reminder-saturday-abbr": "l",
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Side"
+	"bs-reminder-type-page": "Side",
+	"bs-reminder-delete-error-unkown": "Påmindelsen kunne ikke blive slettet.",
+	"bs-reminder-user-label": "Tildel til bruger",
+	"bs-reminder-comment-label": "Kommentar",
+	"bs-reminder-header-comment": "Kommentar",
+	"bs-reminder-header-is-repeating": "Gentages",
+	"bs-reminder-no": "nej"
 }

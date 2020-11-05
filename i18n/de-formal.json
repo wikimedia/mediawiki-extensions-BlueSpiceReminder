@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Fulla07"
+		]
 	},
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Geben Sie hier die Anzahl der Tage ein.",
 	"bs-reminder-unknown-page-msg": "Sie versuchen eine Erinnerung für eine Seite anzulegen, welche nicht existiert.",
@@ -14,9 +16,14 @@
 	"bs-reminder-error-owner-reminder": "Sie können nur Ihre eigenen Erinnerungen löschen.",
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuchen Sie es erneut.",
 	"bs-reminder-other-user-not-allowed": "Sie können keine Erinnerung für einen anderen Nutzer erstellen",
-	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angengebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt.",
+	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angegebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt.",
 	"notification-bs-reminder-one-week-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nIhr Kommentar:\n$2",
 	"notification-bs-reminder-one-week-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.",
 	"notification-bs-reminder-today-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nIhr Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen."
+	"notification-bs-reminder-today-web-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
+	"reminder": "Erinnerung",
+	"specialreminder": "Erinnerung",
+	"prefs-reminder": "Erinnerung",
+	"apihelp-bs-reminder-store-description": "Liefert die Daten für die Übersicht auf Spezial:Erinnerung",
+	"apihelp-bs-reminder-tasks-description": "Führt Aufgaben wie Aktualisierung und Löschen aus für die Übersicht auf Spezial:Erinnerung"
 }

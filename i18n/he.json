@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"reminder": "תזכורת",
+	"specialreminder": "תזכורת",
+	"prefs-reminder": "תזכורת",
+	"bs-reminder-menu_entry-create": "ליצור תזכורת",
+	"bs-reminder-menu_entry-show": "תזכורות",
+	"bs-reminder-create-reminder-label": "ליצור תזכורת",
+	"bs-reminder-create-title": "תזכורת",
+	"bs-reminder-header-pagename": "דף",
+	"bs-reminder-header-username": "משתמש",
+	"bs-reminder-header-date": "להזכיר ב־",
+	"bs-reminder-title-delete": "מחיקת תזכורת",
+	"bs-reminder-text-delete": "למחוק את {{PLURAL:$1|התזכורת הזאת|$1 התזכורות האלו}}?",
+	"bs-reminder-save-error-unkown": "לא ניתן לשמור את התזכורת.",
+	"bs-reminder-comment-label": "הערה",
+	"bs-reminder-header-comment": "הערה",
+	"bs-reminder-article-label": "דף",
+	"bs-reminder-dlg-btn-manager-label": "לנהל תזכורות",
+	"bs-reminder-navigation-link-title": "תזכורת",
+	"bs-reminder-navigation-link-text": "תזכורת",
+	"bs-reminder-nav-link-title-reminder": "תזכורת",
+	"bs-reminder-flyout-title": "תזכורת",
+	"bs-reminder-flyout-form-title": "ליצור תזכורת",
+	"bs-reminder-flyout-grid-title": "תזכורת של משתמש אחר",
+	"bs-reminder-flyout-manager-btn-label": "לנהל תזכורות",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "התזכורות שלי",
+	"echo-category-title-notification-bs-reminder-cat": "תזכורות"
+}

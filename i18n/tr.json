@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"bs-reminder-extension-description": "Kullanıcıya hatırlatıcı oluşturma fırsatı verir.",
@@ -63,10 +64,10 @@
 	"echo-pref-tooltip-bs-reminder-cat": "Hatırlatıcılarımın zamanı geldiğinde veya bir hafta içinde bana bildir",
 	"notification-bs-reminder-one-week-subject": "\"$1\" maddesini hatırla",
 	"notification-bs-reminder-one-week-email-body": "\"$1\" maddesinde hatırlatıcı ayarladınız. Bu hatırlatma bir hafta içinde çıkacak.\n\nYorumunuz:\n$2",
-	"notification-bs-reminder-one-week-web-body": "\"$1\" maddesinde hatırlatıcı ayarladınız. Bu hatırlatma bir hafta içinde çıkacak.",
+	"notification-bs-reminder-one-week-web-body": "\"$1\" maddesine \"$2\" yorumuyla hatırlatıcı ayarladınız. Bu hatırlatıcı bir hafta sonra gelecek.",
 	"notification-bs-reminder-today-subject": "Bugün \"$1\" maddesini hatırla",
 	"notification-bs-reminder-today-email-body": "\"$1\" maddesinde hatırlatıcı ayarladınız. Bu hatırlatma bugün sona erecek.\n\nYorumunuz:\n$2",
-	"notification-bs-reminder-today-web-body": "\"$1\" maddesinde hatırlatıcı ayarladınız. Bu hatırlatma bugün sona erecek.",
+	"notification-bs-reminder-today-web-body": "\"$1\" maddesine \"$2\" yorumuyla hatırlatıcı ayarladınız. Bu hatırlatmanın sonu bugündür.",
 	"apihelp-bs-reminder-store-summary": "Hatırlatıcılar için sorgulanabilecek bir mağaza sağlar",
 	"apihelp-bs-reminder-tasks-summary": "Hatırlatıcıları düzenleme veya silme gibi görevler sağlar",
 	"right-remindereditall": "Diğer hatırlatıcıları düzenle",

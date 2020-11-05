@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos"
+		]
+	},
+	"notification-bs-reminder-one-week-web-body": "A/az $1 cikken beállítottál egy emlékeztetőt $2 megjegyzéssel, mely jövő héten esedékes.",
+	"notification-bs-reminder-today-web-body": "A/az $1 cikken beállítottál egy emlékeztetőt $2 megjegyzéssel, mely a mai napon esedékes."
+}
