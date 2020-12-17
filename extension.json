@@ -16,7 +16,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceReminder": {
-					"className": "Reminder",
+					"className": "\\BlueSpice\\Reminder\\Extension",
 					"extPath": "/BlueSpiceReminder",
 					"package": "BlueSpice Pro"
 				}
@@ -89,7 +89,6 @@
 		"BlueSpice\\Reminder\\": "src/"
 	},
 	"AutoloadClasses": {
-		"Reminder": "Reminder.class.php",
 		"SpecialReminder": "includes/specials/SpecialReminder.class.php",
 		"ApiReminderStore": "includes/api/ApiReminderStore.php",
 		"ApiReminderTasks": "includes/api/ApiReminderTasks.php"
