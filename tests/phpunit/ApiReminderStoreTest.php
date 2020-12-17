@@ -54,7 +54,6 @@ class ApiReminderStoreTest extends ApiTestCase {
 	 * @dataProvider provideGetDetailsForReminderData
 	 */
 	public function testMakeData_getReminders( $aTaskData, $aExpected ) {
-		self::$users['sysop']->getUser()->setOption( "MW::Reminder::ShowAllReminders", true );
 		$this->addTestReminderToDb();
 		$aData = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-store'
