@@ -1,11 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
+			")8",
 			"Nadine Siak",
 			"Shuiwater",
 			"SomeyaMako"
 		]
 	},
+	"bs-reminder-header-pagename": "页面",
+	"bs-reminder-header-username": "用户",
+	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-comment-label": "评论",
+	"bs-reminder-header-comment": "评论",
+	"bs-reminder-article-label": "页面",
+	"bs-reminder-navigation-link-title": "提醒",
+	"bs-reminder-navigation-link-text": "提醒",
+	"bs-reminder-nav-link-title-reminder": "提醒",
+	"bs-reminder-flyout-title": "提醒",
 	"bs-reminder-repeat-label": "重复",
 	"bs-reminder-repeat-every-title": "重复每个",
 	"bs-reminder-repeat-on-title": "开启重复",

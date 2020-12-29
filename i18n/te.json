@@ -4,6 +4,9 @@
 			"Veeven"
 		]
 	},
+	"bs-reminder-header-pagename": "పేజీ",
+	"bs-reminder-header-username": "వాడుకరి",
+	"bs-reminder-article-label": "పేజీ",
 	"bs-reminder-repeat-interval-day": "రోజు(లు)",
 	"bs-reminder-repeat-interval-week": "వారము(లు)",
 	"bs-reminder-repeat-interval-month": "నెల(లు)",
