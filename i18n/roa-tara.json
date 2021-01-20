@@ -92,6 +92,8 @@
 	"bs-reminder-thursday-abbr": "t",
 	"bs-reminder-friday-abbr": "f",
 	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-date-repeat-ends-on-label": "'A ripetizione spicce 'u",
+	"bs-reminder-start-date-greater-end-date": "Date de fine d'u promemorie non ge pò essere cchiù curte de quedde de inizie",
 	"bs-reminder-header-is-repeating": "Stoche a ripete",
 	"bs-reminder-no": "none",
 	"bs-reminder-invalid-type": "Tipe invalide",
