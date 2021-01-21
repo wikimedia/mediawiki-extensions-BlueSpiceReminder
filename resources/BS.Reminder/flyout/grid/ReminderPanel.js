@@ -28,7 +28,7 @@ Ext.define( 'BS.Reminder.flyout.grid.ReminderPanel', {
 			}],
 			sorters: [{
 				property: 'reminder_date',
-				direction: 'ASC'
+				direction: 'DESC'
 			}]
 		} );
 
