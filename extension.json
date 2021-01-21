@@ -36,6 +36,9 @@
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-reminder-send-daily": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendTodayReminderNotification::factory",
 				"bs-reminder-send-weekly": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendInOneWeekReminderNotification::factory"
+			},
+			"AdminToolRegistry": {
+				"bs-reminder-manager": "BlueSpice\\Reminder\\AdminTool"
 			}
 		},
 		"BlueSpiceEchoConnector": {
@@ -190,7 +193,6 @@
 			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddDisableReminderForNS::callback"
 		],
 		"SkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddToGlobalActions::callback",
 			"\\BlueSpice\\Reminder\\Hook\\SkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
