@@ -3,9 +3,9 @@
 namespace BlueSpice\Reminder;
 
 use BlueSpice\IAdminTool;
-use MediaWiki\MediaWikiServices;
 use Message;
 use SpecialPage;
+use SpecialPageFactory;
 
 class AdminTool implements IAdminTool {
 
@@ -57,9 +57,7 @@ class AdminTool implements IAdminTool {
 	 * @return array
 	 */
 	public function getPermissions() {
-		$specialReminder = MediaWikiServices::getInstance()
-			->getSpecialPageFactory()
-			->getPage( 'Reminder' );
+		$specialReminder = SpecialPageFactory::getPage( 'Reminder' );
 		return [
 			$specialReminder->getRestriction()
 		];
