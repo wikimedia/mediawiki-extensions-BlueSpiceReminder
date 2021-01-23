@@ -34,9 +34,6 @@ class ApiReminderStoreTest extends ApiTestCase {
 		);
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testMakeData_catchAnonUser() {
 		$aData = $this->doApiRequest( [
 			'action' => 'bs-reminder-store',
@@ -47,10 +44,6 @@ class ApiReminderStoreTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aTaskData
-	 * @param $aExpected
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
 	 * @dataProvider provideGetDetailsForReminderData
 	 */
 	public function testMakeData_getReminders( $aTaskData, $aExpected ) {

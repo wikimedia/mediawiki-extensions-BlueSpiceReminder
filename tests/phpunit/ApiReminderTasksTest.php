@@ -57,9 +57,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		);
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_catchAnonUser() {
 		// You could also retrieve the edit toke for an anonymous user via Api.
 		// This seems unneccessary right now, but might be useful in the future.
@@ -77,9 +74,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aRequest
-	 * @param $sExpectedError
-	 * @throws Exception
 	 * @dataProvider provideFalseSaveReminderData
 	 */
 	public function testSaveReminder_catchFalseRequests( $aRequest, $sExpectedError ) {
@@ -187,9 +181,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		return $falseParams;
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksPermissionReminderEditAll() {
 		$GLOBALS['wgGroupPermissions']['sysop']['remindereditall'] = false;
 		$data = $this->doApiRequestWithToken( [
@@ -204,9 +195,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['user'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksSaveHookFailure() {
 		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnSave'] )
 			? $GLOBALS['wgHooks']['BsReminderOnSave']
@@ -225,9 +213,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksUpdateHookFailure() {
 		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderOnUpdate'] )
 			? $GLOBALS['wgHooks']['BsReminderOnUpdate']
@@ -258,9 +243,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksDbExistenceCheckFailure() {
 		$this->db->query(
 			'ALTER TABLE `'
@@ -285,9 +267,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['noactions'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksDbInsertFailure() {
 		$this->db->query(
 			'ALTER TABLE `'
@@ -311,9 +290,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testSaveReminder_checksDbUpdateFailure() {
 		$this->db->insert(
 			'bs_reminder',
@@ -349,10 +325,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aTaskData
-	 * @param $aExpected
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
 	 * @dataProvider provideCreateReminderData
 	 */
 	public function testSaveReminder_createReminder( $aTaskData, $aExpected ) {
@@ -420,10 +392,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aTaskData
-	 * @param $aExpected
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
 	 * @dataProvider provideEditReminderData
 	 */
 	public function testSaveReminder_editReminder( $aTaskData, $aExpected ) {
@@ -478,9 +446,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		return $workingParams;
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testDeleteReminder_catchAnonUser() {
 		$data = $this->doApiRequest( [
 			'action' => 'bs-reminder-tasks',
@@ -492,9 +457,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aRequest
-	 * @param $sExpectedError
-	 * @throws Exception
 	 * @dataProvider provideFalseDeleteReminderData
 	 */
 	public function testDeleteReminder_catchFalseRequests( $aRequest, $sExpectedError ) {
@@ -506,9 +468,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors'][$sExpectedError] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testDeleteReminder_checksPermissionReminderEditAll() {
 		$GLOBALS['wgGroupPermissions']['sysop']['remindereditall'] = false;
 		$data = $this->doApiRequestWithToken( [
@@ -523,9 +482,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['reminderId'] ) );
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testDeleteReminder_checksDeleteHookFailure() {
 		$this->db->insert(
 			'bs_reminder',
@@ -553,11 +509,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors']['deletehookerror'] ) );
 	}
 
-	/**
-	 * @param $aTaskData
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
-	 */
 	public function testDeleteReminder_checksDbDeleteFailure() {
 		$this->db->insert(
 			'bs_reminder',
@@ -588,9 +539,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aTaskData
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
 	 * @dataProvider provideDeleteReminderData
 	 */
 	public function testDeleteReminder_deleteReminder( $aTaskData ) {
@@ -626,9 +574,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		);
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testGetDetailsForReminder_catchAnonUser() {
 		$data = $this->doApiRequest( [
 			'action' => 'bs-reminder-tasks',
@@ -640,9 +585,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aRequest
-	 * @param $sExpectedError
-	 * @throws Exception
 	 * @dataProvider provideFalseGetDetailsForReminderData
 	 */
 	public function testGetDetailsForReminder_catchFalseRequests( $aRequest, $sExpectedError ) {
@@ -654,11 +596,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->assertTrue( isset( $data[0]['errors'][$sExpectedError] ) );
 	}
 
-	/**
-	 * @param $aTaskData
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
-	 */
 	public function testGetDetailsForReminder_checksDbReadFailure() {
 		$this->addTestReminderToDb();
 		$this->db->query(
@@ -689,9 +626,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 		return $falseParams;
 	}
 
-	/**
-	 * @throws Exception
-	 */
 	public function testGetDetailsForReminder_checksPermissionReminderEditAll() {
 		$this->addTestReminderToDb();
 		$GLOBALS['wgGroupPermissions']['user']['remindereditall'] = false;
@@ -707,10 +641,6 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	/**
-	 * @param $aTaskData
-	 * @param $aExpected
-	 * @internal param $aRequest
-	 * @internal param $sExpectedError
 	 * @dataProvider provideGetDetailsForReminderData
 	 */
 	public function testGetDetailsForReminder_getReminder( $aTaskData, $aExpected ) {
