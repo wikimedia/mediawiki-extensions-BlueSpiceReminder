@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Reminder\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
 class AddToPersonal extends ChameleonSkinTemplateOutputPageBeforeExec {
 	/**
