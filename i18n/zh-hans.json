@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"LaMagiaaa",
 			"Nadine Siak",
 			"Shuiwater",
 			"SomeyaMako"
@@ -9,6 +10,8 @@
 	},
 	"bs-reminder-header-pagename": "页面",
 	"bs-reminder-header-username": "用户",
+	"bs-reminder-delete-error": "发生错误：$1",
+	"bs-reminder-save-error": "发生错误：$1",
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-comment-label": "评论",
 	"bs-reminder-header-comment": "评论",
