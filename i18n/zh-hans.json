@@ -3,11 +3,15 @@
 		"authors": [
 			")8",
 			"LaMagiaaa",
+			"Lakejason0",
 			"Nadine Siak",
 			"Shuiwater",
 			"SomeyaMako"
 		]
 	},
+	"reminder": "提醒",
+	"specialreminder": "提醒",
+	"prefs-reminder": "提醒",
 	"bs-reminder-header-pagename": "页面",
 	"bs-reminder-header-username": "用户",
 	"bs-reminder-delete-error": "发生错误：$1",
