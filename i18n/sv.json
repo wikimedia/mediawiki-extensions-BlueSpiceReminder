@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
-			"Mjälten"
+			"Mjälten",
+			"Sabelöga",
+			"WikiPhoenix"
 		]
 	},
 	"bs-reminder-extension-description": "Ger användaren möjligheten att skapa påminnelser.",
@@ -61,5 +62,29 @@
 	"bs-reminder-date-label": "Påminnelse",
 	"bs-reminder-create-error": "Din påminnelse kunde ännu inte uppdateras. Försök igen.",
 	"bs-reminder-header-date": "Påminnelse",
-	"echo-pref-tooltip-bs-reminder-cat": "Avisera mig när mina påminnelser går ut idag eller om en vecka"
+	"echo-pref-tooltip-bs-reminder-cat": "Avisera mig när mina påminnelser går ut idag eller om en vecka",
+	"bs-reminder-repeat-label": "Upprepa",
+	"bs-reminder-repeat-on-title": "Upprepas",
+	"bs-reminder-ordinal-first": "första",
+	"bs-reminder-ordinal-second": "andra",
+	"bs-reminder-ordinal-third": "tredje",
+	"bs-reminder-ordinal-fourth": "fjärde",
+	"bs-reminder-ordinal-last": "sista",
+	"bs-reminder-monthly-on-the-prefix": "Månatligt varje",
+	"bs-reminder-repeat-interval-day": "dag(ar)",
+	"bs-reminder-repeat-interval-week": "vecka(-or)",
+	"bs-reminder-repeat-interval-month": "månad(er)",
+	"bs-reminder-repeat-interval-year": "år",
+	"bs-reminder-sunday-abbr": "s",
+	"bs-reminder-monday-abbr": "m",
+	"bs-reminder-tuesday-abbr": "t",
+	"bs-reminder-wednesday-abbr": "o",
+	"bs-reminder-thursday-abbr": "t",
+	"bs-reminder-friday-abbr": "f",
+	"bs-reminder-saturday-abbr": "l",
+	"bs-reminder-header-is-repeating": "Upprepar",
+	"bs-reminder-no": "nej",
+	"bs-reminder-invalid-type": "Ogiltig typ",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Sida"
 }

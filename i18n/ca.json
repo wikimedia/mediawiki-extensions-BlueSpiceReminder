@@ -33,5 +33,6 @@
 	"bs-reminder-create-success": "S’ha creat el recordatori correctament.",
 	"bs-reminder-delete-success": "S’ha suprimit el recordatori correctament.",
 	"bs-reminder-delete-error": "S’ha produït un error: $1",
-	"bs-reminder-save-error-unkown": "No s’ha pogut desar el recordatori."
+	"bs-reminder-save-error-unkown": "No s’ha pogut desar el recordatori.",
+	"bs-reminder-no": "no"
 }

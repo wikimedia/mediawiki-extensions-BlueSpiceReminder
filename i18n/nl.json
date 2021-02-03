@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dutchy45",
 			"Elroy",
 			"Mainframe98"
 		]
@@ -21,5 +22,7 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Uw herinneringen",
 	"bs-reminder-article-label": "Pagina",
 	"bs-reminder-flyout-manager-btn-label": "Herinneringen beheren",
-	"echo-category-title-notification-bs-reminder-cat": "Herinneringen"
+	"echo-category-title-notification-bs-reminder-cat": "Herinneringen",
+	"bs-reminder-header-type": "Soort",
+	"bs-reminder-type-page": "Pagina"
 }

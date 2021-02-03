@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"bs-reminder-invalid-type": "Nevrijedeća vrsta",
+	"bs-reminder-header-type": "Vrsta",
+	"bs-reminder-type-page": "Stranica"
+}

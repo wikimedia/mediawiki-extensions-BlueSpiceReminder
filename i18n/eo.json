@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin van der Vliet"
+		]
+	},
+	"bs-reminder-ordinal-second": "sekundo",
+	"bs-reminder-repeat-interval-day": "tago(j)",
+	"bs-reminder-repeat-interval-week": "semajno(j)",
+	"bs-reminder-repeat-interval-month": "monato(j)",
+	"bs-reminder-repeat-interval-year": "jaro(j)",
+	"bs-reminder-no": "ne"
+}

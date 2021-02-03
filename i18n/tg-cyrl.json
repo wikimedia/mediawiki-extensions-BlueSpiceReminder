@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dovud",
 			"ToJack"
 		]
 	},
@@ -30,5 +31,15 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Хотиррасонҳои ман",
 	"notification-bs-reminder-one-week-subject": "Мақолаии \"$1\"-ро ба хотир гирифтан",
 	"notification-bs-reminder-one-week-email-body": "Шумо ба саҳифаи \"$1\" хотиррасон пайвастед. Ин хотира баъди як ҳафта дарҷ мегардад. \n\nШарҳи Шумо:\n$2",
-	"right-remindereditall": "Вироиши хотиррасонҳои дигар"
+	"right-remindereditall": "Вироиши хотиррасонҳои дигар",
+	"bs-reminder-ordinal-first": "аввал",
+	"bs-reminder-ordinal-second": "дуюм",
+	"bs-reminder-ordinal-third": "сеюм",
+	"bs-reminder-ordinal-last": "охирин",
+	"bs-reminder-repeat-interval-day": "рӯз(ҳо)",
+	"bs-reminder-repeat-interval-week": "ҳафта(ҳо)",
+	"bs-reminder-repeat-interval-month": "моҳ(ҳо)",
+	"bs-reminder-repeat-interval-year": "сол(ҳо)",
+	"bs-reminder-monday-abbr": "м",
+	"bs-reminder-no": "на"
 }

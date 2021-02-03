@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Madamebiblio"
+			"Madamebiblio",
+			"Nguyễn Mạnh An",
+			"Suecarmol"
 		]
 	},
 	"reminder": "Recordatorio",
@@ -32,5 +34,28 @@
 	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
 	"bs-reminder-create-success": "El recordatorio se creó correctamente.",
 	"bs-reminder-delete-success": "Se eliminó el recordatorio correctamente.",
-	"bs-reminder-delete-error": "Se produjo un error: $1"
+	"bs-reminder-delete-error": "Se produjo un error: $1",
+	"bs-reminder-error-owner-reminder": "Solo pueden eliminarse los propios recordatorios.",
+	"bs-reminder-save-error-unkown": "No se pudo guardar el recordatorio.",
+	"bs-reminder-date-format": "d-m-Y",
+	"bs-reminder-save-success": "Se creó el recordatorio correctamente.",
+	"bs-reminder-pref-DisableReminderForNS": "No crear recordatorios para los espacios de nombres siguientes:",
+	"bs-reminder-repeat-label": "Repetir",
+	"bs-reminder-repeat-every-title": "Repetir cada",
+	"bs-reminder-repeat-interval-day": "día(s)",
+	"bs-reminder-repeat-interval-week": "semana(s)",
+	"bs-reminder-repeat-interval-month": "mes(es)",
+	"bs-reminder-repeat-interval-year": "año(s)",
+	"bs-reminder-sunday-abbr": "d",
+	"bs-reminder-monday-abbr": "l",
+	"bs-reminder-tuesday-abbr": "m",
+	"bs-reminder-wednesday-abbr": "x",
+	"bs-reminder-thursday-abbr": "j",
+	"bs-reminder-friday-abbr": "v",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-header-is-repeating": "Se repite",
+	"bs-reminder-no": "no",
+	"bs-reminder-invalid-type": "Tipo no válido",
+	"bs-reminder-header-type": "Tipo",
+	"bs-reminder-type-page": "Página"
 }

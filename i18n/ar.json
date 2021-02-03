@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Omar Ghrida",
 			"ديفيد"
 		]
 	},
@@ -69,5 +70,10 @@
 	"apihelp-bs-reminder-store-summary": "يوفر مخزنا للتذكيرات، والتي يمكن الاستعلام عنها",
 	"apihelp-bs-reminder-tasks-summary": "يوفر مهاما مثل تحرير أو حذف تذكيرات",
 	"right-remindereditall": "تحرير تذكيرات الآخرين",
-	"action-remindereditall": "تحرير تذكيرات الآخرين"
+	"action-remindereditall": "تحرير تذكيرات الآخرين",
+	"bs-reminder-ordinal-first": "أول",
+	"bs-reminder-ordinal-second": "ثاني",
+	"bs-reminder-ordinal-third": "ثالث",
+	"bs-reminder-ordinal-fourth": "رابع",
+	"bs-reminder-ordinal-last": "أخير"
 }

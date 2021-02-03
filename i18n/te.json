@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veeven"
+		]
+	},
+	"bs-reminder-header-pagename": "పేజీ",
+	"bs-reminder-header-username": "వాడుకరి",
+	"bs-reminder-article-label": "పేజీ",
+	"bs-reminder-repeat-interval-day": "రోజు(లు)",
+	"bs-reminder-repeat-interval-week": "వారము(లు)",
+	"bs-reminder-repeat-interval-month": "నెల(లు)",
+	"bs-reminder-repeat-interval-year": "సంవత్సరము(లు)",
+	"bs-reminder-invalid-type": "చెల్లని రకం",
+	"bs-reminder-header-type": "రకం",
+	"bs-reminder-type-page": "పేజీ"
+}

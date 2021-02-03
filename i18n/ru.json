@@ -1,11 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diman Russkov",
 			"Kareyac"
 		]
 	},
 	"bs-reminder-header-pagename": "Страница",
 	"bs-reminder-header-username": "Участник",
 	"bs-reminder-article-label": "Страница",
-	"bs-reminder-navigation-link-title": "Напоминание"
+	"bs-reminder-navigation-link-title": "Напоминание",
+	"bs-reminder-ordinal-first": "первый",
+	"bs-reminder-ordinal-second": "второй",
+	"bs-reminder-ordinal-third": "третий",
+	"bs-reminder-ordinal-fourth": "четвёртый",
+	"bs-reminder-no": "нет"
 }

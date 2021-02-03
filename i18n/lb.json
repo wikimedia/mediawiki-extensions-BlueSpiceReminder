@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Soued031"
 		]
 	},
 	"reminder": "Erënnerung",
@@ -19,7 +20,7 @@
 	"bs-reminder-save-error": "Et ass e Feeler geschitt: $1",
 	"bs-reminder-save-error-unkown": "Erënnerung konnt net gespäichert ginn.",
 	"bs-reminder-date-format": "d.m.Y",
-	"bs-reminder-create-no-actions": "E puer Parametere feelen. Probéiert w.e.g. nach eng Kéier.",
+	"bs-reminder-create-no-actions": "E puer Parametere feelen. Probéiert wgl. nach eng Kéier.",
 	"bs-reminder-save-success": "D'Erënnerung gouf ugeluecht.",
 	"bs-reminder-comment-label": "Bemierkung",
 	"bs-reminder-header-comment": "Bemierkung",
@@ -32,5 +33,20 @@
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meng Erënnerungen",
 	"echo-category-title-notification-bs-reminder-cat": "Erënnerungen",
 	"notification-bs-reminder-one-week-subject": "Erënnerung un den Artikel \"$1\"",
-	"action-remindereditall": "Aneren hir Erënnerungen änneren"
+	"action-remindereditall": "Aneren hir Erënnerungen änneren",
+	"bs-reminder-repeat-label": "Widderhuelen",
+	"bs-reminder-ordinal-first": "éischten",
+	"bs-reminder-ordinal-second": "zweeten",
+	"bs-reminder-ordinal-fourth": "véiert",
+	"bs-reminder-ordinal-last": "lescht",
+	"bs-reminder-monthly-on-the-prefix": "All Mount den",
+	"bs-reminder-monthly-on-day-prefix": "All Mount de(n)",
+	"bs-reminder-repeat-interval-day": "Dag/Deeg",
+	"bs-reminder-repeat-interval-week": "Woch(en)",
+	"bs-reminder-repeat-interval-month": "Mount/Méint",
+	"bs-reminder-repeat-interval-year": "Joer",
+	"bs-reminder-tuesday-abbr": "d",
+	"bs-reminder-no": "neen",
+	"bs-reminder-header-type": "Typ",
+	"bs-reminder-type-page": "Säit"
 }
