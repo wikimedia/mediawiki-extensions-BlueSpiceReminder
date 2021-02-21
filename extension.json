@@ -2,7 +2,7 @@
 	"name": "BlueSpiceReminder",
 	"version": "4.0.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:Reminder",
-	"author": ["Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm"],
+	"author": [ "Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm" ],
 	"descriptionmsg": "bs-reminder-extension-description",
 	"license-name": "GPL-3.0-only",
 	"requires": {
