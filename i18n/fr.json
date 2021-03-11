@@ -40,6 +40,7 @@
 	"bs-reminder-save-error": "Une erreur s’est produite : $1",
 	"bs-reminder-save-error-unkown": "Le rappel n’a pas pu être enregistré.",
 	"bs-reminder-date-format": "j m a",
+	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-create-no-actions": "Certains paramètres sont manquants. Veuillez essayer à nouveau.",
 	"bs-reminder-save-success": "Le rappel a été créé avec succès.",
 	"bs-reminder-user-label": "Assigner à un utilisateur",
