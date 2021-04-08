@@ -46,5 +46,9 @@
 	"bs-reminder-no": "nej",
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Side"
+	"bs-reminder-type-page": "Side",
+	"bs-reminder-delete-error": "Der opstod en fejl: $1",
+	"bs-reminder-save-error": "Der opstod en fejl: $1",
+	"bs-reminder-date-format": "Å-m-d",
+	"bs-reminder-repeat-label": "Gentag"
 }

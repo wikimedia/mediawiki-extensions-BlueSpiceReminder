@@ -101,5 +101,6 @@
 	"bs-reminder-no": "non",
 	"bs-reminder-invalid-type": "Type non valide",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Page"
+	"bs-reminder-type-page": "Page",
+	"bs-reminder-specialpage-subtitle": "← $1"
 }
