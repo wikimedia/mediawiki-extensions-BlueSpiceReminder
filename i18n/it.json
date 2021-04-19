@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16"
 		]
 	},
+	"bs-reminder-header-pagename": "Pagina",
+	"bs-reminder-header-username": "Utente",
 	"bs-reminder-repeat-label": "Ripeti",
 	"bs-reminder-ordinal-first": "primo",
 	"bs-reminder-ordinal-second": "secondo",
