@@ -146,7 +146,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		}
 
 		try {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$dbw->delete(
 				'bs_reminder',
 				$aConds,
@@ -301,7 +301,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$aData['rem_repeat_config'] = FormatJson::encode( $oTaskData->repeatConfig );
 		}
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		if ( !$iReminderId ) {
 			try {
 				$res = $dbw->insert( 'bs_reminder', $aData, __METHOD__ );

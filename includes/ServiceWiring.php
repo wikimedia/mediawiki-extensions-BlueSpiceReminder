@@ -5,10 +5,10 @@ use BlueSpice\Reminder\Factory;
 use MediaWiki\MediaWikiServices;
 
 return [
-	'BSRepeatingReminderDateCalculator' => function ( MediaWikiServices $services ) {
+	'BSRepeatingReminderDateCalculator' => static function ( MediaWikiServices $services ) {
 		return new \BlueSpice\Reminder\RepeatingReminderDateCalculator();
 	},
-	'BSReminderFactory' => function ( MediaWikiServices $services ) {
+	'BSReminderFactory' => static function ( MediaWikiServices $services ) {
 		$registry = new ExtensionAttributeBasedRegistry(
 			'BlueSpiceReminderRegistry'
 		);

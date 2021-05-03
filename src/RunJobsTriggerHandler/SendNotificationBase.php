@@ -77,7 +77,7 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 				$repeatDateEnd = DateTime::createFromFormat( 'YmdHis', $reminder->rem_repeat_date_end );
 
 				if ( $repeatDateEnd->format( 'Y-m-d' ) >= $nextReminderDate->format( 'Y-m-d' ) ) {
-					$dbw = $this->loadBalancer->getConnection( DB_MASTER );
+					$dbw = $this->loadBalancer->getConnection( DB_PRIMARY );
 					$dbw->update(
 						'bs_reminder',
 						[ 'rem_date' => $nextReminderDate->format( 'Y-m-d' ) ],

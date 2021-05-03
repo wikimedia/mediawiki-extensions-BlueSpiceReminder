@@ -19,7 +19,7 @@ class DeleteReminders extends BSUserManagerAfterDeleteUser {
 
 	protected function doProcess() {
 		try {
-			$this->getServices()->getDBLoadBalancer()->getConnection( DB_MASTER )->delete(
+			$this->getServices()->getDBLoadBalancer()->getConnection( DB_PRIMARY )->delete(
 				'bs_reminder',
 				[ 'rem_user_id' => $this->user->getId() ],
 				__METHOD__

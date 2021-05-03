@@ -53,7 +53,7 @@ class SetReminderOnCreate extends PageSaveComplete {
 		$iDate = strtotime( "+$sDefaultPeriod days" );
 		$sFormattedFieldValue = date( 'Y-m-d', $iDate );
 
-		$conn = $this->getServices()->getDBLoadBalancer()->getConnection( DB_MASTER );
+		$conn = $this->getServices()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$res = $conn->insert(
 			'bs_reminder',
 			[
