@@ -13,7 +13,7 @@ class AddToPersonal extends ChameleonSkinTemplateOutputPageBeforeExec {
 		if ( !$this->getServices()->getSpecialPageFactory()->exists( 'Reminder' ) ) {
 			return true;
 		}
-		return !$this->skin->getUser()->isLoggedIn();
+		return !$this->skin->getUser()->isRegistered();
 	}
 
 	protected function doProcess() {
