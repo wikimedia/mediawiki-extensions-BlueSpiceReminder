@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"Ken418",
 			"LaMagiaaa",
 			"Lakejason0",
 			"Nadine Siak",
@@ -12,6 +13,8 @@
 	"reminder": "提醒",
 	"specialreminder": "提醒",
 	"prefs-reminder": "提醒",
+	"bs-reminder-create-title": "提醒",
+	"bs-reminder-create-success": "您的提醒已成功创建。",
 	"bs-reminder-header-pagename": "页面",
 	"bs-reminder-header-username": "用户",
 	"bs-reminder-delete-error": "发生错误：$1",
