@@ -11,7 +11,7 @@ class AddReminderEntry extends SkinTemplateNavigationUniversal {
 	 */
 	protected function skipProcessing() {
 		$user = $this->sktemplate->getUser();
-		if ( !$user->isLoggedIn() ) {
+		if ( !$user->isRegistered() ) {
 			return true;
 		}
 		$title = $this->sktemplate->getTitle();
