@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16"
 		]
 	},
@@ -24,5 +25,7 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo non valido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-header-pagename": "Pagina",
+	"bs-reminder-header-username": "Utente"
 }

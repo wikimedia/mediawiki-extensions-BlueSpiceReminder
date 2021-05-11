@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"Ken418",
 			"LaMagiaaa",
 			"Lakejason0",
 			"Nadine Siak",
@@ -48,5 +49,7 @@
 	"bs-reminder-no": "否",
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
-	"bs-reminder-type-page": "页面"
+	"bs-reminder-type-page": "页面",
+	"bs-reminder-create-title": "提醒",
+	"bs-reminder-create-success": "您的提醒已成功创建。"
 }
