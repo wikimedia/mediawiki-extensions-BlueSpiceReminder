@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"reminder": "Напамін",
+	"specialreminder": "Напамін",
+	"prefs-reminder": "Напамін",
+	"bs-reminder-menu_entry-create": "Стварыць напамін",
+	"bs-reminder-menu_entry-show": "Напаміны",
+	"bs-reminder-create-reminder-label": "Стварыць напамін",
+	"bs-reminder-create-title": "Напамін",
+	"bs-reminder-create-success": "Ваш напамін пасьпяховы створаны.",
+	"bs-reminder-create-error": "Ваш напамін пакуль ня можа быць створаны. Калі ласка, спрабуйце зноў.",
+	"bs-reminder-update-success": "Ваш напамін пасьпяхова абноўлены.",
+	"bs-reminder-update-error": "Ваш напамін пакуль ня можа быць абноўлены. Калі ласка, спрабуйце зноў.",
+	"bs-reminder-header-pagename": "Старонка",
+	"bs-reminder-title-delete": "Выдаліць напамін",
+	"bs-reminder-delete-error-unkown": "Напамін ня можа быць выдалены.",
+	"bs-reminder-save-error-unkown": "Напамін ня можа быць захаваны.",
+	"bs-reminder-date-format": "Г-м-д",
+	"bs-reminder-article-label": "Старонка",
+	"bs-reminder-navigation-link-title": "Напамін",
+	"bs-reminder-navigation-link-text": "Напамін",
+	"bs-reminder-nav-link-title-reminder": "Напамін",
+	"bs-reminder-flyout-title": "Напамін",
+	"bs-reminder-flyout-form-title": "Стварыць напамін",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мае напаміны",
+	"echo-category-title-notification-bs-reminder-cat": "Напаміны",
+	"right-remindereditall": "Правіць іншыя напаміны",
+	"action-remindereditall": "правіць іншыя напаміны",
+	"bs-reminder-repeat-label": "Паўтарыць",
+	"bs-reminder-header-type": "Від",
+	"bs-reminder-type-page": "Старонка"
+}

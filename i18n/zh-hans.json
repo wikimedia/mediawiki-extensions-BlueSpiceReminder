@@ -1,6 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			")8",
+			"Ken418",
+			"LaMagiaaa",
+			"Lakejason0",
 			"Nadine Siak",
 			"Shuiwater",
 			"SomeyaMako"
@@ -30,5 +34,22 @@
 	"bs-reminder-no": "否",
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
-	"bs-reminder-type-page": "页面"
+	"bs-reminder-type-page": "页面",
+	"reminder": "提醒",
+	"specialreminder": "提醒",
+	"prefs-reminder": "提醒",
+	"bs-reminder-create-title": "提醒",
+	"bs-reminder-create-success": "您的提醒已成功创建。",
+	"bs-reminder-header-pagename": "页面",
+	"bs-reminder-header-username": "用户",
+	"bs-reminder-delete-error": "发生错误：$1",
+	"bs-reminder-save-error": "发生错误：$1",
+	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-comment-label": "评论",
+	"bs-reminder-header-comment": "评论",
+	"bs-reminder-article-label": "页面",
+	"bs-reminder-navigation-link-title": "提醒",
+	"bs-reminder-navigation-link-text": "提醒",
+	"bs-reminder-nav-link-title-reminder": "提醒",
+	"bs-reminder-flyout-title": "提醒"
 }

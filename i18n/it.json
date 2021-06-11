@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16"
 		]
 	},
@@ -24,5 +25,13 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo non valido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-header-pagename": "Pagina",
+	"bs-reminder-header-username": "Utente",
+	"bs-reminder-article-label": "Pagina",
+	"bs-reminder-navigation-link-title": "Promemoria",
+	"bs-reminder-navigation-link-text": "Promemoria",
+	"bs-reminder-nav-link-title-reminder": "Promemoria",
+	"bs-reminder-flyout-title": "Promemoria",
+	"echo-category-title-notification-bs-reminder-cat": "Promemoria"
 }

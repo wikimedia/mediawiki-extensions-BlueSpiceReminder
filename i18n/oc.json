@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"BrennodAloisi",
 			"Quentí"
 		]
 	},
 	"bs-reminder-header-type": "Tipe",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-repeat-interval-month": "mes(es)"
 }
