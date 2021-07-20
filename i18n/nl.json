@@ -3,7 +3,8 @@
 		"authors": [
 			"Dutchy45",
 			"Elroy",
-			"Mainframe98"
+			"Mainframe98",
+			"Romaine"
 		]
 	},
 	"bs-reminder-unknown-user-msg": "U kunt geen herinnering maken voor een gebruiker die niet bestaat.",
@@ -44,5 +45,16 @@
 	"bs-reminder-friday-abbr": "v",
 	"bs-reminder-saturday-abbr": "z",
 	"bs-reminder-no": "nee",
-	"bs-reminder-invalid-type": "Ongeldig type"
+	"bs-reminder-invalid-type": "Ongeldig type",
+	"reminder": "Herinnering",
+	"specialreminder": "Herinnering",
+	"prefs-reminder": "Herinnering",
+	"bs-reminder-menu_entry-show": "Herinneringen",
+	"bs-reminder-create-reminder-label": "Herinnering aanmaken",
+	"bs-reminder-title-delete": "Herinnering verwijderen",
+	"bs-reminder-delete-error-unkown": "Herinnering kon niet worden verwijderd.",
+	"bs-reminder-save-error": "Er is een fout opgetreden: $1",
+	"bs-reminder-save-error-unkown": "Herinnering kon niet worden opgeslagen.",
+	"bs-reminder-user-label": "Toewijzen aan gebruiker",
+	"bs-reminder-other-user-not-allowed": "U mag geen herinneringen toewijzen aan een andere gebruiker"
 }
