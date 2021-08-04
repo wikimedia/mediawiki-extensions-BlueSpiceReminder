@@ -46,7 +46,7 @@ Ext.define( 'BS.Reminder.flyout.grid.ReminderPanel', {
 			header: mw.message( 'bs-reminder-header-username' ).plain(),
 			sortable: true,
 			dataIndex: 'user_name',
-			tpl: '<a href="{user_page}">{user_name}</a>',
+			tpl: '<a data-bs-username="{user_name}" href="{user_page}">{user_name}</a>',
 			filter: {
 				type: 'string'
 			},

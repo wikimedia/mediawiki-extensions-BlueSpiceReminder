@@ -191,10 +191,11 @@ class Reminder extends BsExtensionMW {
 		if ( $res ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rem_page_id );
+				$userpage = Title::makeTitle( NS_USER, $row->user_name );
 				$aResultSet = [
 					'id' => $row->rem_id,
 					'user_name' => $row->user_name,
-					'user_page' => $row->user_name,
+					'user_page' => $userpage->getLocalURL(),
 					'page_title' => $oTitle->getPrefixedText(),
 					'page_link' => $oTitle->getLocalURL(),
 					'reminder_date' => $row->rem_date,
