@@ -187,6 +187,11 @@
 		"echo-subscriptions-web-notification-bs-reminder-cat": 1,
 		"echo-subscriptions-email-notification-bs-reminder-cat": 1
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "\\BlueSpice\\Reminder\\Hook\\LoadExtensionSchemaUpdates\\AddReminderTable::callback",
 		"GetPreferences": [
@@ -201,7 +206,8 @@
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback",
 		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
-		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback"
+		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
