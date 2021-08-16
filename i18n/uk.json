@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion",
 			"Ата"
 		]
@@ -99,5 +100,6 @@
 	"bs-reminder-no": "ні",
 	"bs-reminder-invalid-type": "Недійсний тип",
 	"bs-reminder-header-type": "Тип",
-	"bs-reminder-type-page": "Сторінка"
+	"bs-reminder-type-page": "Сторінка",
+	"bs-reminder-specialpage-subtitle": "← $1"
 }
