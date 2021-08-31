@@ -25,7 +25,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors['permissionError']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
@@ -37,7 +37,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$oTitle = Title::newFromID( $iArticleId );
 
 		if ( $oTitle === null || !$oTitle->exists() ) {
-			$oResult->message = $oResult->errors['reminderId']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
 			return $oResult;
 		}
@@ -59,7 +59,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				[]
 			);
 		} catch ( DBError $e ) {
-			$oResult->message = $oResult->errors['reminderId']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
 			return $oResult;
 		}
@@ -88,7 +88,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors['permissionError']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
@@ -99,7 +99,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		}
 
 		if ( !$iReminderId ) {
-			$oResult->message = $oResult->errors['reminderId'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-error-valid-reminder' )->text();
 			return $oResult;
 		}
@@ -124,13 +124,13 @@ class ApiReminderTasks extends BSApiTasksBase {
 			);
 		} catch ( DBError $e ) {
 			$res = false;
-			$oResult->message = $oResult->errors['saving'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-delete-error-unkown' )->text();
 			return $oResult;
 		}
 
 		if ( !$res || !$res->valid() || $res->numRows() < 1 ) {
-			$oResult->message = $oResult->errors['reminderId']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-reminder-error-owner-reminder' )->plain();
 			return $oResult;
 		}
@@ -159,7 +159,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			// This case cannot be reproduced in unit tests, but it is ok not to check.
 			// Thus ignoring in code coverage
 			$oResult->success = false;
-			$oResult->message = $oResult->errors['saving'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-delete-error-unkown' )->text();
 			wfDebugLog(
 				'BS::Reminder',
@@ -186,13 +186,13 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$sComment = '';
 		$bIsUpdate = false;
 		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors['permissionError']
+			$oResult->message = $oResult->errors[]
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
 		$type = !empty( $oTaskData->type ) ? $oTaskData->type : '';
 		if ( !$this->getFactory()->isRegisteredType( $type ) ) {
-			$oResult->message = $oResult->errors['invalidtype']
+			$oResult->message = $oResult->errors[]
 				= $this->msg( 'bs-reminder-invalid-type' )->plain();
 			return $oResult;
 		}
@@ -220,13 +220,13 @@ class ApiReminderTasks extends BSApiTasksBase {
 				$res = false;
 			}
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['noactions'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-create-no-actions' )->text();
 				return $oResult;
 			}
 			$row = $res->fetchRow();
 			if ( empty( $row['rem_page_id'] ) ) {
-				$oResult->message = $oResult->errors['noactions'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-create-no-actions' )->text();
 				return $oResult;
 			}
@@ -238,7 +238,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			: 0;
 		$oTitle = Title::newFromID( $iArticleId );
 		if ( !$oTitle instanceof Title || !$oTitle->exists() ) {
-			$oResult->message = $oResult->errors['unknown-page'] =
+			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-unknown-page-msg' )->text();
 			return $oResult;
 		}
@@ -253,7 +253,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$iTargetUserId = User::newFromName( $oTaskData->userName )->getId();
 
 			if ( !$iTargetUserId > 0 ) {
-				$oResult->message = $oResult->errors['unknown-user'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-unknown-user-msg' )->text();
 				return $oResult;
 			}
@@ -263,7 +263,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				'remindereditall'
 			);
 			if ( !$isAllowed && $iUserId !== $iTargetUserId ) {
-				$oResult->message = $oResult->errors['user'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-other-user-not-allowed' )->text();
 				return $oResult;
 			}
@@ -292,7 +292,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$startReminderDate = $startReminderDate->format( 'YmdHis' );
 
 			if ( $startReminderDate > $aData['rem_repeat_date_end'] ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					$this->msg( 'bs-reminder-start-date-greater-end-date' )->text();
 				return $oResult;
 			}
@@ -309,7 +309,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				$res = false;
 			}
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-create-error' )->text();
 				return $oResult;
 			}
@@ -323,7 +323,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 					$oTaskData->articleId, $iUserId
 				] );
 			} catch ( Exception $e ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					$e->getMessage();
 				return $oResult;
 			}
@@ -339,7 +339,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				$res = false;
 			}
 			if ( !$res ) {
-				$oResult->message = $oResult->errors['updateerror'] =
+				$oResult->message = $oResult->errors[] =
 					wfMessage( 'bs-reminder-update-error' )->text();
 				return $oResult;
 			}
@@ -350,7 +350,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 					$iReminderId
 				] );
 			} catch ( Exception $e ) {
-				$oResult->message = $oResult->errors['createerror'] =
+				$oResult->message = $oResult->errors[] =
 					$e->getMessage();
 				return $oResult;
 			}
