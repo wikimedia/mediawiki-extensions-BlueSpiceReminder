@@ -8,7 +8,9 @@ Ext.define( "BS.Reminder.PanelDialog", {
 			labelAlign: 'right'
 		});
 
-		this.cbxUser = Ext.create( 'BS.form.UserCombo' );
+		this.cbxUser = Ext.create( 'BS.form.UserCombo', {
+			valueField: 'user_name'
+		} );
 
 		items.push( this.cbTargetPage );
 		items.push( this.cbxUser );

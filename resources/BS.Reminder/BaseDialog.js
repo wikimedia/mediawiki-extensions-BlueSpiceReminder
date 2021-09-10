@@ -68,7 +68,7 @@ Ext.define( "BS.Reminder.BaseDialog", {
 			date: Ext.Date.format( this.dfDate.getValue(), 'YmdHis' ),
 			id: this.hfId.getValue(),
 			articleId: articleId,
-			userName: this.cbxUser.getDisplayValue(),
+			userName: this.cbxUser.getValue(),
 			comment: this.taComment.getValue()
 		};
 		$( document ).trigger( "BSReminderGetData", [ this, obj ] );
