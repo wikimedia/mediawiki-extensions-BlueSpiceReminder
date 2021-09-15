@@ -197,7 +197,8 @@
 		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigation\\AddReminderEntry::callback",
-		"PageContentSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageContentSaveComplete\\SetReminderOnCreate::callback"
+		"PageContentSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageContentSaveComplete\\SetReminderOnCreate::callback",
+		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
