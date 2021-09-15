@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dovud",
+			"McDutchie",
 			"ToJack"
 		]
 	},
@@ -18,7 +19,7 @@
 	"bs-reminder-header-date": "Ба хотир гирифтан дар санаи",
 	"bs-reminder-title-delete": "Ҳазфи хотиррасон",
 	"bs-reminder-save-error-unkown": "Хотиррасон захира нашуд.",
-	"bs-reminder-date-format": "Сол-моҳ-рӯз",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Баъзе параметрҳо хатоянд. Бори дигар кӯшиш намоед.",
 	"bs-reminder-comment-label": "Тавзеҳ/шарҳ",
 	"bs-reminder-header-comment": "Шарҳ",

@@ -3,7 +3,8 @@
 		"authors": [
 			"Hamilton Abreu",
 			"Mansil",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"McDutchie"
 		]
 	},
 	"bs-reminder-extension-description": "Dá ao utilizador a oportunidade de criar avisos.",
@@ -38,7 +39,7 @@
 	"bs-reminder-delete-error-unkown": "Não foi possível eliminar o aviso.",
 	"bs-reminder-save-error": "Ocorreu um erro: $1",
 	"bs-reminder-save-error-unkown": "Não foi possível gravar o aviso.",
-	"bs-reminder-date-format": "A-m-d",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Alguns parâmetros estão em falta. Por favor, tente novamente.",
 	"bs-reminder-save-success": "O aviso foi criado.",
 	"bs-reminder-user-label": "Atribuir ao utilizador",

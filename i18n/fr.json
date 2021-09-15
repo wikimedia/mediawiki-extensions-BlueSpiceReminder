@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"McDutchie",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -39,7 +40,7 @@
 	"bs-reminder-delete-error-unkown": "Le rappel n’a pas pu être supprimé.",
 	"bs-reminder-save-error": "Une erreur est survenue : $1",
 	"bs-reminder-save-error-unkown": "Le rappel n’a pas pu être enregistré.",
-	"bs-reminder-date-format": "j m a",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-create-no-actions": "Certains paramètres sont manquants. Veuillez essayer à nouveau.",
 	"bs-reminder-save-success": "Le rappel a été créé avec succès.",

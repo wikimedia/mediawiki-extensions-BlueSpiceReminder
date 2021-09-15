@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"McDutchie"
 		]
 	},
 	"bs-reminder-extension-description": "Dá ao usuário a oportunidade de criar lembretes.",
@@ -37,7 +38,7 @@
 	"bs-reminder-delete-error-unkown": "Não foi possível excluir o lembrete.",
 	"bs-reminder-save-error": "Um erro ocorreu: $1",
 	"bs-reminder-save-error-unkown": "Não foi possível salvar o lembrete.",
-	"bs-reminder-date-format": "A-M-D",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Alguns parâmetros estão ausentes. Por favor, tente novamente.",
 	"bs-reminder-save-success": "O lembrete foi criado com sucesso.",
 	"bs-reminder-user-label": "Atribuir ao usuário",

@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"McDutchie"
 		]
 	},
 	"bs-reminder-header-pagename": "Էջ",
 	"bs-reminder-header-username": "Մասնակից",
-	"bs-reminder-date-format": "Տ-ա-օ",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-comment-label": "Մեկնաբանություն",
 	"bs-reminder-header-comment": "Մեկնաբանություն",
 	"bs-reminder-article-label": "Էջ",

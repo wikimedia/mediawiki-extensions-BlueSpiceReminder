@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"McDutchie"
 		]
 	},
 	"bs-reminder-extension-description": "讓使用者有機會來建立提醒。",
@@ -36,7 +37,7 @@
 	"bs-reminder-delete-error-unkown": "提醒無法被刪除。",
 	"bs-reminder-save-error": "發生錯誤：$1",
 	"bs-reminder-save-error-unkown": "提醒無法儲存。",
-	"bs-reminder-date-format": "年-月-日",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "缺少一些參數，請重試。",
 	"bs-reminder-save-success": "提醒已成功建立。",
 	"bs-reminder-user-label": "分配給使用者",

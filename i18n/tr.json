@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"McDutchie",
 			"MuratTheTurkish"
 		]
 	},
@@ -37,7 +38,7 @@
 	"bs-reminder-delete-error-unkown": "Hatırlatıcı silinemedi.",
 	"bs-reminder-save-error": "Bir hata oluştu: $1",
 	"bs-reminder-save-error-unkown": "Hatırlatıcı kaydedilemedi.",
-	"bs-reminder-date-format": "Y-a-g",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Bazı parametreler eksik. Lütfen tekrar deneyin.",
 	"bs-reminder-save-success": "Hatırlatıcı başarıyla oluşturuldu.",
 	"bs-reminder-user-label": "Kullanıcıya ata",
