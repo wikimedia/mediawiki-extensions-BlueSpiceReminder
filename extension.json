@@ -201,7 +201,8 @@
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback",
 		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
-		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback"
+		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
+		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
