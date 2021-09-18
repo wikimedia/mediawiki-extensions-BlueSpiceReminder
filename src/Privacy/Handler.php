@@ -4,15 +4,16 @@ namespace BlueSpice\Reminder\Privacy;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
+use Wikimedia\Rdbms\IDatabase;
 
 class Handler implements IPrivacyHandler {
 	protected $db;
 
 	/**
 	 *
-	 * @param \IDatabase $db
+	 * @param IDatabase $db
 	 */
-	public function __construct( \IDatabase $db ) {
+	public function __construct( IDatabase $db ) {
 		$this->db = $db;
 	}
 
