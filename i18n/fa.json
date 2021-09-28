@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amir1arch",
-			"FarsiNevis"
+			"FarsiNevis",
+			"McDutchie"
 		]
 	},
 	"reminder": "یادآور",
@@ -31,7 +32,7 @@
 	"bs-reminder-delete-error-unkown": "یادآور نمی‌تواند حذف شود.",
 	"bs-reminder-save-error": "خطایی رخ داد: $1",
 	"bs-reminder-save-error-unkown": "یادآور نمی‌تواند ذخیره شود.",
-	"bs-reminder-date-format": "سال-ماه-روز",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-comment-label": "نظر",
 	"bs-reminder-header-comment": "نظر",
 	"bs-reminder-article-label": "صفحه",

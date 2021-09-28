@@ -3,7 +3,8 @@
 		"authors": [
 			"Hamilton Abreu",
 			"Mansil",
-			"Mansil alfalb"
+			"Mansil alfalb",
+			"McDutchie"
 		]
 	},
 	"reminder": "Aviso",
@@ -20,7 +21,7 @@
 	"bs-reminder-text-delete": "Pretende eliminar {{PLURAL:$1|este aviso|estes $1 avisos}}?",
 	"bs-reminder-delete-error": "Ocorreu um erro: $1",
 	"bs-reminder-save-error": "Ocorreu um erro: $1",
-	"bs-reminder-date-format": "A-m-d",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-comment-label": "Comentário",
 	"bs-reminder-header-comment": "Comentário",
 	"bs-reminder-article-label": "Página",

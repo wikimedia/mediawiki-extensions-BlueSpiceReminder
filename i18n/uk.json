@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"DDPAT",
+			"McDutchie",
 			"Piramidion",
 			"Ата"
 		]
@@ -48,7 +49,7 @@
 	"bs-reminder-menu_entry-create": "Створити нагадування",
 	"bs-reminder-unknown-page-msg": "Ви намагаєтесь створити нагадування для сторінки, яка не існує.",
 	"bs-reminder-unknown-user-msg": "Ви намагаєтесь створити нагадування для користувача, який не існує.",
-	"bs-reminder-date-format": "Р-м-д",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Бракує деяких параметрів. Будь ласка, спробуйте ще раз.",
 	"bs-reminder-save-success": "Нагадування успішно створено.",
 	"bs-reminder-user-label": "Призначити користувачеві",
