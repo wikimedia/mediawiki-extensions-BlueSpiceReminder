@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
+			"Renessaince",
 			"W"
 		]
 	},
@@ -20,7 +21,7 @@
 	"bs-reminder-title-delete": "Выдаліць напамін",
 	"bs-reminder-delete-error-unkown": "Напамін ня можа быць выдалены.",
 	"bs-reminder-save-error-unkown": "Напамін ня можа быць захаваны.",
-	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-date-format": "d m Y",
 	"bs-reminder-article-label": "Старонка",
 	"bs-reminder-navigation-link-title": "Напамін",
 	"bs-reminder-navigation-link-text": "Напамін",
