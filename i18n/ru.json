@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Diman Russkov",
 			"Kareyac"
 		]
@@ -13,5 +14,29 @@
 	"bs-reminder-ordinal-second": "второй",
 	"bs-reminder-ordinal-third": "третий",
 	"bs-reminder-ordinal-fourth": "четвёртый",
-	"bs-reminder-no": "нет"
+	"bs-reminder-no": "нет",
+	"reminder": "Напоминание",
+	"specialreminder": "Напоминание",
+	"prefs-reminder": "Напоминание",
+	"bs-reminder-menu_entry-show": "Напоминания",
+	"bs-reminder-title-delete": "Удалить напоминание",
+	"bs-reminder-delete-error": "Произошла ошибка: $1",
+	"bs-reminder-save-error": "Произошла ошибка: $1",
+	"bs-reminder-date-format": "Г-м-д",
+	"bs-reminder-comment-label": "Комментарий",
+	"bs-reminder-header-comment": "Комментарий",
+	"bs-reminder-dlg-btn-manager-label": "Управление напоминаниями",
+	"bs-reminder-navigation-link-text": "Напоминание",
+	"bs-reminder-nav-link-title-reminder": "Напоминание",
+	"bs-reminder-flyout-title": "Напоминание",
+	"echo-category-title-notification-bs-reminder-cat": "Напоминания",
+	"bs-reminder-ordinal-last": "последний",
+	"bs-reminder-monthly-on-the-prefix": "Ежемесячно на",
+	"bs-reminder-monthly-on-day-prefix": "Ежемесячно в день",
+	"bs-reminder-repeat-interval-day": "день (дни)",
+	"bs-reminder-repeat-interval-week": "неделя (недели)",
+	"bs-reminder-repeat-interval-month": "месяц(-ы)",
+	"bs-reminder-repeat-interval-year": "год(-ы)",
+	"bs-reminder-header-type": "Тип",
+	"bs-reminder-type-page": "Страница"
 }
