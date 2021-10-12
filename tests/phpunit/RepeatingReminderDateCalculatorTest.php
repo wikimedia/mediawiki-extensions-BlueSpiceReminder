@@ -3,9 +3,9 @@ namespace BlueSpice\Reminder\Tests;
 
 use BlueSpice\Reminder\RepeatingReminderDateCalculator;
 use DateTime;
-use MediaWikiTestCase;
+use MediaWikiIntegrationTestCase;
 
-class RepeatingReminderDateCalculatorTest extends MediaWikiTestCase {
+class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers BlueSpice\Reminder\RepeatingReminderDateCalculator
 	 */
