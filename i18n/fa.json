@@ -72,5 +72,9 @@
 	"bs-reminder-date-repeat-ends-on-label": "پایان تکرار در",
 	"bs-reminder-start-date-greater-end-date": "تاریخ پایان یادآور نمی‌تواند قبل از تاریخ آغاز آن باشد",
 	"bs-reminder-header-is-repeating": "در حال تکرار است",
-	"bs-reminder-no": "نه"
+	"bs-reminder-no": "نه",
+	"bs-reminder-user-label": "اختصاص به کاربر",
+	"bs-reminder-invalid-type": "نوع نامعتبر",
+	"bs-reminder-header-type": "نوع",
+	"bs-reminder-type-page": "صفحه"
 }
