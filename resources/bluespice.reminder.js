@@ -1,29 +1,54 @@
 (function( mw, $, d, bs, undefined ){
-	$(d).on( 'click', "#ca-reminderCreate, .ca-reminderCreate", function ( e ) {
+	bs.util.registerNamespace( 'bs.reminder.ui' );
+	bs.util.registerNamespace( 'bs.reminder.ui.mixin' );
+	$( d ).on( 'click', "#ca-reminderCreate, .ca-reminderCreate", function ( e ) {
 		e.preventDefault();
-		var me = this;
-		mw.loader.using( 'ext.bluespice.extjs' ).done( function() {
-			Ext.onReady( function() {
-				if ( !me.dlgReminder ) {
-					me.dlgReminder = Ext.create( 'BS.Reminder.PageDialog', {id: 'bs-reminder-dlg-reminder' });
-					me.dlgReminder.on( 'ok', function() {
-						var obj = me.dlgReminder.getData();
-						bs.api.tasks.exec(
-							'reminder',
-							'saveReminder',
-							obj
-						);
-					}, me );
-				}
-				var obj = {
-					articleId: mw.config.get( 'wgArticleId' ),
-					date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 ),
-					calledFromArticle: true
-				};
-				me.dlgReminder.setData( obj );
-				me.dlgReminder.show( me );
-			} );
-		});
+
+		function getPages( canEditAll ) {
+			return [
+				new bs.reminder.ui.CreateReminderForPage( {
+					data: {
+						page: mw.config.get( 'wgPageName' ),
+						user: mw.config.get( 'wgUserName' ),
+						date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 ),
+					},
+					canCreateForOthers: canEditAll
+				} )
+			];
+		}
+
+		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+			id: 'bs-reminder-dialog-create',
+			pages: function() {
+				var dfd = $.Deferred();
+				mw.loader.using( "ext.bluespice.reminder.dialog.pages", function() {
+					bs.reminder.canEditAll().done( function() {
+						dfd.resolve( getPages( true ) );
+					} ).fail( function() {
+						dfd.resolve( getPages( false ) );
+					} );
+				}, function( e ) {
+					dfd.reject( e );
+				} );
+				return dfd.promise();
+			}
+		} );
+
+		dialog.show();
 	} );
+
+	bs.reminder.canEditAll = function() {
+		var dfd = $.Deferred();
+
+		mw.user.getRights().done( function( rights ) {
+			if ( rights.indexOf( 'remindereditall' ) !== -1 ) {
+				dfd.resolve();
+			} else {
+				dfd.reject();
+			}
+		} );
+
+		return dfd.promise();
+	};
 
 })( mediaWiki, jQuery, document, blueSpice );

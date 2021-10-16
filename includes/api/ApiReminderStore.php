@@ -58,6 +58,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		foreach ( $aReminders['results'] as $aReminder ) {
 			$aReminder['rem_repeat_date_end'] = RequestContext::getMain()->getLanguage()
 				->userTimeAndDate( $aReminder['rem_repeat_date_end'], $oUser );
+
 			$oReminder = (object)$aReminder;
 
 			$aOutput[] = $oReminder;
@@ -98,6 +99,8 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 				[ 'name' => 'rem_comment' ],
 				[ 'name' => 'rem_is_repeating' ],
 				[ 'name' => 'rem_repeat_date_end' ],
+				[ 'name' => 'rem_repeat_date_end_raw' ],
+				[ 'name' => 'rem_repeat_config' ],
 				[ 'name' => 'rem_type' ],
 				[ 'name' => 'type_display' ],
 			],
@@ -223,7 +226,8 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			"{$sTblPrfx}bs_reminder.rem_comment",
 			"{$sTblPrfx}bs_reminder.rem_is_repeating",
 			"{$sTblPrfx}bs_reminder.rem_repeat_date_end",
-			"{$sTblPrfx}bs_reminder.rem_type"
+			"{$sTblPrfx}bs_reminder.rem_type",
+			"{$sTblPrfx}bs_reminder.rem_repeat_config"
 		];
 		$aConditions = [
 			"{$sTblPrfx}bs_reminder.rem_type" => $this->getFactory()->getRegisteredTypes()
@@ -299,6 +303,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 					'rem_is_repeating' => $row->rem_is_repeating,
 					'rem_repeat_date_end' => $row->rem_repeat_date_end,
 					'rem_type' => $row->rem_type,
+					'rem_repeat_config' => $row->rem_repeat_config
 				];
 				MediaWikiServices::getInstance()->getHookContainer()->run(
 					'BsReminderBuildOverviewResultSet',

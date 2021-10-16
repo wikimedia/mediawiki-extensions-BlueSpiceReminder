@@ -4,8 +4,7 @@ use BlueSpice\Api\Response\Standard;
 use BlueSpice\Reminder\Factory;
 
 class ApiReminderTasks extends BSApiTasksBase {
-	protected $aTasks = [ 'deleteReminder', 'saveReminder', 'getDetailsForReminder' ];
-	protected $aReadTasks = [ 'getDetailsForReminder' ];
+	protected $aTasks = [ 'deleteReminder', 'saveReminder' ];
 
 	/**
 	 *
@@ -13,69 +12,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 	 */
 	protected function getFactory() {
 		return $this->getServices()->getService( 'BSReminderFactory' );
-	}
-
-	/**
-	 *
-	 * @param \stdClass $oTaskData
-	 * @param array $aParams
-	 * @return Standard
-	 */
-	public function task_getDetailsForReminder( $oTaskData, $aParams ) {
-		$oResult = $this->makeStandardReturn();
-		$oUser = $this->getUser();
-		if ( $oUser->isAnon() ) {
-			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-permissionerror' )->plain();
-			return $oResult;
-		}
-
-		$iArticleId = isset( $oTaskData->articleId )
-			? (int)$oTaskData->articleId
-			: 0;
-
-		$oTitle = Title::newFromID( $iArticleId );
-
-		if ( $oTitle === null || !$oTitle->exists() ) {
-			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
-			return $oResult;
-		}
-		$aConds = [ 'rem_page_id' => $oTitle->getArticleID() ];
-		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
-			$oUser,
-			'remindereditall'
-		);
-		if ( !$isAllowed ) {
-			$aConds['rem_user_id'] = $oUser->getId();
-		}
-		try {
-			$dbr = wfGetDB( DB_REPLICA );
-			$res = $dbr->select(
-				[ "bs_reminder" ],
-				"rem_date, rem_id, rem_user_id, rem_page_id, rem_comment, rem_type",
-				$aConds,
-				__METHOD__,
-				[]
-			);
-		} catch ( DBError $e ) {
-			$oResult->message = $oResult->errors[]
-				= wfMessage( 'bs-reminder-unknown-page-msg' )->plain();
-			return $oResult;
-		}
-		$row = $res->fetchObject();
-		$aReturnData = [];
-		if ( $row ) {
-			$aReturnData['date'] = $row->rem_date;
-			$aReturnData['id'] = $row->rem_id;
-			$aReturnData['userId'] = $row->rem_user_id;
-			$aReturnData['articleId'] = $row->rem_page_id;
-			$aReturnData['comment'] = $row->rem_comment;
-			$aReturnData['type'] = $row->rem_type;
-		}
-		$oResult->success = true;
-		$oResult->payload = $aReturnData;
-		return $oResult;
 	}
 
 	/**
@@ -197,10 +133,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$iDate = isset( $oTaskData->date )
-			? wfTimestamp( TS_UNIX, $oTaskData->date )
-			: 0;
-
 		$iReminderId = false;
 		$dbr = wfGetDB( DB_REPLICA );
 		// this is normally the case when clicking the reminder on a normal page
@@ -233,17 +165,18 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$bIsUpdate = true;
 			$iReminderId = (int)$oTaskData->id;
 		}
-		$iArticleId = isset( $oTaskData->articleId )
-			? (int)$oTaskData->articleId
-			: 0;
-		$oTitle = Title::newFromID( $iArticleId );
-		if ( !$oTitle instanceof Title || !$oTitle->exists() ) {
+		if ( property_exists( $oTaskData, 'articleId' ) ) {
+			$title = Title::newFromID( $oTaskData->articleId ?? 0 );
+		} else {
+			$title = Title::newFromText( $oTaskData->page );
+		}
+		if ( !$title instanceof Title || !$title->exists() ) {
 			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-unknown-page-msg' )->text();
 			return $oResult;
 		}
-		// TODO: is valid date?
-		$sFormattedFieldValue = date( "Y-m-d", $iDate );
+
+		$sFormattedFieldValue = $oTaskData->date;
 
 		$iUserId = $oUser->getId();
 
@@ -274,7 +207,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		$aData = [
 			'rem_user_id' => $iUserId,
-			'rem_page_id' => $oTaskData->articleId,
+			'rem_page_id' => $title->getArticleID(),
 			'rem_date' => $sFormattedFieldValue,
 			'rem_comment' => addslashes( $sComment ),
 			'rem_type' => $type,
@@ -282,8 +215,8 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		if ( isset( $oTaskData->isRepeating ) && $oTaskData->isRepeating === true
 			&& !empty( $oTaskData->repeatConfig ) ) {
-			$aData['rem_repeat_date_end'] = date( 'YmdHis',
-				wfTimestamp( TS_UNIX, $oTaskData->repeatDateEnd ) );
+			$endDate = new DateTime( $oTaskData->repeatConfig->repeatDateEnd );
+			$aData['rem_repeat_date_end'] = $endDate->format( 'YmdHis' );
 
 			$startReminderDate = DateTime::createFromFormat( 'Y-m-d', $aData['rem_date'] );
 			$startReminderDate = $this->getServices()
@@ -374,8 +307,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 	protected function getRequiredTaskPermissions() {
 		return [
 			'deleteReminder' => [ 'read' ],
-			'saveReminder' => [ 'read' ],
-			'getDetailsForReminder' => [ 'read' ]
+			'saveReminder' => [ 'read' ]
 		];
 	}
 }
