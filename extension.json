@@ -113,12 +113,25 @@
 			],
 			"dependencies": [
 				"mediawiki.user",
-				"ext.bluespice.extjs"
+				"ext.bluespice.extjs",
+				"ext.bluespice.reminder.dialog.pages"
 			]
 		},
 		"ext.bluespice.reminder": {
-			"scripts": "bluespice.reminder.js",
+			"scripts": [
+				"bluespice.reminder.js"
+			],
 			"styles": "bluespice.reminder.css",
+			"dependencies": [
+				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.reminder.dialog.pages": {
+			"scripts": [
+				"ui/mixin/RepeatLayout.js",
+				"ui/page/ReminderPage.js",
+				"ui/page/CreateReminderForPage.js"
+			],
 			"messages": [
 				"bs-reminder-date-label",
 				"bs-reminder-create-title",
@@ -150,9 +163,18 @@
 				"bs-reminder-friday-abbr",
 				"bs-reminder-saturday-abbr",
 				"bs-reminder-date-repeat-ends-on-label",
-				"bs-reminder-header-type"
+				"bs-reminder-header-type",
+				"bs-reminder-dialog-page-action-my-reminders",
+				"bs-reminder-dialog-page-action-all-reminders",
+				"bs-reminder-dialog-page-action-page-reminders"
 			],
-			"dependencies": "ext.bluespice"
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.dialogs",
+				"mediawiki.widgets.UserInputWidget",
+				"mediawiki.widgets.DateInputWidget",
+				"mediawiki.widgets"
+			]
 		},
 		"ext.bluespice.reminder.flyout": {
 			"scripts": "bluespice.reminder.flyout.js",
@@ -166,7 +188,38 @@
 				"bs-reminder-flyout-form-title",
 				"bs-reminder-flyout-grid-title",
 				"bs-reminder-flyout-manager-btn-label",
-				"bs-reminder-flyout-manager-my-reminder-btn-label"
+				"bs-reminder-flyout-manager-my-reminder-btn-label",
+				"bs-reminder-date-label",
+				"bs-reminder-create-title",
+				"bs-reminder-user-label",
+				"bs-reminder-comment-label",
+				"bs-reminder-header-comment",
+				"bs-reminder-article-label",
+				"bs-reminder-dlg-btn-manager-label",
+				"bs-reminder-create-reminder-label",
+				"bs-reminder-repeat-label",
+				"bs-reminder-repeat-every-title",
+				"bs-reminder-repeat-on-title",
+				"bs-reminder-ordinal-first",
+				"bs-reminder-ordinal-second",
+				"bs-reminder-ordinal-third",
+				"bs-reminder-ordinal-fourth",
+				"bs-reminder-ordinal-last",
+				"bs-reminder-monthly-on-the-prefix",
+				"bs-reminder-monthly-on-day-prefix",
+				"bs-reminder-repeat-interval-day",
+				"bs-reminder-repeat-interval-week",
+				"bs-reminder-repeat-interval-month",
+				"bs-reminder-repeat-interval-year",
+				"bs-reminder-sunday-abbr",
+				"bs-reminder-monday-abbr",
+				"bs-reminder-tuesday-abbr",
+				"bs-reminder-wednesday-abbr",
+				"bs-reminder-thursday-abbr",
+				"bs-reminder-friday-abbr",
+				"bs-reminder-saturday-abbr",
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-header-type"
 			],
 			"dependencies": [
 				"mediawiki.jqueryMsg",

@@ -45,13 +45,48 @@ class SpecialReminder extends ManagerBase {
 
 	/**
 	 *
-	 * @param string $username
+	 * @param string $subpage
 	 */
-	protected function showRemindersOverview( $username = '' ) {
+	protected function showRemindersOverview( $subpage = '' ) {
+		$username = '';
+		$page = '';
+
+		if ( $subpage ) {
+			// B/C
+			$username = $subpage;
+		}
+		$requestParams = $this->getRequest()->getQueryValues();
+		if ( isset( $requestParams['user'] ) ) {
+			$username = $requestParams['user'];
+		}
+		if ( isset( $requestParams['page'] ) ) {
+			$page = $requestParams['page'];
+		}
+
+		if ( !$this->userCanEditAll() ) {
+			$username = $this->getUser()->getName();
+		}
+
+		if ( ( $username || $page ) && $this->userCanEditAll() ) {
+			$this->getOutput()->addBacklinkSubtitle(
+				$this->getPageTitle()
+			);
+		}
+
 		$this->getOutput()->addJsConfigVars(
 			'BSReminderUsername',
 			empty( $username ) ? false : $username
 		);
+
+		$this->getOutput()->addJsConfigVars(
+			'BSReminderPage',
+			empty( $page ) ? false : $page
+		);
+	}
+
+	private function userCanEditAll() {
+		$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		return $permissionManager->userHasRight( $this->getUser(), 'remindereditall' );
 	}
 
 	/**

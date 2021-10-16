@@ -14,6 +14,8 @@
 Ext.define( 'BS.Reminder.Panel', {
 	extend: 'BS.CRUDGridPanel',
 	requires: [ 'BS.store.BSApi', 'BS.Reminder.PanelDialog' ],
+	username: false,
+	page: false,
 	initComponent: function() {
 		this.strMain = new BS.store.BSApi({
 			apiAction: 'bs-reminder-store',
@@ -156,64 +158,52 @@ Ext.define( 'BS.Reminder.Panel', {
 	},
 	onBtnEditClick: function () {
 		this.selectedRow = this.grdMain.getSelectionModel().getSelection();
-		var rowData = this.selectedRow[0].getData();
-		var obj = {
-			id: rowData.id,
-			date: rowData.reminder_date,
-			page_title: rowData.page_title,
-			userName: rowData.user_name,
-			comment: rowData.rem_comment,
-			calledFromArticle: false
-		};
-		var me = this;
-		if ( !this.dlgEdit ) {
-			this.dlgEdit = new BS.Reminder.PanelDialog({
-				id: 'bs-reminder-dlg-edit'
-			});
-			this.dlgEdit.on( 'ok', me.onEditReminderOk, me );
+		var rowData = this.selectedRow[0].getData(),
+			dialogData = {
+				id: rowData.id,
+				date: rowData.reminder_date,
+				page: rowData.page_title,
+				user: rowData.user_name,
+				comment: rowData.rem_comment,
+				isRepeating: !!parseInt( rowData.rem_is_repeating )
+			};
+
+		if ( dialogData.isRepeating ) {
+			try {
+				dialogData.repeatConfig = JSON.parse( rowData.rem_repeat_config );
+			} catch( e ) {}
+
 		}
-		this.dlgEdit.setData( obj );
-		this.dlgEdit.show();
+		this.showDialog( dialogData );
 	},
 	onBtnAddClick: function () {
-		var obj = {
-			date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 ),
-			userName: mw.user.getName()
-		}
-		var me = this;
-		if ( !this.dlgAdd ) {
-			this.dlgAdd = new BS.Reminder.PanelDialog({
-				id: 'bs-reminder-dlg-add'
-			});
-			this.dlgAdd.on( 'ok', me.onAddReminderOk, me );
-		}
-		this.dlgAdd.setData( obj );
-		this.dlgAdd.show();
+		this.showDialog( {} );
 	},
-	onAddReminderOk: function( data ) {
-		var obj = this.dlgAdd.getData();
-		var me = this;
-		bs.api.tasks.exec(
-			'reminder',
-			'saveReminder',
-			obj
-			)
-			.done(function(){
-				me.reloadStore();
-			});
+
+	showDialog: function( data ) {
+		var config = {
+				data: $.extend( {
+					user: mw.config.get( 'wgUserName' ),
+					date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 ),
+				}, data ),
+				// If no fixed username is set, user can be changed
+				canCreateForOthers: this.username === false
+			},
+			page = this.page === false ?
+				new bs.reminder.ui.ReminderPage( 'add-reminder', config ) :
+				new bs.reminder.ui.CreateReminderForPage( config ),
+			dialogAdd = new OOJSPlus.ui.dialog.BookletDialog( {
+				id: 'bs-reminder-dialog-create',
+				pages: [ page ]
+			} );
+
+		dialogAdd.show().closed.then( function( data ) {
+			if ( data.success ) {
+				this.reloadStore();
+			}
+		}.bind( this ) );
 	},
-	onEditReminderOk: function( data ) {
-		var obj = this.dlgEdit.getData();
-		var me = this;
-		bs.api.tasks.exec(
-			'reminder',
-			'saveReminder',
-			obj
-		)
-		.done(function(){
-			me.reloadStore();
-		});
-	},
+
 	onRemoveReminderOk: function() {
 		var selectedRow = this.grdMain.getSelectionModel().getSelection();
 		for (var i = 0; i < selectedRow.length; i++){
