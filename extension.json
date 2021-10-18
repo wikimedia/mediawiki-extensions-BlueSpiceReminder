@@ -188,6 +188,9 @@
 		"echo-subscriptions-email-notification-bs-reminder-cat": 1
 	},
 	"HookHandlers": {
+		"common-user-interface": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\CommonUserInterface"
+		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\Reminder\\HookHandler\\DiscoverySkin"
 		}
@@ -208,7 +211,7 @@
 		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
 		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
 		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "discovery-skin",
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
 	},
 	"ServiceWiringFiles": [
