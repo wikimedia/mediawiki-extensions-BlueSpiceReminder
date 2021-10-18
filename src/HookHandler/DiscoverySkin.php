@@ -4,29 +4,8 @@ namespace BlueSpice\Reminder\HookHandler;
 
 use BlueSpice\Discovery\Hook\BlueSpiceDiscoveryTemplateDataProviderAfterInit;
 use BlueSpice\Discovery\ITemplateDataProvider;
-use BlueSpice\Reminder\GlobalActionsManager;
-use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class DiscoverySkin implements
-	MWStakeCommonUIRegisterSkinSlotComponents,
-	BlueSpiceDiscoveryTemplateDataProviderAfterInit
-{
-
-	/**
-	 * @inheritDoc
-	 */
-	public function onMWStakeCommonUIRegisterSkinSlotComponents( $registry ): void {
-		$registry->register(
-			'GlobalActionsManager',
-			[
-				'special-bluespice-reminder' => [
-					'factory' => function () {
-						return new GlobalActionsManager();
-					}
-				]
-			]
-		);
-	}
+class DiscoverySkin implements BlueSpiceDiscoveryTemplateDataProviderAfterInit {
 
 	/**
 	 *
