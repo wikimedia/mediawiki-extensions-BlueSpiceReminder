@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
+			"McDutchie",
 			"Piramidion",
 			"Ата"
 		]
@@ -37,7 +39,7 @@
 	"bs-reminder-delete-error-unkown": "Не вдалося вилучити нагадування.",
 	"bs-reminder-save-error": "Сталася помилка: $1",
 	"bs-reminder-save-error-unkown": "Не вдалося зберегти нагадування.",
-	"bs-reminder-date-format": "Р-м-д",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "Бракує деяких параметрів. Будь ласка, спробуйте ще раз.",
 	"bs-reminder-save-success": "Нагадування успішно створено.",
 	"bs-reminder-user-label": "Призначити користувачеві",
@@ -99,5 +101,6 @@
 	"bs-reminder-no": "ні",
 	"bs-reminder-invalid-type": "Недійсний тип",
 	"bs-reminder-header-type": "Тип",
-	"bs-reminder-type-page": "Сторінка"
+	"bs-reminder-type-page": "Сторінка",
+	"bs-reminder-specialpage-subtitle": "← $1"
 }

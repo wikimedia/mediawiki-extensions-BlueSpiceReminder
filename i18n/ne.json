@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"हिमाल सुबेदी"
 		]
 	},
@@ -8,7 +9,7 @@
 	"bs-reminder-header-username": "प्रयोगकर्ता",
 	"bs-reminder-delete-error": "एउटा त्रुटी देखियो $1",
 	"bs-reminder-save-error": "एउटा त्रुटी देखियो $1",
-	"bs-reminder-date-format": "वर्ष-महिना-दिन",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-comment-label": "टिप्पणी",
 	"bs-reminder-header-comment": "टिप्पणी",

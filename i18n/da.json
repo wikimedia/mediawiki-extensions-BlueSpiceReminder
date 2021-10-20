@@ -1,6 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
+			"Antonla",
+			"McDutchie",
 			"Saederup92"
 		]
 	},
@@ -49,6 +51,6 @@
 	"bs-reminder-delete-error": "Der opstod en fejl: $1",
 	"bs-reminder-delete-error-unkown": "Påmindelsen kunne ikke blive slettet.",
 	"bs-reminder-save-error": "Der opstod en fejl: $1",
-	"bs-reminder-date-format": "Å-m-d",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-repeat-label": "Gentag"
 }
