@@ -6,10 +6,10 @@
 			"Mehtab ahmed"
 		]
 	},
-	"bs-reminder-create-reminder-label": "يادگار ٺاهڻ",
+	"bs-reminder-create-reminder-label": "يادگيري ٺاھيو",
 	"bs-reminder-save-error": "ڪا چُڪَ پيش آئي: $1",
 	"bs-reminder-comment-label": "تبصرو",
 	"bs-reminder-article-label": "صفحو",
-	"echo-category-title-notification-bs-reminder-cat": "ياد ڏياريندڙ",
+	"echo-category-title-notification-bs-reminder-cat": "يادگيريون",
 	"bs-reminder-header-pagename": "صفحو"
 }
