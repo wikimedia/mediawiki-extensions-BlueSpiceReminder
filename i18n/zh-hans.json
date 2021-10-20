@@ -7,7 +7,8 @@
 			"Lakejason0",
 			"Nadine Siak",
 			"Shuiwater",
-			"SomeyaMako"
+			"SomeyaMako",
+			"落花有意12138"
 		]
 	},
 	"bs-reminder-repeat-label": "重复",
@@ -51,5 +52,10 @@
 	"bs-reminder-navigation-link-title": "提醒",
 	"bs-reminder-navigation-link-text": "提醒",
 	"bs-reminder-nav-link-title-reminder": "提醒",
-	"bs-reminder-flyout-title": "提醒"
+	"bs-reminder-flyout-title": "提醒",
+	"bs-reminder-date-label": "提醒：开启",
+	"bs-reminder-create-no-actions": "丢失了某些参数，请重试。",
+	"bs-reminder-user-label": "指定给用户",
+	"notification-bs-reminder-one-week-email-body": "您已经设置文章“$1”的提醒。此提醒将在一周之内到达。\n\n您的注释：\n$2",
+	"notification-bs-reminder-today-subject": "在今天记住文章“$1”"
 }

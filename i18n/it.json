@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
-			"Beta16"
+			"Beta16",
+			"McDutchie",
+			"Stefano"
 		]
 	},
 	"bs-reminder-repeat-label": "Ripeti",
@@ -33,5 +35,23 @@
 	"bs-reminder-navigation-link-text": "Promemoria",
 	"bs-reminder-nav-link-title-reminder": "Promemoria",
 	"bs-reminder-flyout-title": "Promemoria",
-	"echo-category-title-notification-bs-reminder-cat": "Promemoria"
+	"echo-category-title-notification-bs-reminder-cat": "Promemoria",
+	"reminder": "Promemoria",
+	"prefs-reminder": "Promemoria",
+	"bs-reminder-menu_entry-show": "Promemoria",
+	"bs-reminder-create-title": "Promemoria",
+	"bs-reminder-title-delete": "Elimina promemoria",
+	"bs-reminder-error-owner-reminder": "Puoi eliminare solamente i tuoi promemoria",
+	"bs-reminder-delete-error": "Si è verificato l'errore $1",
+	"bs-reminder-save-error": "Si è verificato un errore: $1",
+	"bs-reminder-date-format": "d-m-Y",
+	"bs-reminder-save-success": "Il promemoria è stato creato correttamente.",
+	"bs-reminder-comment-label": "Commento",
+	"bs-reminder-header-comment": "Commento",
+	"bs-reminder-dlg-btn-manager-label": "Gestione promemoria",
+	"bs-reminder-flyout-form-title": "Creazione promemoria",
+	"bs-reminder-flyout-grid-title": "Promemoria di altri utenti",
+	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "I miei promemoria",
+	"bs-reminder-repeat-every-title": "Ripete ogni"
 }
