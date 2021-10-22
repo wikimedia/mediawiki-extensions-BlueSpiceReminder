@@ -227,6 +227,20 @@
 				"ext.bluespice.extjs",
 				"ext.bluespice"
 			]
+		},
+		"ext.bluespice.reminder.infodialog": {
+			"scripts": [
+				"bluespice.reminder.ReminderInformationPage.js"
+			],
+			"styles": [
+				"bluespice.reminder.css"
+			],
+			"messages": [
+				"bs-reminder-info-dialog"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -246,6 +260,9 @@
 		},
 		"discovery-skin": {
 			"class": "\\BlueSpice\\Reminder\\HookHandler\\DiscoverySkin"
+		},
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\StandardDialogs"
 		}
 	},
 	"Hooks": {
@@ -265,7 +282,8 @@
 		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
 		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin"
+		"BlueSpiceDiscoveryTemplateDataProviderAfterInit": "discovery-skin",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
 	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"

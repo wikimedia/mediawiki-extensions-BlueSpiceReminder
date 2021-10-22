@@ -104,5 +104,6 @@
 	"bs-reminder-start-date-greater-end-date": "Das Endedatum kann nicht vor dem Startdatum liegen",
 	"bs-reminder-invalid-type": "Ungültiger Typ",
 	"bs-reminder-header-type": "Typ",
-	"bs-reminder-type-page": "Seite"
+	"bs-reminder-type-page": "Seite",
+	"bs-reminder-info-dialog": "Erinnerungen"
 }
