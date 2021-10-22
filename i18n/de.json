@@ -104,5 +104,6 @@
 	"bs-reminder-no": "nein",
 	"bs-reminder-invalid-type": "Ungültiger Typ",
 	"bs-reminder-header-type": "Typ",
-	"bs-reminder-type-page": "Seite"
+	"bs-reminder-type-page": "Seite",
+	"bs-reminder-info-dialog": "Erinnerungen"
 }
