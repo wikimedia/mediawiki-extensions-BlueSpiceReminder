@@ -20,7 +20,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 		];
 		$startDate = $dateCalculator->getStartDate( $currentDate, $repeatConfig );
 
-		$this->assertEquals( $startDate->format( 'Y-m-d' ), '2020-05-15' );
+		$this->assertEquals( '2020-05-15', $startDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-13' );
 		$repeatConfig = (object)[
@@ -30,7 +30,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 		];
 		$startDate = $dateCalculator->getStartDate( $currentDate, $repeatConfig );
 
-		$this->assertEquals( $startDate->format( 'Y-m-d' ), '2020-05-13' );
+		$this->assertEquals( '2020-05-13', $startDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -46,7 +46,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			'intervalValue' => 2
 		];
 		$nextDate = $dateCalculator->getNextReminderDateFromGivenDate( $currentDate, $repeatConfig );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-08' );
+		$this->assertEquals( '2020-05-08', $nextDate->format( 'Y-m-d' ) );
 
 		// weekly interval
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-05' );
@@ -58,7 +58,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 
 		$nextDate = $dateCalculator->getNextReminderDateFromGivenDate( $currentDate, $repeatConfig );
 		// sunday
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-10' );
+		$this->assertEquals( '2020-05-10', $nextDate->format( 'Y-m-d' ) );
 
 		// monthly interval for certain weekdays
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-01' );
@@ -72,7 +72,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			]
 		];
 		$nextDate = $dateCalculator->getNextReminderDateFromGivenDate( $currentDate, $repeatConfig );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-02' );
+		$this->assertEquals( '2020-05-02', $nextDate->format( 'Y-m-d' ) );
 
 		// monthly interval
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-12' );
@@ -84,7 +84,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			]
 		];
 		$nextDate = $dateCalculator->getNextReminderDateFromGivenDate( $currentDate, $repeatConfig );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-07-12' );
+		$this->assertEquals( '2020-07-12', $nextDate->format( 'Y-m-d' ) );
 
 		// yearly interval
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-29' );
@@ -93,7 +93,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			'intervalValue' => 1
 		];
 		$nextDate = $dateCalculator->getNextReminderDateFromGivenDate( $currentDate, $repeatConfig );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2021-05-29' );
+		$this->assertEquals( '2021-05-29', $nextDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -104,19 +104,19 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-06' );
 		$nextDate = $dateCalculator->getNextDateForDailyInterval( $currentDate, 2 );
 
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-08' );
+		$this->assertEquals( '2020-05-08', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForDailyInterval( $nextDate, 2 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-10' );
+		$this->assertEquals( '2020-05-10', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForDailyInterval( $nextDate, 60 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-07-09' );
+		$this->assertEquals( '2020-07-09', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForDailyInterval( $nextDate, 60 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-09-07' );
+		$this->assertEquals( '2020-09-07', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForDailyInterval( $nextDate, 1 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-09-08' );
+		$this->assertEquals( '2020-09-08', $nextDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -133,19 +133,19 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 		 */
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $currentDate, 1, $weekdaysToRepeat );
 		// sunday
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-10' );
+		$this->assertEquals( '2020-05-10', $nextDate->format( 'Y-m-d' ) );
 
 		// monday
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 1, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-11' );
+		$this->assertEquals( '2020-05-11', $nextDate->format( 'Y-m-d' ) );
 
 		// tuesday
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 1, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-12' );
+		$this->assertEquals( '2020-05-12', $nextDate->format( 'Y-m-d' ) );
 
 		// sunday
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 1, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-17' );
+		$this->assertEquals( '2020-05-17', $nextDate->format( 'Y-m-d' ) );
 
 		/**
 		 *  repeat every 2 weeks on tuesday, wednesday and friday
@@ -155,13 +155,13 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-08' );
 
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $currentDate, 2, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-19' );
+		$this->assertEquals( '2020-05-19', $nextDate->format( 'Y-m-d' ) );
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 2, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-20' );
+		$this->assertEquals( '2020-05-20', $nextDate->format( 'Y-m-d' ) );
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 2, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-22' );
+		$this->assertEquals( '2020-05-22', $nextDate->format( 'Y-m-d' ) );
 		$nextDate = $dateCalculator->getNextDateForWeeklyInterval( $nextDate, 2, $weekdaysToRepeat );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-06-02' );
+		$this->assertEquals( '2020-06-02', $nextDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -179,7 +179,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// saturday
 			6
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-02' );
+		$this->assertEquals( '2020-05-02', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-06' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyDayOfWeekInterval(
@@ -190,7 +190,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// saturday
 			6
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-06-06' );
+		$this->assertEquals( '2020-06-06', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForMonthlyDayOfWeekInterval(
 			$nextDate,
@@ -200,7 +200,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// saturday
 			6
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-07-04' );
+		$this->assertEquals( '2020-07-04', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-01' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyDayOfWeekInterval(
@@ -211,7 +211,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// tuesday
 			2
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-05-26' );
+		$this->assertEquals( '2020-05-26', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-26' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyDayOfWeekInterval(
@@ -222,7 +222,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// tuesday
 			2
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-08-25' );
+		$this->assertEquals( '2020-08-25', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-16' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyDayOfWeekInterval(
@@ -233,7 +233,7 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 			// saturday
 			6
 		);
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-06-20' );
+		$this->assertEquals( '2020-06-20', $nextDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -244,19 +244,19 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-12' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyInterval( $currentDate, 1 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-06-12' );
+		$this->assertEquals( '2020-06-12', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-12' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyInterval( $currentDate, 2 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-07-12' );
+		$this->assertEquals( '2020-07-12', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2019-12-28' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyInterval( $currentDate, 2 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-02-28' );
+		$this->assertEquals( '2020-02-28', $nextDate->format( 'Y-m-d' ) );
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2019-12-31' );
 		$nextDate = $dateCalculator->getNextDateForMonthlyInterval( $currentDate, 2 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2020-03-31' );
+		$this->assertEquals( '2020-03-31', $nextDate->format( 'Y-m-d' ) );
 	}
 
 	/**
@@ -267,9 +267,9 @@ class RepeatingReminderDateCalculatorTest extends MediaWikiIntegrationTestCase {
 
 		$currentDate = DateTime::createFromFormat( 'Y-m-d', '2020-05-06' );
 		$nextDate = $dateCalculator->getNextDateForYearlyInterval( $currentDate, 1 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2021-05-06' );
+		$this->assertEquals( '2021-05-06', $nextDate->format( 'Y-m-d' ) );
 
 		$nextDate = $dateCalculator->getNextDateForYearlyInterval( $nextDate, 2 );
-		$this->assertEquals( $nextDate->format( 'Y-m-d' ), '2023-05-06' );
+		$this->assertEquals( '2023-05-06', $nextDate->format( 'Y-m-d' ) );
 	}
 }

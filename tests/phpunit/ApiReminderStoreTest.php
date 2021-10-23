@@ -40,7 +40,7 @@ class ApiReminderStoreTest extends ApiTestCase {
 			'token' => '+\\'
 		],  null, false, new User );
 		$this->assertTrue( isset( $aData[0]['total'] ), 'API did not report total number of results' );
-		$this->assertEquals( $aData[0]['total'], 0 );
+		$this->assertSame( 0, $aData[0]['total'] );
 	}
 
 	/**
@@ -53,7 +53,7 @@ class ApiReminderStoreTest extends ApiTestCase {
 		],  null, null );
 		// reset option?
 		$this->assertTrue( isset( $aData[0]['total'] ), 'API did not report total number of results' );
-		$this->assertEquals( $aData[0]['total'], 1 );
+		$this->assertSame( 1, $aData[0]['total'] );
 	}
 
 	public function provideGetDetailsForReminderData() {
