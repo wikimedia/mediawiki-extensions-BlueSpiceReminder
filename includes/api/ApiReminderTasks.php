@@ -29,25 +29,41 @@ class ApiReminderTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$iReminderId = false;
+		$iReminderId = null;
 		if ( isset( $oTaskData->reminderId ) ) {
 			$iReminderId = (int)$oTaskData->reminderId;
 		}
+		$pageAndType = [];
+		if ( isset( $oTaskData->page ) && isset( $oTaskData->type ) ) {
+			$pageAndType = [
+				'page' => Title::newFromText( $oTaskData->page ),
+				'type' => $oTaskData->type
+			];
+		}
 
-		if ( !$iReminderId ) {
+		if (
+			$iReminderId === null &&
+			( empty( $pageAndType ) || !$pageAndType['page'] instanceof Title )
+		) {
 			$oResult->message = $oResult->errors[] =
 				wfMessage( 'bs-reminder-error-valid-reminder' )->text();
 			return $oResult;
 		}
 
 		// check if user has right to delete reminders for other users
-		$aConds = [ 'rem_id' => $iReminderId ];
-		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
-			$oUser,
-			'remindereditall'
-		);
-		if ( !$isAllowed ) {
-			$aConds['rem_user_id'] = $oUser->getId();
+		$aConds = [];
+		if ( $iReminderId ) {
+			$aConds['rem_id'] = $iReminderId;
+			$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+				$oUser,
+				'remindereditall'
+			);
+			if ( !$isAllowed ) {
+				$aConds['rem_user_id'] = $oUser->getId();
+			}
+		} else {
+			$aConds['rem_page_id'] = $pageAndType['page']->getArticleID();
+			$aConds['rem_type'] = $pageAndType['type'];
 		}
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -73,12 +89,16 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		$oResult->success = true;
 
-		$this->getServices()->getHookContainer()->run( 'BsReminderDeleteReminder', [
-			$iReminderId,
-			&$oResult
-		] );
-		if ( !$oResult->success ) {
-			return $oResult;
+		$idsToRemove = [];
+		foreach ( $res as $row ) {
+			$idsToRemove[] = (int)$row->rem_id;
+			$this->getServices()->getHookContainer()->run( 'BsReminderDeleteReminder', [
+				(int)$row->rem_id,
+				&$oResult
+			] );
+			if ( !$oResult->success ) {
+				return $oResult;
+			}
 		}
 
 		try {
@@ -105,7 +125,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			// @codeCoverageIgnoreEnd
 		}
 		$oResult->message = wfMessage( 'bs-reminder-delete-success' )->plain();
-		$oResult->payload = [ 'id' => $iReminderId ];
+		$oResult->payload = [ 'id' => count( $idsToRemove ) === 1 ? $idsToRemove[0] : $idsToRemove ];
 
 		return $oResult;
 	}
@@ -253,7 +273,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				$this->getServices()->getHookContainer()->run( 'BsReminderOnSave', [
 					$oTaskData,
 					$iReminderId,
-					$oTaskData->articleId, $iUserId
+					$oTaskData->articleId ?? 0, $iUserId
 				] );
 			} catch ( Exception $e ) {
 				$oResult->message = $oResult->errors[] =

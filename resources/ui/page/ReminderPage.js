@@ -1,15 +1,14 @@
 bs.reminder.ui.ReminderPage = function( name, cfg ) {
+	cfg = cfg || {};
+	name = name || 'create-reminder';
 	this.canCreateForOthers = cfg.canCreateForOthers || false;
 
 	bs.reminder.ui.ReminderPage.parent.call( this, name, cfg );
 	bs.reminder.ui.mixin.RepeatLayout.call( this );
 
+	this.type = 'page';
 	if ( !this.canCreateForOthers ) {
 		this.userSelectorLayout.$element.hide();
-	}
-
-	if ( cfg.hasOwnProperty( 'data' ) ) {
-		this.setValue( cfg.data );
 	}
 };
 
@@ -32,6 +31,7 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 			if ( selected ) {
 				this.repeatLayout.$element.show();
 			} else {
+				this.repeatLayout.$element.hide();
 				this.repeatLayout.$element.hide();
 			}
 			this.updateDialogSize();
@@ -81,22 +81,35 @@ bs.reminder.ui.ReminderPage.prototype.getTitle = function() {
 	return mw.message( 'bs-reminder-create-title' ).plain();
 };
 
-bs.reminder.ui.ReminderPage.prototype.getTitle = function() {
-	return mw.message( 'bs-reminder-create-title' ).plain();
-};
-
 bs.reminder.ui.ReminderPage.prototype.getSize = function() {
 	return 'medium';
 };
 
-bs.reminder.ui.ReminderPage.prototype.setValue = function( value ) {
-	this.userSelector.setValue( value.user || '' );
-	this.pagePicker.setValue( value.page || '' );
-	this.datePicker.setValue( value.hasOwnProperty( 'date' ) ? this.formatDateForInput( this.dateFromValue( value.date ) ) : '' );
-	this.comment.setValue( value.comment || '' );
-	this.repeatSwitch.setSelected( value.isRepeating || false );
-	this.setRepeatValue( value );
-	this.reminderId = value.id || 0;
+bs.reminder.ui.ReminderPage.prototype.setData = function( data ) {
+	data = data || {};
+	if ( data.hasOwnProperty( 'user' ) ) {
+		this.userSelector.setValue( data.user );
+	}
+	if ( data.hasOwnProperty( 'page' ) ) {
+		this.pagePicker.setValue( data.page );
+	}
+	if ( data.hasOwnProperty( 'type' ) ) {
+		this.type = data.type;
+	}
+	if ( data.hasOwnProperty( 'date' ) ) {
+		this.datePicker.setValue( this.formatDateForInput( this.dateFromValue( data.date ) ) );
+	}
+	if ( data.hasOwnProperty( 'comment' ) ) {
+		this.comment.setValue( data.comment );
+	}
+	if ( data.hasOwnProperty( 'isRepeating' ) ) {
+		this.repeatSwitch.setSelected( data.isRepeating );
+	}
+	if ( data.hasOwnProperty( 'id' ) ) {
+		this.reminderId = data.id;
+	}
+
+	this.setRepeatData( data );
 
 	this.updateDialogSize();
 };
@@ -124,19 +137,19 @@ bs.reminder.ui.ReminderPage.prototype.getAbilities = function() {
 bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function() {
 	var defs = {
 		'page-reminders': {
-			action: 'page-reminders', label: 'Reminders for this page',
+			action: 'page-reminders', label: mw.message( "bs-reminder-dialog-page-action-page-reminders" ).text(),
 			href: mw.util.getUrl( 'Special:Reminder', { page: mw.config.get( 'wgPageName' ) } )
 		}
 	};
 	if ( this.canCreateForOthers ) {
 		defs['manage-all'] = {
-			action: 'manage-all', label: 'Manage all reminders',
+			action: 'manage-all', label: mw.message( "bs-reminder-dialog-page-action-all-reminders" ).text(),
 			href: mw.util.getUrl( 'Special:Reminder' )
 		};
 	}
 	if ( !mw.user.isAnon() ) {
 		defs['my-reminders'] = {
-			action: 'my-reminders', label: 'My reminders',
+			action: 'my-reminders', label: mw.message( "bs-reminder-dialog-page-action-my-reminders" ).text(),
 			href: mw.util.getUrl( 'Special:Reminder', { user: mw.user.getName() } )
 		};
 	}
@@ -148,7 +161,11 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 	var dfd = $.Deferred();
 
 	if ( action === 'done' ) {
-		this.checkValidity().done( function() {
+		this.checkValidity( [
+			this.userSelector,
+			this.pagePicker,
+			this.datePicker
+		] ).done( function() {
 			this.createReminder().done( function() {
 				dfd.resolve( { action: 'close', data: { success: true } } );
 			}.bind( this ) ).fail( function( error ) {
@@ -163,35 +180,6 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 	}
 
 	return dfd.promise();
-};
-
-bs.reminder.ui.ReminderPage.prototype.checkValidity = function() {
-	var dfd = $.Deferred();
-
-	var inputs = [
-		this.userSelector,
-		this.pagePicker,
-		this.datePicker
-	];
-	this.doCheckValidity( inputs, dfd );
-
-	return dfd.promise();
-};
-
-bs.reminder.ui.ReminderPage.prototype.doCheckValidity = function( inputs, dfd ) {
-	if ( inputs.length === 0 ) {
-		dfd.resolve();
-		return;
-	}
-	var input = inputs.shift();
-
-	input.getValidity().done( function() {
-		input.setValidityFlag( true );
-		this.doCheckValidity( inputs, dfd );
-	}.bind( this ) ).fail( function() {
-		input.setValidityFlag( false );
-		dfd.reject();
-	} );
 };
 
 bs.reminder.ui.ReminderPage.prototype.createReminder = function() {
@@ -212,7 +200,6 @@ bs.reminder.ui.ReminderPage.prototype.createReminder = function() {
 
 	return dfd.promise();
 };
-
 
 bs.reminder.ui.ReminderPage.prototype.formatDateForInput = function( date ) {
 	if ( !date ) {
@@ -235,6 +222,7 @@ bs.reminder.ui.ReminderPage.prototype.getValue = function() {
 		date: this.datePicker.getValue(),
 		isRepeating: this.repeatSwitch.isSelected(),
 		repeatDateEnd: this.repeatEnd.getValue(),
-		repeatConfig: this.getRepeatValue()
+		repeatConfig: this.getRepeatValue(),
+		type: this.type
 	};
 };
