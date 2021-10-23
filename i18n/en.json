@@ -101,5 +101,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "My reminders",
 	"bs-reminder-dialog-page-action-all-reminders": "All reminders",
 	"bs-reminder-dialog-page-action-page-reminders": "Reminders for this page",
-	"bs-reminder-info-dialog": "Reminder"
+	"bs-reminder-info-dialog": "Reminder",
+	"bs-reminder-info-dialog-button-label": "Manage reminders"
 }
