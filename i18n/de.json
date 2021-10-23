@@ -105,5 +105,6 @@
 	"bs-reminder-invalid-type": "Ungültiger Typ",
 	"bs-reminder-header-type": "Typ",
 	"bs-reminder-type-page": "Seite",
-	"bs-reminder-info-dialog": "Erinnerungen"
+	"bs-reminder-info-dialog": "Erinnerungen",
+	"bs-reminder-info-dialog-button-label": "Erinnerungen verwalten"
 }
