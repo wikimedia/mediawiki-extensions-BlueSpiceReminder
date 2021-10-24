@@ -12,7 +12,7 @@
 		bs.reminder.info.ReminderInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
 
 		if ( this.outlineItem ) {
-			this.outlineItem.setLabel( 'Reminder' );
+			this.outlineItem.setLabel( mw.message( 'bs-reminder-info-dialog' ).plain() );
 		}
 	};
 
@@ -28,10 +28,14 @@
 					me.reminderGrid = Ext.create( 'BS.Reminder.flyout.grid.ReminderPanel', {
 						title: false,
 						renderTo: me.$element[0],
-						width: me.$element.width(),
-						height: me.$element.height()
+						width: me.$element.width()
 						});
 				}, me );
+				this.specialPageButton = new OO.ui.ButtonWidget( {
+					label: mw.message( 'bs-reminder-info-dialog-button-label' ).plain(),
+					href: mw.util.getUrl( "Special:Reminder" )
+				} );
+				me.$element.append( this.specialPageButton.$element );
 			});
 		}
 	}

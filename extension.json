@@ -236,7 +236,8 @@
 				"bluespice.reminder.css"
 			],
 			"messages": [
-				"bs-reminder-info-dialog"
+				"bs-reminder-info-dialog",
+				"bs-reminder-info-dialog-button-label"
 			],
 			"dependencies": [
 				"ext.bluespice"
