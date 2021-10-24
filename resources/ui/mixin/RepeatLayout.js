@@ -116,22 +116,34 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatValue = function() {
 
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatValue = function( value ) {
-	value.repeatConfig = value.repeatConfig || {};
-	this.repeatValue.setValue( parseInt( value.repeatConfig.intervalType || 0 ) || 1 );
-	var repeatInterval = value.repeatConfig.intervalValue || 'd';
-	this.repeatInterval.setValue( repeatInterval );
-	var date = value.repeatConfig.repeatDateEnd || value.date;
-	date = this.dateFromValue( date );
-	this.repeatEnd.setValue( this.formatDateForInput( this.getDataForInterval( date, repeatInterval ) ) );
-	var daysToRepeat = value.repeatConfig.weekdaysToRepeat || [];
-	for ( var i = 0; i < daysToRepeat.length; i++ ) {
-		var item = this.repeatDaysOfWeek.findItemFromData( daysToRepeat[i] );
-		if ( item ) {
-			item.setValue( true );
+bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatData = function( data ) {
+	var repeatConfig = data.repeatConfig || {};
+	if ( repeatConfig.hasOwnProperty( 'intervalType' ) ) {
+		this.repeatValue.setValue( parseInt( repeatConfig.intervalType ) );
+	}
+	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
+		this.repeatInterval.setValue( repeatConfig.intervalValue );
+	}
+	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
+		this.repeatInterval.setValue( repeatConfig.intervalValue );
+	}
+	var date = repeatConfig.repeatDateEnd || data.date;
+	if ( date ) {
+		date = this.dateFromValue( date );
+		this.repeatEnd.setValue( this.formatDateForInput( this.getDataForInterval( date, repeatConfig.repeatInterval || 'd' ) ) );
+	}
+	if ( repeatConfig.hasOwnProperty( 'weekdaysToRepeat' ) ) {
+		var daysToRepeat = repeatConfig.weekdaysToRepeat || [];
+		for ( var i = 0; i < daysToRepeat.length; i++ ) {
+			var item = this.repeatDaysOfWeek.findItemFromData( daysToRepeat[i] );
+			if ( item ) {
+				item.setValue( true );
+			}
 		}
 	}
-	this.repeatMonthInterval.setValue( value.repeatConfig.monthlyRepeatInterval || 'dayOfTheWeek' );
+	if ( repeatConfig.hasOwnProperty( 'monthlyRepeatInterval' ) ) {
+		this.repeatMonthInterval.setValue( repeatConfig.monthlyRepeatInterval );
+	}
 };
 
 bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function( date, repeatInterval ) {

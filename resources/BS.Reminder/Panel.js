@@ -13,7 +13,7 @@
 
 Ext.define( 'BS.Reminder.Panel', {
 	extend: 'BS.CRUDGridPanel',
-	requires: [ 'BS.store.BSApi', 'BS.Reminder.PanelDialog' ],
+	requires: [ 'BS.store.BSApi' ],
 	username: false,
 	page: false,
 	initComponent: function() {
