@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Fitoschido",
+			"Jakeukalane",
 			"Madamebiblio",
 			"Nguyễn Mạnh An",
 			"Suecarmol"
@@ -12,6 +14,8 @@
 	"prefs-reminder": "Recordatorio",
 	"bs-reminder-menu_entry-create": "Crear recordatorio",
 	"bs-reminder-menu_entry-show": "Recordatorios",
+	"bs-reminder-unknown-page-msg": "Estás intentando crear un recordatorio para una página que no existe.",
+	"bs-reminder-unknown-user-msg": "Estás intentando crear un recordatorio para un usuario que no existe.",
 	"bs-reminder-create-reminder-label": "Crear recordatorio",
 	"bs-reminder-create-title": "Recordatorio",
 	"bs-reminder-create-success": "El recordatorio se creó correctamente.",
@@ -39,7 +43,10 @@
 	"bs-reminder-flyout-manager-btn-label": "Gestionar recordatorios",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
 	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
+	"echo-pref-tooltip-bs-reminder-cat": "Notifícame cuando mis recordatorios venzan hoy o en una semana",
 	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
+	"notification-bs-reminder-one-week-email-body": "Has configurado un recordatorio en el artículo \"$1\". Este recordatorio llegará en una semana.\n\nTu comentario:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Has configurado un recordatorio en el artículo \"$1\" con el comentario \"$2\". Este recordatorio llegará en una semana.",
 	"bs-reminder-repeat-label": "Repetir",
 	"bs-reminder-repeat-every-title": "Repetir cada",
 	"bs-reminder-repeat-interval-day": "día(s)",
@@ -53,9 +60,15 @@
 	"bs-reminder-thursday-abbr": "j",
 	"bs-reminder-friday-abbr": "v",
 	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-start-date-greater-end-date": "La fecha de finalización del recordatorio no se puede establecer antes de la fecha de inicio",
 	"bs-reminder-header-is-repeating": "Se repite",
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo no válido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Página"
+	"bs-reminder-type-page": "Página",
+	"bs-reminder-dialog-page-action-my-reminders": "Mis recordatorios",
+	"bs-reminder-dialog-page-action-all-reminders": "Todos los recordatorios",
+	"bs-reminder-dialog-page-action-page-reminders": "Recordatorios para esta página",
+	"bs-reminder-info-dialog": "Recordatorio",
+	"bs-reminder-info-dialog-button-label": "Gestionar recordatorios"
 }

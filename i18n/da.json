@@ -52,5 +52,9 @@
 	"bs-reminder-no": "nej",
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Side"
+	"bs-reminder-type-page": "Side",
+	"bs-reminder-dialog-page-action-my-reminders": "Mine påmindelser",
+	"bs-reminder-dialog-page-action-all-reminders": "Alle påmindelser",
+	"bs-reminder-dialog-page-action-page-reminders": "Påmindelser for denne side",
+	"bs-reminder-info-dialog": "Påmindelse"
 }

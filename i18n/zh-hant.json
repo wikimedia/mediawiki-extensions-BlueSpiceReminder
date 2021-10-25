@@ -16,8 +16,8 @@
 	"bs-reminder-pref-SetReminderOnCreate": "設定在頁面建立的提醒",
 	"bs-reminder-menu_entry-create": "建立提醒",
 	"bs-reminder-menu_entry-show": "提醒",
-	"bs-reminder-unknown-page-msg": "您嘗試替不存在的頁面建立提醒。",
-	"bs-reminder-unknown-user-msg": "您嘗試替不存在的使用者建立提醒。",
+	"bs-reminder-unknown-page-msg": "您正嘗試替不存在的頁面建立提醒。",
+	"bs-reminder-unknown-user-msg": "您正嘗試替不存在的使用者建立提醒。",
 	"bs-reminder-date-label": "提醒於",
 	"bs-reminder-create-reminder-label": "建立提醒",
 	"bs-reminder-create-title": "提醒",
@@ -94,10 +94,15 @@
 	"bs-reminder-friday-abbr": "週五",
 	"bs-reminder-saturday-abbr": "週六",
 	"bs-reminder-date-repeat-ends-on-label": "結束重複在",
-	"bs-reminder-start-date-greater-end-date": "提醒結束日期不能早於開始日期",
+	"bs-reminder-start-date-greater-end-date": "提醒結束日期不能設定在開始日期之前",
 	"bs-reminder-header-is-repeating": "為重複",
 	"bs-reminder-no": "否",
 	"bs-reminder-invalid-type": "無效類型",
 	"bs-reminder-header-type": "類型",
-	"bs-reminder-type-page": "頁面"
+	"bs-reminder-type-page": "頁面",
+	"bs-reminder-dialog-page-action-my-reminders": "我的提醒",
+	"bs-reminder-dialog-page-action-all-reminders": "所有提醒",
+	"bs-reminder-dialog-page-action-page-reminders": "此頁面的提醒",
+	"bs-reminder-info-dialog": "提醒",
+	"bs-reminder-info-dialog-button-label": "管理提醒"
 }
