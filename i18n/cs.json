@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fraxinus.cs"
+		]
+	},
+	"bs-reminder-unknown-page-msg": "Pokoušíte se vytvořit upozornění pro článek, který neexistuje.",
+	"bs-reminder-unknown-user-msg": "Pokoušíte se vytvořit upozornění pro uživatele, který neexistuje.",
+	"echo-pref-tooltip-bs-reminder-cat": "Informovat mě, když má upozornění nastanou dnes nebo za jeden týden",
+	"notification-bs-reminder-one-week-email-body": "Nastavili jste upozornění pro článek \"$1\". Toto upozornění se ukáže za jeden týden.\n\nVáš komentář:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Nastavili jste upozornění pro článek \"$1\" s komentářem \"$2\". Toto upozornění se zobrazí za jeden týden.",
+	"bs-reminder-start-date-greater-end-date": "Datum konce upozornění nelze nastavit na termín před začátkem",
+	"bs-reminder-dialog-page-action-my-reminders": "Moje upozornění",
+	"bs-reminder-dialog-page-action-all-reminders": "Všechna upozornění",
+	"bs-reminder-dialog-page-action-page-reminders": "Upozornění na tento článek",
+	"bs-reminder-info-dialog": "Upozornění",
+	"bs-reminder-info-dialog-button-label": "Správa upozornění"
+}

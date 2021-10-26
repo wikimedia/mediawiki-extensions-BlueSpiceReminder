@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz"
 		]
 	},
 	"bs-reminder-header-type": "Tyyppi",
-	"bs-reminder-type-page": "Sivu"
+	"bs-reminder-type-page": "Sivu",
+	"bs-reminder-dialog-page-action-my-reminders": "Muistutukseni",
+	"bs-reminder-dialog-page-action-all-reminders": "Kaikki muistutukset"
 }

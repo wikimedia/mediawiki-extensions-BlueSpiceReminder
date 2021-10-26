@@ -106,5 +106,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Мої нагадування",
 	"bs-reminder-dialog-page-action-all-reminders": "Усі нагадування",
 	"bs-reminder-dialog-page-action-page-reminders": "Нагадування для цієї сторінки",
-	"bs-reminder-info-dialog": "Нагадування"
+	"bs-reminder-info-dialog": "Нагадування",
+	"bs-reminder-info-dialog-button-label": "Керувати нагадуваннями"
 }

@@ -98,10 +98,15 @@
 	"bs-reminder-friday-abbr": "ve",
 	"bs-reminder-saturday-abbr": "sa",
 	"bs-reminder-date-repeat-ends-on-label": "Répéter jusqu’au",
-	"bs-reminder-start-date-greater-end-date": "La date de fin du rappel ne peut être antérieure à la date de début",
+	"bs-reminder-start-date-greater-end-date": "La date de fin du rappel ne peut être mise avant la date de début",
 	"bs-reminder-header-is-repeating": "se répète",
 	"bs-reminder-no": "non",
 	"bs-reminder-invalid-type": "Type non valide",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Page"
+	"bs-reminder-type-page": "Page",
+	"bs-reminder-dialog-page-action-my-reminders": "Mes rappels",
+	"bs-reminder-dialog-page-action-all-reminders": "Tous les rappels",
+	"bs-reminder-dialog-page-action-page-reminders": "Rappels pour cette page",
+	"bs-reminder-info-dialog": "Rappel",
+	"bs-reminder-info-dialog-button-label": "Gérer les rappels"
 }
