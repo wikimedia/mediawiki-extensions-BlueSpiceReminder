@@ -137,20 +137,17 @@ bs.reminder.ui.ReminderPage.prototype.getAbilities = function() {
 bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function() {
 	var defs = {
 		'page-reminders': {
-			action: 'page-reminders', label: mw.message( "bs-reminder-dialog-page-action-page-reminders" ).text(),
-			href: mw.util.getUrl( 'Special:Reminder', { page: mw.config.get( 'wgPageName' ) } )
+			action: 'page-reminders', label: mw.message( "bs-reminder-dialog-page-action-page-reminders" ).text()
 		}
 	};
 	if ( this.canCreateForOthers ) {
 		defs['manage-all'] = {
-			action: 'manage-all', label: mw.message( "bs-reminder-dialog-page-action-all-reminders" ).text(),
-			href: mw.util.getUrl( 'Special:Reminder' )
+			action: 'manage-all', label: mw.message( "bs-reminder-dialog-page-action-all-reminders" ).text()
 		};
 	}
 	if ( !mw.user.isAnon() ) {
 		defs['my-reminders'] = {
-			action: 'my-reminders', label: mw.message( "bs-reminder-dialog-page-action-my-reminders" ).text(),
-			href: mw.util.getUrl( 'Special:Reminder', { user: mw.user.getName() } )
+			action: 'my-reminders', label: mw.message( "bs-reminder-dialog-page-action-my-reminders" ).text()
 		};
 	}
 
@@ -175,6 +172,12 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 			// Do nothing
 			dfd.resolve( {} );
 		} );
+	} else if ( action === 'page-reminders' ) {
+		window.location.href = mw.util.getUrl( 'Special:Reminder', { page: mw.config.get( 'wgPageName' ) } );
+	} else if ( action === 'manage-all' ) {
+		window.location.href = mw.util.getUrl( 'Special:Reminder' );
+	} else if ( action === 'my-reminders' ) {
+		window.location.href =  mw.util.getUrl( 'Special:Reminder', { user: mw.user.getName() } );
 	} else {
 		return bs.reminder.ui.ReminderPage.parent.prototype.onAction.call( this, action );
 	}
