@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-reminder-unknown-page-msg": "Je kunt geen herinnering aanmaken voor een pagina die niet bestaat.",
+	"bs-reminder-unknown-user-msg": "Je kunt geen herinnering aanmaken voor een gebruiker die niet bestaat."
+}

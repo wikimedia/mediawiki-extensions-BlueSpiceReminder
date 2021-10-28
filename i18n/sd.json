@@ -8,8 +8,12 @@
 	},
 	"bs-reminder-create-reminder-label": "يادگيري ٺاھيو",
 	"bs-reminder-save-error": "ڪا چُڪَ پيش آئي: $1",
-	"bs-reminder-comment-label": "تبصرو",
+	"bs-reminder-comment-label": "راءِ",
 	"bs-reminder-article-label": "صفحو",
 	"echo-category-title-notification-bs-reminder-cat": "يادگيريون",
-	"bs-reminder-header-pagename": "صفحو"
+	"bs-reminder-header-pagename": "صفحو",
+	"bs-reminder-dialog-page-action-my-reminders": "منھنجون يادگيريون",
+	"bs-reminder-dialog-page-action-all-reminders": "سڀ يادگيريون",
+	"bs-reminder-dialog-page-action-page-reminders": "ھن صفحي لاءِ يادگيريون",
+	"bs-reminder-info-dialog": "يادگيري"
 }

@@ -17,8 +17,8 @@
 	"bs-reminder-pref-SetReminderOnCreate": "Definir lembrete na criação da página",
 	"bs-reminder-menu_entry-create": "Criar lembrete",
 	"bs-reminder-menu_entry-show": "Lembretes",
-	"bs-reminder-unknown-page-msg": "Você tenta criar um lembrete para uma página que não existe.",
-	"bs-reminder-unknown-user-msg": "Você tenta criar um lembrete para um usuário que não existe.",
+	"bs-reminder-unknown-page-msg": "Você está tentando criar um lembrete para uma página que não existe.",
+	"bs-reminder-unknown-user-msg": "Você está tentando criar um lembrete para um usuário que não existe.",
 	"bs-reminder-date-label": "Lembrar em",
 	"bs-reminder-create-reminder-label": "Criar lembrete",
 	"bs-reminder-create-title": "Lembrete",
@@ -95,10 +95,13 @@
 	"bs-reminder-friday-abbr": "sex",
 	"bs-reminder-saturday-abbr": "sab",
 	"bs-reminder-date-repeat-ends-on-label": "A repetição termina em",
-	"bs-reminder-start-date-greater-end-date": "A data de término do lembrete não pode ser menor que a data de início",
+	"bs-reminder-start-date-greater-end-date": "A data de término do lembrete não pode ser definida antes da data de início",
 	"bs-reminder-header-is-repeating": "Mensalmente no",
 	"bs-reminder-no": "não",
 	"bs-reminder-invalid-type": "Tipo inválido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Página"
+	"bs-reminder-type-page": "Página",
+	"bs-reminder-dialog-page-action-my-reminders": "Meus lembretes",
+	"bs-reminder-dialog-page-action-all-reminders": "Todos os lembretes",
+	"bs-reminder-dialog-page-action-page-reminders": "Lembretes para esta página"
 }
