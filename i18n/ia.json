@@ -93,10 +93,15 @@
 	"bs-reminder-friday-abbr": "v",
 	"bs-reminder-saturday-abbr": "s",
 	"bs-reminder-date-repeat-ends-on-label": "Repetition termina le",
-	"bs-reminder-start-date-greater-end-date": "Le data de fin del rememoration on pote esser anterior al data de initio",
+	"bs-reminder-start-date-greater-end-date": "Le data de fin del rememoration non pote esser ante le data de initio",
 	"bs-reminder-header-is-repeating": "Se repete",
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Typo non valide",
 	"bs-reminder-header-type": "Typo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-dialog-page-action-my-reminders": "Mi rememorationes",
+	"bs-reminder-dialog-page-action-all-reminders": "Tote le rememorationes",
+	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
+	"bs-reminder-info-dialog": "Rememoration",
+	"bs-reminder-info-dialog-button-label": "Gerer rememorationes"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"McDutchie",
 			"Robby",
 			"Umherirrender"
@@ -88,13 +89,13 @@
 	"bs-reminder-repeat-interval-week": "Label for repeated reminder interval type week",
 	"bs-reminder-repeat-interval-month": "Label for repeated reminder interval type month",
 	"bs-reminder-repeat-interval-year": "Label for repeated reminder interval type year",
-	"bs-reminder-sunday-abbr": "One-letter abbreviation for sunday",
-	"bs-reminder-monday-abbr": "One-letter abbreviation for monday",
-	"bs-reminder-tuesday-abbr": "One-letter abbreviation for tuesday",
-	"bs-reminder-wednesday-abbr": "One-letter abbreviation for wednesday",
-	"bs-reminder-thursday-abbr": "One-letter abbreviation for thursday",
-	"bs-reminder-friday-abbr": "One-letter abbreviation for friday",
-	"bs-reminder-saturday-abbr": "One-letter abbreviation for saturday",
+	"bs-reminder-sunday-abbr": "One-letter abbreviation for Sunday.",
+	"bs-reminder-monday-abbr": "One-letter abbreviation for Monday.",
+	"bs-reminder-tuesday-abbr": "One-letter abbreviation for Tuesday.",
+	"bs-reminder-wednesday-abbr": "One-letter abbreviation for Wednesday.",
+	"bs-reminder-thursday-abbr": "One-letter abbreviation for Thursday.",
+	"bs-reminder-friday-abbr": "One-letter abbreviation for Friday.",
+	"bs-reminder-saturday-abbr": "One-letter abbreviation for Saturday.",
 	"bs-reminder-date-repeat-ends-on-label": "Label for date when reminder ends field",
 	"bs-reminder-start-date-greater-end-date": "Error message when end date of repeating reminder less than start date",
 	"bs-reminder-header-is-repeating": "Label of the column for Is repeating\n{{Identical|Is repeating}}",

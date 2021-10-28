@@ -52,5 +52,9 @@
 	"bs-reminder-delete-error-unkown": "Påmindelsen kunne ikke blive slettet.",
 	"bs-reminder-save-error": "Der opstod en fejl: $1",
 	"bs-reminder-date-format": "Y-m-d",
-	"bs-reminder-repeat-label": "Gentag"
+	"bs-reminder-repeat-label": "Gentag",
+	"bs-reminder-dialog-page-action-my-reminders": "Mine påmindelser",
+	"bs-reminder-dialog-page-action-all-reminders": "Alle påmindelser",
+	"bs-reminder-dialog-page-action-page-reminders": "Påmindelser for denne side",
+	"bs-reminder-info-dialog": "Påmindelse"
 }

@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Avengium",
 			"Fitoschido",
+			"Jakeukalane",
 			"Madamebiblio",
 			"Nguyễn Mạnh An",
 			"Suecarmol"
@@ -57,5 +59,16 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo no válido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Página"
+	"bs-reminder-type-page": "Página",
+	"bs-reminder-unknown-page-msg": "Estás intentando crear un recordatorio para una página que no existe.",
+	"bs-reminder-unknown-user-msg": "Estás intentando crear un recordatorio para un usuario que no existe.",
+	"echo-pref-tooltip-bs-reminder-cat": "Notifícame cuando mis recordatorios venzan hoy o en una semana",
+	"notification-bs-reminder-one-week-email-body": "Has configurado un recordatorio en el artículo \"$1\". Este recordatorio llegará en una semana.\n\nTu comentario:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Has configurado un recordatorio en el artículo \"$1\" con el comentario \"$2\". Este recordatorio llegará en una semana.",
+	"bs-reminder-start-date-greater-end-date": "La fecha de finalización del recordatorio no se puede establecer antes de la fecha de inicio",
+	"bs-reminder-dialog-page-action-my-reminders": "Mis recordatorios",
+	"bs-reminder-dialog-page-action-all-reminders": "Todos los recordatorios",
+	"bs-reminder-dialog-page-action-page-reminders": "Recordatorios para esta página",
+	"bs-reminder-info-dialog": "Recordatorio",
+	"bs-reminder-info-dialog-button-label": "Gestionar recordatorios"
 }

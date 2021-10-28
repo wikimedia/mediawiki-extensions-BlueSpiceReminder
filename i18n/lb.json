@@ -48,5 +48,7 @@
 	"bs-reminder-tuesday-abbr": "d",
 	"bs-reminder-no": "neen",
 	"bs-reminder-header-type": "Typ",
-	"bs-reminder-type-page": "Säit"
+	"bs-reminder-type-page": "Säit",
+	"bs-reminder-dialog-page-action-my-reminders": "Meng Erënnerungen",
+	"bs-reminder-dialog-page-action-all-reminders": "All Erënnerungen"
 }

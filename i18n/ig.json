@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olugold"
+		]
+	},
+	"echo-pref-tooltip-bs-reminder-cat": "Gwa m mgbe ihe ncheta m ruru taa ma ọ bụ n'otu izu",
+	"notification-bs-reminder-one-week-email-body": "Ịtọla ihe ncheta n'edemede \"$1\". Ihe ncheta a na -abịa n'ime otu izu. \n\nOkwu gị:\n$2",
+	"bs-reminder-dialog-page-action-my-reminders": "Ihe ncheta m",
+	"bs-reminder-dialog-page-action-all-reminders": "Ihe ncheta niile",
+	"bs-reminder-info-dialog": "Ihe ncheta",
+	"bs-reminder-info-dialog-button-label": "Jikwaa ihe ncheta"
+}

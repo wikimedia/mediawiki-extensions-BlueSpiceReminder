@@ -9,7 +9,7 @@
 			"Romaine"
 		]
 	},
-	"bs-reminder-unknown-user-msg": "U kunt geen herinnering maken voor een gebruiker die niet bestaat.",
+	"bs-reminder-unknown-user-msg": "U kunt geen herinnering aanmaken voor een gebruiker die niet bestaat.",
 	"bs-reminder-create-title": "Herinnering",
 	"bs-reminder-header-pagename": "Pagina",
 	"bs-reminder-header-username": "Gebruiker",
@@ -64,7 +64,7 @@
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Voer het aantal dagen in voor de herinneringsperiode.",
 	"bs-reminder-pref-SetReminderOnCreate": "Herinnering instellen bij het aanmaken van pagina's",
 	"bs-reminder-menu_entry-create": "Herinnering aanmaken",
-	"bs-reminder-unknown-page-msg": "U kunt geen herinnering maken voor een pagina die niet bestaat.",
+	"bs-reminder-unknown-page-msg": "U kunt geen herinnering aanmaken voor een pagina die niet bestaat.",
 	"bs-reminder-date-label": "Herinneren op",
 	"bs-reminder-create-success": "De herinnering is met succes gemaakt.",
 	"bs-reminder-create-error": "De herinnering kon niet aangemaakt worden. Probeer het opnieuw.",
