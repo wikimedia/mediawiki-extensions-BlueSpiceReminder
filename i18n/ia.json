@@ -98,5 +98,10 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Typo non valide",
 	"bs-reminder-header-type": "Typo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-dialog-page-action-my-reminders": "Mi rememorationes",
+	"bs-reminder-dialog-page-action-all-reminders": "Tote le rememorationes",
+	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
+	"bs-reminder-info-dialog": "Rememoration",
+	"bs-reminder-info-dialog-button-label": "Gerer rememorationes"
 }
