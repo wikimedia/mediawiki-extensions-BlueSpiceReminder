@@ -52,5 +52,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Meng Erënnerungen",
 	"bs-reminder-dialog-page-action-all-reminders": "All Erënnerungen",
 	"bs-reminder-dialog-page-action-page-reminders": "Erënnerunge fir dës Säit",
-	"bs-reminder-info-dialog": "Erënnerung"
+	"bs-reminder-info-dialog": "Erënnerung",
+	"bs-reminder-info-dialog-button-label": "Erënnerunge geréieren"
 }
