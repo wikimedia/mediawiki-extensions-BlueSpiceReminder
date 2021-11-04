@@ -19,7 +19,8 @@ class AddReminderUrl extends PersonalUrls {
 		$this->personal_urls['my_reminder'] = [
 			'href' => $reminder->getPageTitle()->getLocalURL() . '/'
 			. $user->getName(),
-			'text' => $this->msg( 'bs-reminder-menu_entry-show' )->plain()
+			'text' => $this->msg( 'bs-reminder-menu_entry-show' )->plain(),
+			'position' => 80,
 		];
 
 		return true;
