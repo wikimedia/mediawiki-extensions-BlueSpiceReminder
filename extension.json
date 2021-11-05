@@ -57,6 +57,11 @@
 			"Registry": {
 				"page": "\\BlueSpice\\Reminder\\Reminder\\Page::factory"
 			}
+		},
+		"BlueSpiceDiscovery": {
+			"AttentionIndicatorRegistry": {
+				"reminder": "\\BlueSpice\\Reminder\\AttentionIndicator\\Reminder::factory"
+			}
 		}
 	},
 	"GroupPermissions": {

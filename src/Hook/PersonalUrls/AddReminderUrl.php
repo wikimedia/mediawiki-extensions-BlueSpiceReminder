@@ -21,6 +21,7 @@ class AddReminderUrl extends PersonalUrls {
 			. $user->getName(),
 			'text' => $this->msg( 'bs-reminder-menu_entry-show' )->plain(),
 			'position' => 80,
+			'data' => [ 'attentionindicator' => 'reminder' ],
 		];
 
 		return true;
