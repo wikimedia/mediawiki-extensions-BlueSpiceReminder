@@ -36,7 +36,8 @@ class AddReminderEntry extends SkinTemplateNavigationUniversal {
 			"class" => '',
 			"text" => $this->msg( 'bs-reminder-menu_entry-create' )->plain(),
 			"href" => "#",
-			"bs-group" => "hidden"
+			"bs-group" => "hidden",
+			'position' => 30,
 		];
 		return true;
 	}
