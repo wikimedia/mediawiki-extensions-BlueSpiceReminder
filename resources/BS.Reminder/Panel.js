@@ -228,7 +228,7 @@ Ext.define( 'BS.Reminder.Panel', {
 		var actions = this.callParent( arguments );
 		for( var i = 0; i < actions.length; i++ ) {
 			actions[i].isDisabled = function( view, rowIndex, colIndex, item, record  ) {
-				return record.get( 'rem_type' ) !== '' && !record.get( 'rem_type' ) !== 'page' ;
+				return record.get( 'rem_type' ) !== '' && record.get( 'rem_type' ) !== 'page' ;
 			};
 		}
 

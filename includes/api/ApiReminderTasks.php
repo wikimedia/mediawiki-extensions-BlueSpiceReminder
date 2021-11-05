@@ -146,6 +146,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				= wfMessage( 'bs-permissionerror' )->plain();
 			return $oResult;
 		}
+
 		$type = !empty( $oTaskData->type ) ? $oTaskData->type : '';
 		if ( !$this->getFactory()->isRegisteredType( $type ) ) {
 			$oResult->message = $oResult->errors[]
@@ -196,7 +197,12 @@ class ApiReminderTasks extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$sFormattedFieldValue = $oTaskData->date;
+		$rawDate = $oTaskData->date;
+		if ( strlen( $rawDate ) === 14 ) {
+			// B/C
+			$rawDate = DateTime::createFromFormat( 'YmdHis', $rawDate )->format( 'Y-m-d' );
+		}
+		$sFormattedFieldValue = $rawDate;
 
 		$iUserId = $oUser->getId();
 
@@ -235,7 +241,9 @@ class ApiReminderTasks extends BSApiTasksBase {
 
 		if ( isset( $oTaskData->isRepeating ) && $oTaskData->isRepeating === true
 			&& !empty( $oTaskData->repeatConfig ) ) {
-			$endDate = new DateTime( $oTaskData->repeatConfig->repeatDateEnd );
+			$endDate = new DateTime(
+				$oTaskData->repeatConfig->repeatDateEnd ?? $oTaskData->repeatDateEnd
+			);
 			$aData['rem_repeat_date_end'] = $endDate->format( 'YmdHis' );
 
 			$startReminderDate = DateTime::createFromFormat( 'Y-m-d', $aData['rem_date'] );
