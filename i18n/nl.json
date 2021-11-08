@@ -95,5 +95,7 @@
 	"bs-reminder-no": "nee",
 	"bs-reminder-invalid-type": "Ongeldig type",
 	"bs-reminder-header-type": "Soort",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-dialog-page-action-my-reminders": "Mijn herinneringen",
+	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen"
 }
