@@ -20,7 +20,7 @@ class AddReminderUrl extends PersonalUrls {
 			'href' => $reminder->getPageTitle()->getLocalURL() . '/'
 			. $user->getName(),
 			'text' => $this->msg( 'bs-reminder-menu_entry-show' )->plain(),
-			'position' => 80,
+			'position' => 50,
 			'data' => [ 'attentionindicator' => 'reminder' ],
 		];
 
