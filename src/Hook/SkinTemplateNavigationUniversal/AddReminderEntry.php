@@ -34,7 +34,7 @@ class AddReminderEntry extends SkinTemplateNavigationUniversal {
 	protected function doProcess() {
 		$this->links['actions']['reminderCreate'] = [
 			"class" => '',
-			"text" => $this->msg( 'bs-reminder-menu_entry-create' )->plain(),
+			"text" => $this->msg( 'bs-reminder-actionmenuentry-setreminder-label' )->plain(),
 			"href" => "#",
 			"bs-group" => "hidden",
 			'position' => 30,
