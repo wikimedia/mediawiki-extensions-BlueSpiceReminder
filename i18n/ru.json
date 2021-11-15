@@ -3,7 +3,8 @@
 		"authors": [
 			"DDPAT",
 			"Diman Russkov",
-			"Kareyac"
+			"Kareyac",
+			"Pacha Tchernof"
 		]
 	},
 	"bs-reminder-header-pagename": "Страница",
@@ -38,5 +39,9 @@
 	"bs-reminder-repeat-interval-month": "месяц(-ы)",
 	"bs-reminder-repeat-interval-year": "год(-ы)",
 	"bs-reminder-header-type": "Тип",
-	"bs-reminder-type-page": "Страница"
+	"bs-reminder-type-page": "Страница",
+	"bs-reminder-unknown-user-msg": "Мы пытаетесь создать напоминание для пользователя, которого не существует.",
+	"bs-reminder-start-date-greater-end-date": "Конечная дата не может быть установлена ранее начальной даты.",
+	"bs-reminder-dialog-page-action-my-reminders": "Мои напоминания",
+	"bs-reminder-dialog-page-action-all-reminders": "Все напоминания"
 }

@@ -35,10 +35,11 @@
 	"bs-reminder-friday-abbr": "금",
 	"bs-reminder-saturday-abbr": "토",
 	"bs-reminder-date-repeat-ends-on-label": "반복 종료:",
-	"bs-reminder-start-date-greater-end-date": "리마인더 종료 날짜는 시작 날짜보다 앞설 수 없습니다",
+	"bs-reminder-start-date-greater-end-date": "리마인더 종료 날짜는 시작 날짜 이전으로 설정할 수 없습니다",
 	"bs-reminder-header-is-repeating": "반복",
 	"bs-reminder-no": "아니오",
 	"bs-reminder-invalid-type": "잘못된 유형",
 	"bs-reminder-header-type": "유형",
-	"bs-reminder-type-page": "문서"
+	"bs-reminder-type-page": "문서",
+	"echo-pref-tooltip-bs-reminder-cat": "내 리마인더의 만기일이 오늘이거나 1주일 전이면 내게 알립니다"
 }

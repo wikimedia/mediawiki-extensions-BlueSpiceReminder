@@ -11,5 +11,6 @@
 	"bs-reminder-article-label": "পাতা",
 	"bs-reminder-invalid-type": "অবৈধ ধরন",
 	"bs-reminder-header-type": "ধরন",
-	"bs-reminder-type-page": "পাতা"
+	"bs-reminder-type-page": "পাতা",
+	"bs-reminder-info-dialog": "অনুস্মারক"
 }
