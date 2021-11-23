@@ -95,5 +95,7 @@
 	"bs-reminder-repeat-every-title": "Herhaal iedere",
 	"bs-reminder-repeat-on-title": "Herhaal op",
 	"bs-reminder-date-repeat-ends-on-label": "Herhaling eindigt op",
-	"bs-reminder-start-date-greater-end-date": "Einddatum herinnering kan niet voor de startdatum liggen"
+	"bs-reminder-start-date-greater-end-date": "Einddatum herinnering kan niet voor de startdatum liggen",
+	"bs-reminder-dialog-page-action-my-reminders": "Mijn herinneringen",
+	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen"
 }

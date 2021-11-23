@@ -106,7 +106,7 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Label for the process dialog action",
 	"bs-reminder-dialog-page-action-all-reminders": "Label for the process dialog action",
 	"bs-reminder-dialog-page-action-page-reminders": "Label for the process dialog action",
-	"bs-reminder-info-dialog": "Label for page information dialog",
+	"bs-reminder-info-dialog": "Label for page information dialog\n{{identical|Reminder}}",
 	"bs-reminder-info-dialog-button-label": "Label for button in page information dialog that opens special page containing all reminders",
 	"bs-reminder-actionmenuentry-setreminder-label": "Label for action menu entry that allows setting a reminder\n{{Identical|Set reminder}}"
 }
