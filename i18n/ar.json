@@ -3,7 +3,8 @@
 		"authors": [
 			"Omar Ghrida",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"McDutchie"
 		]
 	},
 	"bs-reminder-extension-description": "يمنح المستخدم الفرصة لإنشاء تذكيرات.",
@@ -38,7 +39,7 @@
 	"bs-reminder-delete-error-unkown": "لا يمكن حذف التذكير.",
 	"bs-reminder-save-error": "حدث خطأ: $1",
 	"bs-reminder-save-error-unkown": "لا يمكن حفظ التذكير.",
-	"bs-reminder-date-format": "س-ش-ي",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "بعض المعلمات مفقودة؛ تُرجَى المحاولة مرة أخرى.",
 	"bs-reminder-save-success": "تم إنشاء التذكير بنجاح.",
 	"bs-reminder-user-label": "تعيين للمستخدم",

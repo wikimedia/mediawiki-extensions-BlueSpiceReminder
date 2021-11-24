@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tomasdd"
+			"Tomasdd",
+			"McDutchie"
 		]
 	},
 	"reminder": "Priminimas",
@@ -13,7 +14,7 @@
 	"bs-reminder-header-pagename": "Puslapis",
 	"bs-reminder-header-username": "Naudotojas",
 	"bs-reminder-save-error": "Įvyko klaida: $1",
-	"bs-reminder-date-format": "MMMM-mm-dd",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-article-label": "Puslapis",
 	"bs-reminder-dlg-btn-manager-label": "Tvarkyti priminimus",
 	"bs-reminder-navigation-link-title": "Priminimas",

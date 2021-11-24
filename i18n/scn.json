@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-reminder-header-pagename": "Pàggina",
+	"bs-reminder-header-username": "Utenti",
+	"bs-reminder-date-format": "d-m-Y",
+	"bs-reminder-comment-label": "Cummentu",
+	"bs-reminder-header-comment": "Cummentu",
+	"bs-reminder-article-label": "Pàggina",
+	"bs-reminder-ordinal-first": "primu",
+	"bs-reminder-ordinal-second": "secunnu",
+	"bs-reminder-ordinal-third": "terzu",
+	"bs-reminder-ordinal-fourth": "quartu",
+	"bs-reminder-ordinal-last": "ùrtimu",
+	"bs-reminder-repeat-interval-day": "jornu/a",
+	"bs-reminder-repeat-interval-week": "simana/i",
+	"bs-reminder-repeat-interval-month": "misi",
+	"bs-reminder-repeat-interval-year": "annu/i",
+	"bs-reminder-sunday-abbr": "d",
+	"bs-reminder-monday-abbr": "l",
+	"bs-reminder-tuesday-abbr": "m",
+	"bs-reminder-wednesday-abbr": "m",
+	"bs-reminder-thursday-abbr": "j",
+	"bs-reminder-friday-abbr": "v",
+	"bs-reminder-saturday-abbr": "s",
+	"bs-reminder-invalid-type": "Tipu nun vàliddu",
+	"bs-reminder-header-type": "Tipu",
+	"bs-reminder-type-page": "Pàggina"
+}

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"YaronSh"
+			"YaronSh",
+			"Amire80"
 		]
 	},
 	"reminder": "תזכורת",
@@ -29,5 +30,12 @@
 	"bs-reminder-flyout-grid-title": "תזכורת של משתמש אחר",
 	"bs-reminder-flyout-manager-btn-label": "לנהל תזכורות",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "התזכורות שלי",
-	"echo-category-title-notification-bs-reminder-cat": "תזכורות"
+	"echo-category-title-notification-bs-reminder-cat": "תזכורות",
+	"bs-reminder-sunday-abbr": "א",
+	"bs-reminder-monday-abbr": "ב",
+	"bs-reminder-tuesday-abbr": "ג",
+	"bs-reminder-wednesday-abbr": "ד",
+	"bs-reminder-thursday-abbr": "ה",
+	"bs-reminder-friday-abbr": "ו",
+	"bs-reminder-saturday-abbr": "ש"
 }

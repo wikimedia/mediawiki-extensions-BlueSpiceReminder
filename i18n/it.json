@@ -3,7 +3,8 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
-			"Stefano"
+			"Stefano",
+			"McDutchie"
 		]
 	},
 	"reminder": "Promemoria",
@@ -16,7 +17,7 @@
 	"bs-reminder-error-owner-reminder": "Puoi eliminare solamente i tuoi promemoria",
 	"bs-reminder-delete-error": "Si è verificato l'errore $1",
 	"bs-reminder-save-error": "Si è verificato un errore: $1",
-	"bs-reminder-date-format": "A-m-g",
+	"bs-reminder-date-format": "d-m-Y",
 	"bs-reminder-save-success": "Il promemoria è stato creato correttamente.",
 	"bs-reminder-comment-label": "Commento",
 	"bs-reminder-header-comment": "Commento",
