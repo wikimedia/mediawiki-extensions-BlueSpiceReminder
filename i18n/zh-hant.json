@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"McDutchie"
+			"McDutchie",
+			"Winston Sung"
 		]
 	},
 	"bs-reminder-extension-description": "讓使用者有機會來建立提醒。",
@@ -104,5 +105,6 @@
 	"bs-reminder-dialog-page-action-all-reminders": "所有提醒",
 	"bs-reminder-dialog-page-action-page-reminders": "此頁面的提醒",
 	"bs-reminder-info-dialog": "提醒",
-	"bs-reminder-info-dialog-button-label": "管理提醒"
+	"bs-reminder-info-dialog-button-label": "管理提醒",
+	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒"
 }

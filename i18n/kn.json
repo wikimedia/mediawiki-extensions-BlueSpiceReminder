@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
+		]
+	},
+	"bs-reminder-header-pagename": "ಪುಟ",
+	"bs-reminder-header-username": "ಬಳಕೆದಾರ",
+	"bs-reminder-comment-label": "ಟಿಪ್ಪಣಿ",
+	"bs-reminder-header-comment": "ಟಿಪ್ಪಣಿ",
+	"bs-reminder-article-label": "ಪುಟ",
+	"bs-reminder-repeat-interval-day": "ದಿನ(ಗಳು)",
+	"bs-reminder-repeat-interval-week": "ವಾರ(ಗಳು)",
+	"bs-reminder-repeat-interval-month": "ತಿಂಗಳು(ಗಳು)",
+	"bs-reminder-repeat-interval-year": "ವರ್ಷ(ಗಳು)",
+	"bs-reminder-sunday-abbr": "ಭಾ",
+	"bs-reminder-monday-abbr": "ಸೋ",
+	"bs-reminder-tuesday-abbr": "ಮಂ",
+	"bs-reminder-wednesday-abbr": "ಬು",
+	"bs-reminder-thursday-abbr": "ಗು",
+	"bs-reminder-friday-abbr": "ಶು",
+	"bs-reminder-saturday-abbr": "ಶ",
+	"bs-reminder-no": "ಇಲ್ಲ",
+	"bs-reminder-header-type": "ನಮೂನೆ",
+	"bs-reminder-type-page": "ಪುಟ"
+}
