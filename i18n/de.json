@@ -110,5 +110,6 @@
 	"bs-reminder-info-dialog-button-label": "Erinnerungen verwalten",
 	"bs-reminder-dialog-page-action-my-reminders": "Meine Erinnerungen",
 	"bs-reminder-dialog-page-action-all-reminders": "\nAlle Erinnerungen",
-	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite"
+	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite",
+	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen"
 }
