@@ -6,6 +6,7 @@
 	"reminder": "Reminder",
 	"specialreminder": "Reminder",
 	"prefs-reminder": "Reminder",
+	"bs-reminder-text": "Reminders",
 	"apihelp-bs-reminder-store-description": "Serves the data for Special:Reminder overview grid",
 	"apihelp-bs-reminder-tasks-description": "Executes tasks like update and delete for Special:Reminder overview grid",
 	"bs-reminder-pref-DefaultReminderPeriod": "Default reminder period",

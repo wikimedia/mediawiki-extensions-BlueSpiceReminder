@@ -14,6 +14,7 @@
 	"reminder": "Erinnerung",
 	"specialreminder": "Erinnerung",
 	"prefs-reminder": "Erinnerung",
+	"bs-reminder-text": "Erinnerungen",
 	"apihelp-bs-reminder-store-description": "Liefert die Daten für die Übersicht auf Spezial:Erinnerung",
 	"apihelp-bs-reminder-tasks-description": "Führt Aufgaben wie Aktualisierung und Löschen aus für die Übersicht auf Spezial:Erinnerung",
 	"bs-reminder-pref-DefaultReminderPeriod": "Standard-Zeitraum für Erinnerungen",
