@@ -103,5 +103,6 @@
 	"bs-reminder-type-page": "Página",
 	"bs-reminder-dialog-page-action-my-reminders": "Meus lembretes",
 	"bs-reminder-dialog-page-action-all-reminders": "Todos os lembretes",
-	"bs-reminder-dialog-page-action-page-reminders": "Lembretes para esta página"
+	"bs-reminder-dialog-page-action-page-reminders": "Lembretes para esta página",
+	"bs-reminder-text": "Lembretes"
 }
