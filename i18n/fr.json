@@ -12,6 +12,7 @@
 	"reminder": "Rappel",
 	"specialreminder": "Rappel",
 	"prefs-reminder": "Rappel",
+	"bs-reminder-text": "Rappels",
 	"apihelp-bs-reminder-store-description": "Sert les données pour la grille de l’aperçu général des rappels sur Special:Reminder",
 	"apihelp-bs-reminder-tasks-description": "Exécute des tâches pour les mises à jour et suppressions sur la grille générale de l’aperçu général des rappels sur Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Période par défaut du rappel",
