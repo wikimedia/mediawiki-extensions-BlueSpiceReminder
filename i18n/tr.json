@@ -2,15 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"McDutchie",
 			"Melissadilara",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"bs-reminder-extension-description": "Kullanıcıya hatırlatıcı oluşturma fırsatı verir.",
 	"reminder": "Hatırlatma",
 	"specialreminder": "Hatırlatma",
 	"prefs-reminder": "Hatırlatma",
+	"bs-reminder-text": "Hatırlatıcılar",
 	"apihelp-bs-reminder-store-description": "Special:Reminder genel bakış ızgarası için veri sunar",
 	"apihelp-bs-reminder-tasks-description": "Special:Reminder genel bakış ızgarası için güncelleme ve silme gibi görevleri yürütür",
 	"bs-reminder-pref-DefaultReminderPeriod": "Varsayılan hatırlatma süresi",
@@ -18,8 +21,8 @@
 	"bs-reminder-pref-SetReminderOnCreate": "Sayfa oluşturma konusunda hatırlatıcı ayarla",
 	"bs-reminder-menu_entry-create": "Hatırlatıcı oluştur",
 	"bs-reminder-menu_entry-show": "Hatırlatmalar",
-	"bs-reminder-unknown-page-msg": "Var olmayan bir sayfa için hatırlatıcı oluşturmaya çalışırsınız.",
-	"bs-reminder-unknown-user-msg": "Var olmayan bir kullanıcı için hatırlatıcı oluşturmaya çalışırsınız.",
+	"bs-reminder-unknown-page-msg": "Var olmayan bir sayfa için hatırlatıcı oluşturmaya çalışıyorsunuz.",
+	"bs-reminder-unknown-user-msg": "Var olmayan bir kullanıcı için hatırlatıcı oluşturmaya çalışıyorsunuz.",
 	"bs-reminder-date-label": "Hatırlat",
 	"bs-reminder-create-reminder-label": "Hatırlatıcı oluştur",
 	"bs-reminder-create-title": "Hatırlatma",
@@ -96,10 +99,16 @@
 	"bs-reminder-friday-abbr": "cum",
 	"bs-reminder-saturday-abbr": "cmt",
 	"bs-reminder-date-repeat-ends-on-label": "Tekrarlama bitiş tarihi",
-	"bs-reminder-start-date-greater-end-date": "Hatırlatıcı bitiş tarihi, başlangıç tarihinden az olamaz",
+	"bs-reminder-start-date-greater-end-date": "Hatırlatıcı bitiş tarihi, başlangıç tarihinden önce ayarlanamaz",
 	"bs-reminder-header-is-repeating": "Tekrar ediyor",
 	"bs-reminder-no": "hayır",
 	"bs-reminder-invalid-type": "Geçersiz Tür",
 	"bs-reminder-header-type": "Tür",
-	"bs-reminder-type-page": "Sayfa"
+	"bs-reminder-type-page": "Sayfa",
+	"bs-reminder-dialog-page-action-my-reminders": "Hatırlatıcılarım",
+	"bs-reminder-dialog-page-action-all-reminders": "Tüm hatırlatıcılar",
+	"bs-reminder-dialog-page-action-page-reminders": "Bu sayfa için hatırlatıcılar",
+	"bs-reminder-info-dialog": "Hatırlatıcılar",
+	"bs-reminder-info-dialog-button-label": "Hatırlatıcıları yönet",
+	"bs-reminder-actionmenuentry-setreminder-label": "Hatırlatıcı belirle"
 }
