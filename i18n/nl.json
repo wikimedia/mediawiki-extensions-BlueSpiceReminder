@@ -6,6 +6,7 @@
 			"Elroy",
 			"Mainframe98",
 			"McDutchie",
+			"Nickthijssen1994",
 			"Romaine"
 		]
 	},
@@ -13,6 +14,7 @@
 	"reminder": "Herinnering",
 	"specialreminder": "Herinnering",
 	"prefs-reminder": "Herinnering",
+	"bs-reminder-text": "Herinneringen",
 	"bs-reminder-pref-DefaultReminderPeriod": "Standaard herinneringsperiode",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Voer het aantal dagen in voor de herinneringsperiode.",
 	"bs-reminder-pref-SetReminderOnCreate": "Herinnering instellen bij het aanmaken van pagina's",
