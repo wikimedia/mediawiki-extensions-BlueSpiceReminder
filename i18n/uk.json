@@ -4,6 +4,7 @@
 			"DDPAT",
 			"McDutchie",
 			"Piramidion",
+			"Samflint",
 			"Ата"
 		]
 	},
@@ -11,6 +12,7 @@
 	"reminder": "Нагадування",
 	"specialreminder": "Нагадування",
 	"prefs-reminder": "Нагадування",
+	"bs-reminder-text": "Нагадування",
 	"apihelp-bs-reminder-store-description": "Постачає дані для оглядової сітки на Special:Reminder",
 	"apihelp-bs-reminder-tasks-description": "Виконує завдання на кшталт оновлення та вилучення в оглядовій сітці на Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Стандартний період нагадування",
@@ -107,5 +109,6 @@
 	"bs-reminder-dialog-page-action-all-reminders": "Усі нагадування",
 	"bs-reminder-dialog-page-action-page-reminders": "Нагадування для цієї сторінки",
 	"bs-reminder-info-dialog": "Нагадування",
-	"bs-reminder-info-dialog-button-label": "Керувати нагадуваннями"
+	"bs-reminder-info-dialog-button-label": "Керувати нагадуваннями",
+	"bs-reminder-actionmenuentry-setreminder-label": "Встановити нагадування"
 }
