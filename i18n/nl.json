@@ -99,5 +99,9 @@
 	"bs-reminder-header-type": "Soort",
 	"bs-reminder-type-page": "Pagina",
 	"bs-reminder-dialog-page-action-my-reminders": "Mijn herinneringen",
-	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen"
+	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen",
+	"bs-reminder-dialog-page-action-page-reminders": "Herinneringen voor deze pagina",
+	"bs-reminder-info-dialog": "Herinnering",
+	"bs-reminder-info-dialog-button-label": "Herinneringen beheren",
+	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen"
 }
