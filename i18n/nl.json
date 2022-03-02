@@ -73,7 +73,7 @@
 	"notification-bs-reminder-one-week-email-body": "U hebt een herinnering ingesteld voor het artikel \"$1\". Deze herinnering staat gepland voor over één week.\n\nUw opmerking:\n$2",
 	"notification-bs-reminder-today-subject": "Vergeet artikel \"$1\" vandaag niet",
 	"notification-bs-reminder-today-email-body": "U hebt een herinnering ingesteld voor het artikel \"$1\". Deze herinnering komt vandaag.\n\nUw opmerking:\n$2",
-	"notification-bs-reminder-today-web-body": "U hebt een herinnering ingesteld voor het artikel \"$1\". Deze herinnering komt vandaag.",
+	"notification-bs-reminder-today-web-body": "U hebt een herinnering ingesteld voor het artikel \"$1\" met het commentaar \"$2\". Deze herinnering is voor vandaag.",
 	"apihelp-bs-reminder-tasks-summary": "Voorziet in taken zoals het bewerken of verwijderen van herinneringen",
 	"right-remindereditall": "De herinneringen van anderen bewerken",
 	"action-remindereditall": "de herinneringen van anderen te bewerken",
