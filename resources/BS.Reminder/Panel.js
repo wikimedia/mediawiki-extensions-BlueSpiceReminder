@@ -24,11 +24,12 @@ Ext.define( 'BS.Reminder.Panel', {
 			fields: [ 'id', 'user_name', 'page_title', 'page_link', 'reminder_date', 'article_id', 'rem_comment', 'rem_is_repeating' ],
 			proxy: {
 				extraParams: {
-					query: mw.config.get( 'BSReminderUsername', false )
+					query: this.username
 				}
 			}
 		} );
-		if ( mw.config.get( 'BSReminderShowUserColumn', false ) || !mw.config.get( 'BSReminderUsername', false ) ) {
+
+		if ( mw.config.get( 'BSReminderShowUserColumn', false ) || !this.username ) {
 			this.colUserName = Ext.create( 'Ext.grid.column.Template', {
 				id: 'user_name',
 				header: mw.message( 'bs-reminder-header-username' ).plain(),
@@ -42,16 +43,25 @@ Ext.define( 'BS.Reminder.Panel', {
 			this.colMainConf.columns.push( this.colUserName );
 		}
 
+		var pageFilter = {
+			type: 'string'
+		};
+		if ( this.page ) {
+			pageFilter.operator = 'eq';
+			pageFilter.value = this.page.replace( '_', ' ' );
+		}
 		this.colPageTitle = Ext.create( 'Ext.grid.column.Template', {
 			id: 'page_title',
 			header: mw.message('bs-reminder-header-pagename').plain(),
 			sortable: true,
+			hidden: !!this.page,
 			dataIndex: 'page_title',
 			tpl: '<a href="{page_link}">{page_title}</a>',
-			filter: {
-				type: 'string'
-			}
+			filter: pageFilter
 		} );
+
+		this.colMainConf.columns.push( this.colPageTitle );
+
 		var filter = [];
 		for( var idx in mw.config.get( 'bsgReminderRegisteredTypes' ) ) {
 			if ( idx === '' ) {
@@ -117,7 +127,6 @@ Ext.define( 'BS.Reminder.Panel', {
 			}
 		});
 
-		this.colMainConf.columns.push( this.colPageTitle );
 		this.colMainConf.columns.push( this.colReminderType );
 		this.colMainConf.columns.push( this.colReminderDate );
 		this.colMainConf.columns.push( this.colComment );
