@@ -30,7 +30,7 @@ Ext.onReady( function(){
 	Ext.create( 'BS.Reminder.Panel', {
 		operationPermissions: operationPermissions,
 		renderTo: 'bs-reminder-overview-grid',
-		username: mw.config.get( 'BSReminderUsername' ),
+		username: mw.config.get( 'BSReminderUsername', false ),
 		page: mw.config.get( 'BSReminderPage' )
 	} );
 } );
