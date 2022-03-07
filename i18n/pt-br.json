@@ -3,13 +3,15 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"McDutchie"
+			"McDutchie",
+			"Juan90264"
 		]
 	},
 	"bs-reminder-extension-description": "Dá ao usuário a oportunidade de criar lembretes.",
 	"reminder": "Lembrete",
 	"specialreminder": "Lembrete",
 	"prefs-reminder": "Lembrete",
+	"bs-reminder-text": "Lembretes",
 	"apihelp-bs-reminder-store-description": "Fornece os dados para a grade de visão geral do Special:Reminder",
 	"apihelp-bs-reminder-tasks-description": "Executa tarefas como atualização e exclusão da grade de visão geral do Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Período de lembrete padrão",
@@ -104,5 +106,7 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Meus lembretes",
 	"bs-reminder-dialog-page-action-all-reminders": "Todos os lembretes",
 	"bs-reminder-dialog-page-action-page-reminders": "Lembretes para esta página",
-	"bs-reminder-text": "Lembretes"
+	"bs-reminder-info-dialog": "Lembrete",
+	"bs-reminder-info-dialog-button-label": "Gerenciar lembretes",
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir lembrete"
 }
