@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"McDutchie",
 			"Omar Ghrida",
 			"ديفيد",
@@ -78,5 +79,7 @@
 	"bs-reminder-ordinal-third": "ثالث",
 	"bs-reminder-ordinal-fourth": "رابع",
 	"bs-reminder-ordinal-last": "أخير",
-	"bs-reminder-header-type": "النوع"
+	"bs-reminder-no": "لا",
+	"bs-reminder-header-type": "النوع",
+	"bs-reminder-type-page": "الصفحة"
 }
