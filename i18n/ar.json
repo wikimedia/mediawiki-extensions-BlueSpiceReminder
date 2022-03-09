@@ -4,7 +4,8 @@
 			"Omar Ghrida",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح",
-			"McDutchie"
+			"McDutchie",
+			"FiberAhmed"
 		]
 	},
 	"bs-reminder-extension-description": "يمنح المستخدم الفرصة لإنشاء تذكيرات.",
@@ -78,5 +79,7 @@
 	"bs-reminder-ordinal-third": "ثالث",
 	"bs-reminder-ordinal-fourth": "رابع",
 	"bs-reminder-ordinal-last": "أخير",
-	"bs-reminder-header-type": "النوع"
+	"bs-reminder-no": "لا",
+	"bs-reminder-header-type": "النوع",
+	"bs-reminder-type-page": "الصفحة"
 }
