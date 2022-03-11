@@ -103,5 +103,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Reminders for this page",
 	"bs-reminder-info-dialog": "Reminder",
 	"bs-reminder-info-dialog-button-label": "Manage reminders",
-	"bs-reminder-actionmenuentry-setreminder-label": "Set reminder"
+	"bs-reminder-actionmenuentry-setreminder-label": "Set reminder",
+	"bs-reminder-text": "Reminders"
 }

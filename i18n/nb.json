@@ -98,5 +98,12 @@
 	"bs-reminder-no": "nei",
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
-	"bs-reminder-type-page": "Side"
+	"bs-reminder-type-page": "Side",
+	"bs-reminder-text": "Påminnelser",
+	"bs-reminder-dialog-page-action-my-reminders": "Mine påminnelser",
+	"bs-reminder-dialog-page-action-all-reminders": "Alle påminnelser",
+	"bs-reminder-dialog-page-action-page-reminders": "Påminnelser for denne sida",
+	"bs-reminder-info-dialog": "Påminnelse",
+	"bs-reminder-info-dialog-button-label": "Behandle påminnelser",
+	"bs-reminder-actionmenuentry-setreminder-label": "Sett påminnelse"
 }
