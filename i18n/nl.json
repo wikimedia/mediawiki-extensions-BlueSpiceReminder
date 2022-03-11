@@ -7,7 +7,8 @@
 			"Mainframe98",
 			"McDutchie",
 			"Nickthijssen1994",
-			"Romaine"
+			"Romaine",
+			"Rots61"
 		]
 	},
 	"bs-reminder-unknown-user-msg": "U kunt geen herinnering aanmaken voor een gebruiker die niet bestaat.",
@@ -99,5 +100,14 @@
 	"bs-reminder-start-date-greater-end-date": "Einddatum herinnering kan niet voor de startdatum liggen",
 	"bs-reminder-dialog-page-action-my-reminders": "Mijn herinneringen",
 	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen",
-	"bs-reminder-text": "Herinneringen"
+	"bs-reminder-text": "Herinneringen",
+	"apihelp-bs-reminder-store-description": "Serveert de gegevens voor het overzichtsraster op Special:Reminder",
+	"apihelp-bs-reminder-tasks-description": "Voert taken uit zoals bijwerken en verwijderen voor het overzichtsraster op Special:Reminder",
+	"notification-bs-reminder-today-email-body": "U hebt een herinnering ingesteld voor het artikel \"$1\". Deze herinnering komt vandaag.\n\nUw opmerking:\n$2",
+	"notification-bs-reminder-today-web-body": "U hebt een herinnering ingesteld voor het artikel \"$1\" met het commentaar \"$2\". Deze herinnering is voor vandaag.",
+	"apihelp-bs-reminder-tasks-summary": "Voorziet in taken zoals het bewerken of verwijderen van herinneringen",
+	"bs-reminder-dialog-page-action-page-reminders": "Herinneringen voor deze pagina",
+	"bs-reminder-info-dialog": "Herinnering",
+	"bs-reminder-info-dialog-button-label": "Herinneringen beheren",
+	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen"
 }
