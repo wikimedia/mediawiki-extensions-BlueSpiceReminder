@@ -8,6 +8,7 @@
 	"reminder": "Rememoration",
 	"specialreminder": "Rememoration",
 	"prefs-reminder": "Rememoration",
+	"bs-reminder-text": "Rememorationes",
 	"apihelp-bs-reminder-store-description": "Forni le datos pro le grillia de vista general de Special:Reminder",
 	"apihelp-bs-reminder-tasks-description": "Executa travalios como actualisation e deletion pro le grillia de vista general de Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Periodo predefinite de rememorationes",
@@ -103,5 +104,6 @@
 	"bs-reminder-dialog-page-action-all-reminders": "Tote le rememorationes",
 	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
 	"bs-reminder-info-dialog": "Rememoration",
-	"bs-reminder-info-dialog-button-label": "Gerer rememorationes"
+	"bs-reminder-info-dialog-button-label": "Gerer rememorationes",
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration"
 }
