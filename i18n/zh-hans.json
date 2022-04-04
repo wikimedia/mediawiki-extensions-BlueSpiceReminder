@@ -9,6 +9,7 @@
 			"Nadine Siak",
 			"Shuiwater",
 			"SomeyaMako",
+			"StarrySky",
 			"落花有意12138"
 		]
 	},
@@ -32,6 +33,7 @@
 	"bs-reminder-navigation-link-text": "提醒",
 	"bs-reminder-nav-link-title-reminder": "提醒",
 	"bs-reminder-flyout-title": "提醒",
+	"echo-category-title-notification-bs-reminder-cat": "提醒",
 	"notification-bs-reminder-one-week-email-body": "您已经设置文章“$1”的提醒。此提醒将在一周之内到达。\n\n您的注释：\n$2",
 	"notification-bs-reminder-today-subject": "在今天记住文章“$1”",
 	"bs-reminder-repeat-label": "重复",
