@@ -4,7 +4,8 @@
 			"Amir1arch",
 			"FarsiNevis",
 			"Jeeputer",
-			"McDutchie"
+			"McDutchie",
+			"Beginneruser"
 		]
 	},
 	"reminder": "یادآور",
@@ -34,6 +35,7 @@
 	"bs-reminder-save-error": "خطایی رخ داد: $1",
 	"bs-reminder-save-error-unkown": "یادآور نمی‌تواند ذخیره شود.",
 	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-user-label": "اختصاص به کاربر",
 	"bs-reminder-comment-label": "نظر",
 	"bs-reminder-header-comment": "نظر",
 	"bs-reminder-article-label": "صفحه",
@@ -42,7 +44,7 @@
 	"bs-reminder-navigation-link-text": "یادآور",
 	"bs-reminder-nav-link-title-reminder": "یادآور",
 	"bs-reminder-flyout-title": "یادآور",
-	"bs-reminder-flyout-form-title": "ساخت یک یادآور",
+	"bs-reminder-flyout-form-title": "ایجاد یک یادآور",
 	"bs-reminder-flyout-manager-btn-label": "مدیریت یادآورها",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "یادآورهای من",
 	"echo-category-title-notification-bs-reminder-cat": "یادآورها",
@@ -73,7 +75,6 @@
 	"bs-reminder-start-date-greater-end-date": "تاریخ پایان یادآور نمی‌تواند قبل از تاریخ آغاز آن باشد",
 	"bs-reminder-header-is-repeating": "در حال تکرار است",
 	"bs-reminder-no": "نه",
-	"bs-reminder-user-label": "اختصاص به کاربر",
 	"bs-reminder-invalid-type": "نوع نامعتبر",
 	"bs-reminder-header-type": "نوع",
 	"bs-reminder-type-page": "صفحه",
