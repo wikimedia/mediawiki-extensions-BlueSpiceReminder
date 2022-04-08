@@ -62,6 +62,20 @@
 			"AttentionIndicatorRegistry": {
 				"reminder": "\\BlueSpice\\Reminder\\AttentionIndicator\\Reminder::factory"
 			}
+		},
+		"Workflows": {
+			"LogicObjects": {
+				"ActivityRegistry": {
+					"set_reminder": {
+						"class": "\\BlueSpice\\Reminder\\Activity\\SetReminderActivity",
+						"services": [
+							"TitleFactory",
+							"UserFactory",
+							"DBLoadBalancer"
+						]
+					}
+				}
+			}
 		}
 	},
 	"GroupPermissions": {
