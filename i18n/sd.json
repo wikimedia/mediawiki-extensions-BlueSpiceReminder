@@ -12,6 +12,8 @@
 	"bs-reminder-comment-label": "راءِ",
 	"bs-reminder-article-label": "صفحو",
 	"echo-category-title-notification-bs-reminder-cat": "يادگيريون",
+	"bs-reminder-repeat-interval-week": "ھفتو(ھفتا)",
+	"bs-reminder-repeat-interval-month": "مھينو(مھينا)",
 	"bs-reminder-dialog-page-action-my-reminders": "منھنجون يادگيريون",
 	"bs-reminder-dialog-page-action-all-reminders": "سڀ يادگيريون",
 	"bs-reminder-dialog-page-action-page-reminders": "ھن صفحي لاءِ يادگيريون",
