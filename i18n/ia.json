@@ -103,5 +103,7 @@
 	"bs-reminder-dialog-page-action-all-reminders": "Tote le rememorationes",
 	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
 	"bs-reminder-info-dialog": "Rememoration",
-	"bs-reminder-info-dialog-button-label": "Gerer rememorationes"
+	"bs-reminder-info-dialog-button-label": "Gerer rememorationes",
+	"bs-reminder-text": "Rememorationes",
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration"
 }
