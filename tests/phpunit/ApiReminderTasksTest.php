@@ -59,7 +59,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 
 	public function testSaveReminder_catchAnonUser() {
 		// You could also retrieve the edit toke for an anonymous user via Api.
-		// This seems unneccessary right now, but might be useful in the future.
+		// This seems unnecessary right now, but might be useful in the future.
 		// So leaving this code here for reference.
 		// self::$users['anonymous'] = new stdClass();
 		// self::$users['anonymous']->user = new User;
