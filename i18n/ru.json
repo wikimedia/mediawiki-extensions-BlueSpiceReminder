@@ -5,7 +5,8 @@
 			"Diman Russkov",
 			"Ice bulldog",
 			"Kareyac",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"McDutchie"
 		]
 	},
 	"reminder": "Напоминание",
@@ -18,7 +19,7 @@
 	"bs-reminder-title-delete": "Удалить напоминание",
 	"bs-reminder-delete-error": "Произошла ошибка: $1",
 	"bs-reminder-save-error": "Произошла ошибка: $1",
-	"bs-reminder-date-format": "Г-м-д",
+	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-comment-label": "Комментарий",
 	"bs-reminder-header-comment": "Комментарий",
 	"bs-reminder-article-label": "Страница",
