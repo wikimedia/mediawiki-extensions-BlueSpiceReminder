@@ -2,12 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Avengium",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Jakeukalane",
 			"Madamebiblio",
 			"Nguyễn Mạnh An",
-			"Suecarmol",
-			"DiegoAmbrocio"
+			"Suecarmol"
 		]
 	},
 	"bs-reminder-extension-description": "Ofrece al usuario la posibilidad de crear recordatorios.",
