@@ -73,10 +73,10 @@
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: aviso para a página $1 em $2 com o comentário: $3",
 	"echo-pref-tooltip-bs-reminder-cat": "Notificar-me quando os meus avisos serão entregues hoje ou daqui a uma semana",
 	"notification-bs-reminder-one-week-email-body": "Ativou um aviso para o artigo \"$1\". Este aviso será entregue daqui a uma semana.\n\nO seu comentário:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Ativou um aviso para o artigo \"$1\". Este aviso será entregue daqui a uma semana.",
+	"notification-bs-reminder-one-week-web-body": "Ativou um aviso para o artigo \"$1\" com o comentário \"$2\". Este aviso será entregue daqui a uma semana.",
 	"notification-bs-reminder-today-subject": "Recorde-se do artigo \"$1\" hoje",
 	"notification-bs-reminder-today-email-body": "Ativou um aviso para o artigo \"$1\". Este aviso é para ser entregue hoje.\n\nO seu comentário:\n$2",
-	"notification-bs-reminder-today-web-body": "Ativou um aviso para o artigo \"$1\". Este aviso é para ser entregue hoje.",
+	"notification-bs-reminder-today-web-body": "Ativou um aviso para o artigo \"$1\" com o comentário \"$2\". Este aviso é para hoje.",
 	"apihelp-bs-reminder-store-summary": "Fornece um repositório de avisos, que pode ser consultado",
 	"apihelp-bs-reminder-tasks-summary": "Fornece tarefas como editar ou eliminar avisos",
 	"bs-reminder-ordinal-first": "primeiro",
@@ -101,5 +101,12 @@
 	"bs-reminder-no": "não",
 	"bs-reminder-invalid-type": "Tipo inválido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Página"
+	"bs-reminder-type-page": "Página",
+	"bs-reminder-text": "Avisos",
+	"bs-reminder-dialog-page-action-my-reminders": "Avisos",
+	"bs-reminder-dialog-page-action-all-reminders": "Todos os avisos",
+	"bs-reminder-dialog-page-action-page-reminders": "Avisos para esta página",
+	"bs-reminder-info-dialog": "Aviso",
+	"bs-reminder-info-dialog-button-label": "Gerir avisos",
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso"
 }
