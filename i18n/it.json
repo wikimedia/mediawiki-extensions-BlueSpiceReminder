@@ -3,11 +3,13 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"McDutchie",
 			"Stefano"
 		]
 	},
 	"reminder": "Promemoria",
+	"specialreminder": "Promemoria",
 	"prefs-reminder": "Promemoria",
 	"bs-reminder-menu_entry-show": "Promemoria",
 	"bs-reminder-create-title": "Promemoria",
