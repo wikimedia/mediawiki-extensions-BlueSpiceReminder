@@ -4,10 +4,12 @@
 			"Ajeje Brazorf",
 			"Beta16",
 			"Stefano",
-			"McDutchie"
+			"McDutchie",
+			"GpieroMW"
 		]
 	},
 	"reminder": "Promemoria",
+	"specialreminder": "Promemoria",
 	"prefs-reminder": "Promemoria",
 	"bs-reminder-menu_entry-show": "Promemoria",
 	"bs-reminder-create-title": "Promemoria",
