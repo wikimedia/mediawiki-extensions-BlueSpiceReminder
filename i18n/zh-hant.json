@@ -10,6 +10,7 @@
 	"reminder": "提醒",
 	"specialreminder": "提醒",
 	"prefs-reminder": "提醒",
+	"bs-reminder-text": "提醒",
 	"apihelp-bs-reminder-store-description": "服務用於 Special:Reminder 概述網格的資料",
 	"apihelp-bs-reminder-tasks-description": "執行像是更新與刪除用於 Special:Reminder 概述網格的任務",
 	"bs-reminder-pref-DefaultReminderPeriod": "預設提醒期間",
