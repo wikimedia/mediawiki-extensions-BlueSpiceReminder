@@ -100,8 +100,8 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
 
 bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatValue = function() {
 	return {
-		intervalType: this.repeatValue.getValue(),
-		intervalValue: this.repeatInterval.getValue(),
+		intervalType: this.repeatInterval.getValue(),
+		intervalValue: this.repeatValue.getValue(),
 		repeatDateEnd: this.repeatEnd.getValue(),
 		weekdaysToRepeat: this.repeatDaysOfWeek.items.map( function( button ) {
 			if ( button.getValue() ) {
