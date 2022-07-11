@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"McDutchie",
 			"Stefano"
 		]
@@ -53,5 +54,6 @@
 	"bs-reminder-flyout-grid-title": "Promemoria di altri utenti",
 	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "I miei promemoria",
-	"bs-reminder-repeat-every-title": "Ripete ogni"
+	"bs-reminder-repeat-every-title": "Ripete ogni",
+	"specialreminder": "Promemoria"
 }
