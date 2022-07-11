@@ -74,6 +74,15 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 						FormatJson::decode( $reminder->rem_repeat_config )
 					);
 
+				if ( $nextReminderDate === false ) {
+					wfDebugLog(
+						'BS::Reminder',
+						'Could not calculate next reminder date from '
+						. $reminder->rem_repeat_config
+					);
+					continue;
+				}
+
 				$repeatDateEnd = DateTime::createFromFormat( 'YmdHis', $reminder->rem_repeat_date_end );
 
 				if ( $repeatDateEnd->format( 'Y-m-d' ) >= $nextReminderDate->format( 'Y-m-d' ) ) {
