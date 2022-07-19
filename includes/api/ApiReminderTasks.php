@@ -202,6 +202,13 @@ class ApiReminderTasks extends BSApiTasksBase {
 			// B/C
 			$rawDate = DateTime::createFromFormat( 'YmdHis', $rawDate )->format( 'Y-m-d' );
 		}
+
+		// date that comes before current day
+		$formattedDate = DateTime::createFromFormat( 'Y-m-d', $rawDate );
+		if ( $formattedDate < new DateTime() ) {
+			$oResult->message = $oResult->errors[] = wfMessage( 'bs-reminder-illegal-date-msg' )->text();
+			return $oResult;
+		}
 		$sFormattedFieldValue = $rawDate;
 
 		$iUserId = $oUser->getId();
