@@ -16,9 +16,12 @@ OO.inheritClass( bs.reminder.ui.ReminderPage, OOJSPlus.ui.booklet.DialogBookletP
 OO.mixinClass( bs.reminder.ui.ReminderPage, bs.reminder.ui.mixin.RepeatLayout );
 
 bs.reminder.ui.ReminderPage.prototype.getItems = function() {
+	var today = new Date();
+	var currentDate = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
 	this.datePicker = new mw.widgets.DateInputWidget( {
 		$overlay: true,
-		required: true
+		required: true,
+		mustBeAfter: currentDate
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
 
