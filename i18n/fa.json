@@ -78,5 +78,10 @@
 	"bs-reminder-invalid-type": "نوع نامعتبر",
 	"bs-reminder-header-type": "نوع",
 	"bs-reminder-type-page": "صفحه",
-	"bs-reminder-info-dialog-button-label": "مدیریت یادآورها"
+	"bs-reminder-info-dialog-button-label": "مدیریت یادآورها",
+	"bs-reminder-dialog-page-action-my-reminders": "یادآورهای من",
+	"bs-reminder-dialog-page-action-all-reminders": "تمام یادآورها",
+	"bs-reminder-dialog-page-action-page-reminders": "یادآورهای این صفحه",
+	"bs-reminder-info-dialog": "یادآور",
+	"bs-reminder-actionmenuentry-setreminder-label": "تنظیم یادآور"
 }
