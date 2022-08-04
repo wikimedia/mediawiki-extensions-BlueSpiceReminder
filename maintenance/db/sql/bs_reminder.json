@@ -1,0 +1,115 @@
+[
+	{
+		"name": "bs_reminder",
+		"columns": [
+			{
+				"name": "rem_id",
+				"type": "integer",
+				"options": {
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "rem_user_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"notnull": true
+				}
+			},
+			{
+				"name": "rem_page_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"notnull": true
+				}
+			},
+			{
+				"name": "rem_date",
+				"type": "datetimetz",
+				"options": {
+					"notnull": true
+				}
+			},
+			{
+				"name": "rem_comment",
+				"type": "binary",
+				"options": {
+					"length": 255
+				}
+			},
+			{
+				"name": "rem_is_repeating",
+				"type": "mwtinyint",
+				"options": {
+					"length": 1,
+					"notnull": true,
+					"default": 0
+				}
+			},
+			{
+				"name": "rem_repeat_date_end",
+				"type": "string",
+				"options": {
+					"length": 14,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "rem_repeat_config",
+				"type": "blob",
+				"options": {
+					"length": 65535,
+					"notnull": true
+				}
+			},
+			{
+				"name": "rem_type",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			}
+		],
+		"indexes": [
+			{
+				"name": "rem_user_id_idx",
+				"columns": [
+					"rem_user_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "rem_page_id_idx",
+				"columns": [
+					"rem_page_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "rem_user_page_idx",
+				"columns": [
+					"rem_user_id",
+					"rem_page_id"
+				],
+				"unique": false
+			},
+			{
+				"name": "rem_date_idx",
+				"columns": [
+					"rem_date"
+				],
+				"unique": false
+			}
+		],
+		"pk": [
+			"rem_id"
+		]
+	}
+]
