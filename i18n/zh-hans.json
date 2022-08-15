@@ -10,6 +10,7 @@
 			"Shuiwater",
 			"SomeyaMako",
 			"StarrySky",
+			"Wzl19371",
 			"沈澄心",
 			"落花有意12138"
 		]
@@ -72,5 +73,6 @@
 	"bs-reminder-no": "否",
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
-	"bs-reminder-type-page": "页面"
+	"bs-reminder-type-page": "页面",
+	"bs-reminder-text": "提醒"
 }
