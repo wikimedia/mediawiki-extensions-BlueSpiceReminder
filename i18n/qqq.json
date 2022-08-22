@@ -22,6 +22,7 @@
 	"bs-reminder-unknown-page-msg": "Error message when someone tries to create a reminder for a page which doesn't exist.",
 	"bs-reminder-unknown-user-msg": "Error message when someone tries to create a reminder for a user which doesn't exist.",
 	"bs-reminder-date-label": "Label for date field to remind at",
+	"bs-reminder-illegal-date-msg": "Error message when someone tries to create a reminder for a date that comes before current day.",
 	"bs-reminder-create-reminder-label": "Label for checkbox to create reminder",
 	"bs-reminder-create-title": "Title for dialog to create reminder\n{{Identical|Reminder}}",
 	"bs-reminder-create-success": "Message to display when the reminder has been created successfully.",

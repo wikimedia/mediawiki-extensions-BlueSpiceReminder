@@ -16,6 +16,7 @@
 	"bs-reminder-menu_entry-show": "Reminders",
 	"bs-reminder-unknown-page-msg": "You are trying to create a reminder for a page which doesn't exist.",
 	"bs-reminder-unknown-user-msg": "You are trying to create a reminder for a user which doesn't exist.",
+	"bs-reminder-illegal-date-msg": "You are trying to create a reminder for a date which is before current date",
 	"bs-reminder-date-label": "Remind on",
 	"bs-reminder-create-reminder-label": "Create reminder",
 	"bs-reminder-create-title": "Reminder",
