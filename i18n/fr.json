@@ -22,6 +22,7 @@
 	"bs-reminder-menu_entry-show": "Rappels",
 	"bs-reminder-unknown-page-msg": "Vous essayez de créer un rappel pour une page qui n’existe pas.",
 	"bs-reminder-unknown-user-msg": "Vous essayez de créer un rappel pour un utilisateur qui n’existe pas.",
+	"bs-reminder-illegal-date-msg": "Vous essayez de créer un rappel pour une date antérieure à la date actuelle",
 	"bs-reminder-date-label": "Rappel du",
 	"bs-reminder-create-reminder-label": "Créer un rappel",
 	"bs-reminder-create-title": "Rappel",
