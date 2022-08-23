@@ -110,5 +110,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Rappels pour cette page",
 	"bs-reminder-info-dialog": "Rappel",
 	"bs-reminder-info-dialog-button-label": "Gérer les rappels",
-	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel"
+	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel",
+	"bs-reminder-illegal-date-msg": "Vous essayez de créer un rappel pour une date antérieure à la date actuelle"
 }
