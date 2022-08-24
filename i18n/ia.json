@@ -105,5 +105,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
 	"bs-reminder-info-dialog": "Rememoration",
 	"bs-reminder-info-dialog-button-label": "Gerer rememorationes",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration",
+	"bs-reminder-illegal-date-msg": "Tentativa de crear un rememoration pro un data que es ante le data actual"
 }
