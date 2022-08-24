@@ -18,6 +18,7 @@
 	"bs-reminder-menu_entry-show": "Rememorationes",
 	"bs-reminder-unknown-page-msg": "Tentativa de crear un rememoration pro un pagina que non existe.",
 	"bs-reminder-unknown-user-msg": "Tentativa de crear un rememoration pro un usator que non existe.",
+	"bs-reminder-illegal-date-msg": "Tentativa de crear un rememoration pro un data que es ante le data actual",
 	"bs-reminder-date-label": "Rememorar le",
 	"bs-reminder-create-reminder-label": "Crear rememoration",
 	"bs-reminder-create-title": "Rememoration",

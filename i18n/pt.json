@@ -21,6 +21,7 @@
 	"bs-reminder-menu_entry-show": "Avisos",
 	"bs-reminder-unknown-page-msg": "Está a tentar criar um aviso para uma página que não existe.",
 	"bs-reminder-unknown-user-msg": "Está a tentar criar um aviso para um utilizador que não existe.",
+	"bs-reminder-illegal-date-msg": "Está a tentar criar um aviso para uma data anterior à data de hoje",
 	"bs-reminder-date-label": "Lembrar a",
 	"bs-reminder-create-reminder-label": "Criar aviso",
 	"bs-reminder-create-title": "Aviso",

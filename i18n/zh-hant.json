@@ -20,6 +20,7 @@
 	"bs-reminder-menu_entry-show": "提醒",
 	"bs-reminder-unknown-page-msg": "您正嘗試替不存在的頁面建立提醒。",
 	"bs-reminder-unknown-user-msg": "您正嘗試替不存在的使用者建立提醒。",
+	"bs-reminder-illegal-date-msg": "您正在嘗試為現在日期之前的日期建立提醒",
 	"bs-reminder-date-label": "提醒於",
 	"bs-reminder-create-reminder-label": "建立提醒",
 	"bs-reminder-create-title": "提醒",
