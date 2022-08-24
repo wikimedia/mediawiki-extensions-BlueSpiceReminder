@@ -108,5 +108,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Avisos para esta página",
 	"bs-reminder-info-dialog": "Aviso",
 	"bs-reminder-info-dialog-button-label": "Gerir avisos",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso",
+	"bs-reminder-illegal-date-msg": "Está a tentar criar um aviso para uma data anterior à data de hoje"
 }

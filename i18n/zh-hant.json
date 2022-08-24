@@ -107,5 +107,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "此頁面的提醒",
 	"bs-reminder-info-dialog": "提醒",
 	"bs-reminder-info-dialog-button-label": "管理提醒",
-	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒"
+	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒",
+	"bs-reminder-illegal-date-msg": "您正在嘗試為現在日期之前的日期建立提醒"
 }
