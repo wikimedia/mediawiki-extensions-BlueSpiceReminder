@@ -7,6 +7,7 @@
 			"Killarnee",
 			"Mglaser",
 			"MrFraggle",
+			"Mschlindwein",
 			"Umherirrender"
 		]
 	},
@@ -24,6 +25,7 @@
 	"bs-reminder-menu_entry-show": "Erinnerungen",
 	"bs-reminder-unknown-page-msg": "Du versuchst eine Erinnerung für eine Seite anzulegen, welche nicht existiert.",
 	"bs-reminder-unknown-user-msg": "Du versuchst eine Erinnerung für einen Benutzer anzulegen, der nicht existiert.",
+	"bs-reminder-illegal-date-msg": "Du versuchst, eine Erinnerung für ein Datum zu erstellen, das vor dem aktuellen Datum liegt",
 	"bs-reminder-date-label": "Erinnern am",
 	"bs-reminder-create-reminder-label": "Erinnerung erstellen",
 	"bs-reminder-create-title": "Erinnerung",
