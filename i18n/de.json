@@ -7,6 +7,7 @@
 			"Killarnee",
 			"Mglaser",
 			"MrFraggle",
+			"Mschlindwein",
 			"Umherirrender"
 		]
 	},
@@ -112,5 +113,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Meine Erinnerungen",
 	"bs-reminder-dialog-page-action-all-reminders": "\nAlle Erinnerungen",
 	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite",
-	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen"
+	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen",
+	"bs-reminder-illegal-date-msg": "Du versuchst, eine Erinnerung für ein Datum zu erstellen, das vor dem aktuellen Datum liegt"
 }
