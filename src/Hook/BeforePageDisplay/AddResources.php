@@ -5,7 +5,8 @@ namespace BlueSpice\Reminder\Hook\BeforePageDisplay;
 class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function doProcess() {
-		$defaultPeriod = $this->out->getUser()->getOption( 'bs-reminder-period' );
+		$defaultPeriod = $this->getServices()->getUserOptionsLookup()
+			->getOption( $this->out->getUser(), 'bs-reminder-period' );
 		$this->out->addJsConfigVars(
 			"DefaultReminderPeriod",
 			strtotime( "+$defaultPeriod days" )
