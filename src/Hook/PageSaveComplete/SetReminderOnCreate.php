@@ -27,7 +27,8 @@ class SetReminderOnCreate extends PageSaveComplete {
 		if ( !$title->isNewPage() ) {
 			return true;
 		}
-		if ( !$this->user->getOption( 'bs-reminder-oncreate' ) ) {
+		if ( !$this->getServices()->getUserOptionsLookup()
+				->getBoolOption( $this->user, 'bs-reminder-oncreate' ) ) {
 			return true;
 		}
 		foreach ( $this->getNSBlacklist() as $key => $id ) {
@@ -49,7 +50,8 @@ class SetReminderOnCreate extends PageSaveComplete {
 	 * @return bool
 	 */
 	protected function doProcess() {
-		$sDefaultPeriod = $this->user->getOption( 'bs-reminder-period' );
+		$sDefaultPeriod = $this->getServices()->getUserOptionsLookup()
+			->getOption( $this->user, 'bs-reminder-period' );
 		$iDate = strtotime( "+$sDefaultPeriod days" );
 		$sFormattedFieldValue = date( 'Y-m-d', $iDate );
 
@@ -82,7 +84,8 @@ class SetReminderOnCreate extends PageSaveComplete {
 	 * @return int[]
 	 */
 	private function getNSBlacklist() {
-		return explode( '|', $this->user->getOption( 'bs-reminder-forns' ) );
+		return explode( '|', $this->getServices()->getUserOptionsLookup()
+			->getOption( $this->user, 'bs-reminder-forns' ) );
 	}
 
 }
