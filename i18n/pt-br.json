@@ -4,7 +4,8 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Juan90264",
-			"McDutchie"
+			"McDutchie",
+			"Tiagoquix"
 		]
 	},
 	"bs-reminder-extension-description": "Dá ao usuário a oportunidade de criar lembretes.",
@@ -108,5 +109,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Lembretes para esta página",
 	"bs-reminder-info-dialog": "Lembrete",
 	"bs-reminder-info-dialog-button-label": "Gerenciar lembretes",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir lembrete"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir lembrete",
+	"bs-reminder-illegal-date-msg": "Você está tentando criar um lembrete para uma data anterior à de hoje"
 }
