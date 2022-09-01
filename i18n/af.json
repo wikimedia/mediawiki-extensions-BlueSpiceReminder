@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joris Darlington Quarshie"
+			"Joris Darlington Quarshie",
+			"Rooiratel"
 		]
 	},
+	"bs-reminder-comment-label": "Opmerking",
 	"echo-pref-tooltip-bs-reminder-cat": "Stel my in kennis wanneer my aanmanings vandag of oor een week betaal word"
 }
