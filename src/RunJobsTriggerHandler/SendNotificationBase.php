@@ -25,6 +25,19 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 	 */
 	protected $doUpdateRepeatingRemindersDate = false;
 
+	/** @var MediaWikiServices */
+	private $services = null;
+
+	/**
+	 * @param \Config $config
+	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
+	 * @param INotifier $notifier
+	 */
+	public function __construct( $config, $loadBalancer, $notifier ) {
+		parent::__construct( $config, $loadBalancer, $notifier );
+		$this->services = MediaWikiServices::getInstance();
+	}
+
 	protected function doRun() {
 		$status = \Status::newGood();
 
@@ -38,8 +51,9 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 		$repeatingReminders = [];
 
 		if ( $res && $res->numRows() ) {
+			$userFactory = $this->services->getUserFactory();
 			foreach ( $res as $row ) {
-				$user = \User::newFromId( $row->rem_user_id );
+				$user = $userFactory->newFromId( $row->rem_user_id );
 				$title = \Title::newFromID( $row->rem_page_id );
 				$comment = $row->rem_comment;
 				if ( $user && $title ) {
@@ -65,14 +79,13 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 	 */
 	protected function updateRepeatingRemindersDate( array $repeatingReminders ) {
 		if ( count( $repeatingReminders ) > 0 ) {
+			$reminderService = $this->services->getService( 'BSRepeatingReminderDateCalculator' );
 			foreach ( $repeatingReminders as $reminder ) {
 				$currentDate = new DateTime();
-				$nextReminderDate = MediaWikiServices::getInstance()
-					->getService( 'BSRepeatingReminderDateCalculator' )
-					->getNextReminderDateFromGivenDate(
-						$currentDate,
-						FormatJson::decode( $reminder->rem_repeat_config )
-					);
+				$nextReminderDate = $reminderService->getNextReminderDateFromGivenDate(
+					$currentDate,
+					FormatJson::decode( $reminder->rem_repeat_config )
+				);
 
 				if ( $nextReminderDate === false ) {
 					wfDebugLog(
