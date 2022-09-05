@@ -55,5 +55,17 @@
 	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "I miei promemoria",
 	"bs-reminder-repeat-every-title": "Ripete ogni",
-	"specialreminder": "Promemoria"
+	"specialreminder": "Promemoria",
+	"bs-reminder-extension-description": "Offre all'utente la possibilità di creare promemoria.",
+	"bs-reminder-text": "Promemoria",
+	"apihelp-bs-reminder-tasks-description": "Esegue attività come l'aggiornamento e la cancellazione per la griglia panoramica di Special:Reminder",
+	"bs-reminder-pref-SetReminderOnCreate": "Imposta promemoria sulla creazione della pagina",
+	"bs-reminder-menu_entry-create": "Crea promemoria",
+	"bs-reminder-unknown-page-msg": "Stai cercando di creare una promemoria per una pagina che non esiste.",
+	"bs-reminder-unknown-user-msg": "Stai cercando di creare una promemoria per un utente che non esiste.",
+	"bs-reminder-illegal-date-msg": "Stai tentando di creare un promemoria per una data precedente alla data corrente",
+	"bs-reminder-create-success": "Il promemoria è stato creato correttamente.",
+	"bs-reminder-create-error": "Non è stato ancora possibile creare il tuo promemoria. Prova di nuovo.",
+	"bs-reminder-update-success": "Il tuo promemoria è stato aggiornato con successo.",
+	"bs-reminder-update-error": "Il tuo promemoria non può ancora essere aggiornato. Prova di nuovo."
 }
