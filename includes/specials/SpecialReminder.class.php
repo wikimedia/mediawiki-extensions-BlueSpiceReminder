@@ -85,7 +85,7 @@ class SpecialReminder extends ManagerBase {
 	}
 
 	private function userCanEditAll() {
-		$permissionManager = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$permissionManager = $this->services->getPermissionManager();
 		return $permissionManager->userHasRight( $this->getUser(), 'remindereditall' );
 	}
 
