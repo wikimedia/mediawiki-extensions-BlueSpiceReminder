@@ -5,7 +5,6 @@ namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler;
 use DateTime;
 use FormatJson;
-use MediaWiki\MediaWikiServices;
 
 class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
@@ -24,19 +23,6 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 	 * @var bool
 	 */
 	protected $doUpdateRepeatingRemindersDate = false;
-
-	/** @var MediaWikiServices */
-	private $services = null;
-
-	/**
-	 * @param \Config $config
-	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
-	 * @param INotifier $notifier
-	 */
-	public function __construct( $config, $loadBalancer, $notifier ) {
-		parent::__construct( $config, $loadBalancer, $notifier );
-		$this->services = MediaWikiServices::getInstance();
-	}
 
 	protected function doRun() {
 		$status = \Status::newGood();
