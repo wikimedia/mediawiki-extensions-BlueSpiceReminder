@@ -7,16 +7,6 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 
 	/**
 	 *
-	 * @param string $mainModule
-	 * @param string $moduleName
-	 * @param string $modulePrefix
-	 */
-	public function __construct( $mainModule, $moduleName, $modulePrefix = '' ) {
-		parent::__construct( $mainModule, $moduleName, $modulePrefix );
-	}
-
-	/**
-	 *
 	 * @return Factory
 	 */
 	protected function getFactory() {
