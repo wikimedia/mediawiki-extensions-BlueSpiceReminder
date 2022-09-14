@@ -1,7 +1,6 @@
 <?php
 
 use BlueSpice\Reminder\Factory;
-use MediaWiki\MediaWikiServices;
 
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
@@ -10,7 +9,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	 * @return Factory
 	 */
 	protected function getFactory() {
-		return $this->getServices()->getService( 'BSReminderFactory' );
+		return $this->services->getService( 'BSReminderFactory' );
 	}
 
 	/**
@@ -100,7 +99,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			]
 		];
 
-		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+		$isAllowed = $this->services->getPermissionManager()->userHasRight(
 			$oUser,
 			'remindereditall'
 		);
@@ -137,7 +136,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			'sortable' => false
 		];
 
-		$this->getServices()->getHookContainer()->run( 'BsReminderBuildOverviewMetadata', [
+		$this->services->getHookContainer()->run( 'BsReminderBuildOverviewMetadata', [
 			&$aMetadata
 		] );
 
@@ -182,7 +181,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			'results' => [],
 			'total' => 0
 		];
-		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = $this->services->getPermissionManager();
 		if ( !$pm->userHasRight( $oUser, 'read' ) || $oUser->isAnon() ) {
 			return $aData;
 		}
@@ -242,7 +241,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		];
 
 		// give other extensions the opportunity to modify the query
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BsReminderBeforeBuildOverviewQuery',
 			[
 				$this,
@@ -256,7 +255,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			]
 		);
 
-		$isAllowed = MediaWikiServices::getInstance()->getPermissionManager()->userHasRight(
+		$isAllowed = $this->services->getPermissionManager()->userHasRight(
 			$oUser,
 			'remindereditall'
 		);
@@ -295,7 +294,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 					'rem_type' => $row->rem_type,
 					'rem_repeat_config' => $row->rem_repeat_config
 				];
-				MediaWikiServices::getInstance()->getHookContainer()->run(
+				$this->services->getHookContainer()->run(
 					'BsReminderBuildOverviewResultSet',
 					[
 						$this,
