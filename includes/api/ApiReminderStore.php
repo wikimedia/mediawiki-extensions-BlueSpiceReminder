@@ -25,7 +25,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 
 		$requestedUser = null;
 		if ( !empty( $sQuery ) ) {
-			$requestedUser = \User::newFromName( $sQuery );
+			$requestedUser = $this->services->getUserFactory()->newFromName( $sQuery );
 			if ( !$requestedUser || $requestedUser->isAnon() ) {
 				$requestedUser = null;
 			}

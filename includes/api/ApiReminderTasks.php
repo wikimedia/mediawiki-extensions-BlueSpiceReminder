@@ -216,7 +216,8 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$sComment = strip_tags( empty( $oTaskData->comment ) ? '' : (string)$oTaskData->comment );
 
 		if ( isset( $oTaskData->userName ) && $oTaskData->userName != '' ) {
-			$iTargetUserId = User::newFromName( $oTaskData->userName )->getId();
+			$iTargetUserId = $this->services->getUserFactory()->newFromName( $oTaskData->userName )
+				->getId();
 
 			if ( !$iTargetUserId > 0 ) {
 				$oResult->message = $oResult->errors[] =
