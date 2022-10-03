@@ -109,5 +109,9 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Herinneringen voor deze pagina",
 	"bs-reminder-info-dialog": "Herinnering",
 	"bs-reminder-info-dialog-button-label": "Herinneringen beheren",
-	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen"
+	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen",
+	"bs-reminder-illegal-date-msg": "U probeert een herinnering aan te maken voor een datum die vóór de huidige datum ligt.",
+	"notification-bs-reminder-one-week-web-body": "U hebt een herinnering ingesteld voor het artikel \"$1\" met het commentaar \"$2\". Deze herinnering verschijnt over een week.",
+	"apihelp-bs-reminder-store-summary": "Voorziet in opslag voor herinneringen en maakt het mogelijk deze op te vragen",
+	"bs-reminder-header-is-repeating": "Herhaalt zich"
 }
