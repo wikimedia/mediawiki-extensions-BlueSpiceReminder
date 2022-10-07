@@ -11,7 +11,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 	 * @return Factory
 	 */
 	protected function getFactory() {
-		return $this->getServices()->getService( 'BSReminderFactory' );
+		return $this->services->getService( 'BSReminderFactory' );
 	}
 
 	/**
@@ -54,7 +54,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$aConds = [];
 		if ( $iReminderId ) {
 			$aConds['rem_id'] = $iReminderId;
-			$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$isAllowed = $this->services->getPermissionManager()->userHasRight(
 				$oUser,
 				'remindereditall'
 			);
@@ -92,7 +92,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		$idsToRemove = [];
 		foreach ( $res as $row ) {
 			$idsToRemove[] = (int)$row->rem_id;
-			$this->getServices()->getHookContainer()->run( 'BsReminderDeleteReminder', [
+			$this->services->getHookContainer()->run( 'BsReminderDeleteReminder', [
 				(int)$row->rem_id,
 				&$oResult
 			] );
@@ -224,7 +224,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 				return $oResult;
 			}
 
-			$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$isAllowed = $this->services->getPermissionManager()->userHasRight(
 				$oUser,
 				'remindereditall'
 			);
@@ -254,8 +254,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$aData['rem_repeat_date_end'] = $endDate->format( 'YmdHis' );
 
 			$startReminderDate = DateTime::createFromFormat( 'Y-m-d', $aData['rem_date'] );
-			$startReminderDate = $this->getServices()
-				->getService( 'BSRepeatingReminderDateCalculator' )
+			$startReminderDate = $this->services->getService( 'BSRepeatingReminderDateCalculator' )
 				->getStartDate( $startReminderDate, $oTaskData->repeatConfig );
 			$startReminderDate = $startReminderDate->format( 'YmdHis' );
 
@@ -285,7 +284,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$iReminderId = $dbw->insertId();
 
 			try {
-				$this->getServices()->getHookContainer()->run( 'BsReminderOnSave', [
+				$this->services->getHookContainer()->run( 'BsReminderOnSave', [
 					$oTaskData,
 					$iReminderId,
 					$oTaskData->articleId ?? 0, $iUserId
@@ -313,7 +312,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			}
 
 			try {
-				$this->getServices()->getHookContainer()->run( 'BsReminderOnUpdate', [
+				$this->services->getHookContainer()->run( 'BsReminderOnUpdate', [
 					$oTaskData,
 					$iReminderId
 				] );
