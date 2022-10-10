@@ -67,5 +67,6 @@
 	"bs-reminder-create-success": "Il promemoria è stato creato correttamente.",
 	"bs-reminder-create-error": "Non è stato ancora possibile creare il tuo promemoria. Prova di nuovo.",
 	"bs-reminder-update-success": "Il tuo promemoria è stato aggiornato con successo.",
-	"bs-reminder-update-error": "Il tuo promemoria non può ancora essere aggiornato. Prova di nuovo."
+	"bs-reminder-update-error": "Il tuo promemoria non può ancora essere aggiornato. Prova di nuovo.",
+	"bs-reminder-create-reminder-label": "Crea promemoria"
 }
