@@ -20,6 +20,7 @@
 	"bs-reminder-unknown-page-msg": "Stai cercando di creare una promemoria per una pagina che non esiste.",
 	"bs-reminder-unknown-user-msg": "Stai cercando di creare una promemoria per un utente che non esiste.",
 	"bs-reminder-illegal-date-msg": "Stai tentando di creare un promemoria per una data precedente alla data corrente",
+	"bs-reminder-create-reminder-label": "Crea promemoria",
 	"bs-reminder-create-title": "Promemoria",
 	"bs-reminder-create-success": "Il promemoria è stato creato correttamente.",
 	"bs-reminder-create-error": "Non è stato ancora possibile creare il tuo promemoria. Prova di nuovo.",
