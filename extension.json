@@ -190,7 +190,7 @@
 			"dependencies": [
 				"ext.bluespice",
 				"ext.oOJSPlus.dialogs",
-				"mediawiki.widgets.UserInputWidget",
+				"ext.oOJSPlus.widgets",
 				"mediawiki.widgets.DateInputWidget",
 				"mediawiki.widgets"
 			]
