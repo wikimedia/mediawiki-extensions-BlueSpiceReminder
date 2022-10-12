@@ -43,7 +43,7 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 	this.repeatLayout = this.getRepeatLayout();
 	this.repeatLayout.$element.hide();
 
-	this.userSelector = new mw.widgets.UserInputWidget( {
+	this.userSelector = new OOJSPlus.ui.widget.UserPickerWidget( {
 		$overlay: true,
 		id: 'bs-reminder-field-user',
 		required: true
