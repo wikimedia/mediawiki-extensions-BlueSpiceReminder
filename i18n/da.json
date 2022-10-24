@@ -56,5 +56,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "Mine påmindelser",
 	"bs-reminder-dialog-page-action-all-reminders": "Alle påmindelser",
 	"bs-reminder-dialog-page-action-page-reminders": "Påmindelser for denne side",
-	"bs-reminder-info-dialog": "Påmindelse"
+	"bs-reminder-info-dialog": "Påmindelse",
+	"bs-reminder-text": "Påmindelser"
 }
