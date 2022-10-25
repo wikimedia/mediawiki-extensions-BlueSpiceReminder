@@ -283,6 +283,12 @@
 		},
 		"standard-dialogs": {
 			"class": "\\BlueSpice\\Reminder\\HookHandler\\StandardDialogs"
+		},
+		"addReminderUrl": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderUrl"
+		},
+		"addReminderEntry": {
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderEntry"
 		}
 	},
 	"Hooks": {
@@ -295,9 +301,11 @@
 		"ChameleonSkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
 		],
-		"PersonalUrls": "\\BlueSpice\\Reminder\\Hook\\PersonalUrls\\AddReminderUrl::callback",
+		"SkinTemplateNavigation::Universal": [
+			"addReminderUrl",
+			"addReminderEntry"
+		],
 		"BeforePageDisplay": "\\BlueSpice\\Reminder\\Hook\\BeforePageDisplay\\AddResources::callback",
-		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Reminder\\Hook\\SkinTemplateNavigationUniversal\\AddReminderEntry::callback",
 		"PageSaveComplete": "\\BlueSpice\\Reminder\\Hook\\PageSaveComplete\\SetReminderOnCreate::callback",
 		"BSUserManagerAfterDeleteUser": "\\BlueSpice\\Reminder\\Hook\\BSUserManagerAfterDeleteUser\\DeleteReminders::callback",
 		"UserMergeAccountFields": "\\BlueSpice\\Reminder\\Hook\\UserMergeAccountFields\\MergeReminderDBFields::callback",
