@@ -69,5 +69,7 @@
 	"bs-reminder-update-success": "Il tuo promemoria è stato aggiornato con successo.",
 	"bs-reminder-update-error": "Il tuo promemoria non può ancora essere aggiornato. Prova di nuovo.",
 	"bs-reminder-create-reminder-label": "Crea promemoria",
-	"bs-reminder-user-label": "Assegnare all'utente"
+	"bs-reminder-user-label": "Assegnare all'utente",
+	"bs-reminder-other-user-not-allowed": "Non è permesso assegnare promemoria ad un altro utente",
+	"notification-bs-reminder-one-week-subject": "Ricorda l'articolo \"$1\""
 }
