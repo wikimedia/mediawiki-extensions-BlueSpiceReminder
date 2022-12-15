@@ -3,7 +3,8 @@
 		"authors": [
 			"Kly",
 			"McDutchie",
-			"Winston Sung"
+			"Winston Sung",
+			"捍粵者"
 		]
 	},
 	"bs-reminder-extension-description": "讓使用者有機會來建立提醒。",
@@ -56,7 +57,7 @@
 	"bs-reminder-flyout-intro": "您可以在此給頁面設定提醒。您會在根據您於通知設定中所指定的日期裡收到通知。",
 	"bs-reminder-flyout-upcoming": "此頁面的提醒將在{{PLURAL:$1|明天| $1 天}}到期",
 	"bs-reminder-flyout-upcoming-due": "此頁面的提醒將到期在",
-	"bs-reminder-flyout-upcoming-none": "此頁面沒有要進行的提醒",
+	"bs-reminder-flyout-upcoming-none": "此頁沒有即將來到的提醒",
 	"bs-reminder-flyout-form-title": "建立一個提醒",
 	"bs-reminder-flyout-grid-title": "其他使用者的提醒",
 	"bs-reminder-flyout-manager-btn-label": "管理提醒",
