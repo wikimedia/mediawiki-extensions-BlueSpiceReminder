@@ -160,7 +160,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function( date,
 		date.setMonth( date.getMonth() + 1 );
 	}
 	if ( repeatInterval === 'y' ) {
-		date.setYear( date.getYear() + 1 );
+		date.setYear( date.getFullYear() + 1 );
 	}
 
 	return date;
