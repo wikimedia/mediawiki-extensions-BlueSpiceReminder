@@ -4,6 +4,11 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Reminder\Factory;
 use MediaWiki\MediaWikiServices;
 
+// PHP unit does not understand code coverage for this file
+// as the @covers annotation cannot cover a specific file
+// This is fully tested in ServiceWiringTest.php
+// @codeCoverageIgnoreStart
+
 return [
 	'BSRepeatingReminderDateCalculator' => function ( MediaWikiServices $services ) {
 		return new \BlueSpice\Reminder\RepeatingReminderDateCalculator();
@@ -18,3 +23,5 @@ return [
 		);
 	},
 ];
+
+// @codeCoverageIgnoreEnd
