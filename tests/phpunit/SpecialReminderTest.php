@@ -1,5 +1,10 @@
 <?php
 
+namespace BlueSpice\Reminder\Tests;
+
+use SpecialPageTestBase;
+use SpecialReminder;
+
 /**
  * Class SpecialReminderTest
  * @group Database

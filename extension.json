@@ -110,6 +110,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\Reminder\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\Reminder\\Tests\\": "tests/phpunit"
+	},
 	"AutoloadClasses": {
 		"SpecialReminder": "includes/specials/SpecialReminder.class.php",
 		"ApiReminderStore": "includes/api/ApiReminderStore.php",
