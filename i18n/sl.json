@@ -4,5 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"bs-reminder-header-username": "Uporabnik"
+	"bs-reminder-header-pagename": "Stran",
+	"bs-reminder-header-username": "Uporabnik",
+	"bs-reminder-article-label": "Stran",
+	"bs-reminder-type-page": "Stran"
 }
