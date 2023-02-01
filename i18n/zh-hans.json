@@ -3,6 +3,7 @@
 		"authors": [
 			")8",
 			"GuoPC",
+			"John Smith Ri",
 			"Ken418",
 			"LaMagiaaa",
 			"Lakejason0",
@@ -74,5 +75,13 @@
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
 	"bs-reminder-type-page": "页面",
-	"bs-reminder-text": "提醒"
+	"bs-reminder-text": "提醒",
+	"bs-reminder-monthly-on-day-prefix": "每月一天",
+	"bs-reminder-header-is-repeating": "正在重复",
+	"bs-reminder-dialog-page-action-my-reminders": "我的提醒",
+	"bs-reminder-dialog-page-action-all-reminders": "所有提醒",
+	"bs-reminder-dialog-page-action-page-reminders": "此页面的提醒",
+	"bs-reminder-info-dialog": "提醒",
+	"bs-reminder-info-dialog-button-label": "管理提醒",
+	"bs-reminder-actionmenuentry-setreminder-label": "设置提醒"
 }
