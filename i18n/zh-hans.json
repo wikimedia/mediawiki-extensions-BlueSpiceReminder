@@ -12,7 +12,8 @@
 			"StarrySky",
 			"Wzl19371",
 			"沈澄心",
-			"落花有意12138"
+			"落花有意12138",
+			"John Smith Ri"
 		]
 	},
 	"reminder": "提醒",
@@ -58,6 +59,7 @@
 	"bs-reminder-ordinal-fourth": "第四",
 	"bs-reminder-ordinal-last": "最后一个",
 	"bs-reminder-monthly-on-the-prefix": "每月在",
+	"bs-reminder-monthly-on-day-prefix": "每月一天",
 	"bs-reminder-repeat-interval-day": "天",
 	"bs-reminder-repeat-interval-week": "周",
 	"bs-reminder-repeat-interval-month": "月",
@@ -71,8 +73,15 @@
 	"bs-reminder-saturday-abbr": "六",
 	"bs-reminder-date-repeat-ends-on-label": "重复结束于",
 	"bs-reminder-start-date-greater-end-date": "提醒的结束日期不得设置于起始日期之前",
+	"bs-reminder-header-is-repeating": "正在重复",
 	"bs-reminder-no": "否",
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
-	"bs-reminder-type-page": "页面"
+	"bs-reminder-type-page": "页面",
+	"bs-reminder-dialog-page-action-my-reminders": "我的提醒",
+	"bs-reminder-dialog-page-action-all-reminders": "所有提醒",
+	"bs-reminder-dialog-page-action-page-reminders": "此页面的提醒",
+	"bs-reminder-info-dialog": "提醒",
+	"bs-reminder-info-dialog-button-label": "管理提醒",
+	"bs-reminder-actionmenuentry-setreminder-label": "设置提醒"
 }
