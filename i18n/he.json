@@ -71,5 +71,8 @@
 	"bs-reminder-dialog-page-action-page-reminders": "תזכורות לדף הזה",
 	"bs-reminder-info-dialog": "תזכורת",
 	"bs-reminder-info-dialog-button-label": "ניהול תזכורות",
-	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת"
+	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת",
+	"bs-reminder-repeat-label": "חזרה",
+	"bs-reminder-repeat-every-title": "חזרה כל",
+	"bs-reminder-repeat-on-title": "חזרה על"
 }
