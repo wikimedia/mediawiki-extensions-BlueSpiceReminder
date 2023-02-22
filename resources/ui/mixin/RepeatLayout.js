@@ -118,14 +118,11 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatValue = function() {
 
 bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatData = function( data ) {
 	var repeatConfig = data.repeatConfig || {};
+	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
+		this.repeatValue.setValue( parseInt( repeatConfig.intervalValue ) );
+	}
 	if ( repeatConfig.hasOwnProperty( 'intervalType' ) ) {
-		this.repeatValue.setValue( parseInt( repeatConfig.intervalType ) );
-	}
-	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
-		this.repeatInterval.setValue( repeatConfig.intervalValue );
-	}
-	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
-		this.repeatInterval.setValue( repeatConfig.intervalValue );
+		this.repeatInterval.setValue( repeatConfig.intervalType );
 	}
 	var date = repeatConfig.repeatDateEnd || data.date;
 	if ( date ) {
