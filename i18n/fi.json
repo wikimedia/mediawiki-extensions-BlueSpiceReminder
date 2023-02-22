@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"MITO",
-			"Pyscowicz"
+			"Pyscowicz",
+			"Silvonen"
 		]
 	},
 	"bs-reminder-header-type": "Tyyppi",
@@ -13,5 +14,11 @@
 	"bs-reminder-info-dialog": "Muistutus",
 	"bs-reminder-info-dialog-button-label": "Hallinnoi muistutuksia",
 	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus",
-	"bs-reminder-text": "Muistutukset"
+	"bs-reminder-text": "Muistutukset",
+	"bs-reminder-header-pagename": "Sivu",
+	"bs-reminder-header-username": "Käyttäjä",
+	"bs-reminder-navigation-link-title": "Muistutus",
+	"bs-reminder-navigation-link-text": "Muistutus",
+	"bs-reminder-nav-link-title-reminder": "Muistutus",
+	"bs-reminder-flyout-title": "Muistutus"
 }
