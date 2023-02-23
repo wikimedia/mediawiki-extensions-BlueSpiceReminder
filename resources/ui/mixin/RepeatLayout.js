@@ -178,7 +178,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheMonthIntervalOption = fun
 
 bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheWeekIntervalOption = function( date ) {
 	var currentDayNumeric = date.getDay();
-	var currentDayText = date.toLocaleString( mw.config.get( 'wgContentLanguage' ), {
+	var currentDayText = date.toLocaleString( mw.config.get( 'wgUserLanguage' ), {
 		weekday: 'long'
 	} );
 	var daysInCurrentMonth = new Date( date.getYear(), date.getMonth(), 0 ).getDate();
