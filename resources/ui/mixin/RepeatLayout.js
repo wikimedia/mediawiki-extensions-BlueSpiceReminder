@@ -168,9 +168,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function( date,
 
 bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheMonthIntervalOption = function( date ) {
 	return {
-		data: {
-			type: 'dayOfTheMonth'
-		},
+		data: 'dayOfTheMonth',
 		label: mw.message( 'bs-reminder-monthly-on-day-prefix' ).plain() + ' ' +
 			date.getDate()
 	};
