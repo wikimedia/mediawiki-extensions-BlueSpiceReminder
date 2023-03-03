@@ -1,7 +1,7 @@
 {
 	"name": "BlueSpiceReminder",
 	"version": "4.2.6",
-	"url": "https://en.wiki.bluespice.com/wiki/Reference:Reminder",
+	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceReminder",
 	"author": [ "Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm" ],
 	"descriptionmsg": "bs-reminder-extension-description",
 	"license-name": "GPL-3.0-only",
