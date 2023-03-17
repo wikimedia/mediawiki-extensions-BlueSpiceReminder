@@ -105,5 +105,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Påminnelser for denne sida",
 	"bs-reminder-info-dialog": "Påminnelse",
 	"bs-reminder-info-dialog-button-label": "Behandle påminnelser",
-	"bs-reminder-actionmenuentry-setreminder-label": "Sett påminnelse"
+	"bs-reminder-actionmenuentry-setreminder-label": "Sett påminnelse",
+	"bs-reminder-illegal-date-msg": "Du prøver å opprette en påminnelse for en dato i fortiden"
 }
