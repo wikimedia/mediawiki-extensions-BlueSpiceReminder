@@ -18,6 +18,7 @@
 	"bs-reminder-menu_entry-show": "Påminnelser",
 	"bs-reminder-unknown-page-msg": "Du prøver å opprette en påminnelse for en side som ikke finnes.",
 	"bs-reminder-unknown-user-msg": "Du prøver å opprette en påminnelse for en bruker som ikke eksisterer.",
+	"bs-reminder-illegal-date-msg": "Du prøver å opprette en påminnelse for en dato i fortiden",
 	"bs-reminder-date-label": "Påminnelse",
 	"bs-reminder-create-reminder-label": "Opprett påminnelse",
 	"bs-reminder-create-title": "Påminnelse",
