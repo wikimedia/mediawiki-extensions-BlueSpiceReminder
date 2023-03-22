@@ -11,9 +11,9 @@
  */
 
 Ext.onReady( function(){
-	var taskPermissions = mw.config.get( 'bsTaskAPIPermissions' );
+	var taskPermissions = mw.config.get( 'bsgTaskAPIPermissions' );
 	var operationPermissions = {
-		create: true, //should be connected to mw.config.get('bsTaskAPIPermissions').extension_xyz.task1 = boolean in derived class
+		create: true, //should be connected to mw.config.get('bsgTaskAPIPermissions').extension_xyz.task1 = boolean in derived class
 		update: true, //...
 		delete: true  //...
 	};
