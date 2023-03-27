@@ -20,5 +20,8 @@
 	"bs-reminder-navigation-link-title": "Muistutus",
 	"bs-reminder-navigation-link-text": "Muistutus",
 	"bs-reminder-nav-link-title-reminder": "Muistutus",
-	"bs-reminder-flyout-title": "Muistutus"
+	"bs-reminder-flyout-title": "Muistutus",
+	"bs-reminder-menu_entry-create": "Luo muistutus",
+	"bs-reminder-create-reminder-label": "Luo muistutus",
+	"bs-reminder-flyout-form-title": "Luo muistutus"
 }
