@@ -43,7 +43,6 @@
 	"bs-reminder-save-error": "Сталася помилка: $1",
 	"bs-reminder-save-error-unkown": "Не вдалося зберегти нагадування.",
 	"bs-reminder-date-format": "Y-m-d",
-	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-create-no-actions": "Бракує деяких параметрів. Будь ласка, спробуйте ще раз.",
 	"bs-reminder-save-success": "Нагадування успішно створено.",
 	"bs-reminder-user-label": "Призначити користувачеві",

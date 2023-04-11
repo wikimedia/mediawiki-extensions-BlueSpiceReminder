@@ -46,7 +46,6 @@
 	"bs-reminder-save-error": "Es trat ein Fehler auf: $1",
 	"bs-reminder-save-error-unkown": "Die Erinnerung konnte nicht gespeichert werden.",
 	"bs-reminder-date-format": "d.m.Y",
-	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuche es erneut.",
 	"bs-reminder-save-success": "Die Erinnerung wurde erfolgreich erstellt.",
 	"bs-reminder-user-label": "Einem Benutzer zuweisen",
