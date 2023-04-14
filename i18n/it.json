@@ -71,5 +71,7 @@
 	"bs-reminder-create-reminder-label": "Crea promemoria",
 	"bs-reminder-user-label": "Assegnare all'utente",
 	"bs-reminder-other-user-not-allowed": "Non è permesso assegnare promemoria ad un altro utente",
-	"notification-bs-reminder-one-week-subject": "Ricorda l'articolo \"$1\""
+	"notification-bs-reminder-one-week-subject": "Ricorda l'articolo \"$1\"",
+	"right-remindereditall": "Modifica i promemoria degli altri utenti",
+	"action-remindereditall": "modificare i promemoria degli altri utenti"
 }
