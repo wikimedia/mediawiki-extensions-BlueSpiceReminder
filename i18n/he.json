@@ -106,5 +106,7 @@
 	"bs-reminder-repeat-interval-day": "ימים",
 	"bs-reminder-repeat-interval-week": "שבועות",
 	"bs-reminder-repeat-interval-month": "חודשים",
-	"bs-reminder-repeat-interval-year": "שנה"
+	"bs-reminder-repeat-interval-year": "שנה",
+	"right-remindereditall": "ערוך תזכורות של אחרים",
+	"action-remindereditall": "לערוך תזכורות של אחרים"
 }
