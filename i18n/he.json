@@ -73,6 +73,8 @@
 	"notification-bs-reminder-today-web-body": "הגדרת תזכורת לערך \"$1\" עם ההערה \"$2\". התזכורת הזאת אמורה להגיע היום.",
 	"apihelp-bs-reminder-store-summary": "אספקת אחסון תזכורות שאפשר להריץ עליו שאילתות",
 	"apihelp-bs-reminder-tasks-summary": "אספקת משימות כגון עריכה או מחיקה של תזכורות",
+	"right-remindereditall": "ערוך תזכורות של אחרים",
+	"action-remindereditall": "לערוך תזכורות של אחרים",
 	"bs-reminder-repeat-label": "חזרה",
 	"bs-reminder-repeat-every-title": "חזרה מדי",
 	"bs-reminder-repeat-on-title": "חזרה ב־",
