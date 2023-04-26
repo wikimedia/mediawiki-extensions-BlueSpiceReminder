@@ -36,7 +36,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
 	} );
 
 	this.repeatEnd = new mw.widgets.DateInputWidget( {
-		$overlay: true
+		$overlay: this.dialog ? this.dialog.$overlay : true
 	} );
 
 	this.repeatDaysOfWeek = new OO.ui.ButtonGroupWidget( {
