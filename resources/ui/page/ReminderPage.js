@@ -7,25 +7,29 @@ bs.reminder.ui.ReminderPage = function( name, cfg ) {
 	bs.reminder.ui.mixin.RepeatLayout.call( this );
 
 	this.type = 'page';
-	if ( !this.canCreateForOthers ) {
-		this.userSelectorLayout.$element.hide();
-	}
 };
 
 OO.inheritClass( bs.reminder.ui.ReminderPage, OOJSPlus.ui.booklet.DialogBookletPage );
 OO.mixinClass( bs.reminder.ui.ReminderPage, bs.reminder.ui.mixin.RepeatLayout );
 
+bs.reminder.ui.ReminderPage.prototype.init = function() {
+	bs.reminder.ui.ReminderPage.parent.prototype.init.call( this );
+	if ( !this.canCreateForOthers ) {
+		this.userSelectorLayout.$element.hide();
+	}
+}
+
 bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 	var today = new Date();
 	var currentDate = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
 	this.datePicker = new mw.widgets.DateInputWidget( {
-		$overlay: true,
+		$overlay: this.dialog.$overlay,
 		required: true,
 		mustBeAfter: currentDate
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
 
-	this.pagePicker = new mw.widgets.TitleInputWidget( { required: true } );
+	this.pagePicker = new mw.widgets.TitleInputWidget( { required: true, $overlay: this.dialog.$overlay } );
 	this.comment = new OO.ui.MultilineTextInputWidget();
 
 	this.repeatSwitch = new OO.ui.CheckboxInputWidget();
@@ -44,7 +48,7 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 	this.repeatLayout.$element.hide();
 
 	this.userSelector = new OOJSPlus.ui.widget.UserPickerWidget( {
-		$overlay: true,
+		$overlay: this.dialog.$overlay,
 		id: 'bs-reminder-field-user',
 		required: true
 	} );
