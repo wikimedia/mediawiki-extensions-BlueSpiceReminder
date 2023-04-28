@@ -29,7 +29,9 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 	} );
 	this.datePicker.$element.css( 'width', '250px' );
 
-	this.pagePicker = new mw.widgets.TitleInputWidget( { required: true, $overlay: this.dialog.$overlay } );
+	this.pagePicker = new OOJSPlus.ui.widget.TitleInputWidget( {
+		required: true, mustExist: true, $overlay: this.dialog.$overlay
+	} );
 	this.comment = new OO.ui.MultilineTextInputWidget();
 
 	this.repeatSwitch = new OO.ui.CheckboxInputWidget();
