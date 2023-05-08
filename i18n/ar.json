@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"FiberAhmed",
 			"McDutchie",
 			"Meno25",
@@ -83,5 +84,17 @@
 	"bs-reminder-ordinal-last": "أخير",
 	"bs-reminder-no": "لا",
 	"bs-reminder-header-type": "النوع",
-	"bs-reminder-type-page": "الصفحة"
+	"bs-reminder-type-page": "الصفحة",
+	"bs-reminder-text": "تذكيرات",
+	"bs-reminder-illegal-date-msg": "أنت تحاول إنشاء تذكير بتاريخ قبل التاريخ الحالي",
+	"echo-pref-tooltip-bs-reminder-cat": "إعلامي عندما يحين موعد التذكيرات اليوم أو بعد أسبوع",
+	"bs-reminder-repeat-label": "تكرار",
+	"bs-reminder-repeat-every-title": "تكرار كل",
+	"bs-reminder-repeat-on-title": "كرر على",
+	"bs-reminder-monthly-on-the-prefix": "شهريًا على",
+	"bs-reminder-monthly-on-day-prefix": "شهريا في اليوم",
+	"bs-reminder-repeat-interval-day": "يوم (أيام)",
+	"bs-reminder-repeat-interval-week": "أسبوع (أسابيع)",
+	"bs-reminder-repeat-interval-month": "شهر/أشهر",
+	"bs-reminder-repeat-interval-year": "سنة/سنين"
 }
