@@ -96,5 +96,6 @@
 	"bs-reminder-repeat-interval-year": "سنة/سنين",
 	"bs-reminder-no": "لا",
 	"bs-reminder-header-type": "النوع",
-	"bs-reminder-type-page": "الصفحة"
+	"bs-reminder-type-page": "الصفحة",
+	"bs-reminder-info-dialog-button-label": "إدارة التذكيرات"
 }
