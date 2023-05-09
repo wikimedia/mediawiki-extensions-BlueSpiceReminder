@@ -96,5 +96,6 @@
 	"bs-reminder-repeat-interval-day": "يوم (أيام)",
 	"bs-reminder-repeat-interval-week": "أسبوع (أسابيع)",
 	"bs-reminder-repeat-interval-month": "شهر/أشهر",
-	"bs-reminder-repeat-interval-year": "سنة/سنين"
+	"bs-reminder-repeat-interval-year": "سنة/سنين",
+	"bs-reminder-info-dialog-button-label": "إدارة التذكيرات"
 }
