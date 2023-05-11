@@ -97,5 +97,14 @@
 	"bs-reminder-repeat-interval-week": "أسبوع (أسابيع)",
 	"bs-reminder-repeat-interval-month": "شهر/أشهر",
 	"bs-reminder-repeat-interval-year": "سنة/سنين",
-	"bs-reminder-info-dialog-button-label": "إدارة التذكيرات"
+	"bs-reminder-info-dialog-button-label": "إدارة التذكيرات",
+	"bs-reminder-friday-abbr": "F",
+	"bs-reminder-start-date-greater-end-date": "لا يمكن تعيين تاريخ انتهاء التذكير قبل تاريخ البدء",
+	"bs-reminder-header-is-repeating": "يتكرر",
+	"bs-reminder-invalid-type": "نوع غير صالح",
+	"bs-reminder-dialog-page-action-my-reminders": "تذكيراتي",
+	"bs-reminder-dialog-page-action-all-reminders": "كل التذكيرات",
+	"bs-reminder-dialog-page-action-page-reminders": "تذكير لهذه الصفحة",
+	"bs-reminder-info-dialog": "تذكير",
+	"bs-reminder-actionmenuentry-setreminder-label": "ضبط التذكير"
 }
