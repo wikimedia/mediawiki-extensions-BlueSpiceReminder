@@ -5,6 +5,7 @@
 		]
 	},
 	"echo-pref-tooltip-bs-reminder-cat": "Informez me kande mea memorigili sendos a me hodie, od en admaxime 1 semano",
+	"bs-reminder-repeat-interval-day": "dio(dii)",
 	"bs-reminder-invalid-type": "Tipo nevalida",
 	"bs-reminder-dialog-page-action-my-reminders": "Mea memorigili",
 	"bs-reminder-info-dialog": "Memorigilo"
