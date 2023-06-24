@@ -12,8 +12,6 @@
 	"specialreminder": "Name of the special page for reminder\n{{Identical|Reminder}}",
 	"prefs-reminder": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for reminder section in preferences.\n{{Identical|Reminder}}",
 	"bs-reminder-text": "Label for global actions entry",
-	"apihelp-bs-reminder-store-description": "{{doc-apihelp-description|bs-reminder-store}}\nDescribes the API endpoint that provides reminder data",
-	"apihelp-bs-reminder-tasks-description": "{{doc-apihelp-description|bs-reminder-tasks}}\nDescribes the API endpoint that handles reminder tasks",
 	"bs-reminder-pref-DefaultReminderPeriod": "Label for the setting of default reminder period",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Help text for the setting of the reminder period.",
 	"bs-reminder-pref-SetReminderOnCreate": "Label for the setting whether to set reminder on article creation",
