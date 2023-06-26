@@ -8,8 +8,6 @@
 	"reminder": "Promemorie",
 	"specialreminder": "Promemorie",
 	"prefs-reminder": "Promemorie",
-	"apihelp-bs-reminder-store-description": "Serve le date pa griglie panorameche Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "Esegue attivitate cumme aggiornamende e scangellazione pa griglie panorameche Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Periode predefinite d'u promemorie",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Mitte 'u numere de sciurne pu periode d'u promemorie",
 	"bs-reminder-pref-SetReminderOnCreate": "'Mboste 'u promemorie sus 'a ccrejazione d'a pàgene",

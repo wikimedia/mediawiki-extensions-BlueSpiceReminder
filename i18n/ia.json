@@ -9,8 +9,6 @@
 	"specialreminder": "Rememoration",
 	"prefs-reminder": "Rememoration",
 	"bs-reminder-text": "Rememorationes",
-	"apihelp-bs-reminder-store-description": "Forni le datos pro le grillia de vista general de Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "Executa travalios como actualisation e deletion pro le grillia de vista general de Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Periodo predefinite de rememorationes",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Insere le numero de dies pro le periodo de rememoration.",
 	"bs-reminder-pref-SetReminderOnCreate": "Definir un rememoration quando se crea un pagina",

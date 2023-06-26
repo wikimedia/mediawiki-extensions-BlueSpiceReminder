@@ -9,8 +9,6 @@
 	"specialreminder": "Påminnelse",
 	"prefs-reminder": "Påminnelse",
 	"bs-reminder-text": "Påminnelser",
-	"apihelp-bs-reminder-store-description": "Leverer dataene for oversiktstabellen i Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "Utfører oppgaver som å oppdatere og slette for oversiktstabellen i Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Standard påminnelsesperiode",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Skriv inn antall dager i påminnelsesperioden.",
 	"bs-reminder-pref-SetReminderOnCreate": "Sett påminnelse ved sideopprettelse",

@@ -13,8 +13,6 @@
 	"specialreminder": "Lembrete",
 	"prefs-reminder": "Lembrete",
 	"bs-reminder-text": "Lembretes",
-	"apihelp-bs-reminder-store-description": "Fornece os dados para a grade de visão geral do Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "Executa tarefas como atualização e exclusão da grade de visão geral do Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Período de lembrete padrão",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Digite o número de dias para o período do lembrete.",
 	"bs-reminder-pref-SetReminderOnCreate": "Definir lembrete na criação da página",

@@ -12,8 +12,6 @@
 	"specialreminder": "Aviso",
 	"prefs-reminder": "Aviso",
 	"bs-reminder-text": "Avisos",
-	"apihelp-bs-reminder-store-description": "Fornece os dados para a grelha de resumo de Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "Executa tarefas como atualização e eliminação da grelha de resumo de Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "Período de aviso por omissão",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Introduzir o número de dias para o período de aviso.",
 	"bs-reminder-pref-SetReminderOnCreate": "Ativar aviso na criação das páginas",

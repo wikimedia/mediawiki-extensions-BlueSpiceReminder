@@ -16,8 +16,6 @@
 	"specialreminder": "تذكير",
 	"prefs-reminder": "تذكير",
 	"bs-reminder-text": "تذكيرات",
-	"apihelp-bs-reminder-store-description": "يخدم بيانات خاص:شبكة نظرة عامة للتذكير",
-	"apihelp-bs-reminder-tasks-description": "ينفذ مهام مثل التحديث والحذف لخاص:شبكة نظرة عامة للتذكير",
 	"bs-reminder-pref-DefaultReminderPeriod": "فترة التذكير الافتراضية",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "أدخل عدد الأيام لفترة التذكير.",
 	"bs-reminder-pref-SetReminderOnCreate": "تعيين تذكير على إنشاء الصفحة",

@@ -9,8 +9,6 @@
 	"specialreminder": "Opomnik",
 	"prefs-reminder": "Opomnik",
 	"bs-reminder-text": "Opomniki",
-	"apihelp-bs-reminder-store-description": "Zagotavlja podatke za pregledno mrežo Special:Expiry",
-	"apihelp-bs-reminder-tasks-description": "Za pregledno mrežo Special:Expiry izvaja naloge, kot sta posodabljanje in brisanje",
 	"bs-reminder-pref-DefaultReminderPeriod": "Privzeto obdobje opomnika",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Vnesite število dni za obdobje opominka.",
 	"bs-reminder-pref-SetReminderOnCreate": "Nastavitev opomnika pri ustvaritvi strani",

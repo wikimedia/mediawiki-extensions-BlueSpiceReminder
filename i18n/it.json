@@ -13,7 +13,6 @@
 	"specialreminder": "Promemoria",
 	"prefs-reminder": "Promemoria",
 	"bs-reminder-text": "Promemoria",
-	"apihelp-bs-reminder-tasks-description": "Esegue attività come l'aggiornamento e la cancellazione per la griglia panoramica di Special:Reminder",
 	"bs-reminder-pref-SetReminderOnCreate": "Imposta promemoria sulla creazione della pagina",
 	"bs-reminder-menu_entry-create": "Crea promemoria",
 	"bs-reminder-menu_entry-show": "Promemoria",

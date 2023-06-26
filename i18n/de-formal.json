@@ -8,8 +8,6 @@
 	"reminder": "Erinnerung",
 	"specialreminder": "Erinnerung",
 	"prefs-reminder": "Erinnerung",
-	"apihelp-bs-reminder-store-description": "Liefert die Daten für die Übersicht auf Spezial:Erinnerung",
-	"apihelp-bs-reminder-tasks-description": "Führt Aufgaben wie Aktualisierung und Löschen aus für die Übersicht auf Spezial:Erinnerung",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Geben Sie hier die Anzahl der Tage ein.",
 	"bs-reminder-unknown-page-msg": "Sie versuchen eine Erinnerung für eine Seite anzulegen, welche nicht existiert.",
 	"bs-reminder-unknown-user-msg": "Sie versuchen eine Erinnerung für einen Benutzer anzulegen, der nicht existiert.",

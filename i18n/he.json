@@ -11,8 +11,6 @@
 	"specialreminder": "תזכורת",
 	"prefs-reminder": "תזכורת",
 	"bs-reminder-text": "תזכורות",
-	"apihelp-bs-reminder-store-description": "הגשת הנתונים עבור רשת סקירה כללית של Special:Reminder",
-	"apihelp-bs-reminder-tasks-description": "ביצוע משימות כמו עדכון ומחיקה עבור רשת סקירה כללית של Special:Reminder",
 	"bs-reminder-pref-DefaultReminderPeriod": "תקופת ברירת מחדל לתזכורת",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "נא להזין מספר ימים לתקופת התזכורת.",
 	"bs-reminder-pref-SetReminderOnCreate": "הגדרת תזכורת ליצירת דף",

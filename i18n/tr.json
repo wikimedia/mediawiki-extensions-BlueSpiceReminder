@@ -14,8 +14,6 @@
 	"specialreminder": "Hatırlatma",
 	"prefs-reminder": "Hatırlatma",
 	"bs-reminder-text": "Hatırlatıcılar",
-	"apihelp-bs-reminder-store-description": "Special:Reminder genel bakış ızgarası için veri sunar",
-	"apihelp-bs-reminder-tasks-description": "Special:Reminder genel bakış ızgarası için güncelleme ve silme gibi görevleri yürütür",
 	"bs-reminder-pref-DefaultReminderPeriod": "Varsayılan hatırlatma süresi",
 	"bs-reminder-pref-DefaultReminderPeriod-help": "Hatırlatma dönemi için gün sayısını girin.",
 	"bs-reminder-pref-SetReminderOnCreate": "Sayfa oluşturma konusunda hatırlatıcı ayarla",
