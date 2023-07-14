@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"notification-bs-reminder-one-week-subject": "Remember article '$1'",
+	"notification-bs-reminder-one-week-email-body": "You have set reminder on article '$1'. This reminder is coming up in one week.\n\nYour comment:\n$2",
+	"notification-bs-reminder-one-week-web-body": "You have set reminder on article '$1' with comment '$2'. This reminder is coming up in one week.",
+	"notification-bs-reminder-today-subject": "Remember article '$1' today",
+	"notification-bs-reminder-today-email-body": "You have set reminder on article '$1'. This reminder is due today.\n\nYour comment:\n$2",
+	"notification-bs-reminder-today-web-body": "You have set reminder on article '$1' with comment '$2'. This reminder is due today."
+}
