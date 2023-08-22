@@ -108,5 +108,6 @@
 	"bs-reminder-repeat-interval-month": "חודשים",
 	"bs-reminder-repeat-interval-year": "שנה",
 	"right-remindereditall": "ערוך תזכורות של אחרים",
-	"action-remindereditall": "לערוך תזכורות של אחרים"
+	"action-remindereditall": "לערוך תזכורות של אחרים",
+	"bs-reminder-specialpage-subtitle": "→ $1"
 }
