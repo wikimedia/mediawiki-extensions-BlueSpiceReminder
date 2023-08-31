@@ -41,6 +41,7 @@
 	"bs-reminder-save-error": "אירעה שגיאה: $1",
 	"bs-reminder-save-error-unkown": "לא ניתן לשמור את התזכורת.",
 	"bs-reminder-date-format": "Y-m-d",
+	"bs-reminder-specialpage-subtitle": "→ $1",
 	"bs-reminder-create-no-actions": "פרמטרים אחדים חסרים. נא לנסות שוב.",
 	"bs-reminder-save-success": "התזכורת נוצרה בהצלחה.",
 	"bs-reminder-user-label": "להקצות למשתמש",
