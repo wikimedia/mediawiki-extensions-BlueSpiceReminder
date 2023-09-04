@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kokage si",
 			"Shirayuki",
 			"Tmv",
 			"そらたこ"
 		]
 	},
 	"reminder": "リマインダー",
+	"bs-reminder-header-pagename": "ページ",
 	"bs-reminder-header-username": "利用者",
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-header-comment": "コメント",
