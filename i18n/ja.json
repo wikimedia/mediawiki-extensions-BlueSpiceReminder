@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kokage si",
 			"Shirayuki",
 			"Tmv",
 			"そらたこ"
@@ -15,5 +16,6 @@
 	"action-remindereditall": "他の利用者のリマインダーの編集",
 	"right-remindereditall": "他の利用者のリマインダーを編集",
 	"bs-reminder-header-type": "入力",
-	"bs-reminder-type-page": "ページ"
+	"bs-reminder-type-page": "ページ",
+	"bs-reminder-header-pagename": "ページ"
 }
