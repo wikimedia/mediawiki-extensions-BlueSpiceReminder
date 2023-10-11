@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Reminder\HookHandler;
 
-use BlueSpice\Reminder\GlobalActionsManager;
+use BlueSpice\Reminder\GlobalActionsEditing;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
 class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
@@ -12,11 +12,11 @@ class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 	 */
 	public function onMWStakeCommonUIRegisterSkinSlotComponents( $registry ): void {
 		$registry->register(
-			'GlobalActionsManager',
+			'GlobalActionsEditing',
 			[
 				'special-bluespice-reminder' => [
 					'factory' => static function () {
-						return new GlobalActionsManager();
+						return new GlobalActionsEditing();
 					}
 				]
 			]
