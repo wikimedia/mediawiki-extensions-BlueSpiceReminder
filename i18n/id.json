@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Veracious"
+		]
+	},
+	"reminder": "Pengingat",
+	"specialreminder": "Pengingat",
+	"prefs-reminder": "Pengingat",
+	"bs-reminder-text": "Pengingat",
+	"bs-reminder-create-title": "Pengingat",
+	"bs-reminder-header-pagename": "Halaman",
+	"bs-reminder-header-username": "Pengguna",
+	"bs-reminder-date-format": "T-b-h",
+	"bs-reminder-comment-label": "Komentari",
+	"bs-reminder-header-comment": "Komentar",
+	"bs-reminder-article-label": "Halaman",
+	"bs-reminder-dlg-btn-manager-label": "Kelola pengingat",
+	"bs-reminder-navigation-link-title": "Pengingat",
+	"bs-reminder-navigation-link-text": "Pengingat",
+	"bs-reminder-nav-link-title-reminder": "Pengingat",
+	"bs-reminder-flyout-title": "Pengingat",
+	"echo-category-title-notification-bs-reminder-cat": "Pengingat"
+}
