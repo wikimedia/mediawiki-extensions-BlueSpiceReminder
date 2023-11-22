@@ -12,7 +12,7 @@ Ext.define( 'BS.Reminder.flyout.form.Reminder', {
 		this.on( 'dirtychange', this.onDirtyChange, this );
 
 		this.dfDate = Ext.create( 'Ext.form.field.Date', {
-			emptyText: mw.message( 'bs-reminder-date-label' ).plain(),
+			emptyText: mw.message( 'bs-reminder-date-label' ).escaped(),
 			value: this.date,
 			minValue: new Date( ),
 			labelAlign: 'right',
@@ -21,7 +21,7 @@ Ext.define( 'BS.Reminder.flyout.form.Reminder', {
 		} );
 
 		this.taComment = Ext.create( 'Ext.form.field.TextArea', {
-			emptyText: mw.message( 'bs-reminder-comment-label' ).plain(),
+			emptyText: mw.message( 'bs-reminder-comment-label' ).escaped(),
 			labelAlign: 'right',
 			value: '',
 			maxLength: 255
