@@ -72,7 +72,7 @@ Ext.define( 'BS.Reminder.flyout.dataview.Upcoming', {
 			}
 		);
 
-		this.emptyText = mw.message( 'bs-reminder-flyout-upcoming-none' ).plain();
+		this.emptyText = mw.message( 'bs-reminder-flyout-upcoming-none' ).escaped();
 
 		this.callParent( arguments );
 	}
