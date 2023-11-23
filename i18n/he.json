@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"YaronSh",
-			"Xnet1234"
+			"Xnet1234",
+			"YaronSh"
 		]
 	},
 	"bs-reminder-extension-description": "מתן אפשרות ליצור תזכורות למשתמש.",
@@ -107,5 +107,7 @@
 	"bs-reminder-dialog-page-action-page-reminders": "תזכורות לדף הזה",
 	"bs-reminder-info-dialog": "תזכורת",
 	"bs-reminder-info-dialog-button-label": "ניהול תזכורות",
-	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת"
+	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת",
+	"right-remindereditall": "ערוך תזכורות של אחרים",
+	"action-remindereditall": "לערוך תזכורות של אחרים"
 }

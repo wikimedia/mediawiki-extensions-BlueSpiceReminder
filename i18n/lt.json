@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
-			"Tomasdd",
-			"Nokeoo"
+			"Nokeoo",
+			"Tomasdd"
 		]
 	},
 	"bs-reminder-extension-description": "Suteikia naudotojui galimybę kurti priminimus.",
@@ -101,5 +101,7 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Šio puslapio priminimai",
 	"bs-reminder-info-dialog": "Priminimas",
 	"bs-reminder-info-dialog-button-label": "Tvarkyti priminimus",
-	"bs-reminder-actionmenuentry-setreminder-label": "Nustatyti priminimą"
+	"bs-reminder-actionmenuentry-setreminder-label": "Nustatyti priminimą",
+	"right-remindereditall": "Redaguoti kitų priminimus",
+	"action-remindereditall": "redaguoti kitų priminimus"
 }
