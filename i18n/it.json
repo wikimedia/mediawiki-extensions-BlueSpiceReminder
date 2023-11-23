@@ -71,5 +71,7 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo non valido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"right-remindereditall": "Modifica i promemoria degli altri utenti",
+	"action-remindereditall": "modificare i promemoria degli altri utenti"
 }
