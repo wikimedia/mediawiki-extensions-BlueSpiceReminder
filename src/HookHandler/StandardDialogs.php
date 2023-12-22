@@ -4,7 +4,7 @@ namespace BlueSpice\Reminder\HookHandler;
 
 use Config;
 use MediaWiki\Extension\StandardDialogs\Hook\StandardDialogsRegisterPageInfoPanelModules;
-use ResourceLoaderContext;
+use MediaWiki\ResourceLoader\Context as ResourceLoaderContext;
 
 class StandardDialogs implements StandardDialogsRegisterPageInfoPanelModules {
 
