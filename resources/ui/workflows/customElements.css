@@ -1,0 +1,3 @@
+.activity-icon.activity-set-reminder::before {
+	background-image: url( ./../../images/activity-reminder-icon.svg );
+}
