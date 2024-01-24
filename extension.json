@@ -75,7 +75,10 @@
 						]
 					}
 				}
-			}
+			},
+			"EditorPluginModules": [
+				"ext.bluespice.reminder.workflows.editor.customElements"
+			]
 		}
 	},
 	"GroupPermissions": {
@@ -263,6 +266,27 @@
 			],
 			"dependencies": [
 				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.reminder.workflows.editor.customElements": {
+			"scripts": [
+				"ui/workflows/inspector/SetReminderInspector.js",
+				"ui/workflows/registerCustomElements.js"
+			],
+			"styles": [
+				"ui/workflows/customElements.css"
+			],
+			"messages": [
+				"bs-reminder-ui-workflows-inspector-activity-set-reminder-title",
+				"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username",
+				"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page",
+				"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date",
+				"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.workflows.editor.inspector.bootstrap",
+				"ext.workflows.editor.customElements.bootstrap"
 			]
 		}
 	},
