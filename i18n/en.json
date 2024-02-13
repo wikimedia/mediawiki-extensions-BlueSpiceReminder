@@ -105,5 +105,10 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Reminders for this page",
 	"bs-reminder-info-dialog": "Reminder",
 	"bs-reminder-info-dialog-button-label": "Manage reminders",
-	"bs-reminder-actionmenuentry-setreminder-label": "Set reminder"
+	"bs-reminder-actionmenuentry-setreminder-label": "Set reminder",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Set reminder activity",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Username",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Remind on",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment"
 }
