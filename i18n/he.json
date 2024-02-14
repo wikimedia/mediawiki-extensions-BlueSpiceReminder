@@ -107,5 +107,10 @@
 	"bs-reminder-dialog-page-action-page-reminders": "תזכורות לדף הזה",
 	"bs-reminder-info-dialog": "תזכורת",
 	"bs-reminder-info-dialog-button-label": "ניהול תזכורות",
-	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת"
+	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "הגדרת פעילות תזכורת",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "שם משתמש",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "דף",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "להזכיר ב־",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "הערה"
 }
