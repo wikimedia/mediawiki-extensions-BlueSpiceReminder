@@ -109,5 +109,10 @@
 	"bs-reminder-info-dialog-button-label": "ניהול תזכורות",
 	"bs-reminder-actionmenuentry-setreminder-label": "הגדרת תזכורת",
 	"right-remindereditall": "ערוך תזכורות של אחרים",
-	"action-remindereditall": "לערוך תזכורות של אחרים"
+	"action-remindereditall": "לערוך תזכורות של אחרים",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "הגדרת פעילות תזכורת",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "שם משתמש",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "דף",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "להזכיר ב־",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "הערה"
 }
