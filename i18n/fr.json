@@ -3,6 +3,7 @@
 		"authors": [
 			"Gomoko",
 			"McDutchie",
+			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -109,5 +110,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Rappels pour cette page",
 	"bs-reminder-info-dialog": "Rappel",
 	"bs-reminder-info-dialog-button-label": "Gérer les rappels",
-	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel"
+	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nom d’utilisateur"
 }
