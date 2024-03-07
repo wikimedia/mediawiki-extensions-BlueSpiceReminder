@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"MacOS Weed",
 			"McDutchie",
 			"SleaY",
 			"Thibaut120094",
@@ -111,5 +112,7 @@
 	"bs-reminder-info-dialog": "Rappel",
 	"bs-reminder-info-dialog-button-label": "Gérer les rappels",
 	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nom d’utilisateur"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nom d’utilisateur",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commentaire"
 }
