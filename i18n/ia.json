@@ -106,5 +106,10 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Rememorationes pro iste pagina",
 	"bs-reminder-info-dialog": "Rememoration",
 	"bs-reminder-info-dialog-button-label": "Gerer rememorationes",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir rememoration",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Definir activitate de rememoration",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nomine de usator",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Pagina",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Rememorar le",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commento"
 }
