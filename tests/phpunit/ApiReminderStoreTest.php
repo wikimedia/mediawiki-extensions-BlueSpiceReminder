@@ -38,7 +38,7 @@ class ApiReminderStoreTest extends ApiTestCase {
 		$aData = $this->doApiRequest( [
 			'action' => 'bs-reminder-store',
 			'token' => '+\\'
-		],  null, false, new User );
+		], null, false, new User );
 		$this->assertTrue( isset( $aData[0]['total'] ), 'API did not report total number of results' );
 		$this->assertSame( 0, $aData[0]['total'] );
 	}
@@ -50,7 +50,7 @@ class ApiReminderStoreTest extends ApiTestCase {
 		$this->addTestReminderToDb();
 		$aData = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-store'
-		],  null, null );
+		], null, null );
 		// reset option?
 		$this->assertTrue( isset( $aData[0]['total'] ), 'API did not report total number of results' );
 		$this->assertSame( 1, $aData[0]['total'] );

@@ -261,7 +261,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		);
 		if ( $isAllowed ) {
 			if ( $requestedUser && !$requestedUser->isAnon() ) {
-			$aConditions["{$sTblPrfx}bs_reminder.rem_user_id"] = $requestedUser->getId();
+				$aConditions["{$sTblPrfx}bs_reminder.rem_user_id"] = $requestedUser->getId();
 			}
 		} else {
 			$aConditions["{$sTblPrfx}bs_reminder.rem_user_id"] = $oUser->getId();
