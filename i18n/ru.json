@@ -7,7 +7,8 @@
 			"Kareyac",
 			"McDutchie",
 			"Okras",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"Yurina Tatiana"
 		]
 	},
 	"reminder": "Напоминание",
@@ -46,5 +47,11 @@
 	"bs-reminder-header-type": "Тип",
 	"bs-reminder-type-page": "Страница",
 	"bs-reminder-dialog-page-action-my-reminders": "Мои напоминания",
-	"bs-reminder-dialog-page-action-all-reminders": "Все напоминания"
+	"bs-reminder-dialog-page-action-all-reminders": "Все напоминания",
+	"bs-reminder-create-title": "Напоминание",
+	"bs-reminder-create-success": "Ваше напоминание было успешно создано.",
+	"bs-reminder-flyout-manager-btn-label": "Управление напоминаниями",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мои напоминания",
+	"bs-reminder-repeat-label": "Повтор",
+	"bs-reminder-info-dialog": "Напоминание"
 }
