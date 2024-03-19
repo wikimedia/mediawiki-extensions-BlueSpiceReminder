@@ -69,7 +69,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'saveReminder',
 			'taskData' => [],
 			'token' => '+\\'
-		],  null, false, new User );
+		], null, false, new User );
 		$this->assertTrue( isset( $data[0]['errors']['permissionError'] ) );
 	}
 
@@ -81,7 +81,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
 			'taskData' => json_encode( $aRequest )
-		],  null, null );
+		], null, null );
 		$this->assertTrue( isset( $data[0]['errors'][$sExpectedError] ) );
 	}
 
@@ -190,7 +190,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'articleId' => 1,
 				'userName' => 'Apitestuser'
 			] )
-		],  null, null );
+		], null, null );
 		$GLOBALS['wgGroupPermissions']['sysop']['remindereditall'] = true;
 		$this->assertTrue( isset( $data[0]['errors']['user'] ) );
 	}
@@ -208,7 +208,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'articleId' => 1,
 				'userName' => 'Apitestuser'
 			] )
-		],  null, null );
+		], null, null );
 		$GLOBALS['wgHooks']['BsReminderOnSave'] = $originalHookList;
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
@@ -238,7 +238,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'userName' => 'Apitestsysop',
 				'id' => 3
 			] )
-		],  null, null );
+		], null, null );
 		$GLOBALS['wgHooks']['BsReminderOnUpdate'] = $originalHookList;
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
@@ -258,7 +258,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'userName' => 'Apitestsysop',
 				'id' => 3
 			] )
-		],  null, null );
+		], null, null );
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
@@ -281,7 +281,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'comment' => 'Testing Edit Reminder',
 				'userName' => 'Apitestsysop'
 			] )
-		],  null, null );
+		], null, null );
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
@@ -315,7 +315,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'userName' => 'Apitestsysop',
 				'id' => 3
 			] )
-		],  null, null );
+		], null, null );
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
@@ -332,7 +332,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
 			'taskData' => json_encode( $aTaskData )
-		],  null, null );
+		], null, null );
 		$this->assertTrue(
 			isset( $data[0]['success'] ),
 			'API did not report status "success"'
@@ -409,7 +409,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'saveReminder',
 			'taskData' => json_encode( $aTaskData )
-		],  null, null );
+		], null, null );
 		$this->assertTrue(
 			isset( $data[0]['success'] ),
 			'API did not report status "success"'
@@ -452,7 +452,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'deleteReminder',
 			'taskData' => [],
 			'token' => '+\\'
-		],  null, false, new User );
+		], null, false, new User );
 		$this->assertTrue( isset( $data[0]['errors']['permissionError'] ) );
 	}
 
@@ -464,7 +464,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( $aRequest )
-		],  null, null );
+		], null, null );
 		$this->assertTrue( isset( $data[0]['errors'][$sExpectedError] ) );
 	}
 
@@ -477,7 +477,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'reminderId' => 1,
 				'userName' => 'Apitestuser'
 			] )
-		],  null, null );
+		], null, null );
 		$GLOBALS['wgGroupPermissions']['sysop']['remindereditall'] = true;
 		$this->assertTrue( isset( $data[0]['errors']['reminderId'] ) );
 	}
@@ -504,7 +504,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'taskData' => json_encode( [
 				'reminderId' => 3
 			] )
-		],  null, null );
+		], null, null );
 		$GLOBALS['wgHooks']['BsReminderDeleteReminder'] = $originalHookList;
 		$this->assertTrue( isset( $data[0]['errors']['deletehookerror'] ) );
 	}
@@ -529,7 +529,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( [ 'reminderId' => 3 ] )
-		],  null, null );
+		], null, null );
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
@@ -556,7 +556,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( $aTaskData )
-		],  null, null );
+		], null, null );
 		$this->assertTrue(
 			isset( $data[0]['success'] ),
 			'API did not report status "success"'
@@ -580,7 +580,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'getDetailsForReminder',
 			'taskData' => [],
 			'token' => '+\\'
-		],  null, false, new User );
+		], null, false, new User );
 		$this->assertTrue( isset( $data[0]['errors']['permissionError'] ) );
 	}
 
@@ -592,7 +592,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'getDetailsForReminder',
 			'taskData' => json_encode( $aRequest )
-		],  null, null );
+		], null, null );
 		$this->assertTrue( isset( $data[0]['errors'][$sExpectedError] ) );
 	}
 
@@ -607,7 +607,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'getDetailsForReminder',
 			'taskData' => json_encode( [ 'articleId' => 1 ] )
-		],  null, null );
+		], null, null );
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
@@ -635,7 +635,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'taskData' => json_encode( [
 				'articleId' => 1
 			] )
-		],  null, static::$users[ 'uploader' ]->getUser() );
+		], null, static::$users[ 'uploader' ]->getUser() );
 		$GLOBALS['wgGroupPermissions']['user']['remindereditall'] = true;
 		$this->assertFalse( isset( $data[0]['payload']['id'] ) );
 	}
@@ -649,7 +649,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'action' => 'bs-reminder-tasks',
 			'task' => 'getDetailsForReminder',
 			'taskData' => json_encode( $aTaskData )
-		],  null, null );
+		], null, null );
 
 		$this->assertTrue(
 			isset( $aData[0]['success'] ),
