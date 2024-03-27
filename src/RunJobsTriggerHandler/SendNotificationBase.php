@@ -27,7 +27,7 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 	protected function doRun() {
 		$status = \Status::newGood();
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'bs_reminder',
 			'*',
