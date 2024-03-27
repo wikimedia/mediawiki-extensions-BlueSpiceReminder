@@ -188,7 +188,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		if ( empty( $this->getFactory()->getRegisteredTypes() ) ) {
 			return $aData;
 		}
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$sTblPrfx = $dbr->tablePrefix();
 
 		switch ( $sSortField ) {
