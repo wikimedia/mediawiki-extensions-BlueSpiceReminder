@@ -23,5 +23,6 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Tämän sivun muistutukset",
 	"bs-reminder-info-dialog": "Muistutus",
 	"bs-reminder-info-dialog-button-label": "Hallinnoi muistutuksia",
-	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus"
+	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus",
+	"bs-reminder-no": "ei"
 }
