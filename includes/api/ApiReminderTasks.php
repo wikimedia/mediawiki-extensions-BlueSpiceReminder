@@ -2,6 +2,7 @@
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Reminder\Factory;
+use Wikimedia\Rdbms\DBError;
 
 class ApiReminderTasks extends BSApiTasksBase {
 	protected $aTasks = [ 'deleteReminder', 'saveReminder' ];
@@ -66,7 +67,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$aConds['rem_type'] = $pageAndType['type'];
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		try {
 			$res = $dbr->select(
 				'bs_reminder',
@@ -102,7 +103,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		}
 
 		try {
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			$dbw->delete(
 				'bs_reminder',
 				$aConds,
@@ -155,7 +156,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 		}
 
 		$iReminderId = false;
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		// this is normally the case when clicking the reminder on a normal page
 		// (not the overview specialpage) or the edit button on the specialpage
 		// and data needs to be prefilled
@@ -269,7 +270,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 			$aData['rem_repeat_config'] = FormatJson::encode( $oTaskData->repeatConfig );
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		if ( !$iReminderId ) {
 			try {
 				$res = $dbw->insert( 'bs_reminder', $aData, __METHOD__ );
