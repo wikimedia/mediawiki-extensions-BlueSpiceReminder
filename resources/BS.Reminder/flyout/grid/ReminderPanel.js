@@ -37,7 +37,7 @@ Ext.define( 'BS.Reminder.flyout.grid.ReminderPanel', {
 			sortable: false,
 			width: 600,
 			height: 500,
-			tpl: "<div><img class='bs-reminder-flyout-grid-user-image' src='{user_image_url}' /><span>{reminder_date} {user_name}</span></div>",
+			tpl: "<div><img class='bs-reminder-flyout-grid-user-image' src='{user_image_url}' /><span>{reminder_date} {user_real_name}</span></div>",
 			flex: 1
 		} );
 
@@ -46,7 +46,7 @@ Ext.define( 'BS.Reminder.flyout.grid.ReminderPanel', {
 			header: mw.message( 'bs-reminder-header-username' ).plain(),
 			sortable: true,
 			dataIndex: 'user_name',
-			tpl: '<a data-bs-username="{user_name}" href="{user_page}">{user_name}</a>',
+			tpl: '<a data-bs-username="{user_name}" href="{user_page}">{user_real_name}</a>',
 			filter: {
 				type: 'string'
 			},

@@ -280,9 +280,12 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rem_page_id );
 				$userpage = Title::makeTitle( NS_USER, $row->user_name );
+				$user = $this->services->getUserFactory()->newFromName( $row->user_name );
+				$username = !empty( $user->getRealName() ) ? $user->getRealName() : $user->getName();
 				$aResultSet = [
 					'id' => $row->rem_id,
-					'user_name' => $row->user_name,
+					'user_name' => $user->getName(),
+					'user_real_name' => $username,
 					'user_page' => $userpage->getLocalURL(),
 					'page_title' => $oTitle->getPrefixedText(),
 					'page_link' => $oTitle->getLocalURL(),
