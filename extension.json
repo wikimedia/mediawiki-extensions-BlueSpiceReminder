@@ -30,9 +30,6 @@
 					]
 				}
 			},
-			"NotificationRegistrationFunctions": [
-				"\\BlueSpice\\Reminder\\Notification\\Registrator::registerNotifications"
-			],
 			"RunJobsTriggerHandlerRegistry": {
 				"bs-reminder-send-daily": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendTodayReminderNotification::factory",
 				"bs-reminder-send-weekly": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendInOneWeekReminderNotification::factory"
@@ -79,7 +76,24 @@
 			"EditorPluginModules": [
 				"ext.bluespice.reminder.workflows.editor.customElements"
 			]
+		},
+		"Notifications": {
+			"Events": {
+				"bs-reminder-today": {
+					"spec": {
+						"class": "\\BlueSpice\\Reminder\\Event\\ReminderToday"
+					},
+					"buckets": [ "personal" ]
+				},
+				"bs-reminder-one-week": {
+					"spec": {
+						"class": "\\BlueSpice\\Reminder\\Event\\ReminderInOneWeek"
+					},
+					"buckets": [ "personal" ]
+				}
+			}
 		}
+
 	},
 	"GroupPermissions": {
 		"*": {

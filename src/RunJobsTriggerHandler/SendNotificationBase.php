@@ -5,19 +5,16 @@ namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler;
 use DateTime;
 use FormatJson;
+use MediaWiki\User\UserIdentity;
+use MWStake\MediaWiki\Component\Events\INotificationEvent;
+use Title;
 
-class SendNotificationBase extends RunJobsTriggerHandler {
+abstract class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
 	 *
 	 * @var array
 	 */
 	protected $queryConds = [];
-
-	/**
-	 *
-	 * @var string
-	 */
-	protected $notificationClass;
 
 	/**
 	 * @var bool
@@ -40,11 +37,11 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 			$userFactory = $this->services->getUserFactory();
 			foreach ( $res as $row ) {
 				$user = $userFactory->newFromId( $row->rem_user_id );
-				$title = \Title::newFromID( $row->rem_page_id );
+				$title = Title::newFromID( $row->rem_page_id );
 				$comment = $row->rem_comment;
 				if ( $user && $title ) {
-					$notification = new $this->notificationClass( $user, $title, $comment );
-					$this->notifier->notify( $notification );
+					$event = $this->getEvent( $user, $title, $comment );
+					$this->services->getService( 'MWStake.Notifier' )->emit( $event );
 
 					if ( $this->doUpdateRepeatingRemindersDate === true && (int)$row->rem_is_repeating === 1 ) {
 						$repeatingReminders[] = $row;
@@ -59,6 +56,14 @@ class SendNotificationBase extends RunJobsTriggerHandler {
 
 		return $status;
 	}
+
+	/**
+	 * @param UserIdentity $user
+	 * @param Title $title
+	 * @param string $comment
+	 * @return INotificationEvent
+	 */
+	abstract protected function getEvent( UserIdentity $user, Title $title, string $comment ): INotificationEvent;
 
 	/**
 	 * @param array $repeatingReminders
