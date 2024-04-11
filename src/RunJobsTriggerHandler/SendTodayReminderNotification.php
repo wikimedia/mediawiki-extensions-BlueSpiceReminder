@@ -2,14 +2,25 @@
 
 namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 
-use BlueSpice\Reminder\Notification\TodayNotification;
+use BlueSpice\Reminder\Event\ReminderToday;
+use MediaWiki\User\UserIdentity;
+use MWStake\MediaWiki\Component\Events\INotificationEvent;
+use Title;
 
 class SendTodayReminderNotification extends SendNotificationBase {
 	protected $queryConds = [
 		'rem_date = CURDATE()'
 	];
 
-	protected $notificationClass = TodayNotification::class;
+	/**
+	 * @param UserIdentity $user
+	 * @param Title $title
+	 * @param string $comment
+	 * @return INotificationEvent
+	 */
+	protected function getEvent( UserIdentity $user, Title $title, string $comment ): INotificationEvent {
+		return new ReminderToday( $user, $title, $comment );
+	}
 
 	protected $doUpdateRepeatingRemindersDate = true;
 }

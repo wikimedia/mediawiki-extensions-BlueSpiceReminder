@@ -58,14 +58,6 @@
 	"bs-reminder-flyout-manager-btn-label": "Manage reminders",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "My reminders",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Reminder for page $1 on $2 with comment: $3",
-	"echo-category-title-notification-bs-reminder-cat": "Reminders",
-	"echo-pref-tooltip-bs-reminder-cat": "Notify me when my reminders are due today or in one week",
-	"notification-bs-reminder-one-week-subject": "Remember article \"$1\"",
-	"notification-bs-reminder-one-week-email-body": "You have set reminder on article \"$1\". This reminder is coming up in one week.\n\nYour comment:\n$2",
-	"notification-bs-reminder-one-week-web-body": "You have set reminder on article \"$1\" with comment \"$2\". This reminder is coming up in one week.",
-	"notification-bs-reminder-today-subject": "Remember article \"$1\" today",
-	"notification-bs-reminder-today-email-body": "You have set reminder on article \"$1\". This reminder is due today.\n\nYour comment:\n$2",
-	"notification-bs-reminder-today-web-body": "You have set reminder on article \"$1\" with comment \"$2\". This reminder is due today.",
 	"apihelp-bs-reminder-store-summary": "Provides a store for reminders, that can be queried",
 	"apihelp-bs-reminder-tasks-summary": "Provides tasks such as editing or deleting reminders",
 	"right-remindereditall": "Edit others' reminders",
@@ -108,5 +100,11 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Username",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Remind on",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment",
+	"bs-reminder-event-today-desc": "Reminder due today",
+	"bs-reminder-event-one-week-desc": "Reminder due in one week",
+	"bs-reminder-event-today": "your reminder for page [$1 $2] is due today",
+	"bs-reminder-event-today-with-comment": "your reminder for page [$1 $2] is due today.<br><br>Comment on the reminder:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "your reminder for page [$1 $2] is due in one week",
+	"bs-reminder-event-one-week-with-comment": "your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>"
 }
