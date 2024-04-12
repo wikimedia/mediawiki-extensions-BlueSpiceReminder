@@ -47,8 +47,6 @@
 	"bs-reminder-flyout-grid-title": "Promemoria di altri utenti",
 	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "I miei promemoria",
-	"echo-category-title-notification-bs-reminder-cat": "Promemoria",
-	"notification-bs-reminder-one-week-subject": "Ricorda l'articolo \"$1\"",
 	"right-remindereditall": "Modifica i promemoria degli altri utenti",
 	"action-remindereditall": "modificare i promemoria degli altri utenti",
 	"bs-reminder-repeat-label": "Ripeti",

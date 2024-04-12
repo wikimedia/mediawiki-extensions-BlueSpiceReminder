@@ -20,9 +20,5 @@
 	"bs-reminder-error-owner-reminder": "Sie können nur Ihre eigenen Erinnerungen löschen.",
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuchen Sie es erneut.",
 	"bs-reminder-other-user-not-allowed": "Sie können keine Erinnerung für einen anderen Nutzer erstellen",
-	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angegebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt.",
-	"notification-bs-reminder-one-week-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nIhr Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Sie haben eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
-	"notification-bs-reminder-today-email-body": "Sie haben eine Erinnerung für den Artikel \"$1\" angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nIhr Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Sie haben eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen."
+	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angegebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt."
 }

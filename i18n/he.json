@@ -62,14 +62,6 @@
 	"bs-reminder-flyout-manager-btn-label": "לנהל תזכורות",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "התזכורות שלי",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: תזכורת לדף $1 ב־$2 עם הערה: $3",
-	"echo-category-title-notification-bs-reminder-cat": "תזכורות",
-	"echo-pref-tooltip-bs-reminder-cat": "להודיע לי כשהתזכורות שלי אמורות להגיע היום או בעוד שבוע",
-	"notification-bs-reminder-one-week-subject": "לזכור את הערך \"$1\"",
-	"notification-bs-reminder-one-week-email-body": "הגדרת תזכורת לערך \"$1\". התזכורת הזאת תגיע בעוד שבוע.\n\nהערה שלך:\n$2",
-	"notification-bs-reminder-one-week-web-body": "הגדרת תזכורת לערך \"$1\" עם ההערה \"$2\". התזכורת הזאת תגיע בעוד שבוע.",
-	"notification-bs-reminder-today-subject": "לזכור את הערך \"$1\" היום",
-	"notification-bs-reminder-today-email-body": "הגדרת תזכורת לערך \"$1\". הזמן התזכורת הזאת הגיע היום.\n\nהערה שלך:\n$2",
-	"notification-bs-reminder-today-web-body": "הגדרת תזכורת לערך \"$1\" עם ההערה \"$2\". התזכורת הזאת אמורה להגיע היום.",
 	"apihelp-bs-reminder-store-summary": "אספקת אחסון תזכורות שאפשר להריץ עליו שאילתות",
 	"apihelp-bs-reminder-tasks-summary": "אספקת משימות כגון עריכה או מחיקה של תזכורות",
 	"right-remindereditall": "ערוך תזכורות של אחרים",
@@ -112,5 +104,11 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "שם משתמש",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "דף",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "להזכיר ב־",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "הערה"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "הערה",
+	"bs-reminder-event-today-desc": "זמן התזכורת לדף הזה מגיע היום",
+	"bs-reminder-event-one-week-desc": "הגיע זמן התזכורת לדף הזה מגיע בעוד שבוע",
+	"bs-reminder-event-today": "זמן התזכורת שלך לדף [$1 $2] יגיע היום",
+	"bs-reminder-event-today-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע היום.<br><br>הערה על התזכורת:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע",
+	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>"
 }
