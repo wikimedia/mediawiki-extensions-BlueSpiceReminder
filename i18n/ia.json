@@ -61,14 +61,6 @@
 	"bs-reminder-flyout-manager-btn-label": "Gerer rememorationes",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mi rememorationes",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Rememoration pro pagina $1 le $2 con commento: $3",
-	"echo-category-title-notification-bs-reminder-cat": "Rememorationes",
-	"echo-pref-tooltip-bs-reminder-cat": "Notificar me quando mi rememorationes es a venir hodie o in un septimana",
-	"notification-bs-reminder-one-week-subject": "Non oblida articulo \"$1\"",
-	"notification-bs-reminder-one-week-email-body": "Tu ha planate un rememoration sur le articulo \"$1\". Iste rememoration arrivara in un septimana.\n\nTu commento:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Tu ha definite un rememoration sur le articulo \"$1\" con commento \"$2\". Iste rememoration arrivara in un septimana.",
-	"notification-bs-reminder-today-subject": "Non oblida articulo \"$1\" hodie",
-	"notification-bs-reminder-today-email-body": "Tu ha planate un rememoration sur le articulo \"$1\". Iste rememoration es debite pro hodie.\n\nTu commento:\n$2",
-	"notification-bs-reminder-today-web-body": "Tu ha definite un rememoration sur le articulo \"$1\" con commento \"$2\". Iste rememoration es debite pro hodie.",
 	"apihelp-bs-reminder-store-summary": "Forni un immagazinage pro rememorationes que pote esser consultate",
 	"apihelp-bs-reminder-tasks-summary": "Forni processos como le modification e deletion de rememorationes",
 	"right-remindereditall": "Modificar le rememorationes de altere personas",
@@ -111,5 +103,11 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nomine de usator",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Pagina",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Rememorar le",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commento"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commento",
+	"bs-reminder-event-today-desc": "Rememoration pro hodie",
+	"bs-reminder-event-one-week-desc": "Rememoration in un septimana",
+	"bs-reminder-event-today": "tu rememoration pro le pagina [$1 $2] es pro hodie",
+	"bs-reminder-event-today-with-comment": "tu rememoration pro le pagina [$1 $2] es pro hodie.<br><br>Commento sur le rememoration:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "tu rememoration pro le pagina [$1 $2] apparera in un septimana",
+	"bs-reminder-event-one-week-with-comment": "tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>"
 }
