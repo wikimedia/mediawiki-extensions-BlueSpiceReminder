@@ -7,6 +7,7 @@ use MediaWiki\Page\PageIdentity;
 use MediaWiki\User\UserIdentity;
 use Message;
 use MWStake\MediaWiki\Component\Events\BotAgent;
+use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 use MWStake\MediaWiki\Component\Events\TitleEvent;
 
 class ReminderToday extends TitleEvent {
@@ -36,9 +37,9 @@ class ReminderToday extends TitleEvent {
 	}
 
 	/**
-	 * @return Message
+	 * @inheritDoc
 	 */
-	public function getMessage(): Message {
+	public function getMessage( IChannel $forChannel ): Message {
 		$msgKey = $this->getMessageKey();
 		if ( $this->comment ) {
 			return Message::newFromKey( $msgKey . '-with-comment' )->params(
@@ -61,9 +62,9 @@ class ReminderToday extends TitleEvent {
 	}
 
 	/**
-	 * @return Message|null
+	 * @inheritDoc
 	 */
-	public function getLinksIntroMessage(): ?Message {
+	public function getLinksIntroMessage( IChannel $forChannel ): ?Message {
 		return Message::newFromKey( 'ext-notifications-notification-generic-links-intro' );
 	}
 
