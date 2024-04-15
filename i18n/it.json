@@ -70,5 +70,10 @@
 	"bs-reminder-no": "no",
 	"bs-reminder-invalid-type": "Tipo non valido",
 	"bs-reminder-header-type": "Tipo",
-	"bs-reminder-type-page": "Pagina"
+	"bs-reminder-type-page": "Pagina",
+	"bs-reminder-event-today-desc": "Promemoria in scadenza oggi",
+	"bs-reminder-event-one-week-desc": "Promemoria in scadenza tra una settimana",
+	"bs-reminder-event-today": "il tuo promemoria per la pagina [$1 $2] è in scadenza oggi",
+	"bs-reminder-event-today-with-comment": "il tuo promemoria per la pagina [$1 $2] è in scadenza oggi.<br><br>Commento sul promemoria:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "il tuo promemoria per la pagina [$1 $2] è in scadenza tra una settimana"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"Avengium",
 			"DiegoAmbrocio",
+			"Eulalio",
 			"Fitoschido",
 			"Jakeukalane",
 			"Madamebiblio",
@@ -97,5 +98,11 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Recordatorios para esta página",
 	"bs-reminder-info-dialog": "Recordatorio",
 	"bs-reminder-info-dialog-button-label": "Gestionar recordatorios",
-	"bs-reminder-actionmenuentry-setreminder-label": "Establecer recordatorio"
+	"bs-reminder-actionmenuentry-setreminder-label": "Establecer recordatorio",
+	"bs-reminder-event-today-desc": "El recordatorio vence hoy",
+	"bs-reminder-event-one-week-desc": "El recordatorio vence en una semana",
+	"bs-reminder-event-today": "su recordatorio para la página [$1 $2] vence en una semana",
+	"bs-reminder-event-today-with-comment": "su recordatorio para la página [$1 $2] vence en una semana.<br><br> Comenta el recordatorio:<br> <b>$3</b>",
+	"bs-reminder-event-one-week": "su recordatorio para la página [$1 $2] vence en una semana",
+	"bs-reminder-event-one-week-with-comment": "su recordatorio para la página [$1 $2] vence en una semana.<br><br> Comenta el recordatorio:<br> <b>$3</b>"
 }
