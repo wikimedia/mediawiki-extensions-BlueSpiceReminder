@@ -29,6 +29,9 @@ class GlobalActionsEditing extends RestrictedTextLink {
 		$permissions = MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
 			->getPage( 'Reminder' );
+		if ( !$permissions ) {
+			return [];
+		}
 		return [ $permissions->getRestriction() ];
 	}
 

@@ -60,6 +60,9 @@ class AdminTool implements IAdminTool {
 		$specialReminder = MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
 			->getPage( 'Reminder' );
+		if ( !$specialReminder ) {
+			return [];
+		}
 		return [
 			$specialReminder->getRestriction()
 		];
