@@ -7,7 +7,8 @@
 			"Jakeukalane",
 			"Madamebiblio",
 			"Nguyễn Mạnh An",
-			"Suecarmol"
+			"Suecarmol",
+			"Eulalio"
 		]
 	},
 	"bs-reminder-extension-description": "Ofrece al usuario la posibilidad de crear recordatorios.",
@@ -61,14 +62,6 @@
 	"bs-reminder-flyout-grid-title": "Recordatorio de otro usuario",
 	"bs-reminder-flyout-manager-btn-label": "Gestionar recordatorios",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mis recordatorios",
-	"echo-category-title-notification-bs-reminder-cat": "Recordatorios",
-	"echo-pref-tooltip-bs-reminder-cat": "Notifícame cuando mis recordatorios venzan hoy o en una semana",
-	"notification-bs-reminder-one-week-subject": "Recuerda el artículo «$1»",
-	"notification-bs-reminder-one-week-email-body": "Has configurado un recordatorio en el artículo \"$1\". Este recordatorio llegará en una semana.\n\nTu comentario:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Has configurado un recordatorio en el artículo \"$1\" con el comentario \"$2\". Este recordatorio llegará en una semana.",
-	"notification-bs-reminder-today-subject": "Recuerde el artículo \"$1\" de hoy",
-	"notification-bs-reminder-today-email-body": "Ha establecido un recordatorio en el artículo \"$1\". Este recordatorio vence hoy.\n\nSu comentario:\n$2",
-	"notification-bs-reminder-today-web-body": "Ha establecido un recordatorio en el artículo \"$1\" con el comentario \"$2\". Este recordatorio vence hoy.",
 	"apihelp-bs-reminder-tasks-summary": "Proporciona tareas como la edición o eliminación de recordatorios",
 	"right-remindereditall": "Editar otros recordatorios",
 	"action-remindereditall": "editar otros recordatorios",
@@ -105,5 +98,11 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Recordatorios para esta página",
 	"bs-reminder-info-dialog": "Recordatorio",
 	"bs-reminder-info-dialog-button-label": "Gestionar recordatorios",
-	"bs-reminder-actionmenuentry-setreminder-label": "Establecer recordatorio"
+	"bs-reminder-actionmenuentry-setreminder-label": "Establecer recordatorio",
+	"bs-reminder-event-today-desc": "El recordatorio vence hoy",
+	"bs-reminder-event-one-week-desc": "El recordatorio vence en una semana",
+	"bs-reminder-event-today": "su recordatorio para la página [$1 $2] vence en una semana",
+	"bs-reminder-event-today-with-comment": "su recordatorio para la página [$1 $2] vence en una semana.<br><br> Comenta el recordatorio:<br> <b>$3</b>",
+	"bs-reminder-event-one-week": "su recordatorio para la página [$1 $2] vence en una semana",
+	"bs-reminder-event-one-week-with-comment": "su recordatorio para la página [$1 $2] vence en una semana.<br><br> Comenta el recordatorio:<br> <b>$3</b>"
 }
