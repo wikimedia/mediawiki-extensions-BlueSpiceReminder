@@ -8,6 +8,7 @@
 			"Mglaser",
 			"MrFraggle",
 			"Mschlindwein",
+			"TomatoCake",
 			"Umherirrender"
 		]
 	},
@@ -103,5 +104,15 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite",
 	"bs-reminder-info-dialog": "Erinnerungen",
 	"bs-reminder-info-dialog-button-label": "Erinnerungen verwalten",
-	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen"
+	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Benutzername",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Seite",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Erinnern am",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Kommentar",
+	"bs-reminder-event-today-desc": "Erinnerung heute fällig",
+	"bs-reminder-event-one-week-desc": "Erinnerung fällig in einer Woche",
+	"bs-reminder-event-today": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig",
+	"bs-reminder-event-today-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig",
+	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>"
 }
