@@ -7,7 +7,8 @@
 			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Alien333"
 		]
 	},
 	"bs-reminder-extension-description": "Donne à l’utilisateur la possibilité de créer des rappels.",
@@ -112,7 +113,9 @@
 	"bs-reminder-info-dialog": "Rappel",
 	"bs-reminder-info-dialog-button-label": "Gérer les rappels",
 	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Définir une activité de rappel",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nom d’utilisateur",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Rappeler le",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commentaire"
 }

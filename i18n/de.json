@@ -8,7 +8,8 @@
 			"Mglaser",
 			"MrFraggle",
 			"Mschlindwein",
-			"Umherirrender"
+			"Umherirrender",
+			"TomatoCake"
 		]
 	},
 	"bs-reminder-extension-description": "Lässt den Benutzer Erinnerungen zu Seiten erstellen.",
@@ -111,5 +112,9 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite",
 	"bs-reminder-info-dialog": "Erinnerungen",
 	"bs-reminder-info-dialog-button-label": "Erinnerungen verwalten",
-	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen"
+	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Benutzername",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Seite",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Erinnern am",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Kommentar"
 }
