@@ -8,7 +8,8 @@
 			"Mglaser",
 			"MrFraggle",
 			"Mschlindwein",
-			"Umherirrender"
+			"Umherirrender",
+			"TomatoCake"
 		]
 	},
 	"bs-reminder-extension-description": "Lässt den Benutzer Erinnerungen zu Seiten erstellen.",
@@ -69,14 +70,6 @@
 	"bs-reminder-flyout-manager-btn-label": "Erinnerungen verwalten",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Meine Erinnerungen",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Erinnerung für Seite $1 am $2 mit dem Kommentar: $3",
-	"echo-category-title-notification-bs-reminder-cat": "Erinnerungen",
-	"echo-pref-tooltip-bs-reminder-cat": "Benachrichtigung wenn eine Erinnerung heute oder in einer Woche fällig wird",
-	"notification-bs-reminder-one-week-subject": "Erinnerung an Artikel „$1“",
-	"notification-bs-reminder-one-week-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Diese Erinnerung ist in einer Woche fällig.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Du hast eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Diese Erinnerung ist in einer Woche fällig.",
-	"notification-bs-reminder-today-subject": "Erinnerung an Artikel „$1“ heute",
-	"notification-bs-reminder-today-email-body": "Du hast eine Erinnerung für den Artikel „$1“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.\n\nDein Kommentar:\n$2",
-	"notification-bs-reminder-today-web-body": "Du hast eine Erinnerung für den Artikel „$1“ mit dem Kommentar „$2“ angelegt. Heute ist es an der Zeit, sich diesen Artikel anzuschauen.",
 	"apihelp-bs-reminder-store-summary": "Stellt einen Suchspeicher für Erinnerungen bereit, die abgefragt werden können",
 	"apihelp-bs-reminder-tasks-summary": "Stellt Aufgaben wie das Bearbeiten oder Löschen von Erinnerungen bereit",
 	"right-remindereditall": "Erinnerungen anderer Benutzer bearbeiten",
@@ -114,5 +107,15 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Erinnerungen für diese Seite",
 	"bs-reminder-info-dialog": "Erinnerungen",
 	"bs-reminder-info-dialog-button-label": "Erinnerungen verwalten",
-	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen"
+	"bs-reminder-actionmenuentry-setreminder-label": "Erinnerung setzen",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Benutzername",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Seite",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Erinnern am",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Kommentar",
+	"bs-reminder-event-today-desc": "Erinnerung heute fällig",
+	"bs-reminder-event-one-week-desc": "Erinnerung fällig in einer Woche",
+	"bs-reminder-event-today": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig",
+	"bs-reminder-event-today-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig",
+	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>"
 }

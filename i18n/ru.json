@@ -8,7 +8,8 @@
 			"McDutchie",
 			"Okras",
 			"Pacha Tchernof",
-			"Yurina Tatiana"
+			"Yurina Tatiana",
+			"Dirruw'o"
 		]
 	},
 	"reminder": "Напоминание",
@@ -16,6 +17,8 @@
 	"prefs-reminder": "Напоминание",
 	"bs-reminder-menu_entry-show": "Напоминания",
 	"bs-reminder-unknown-user-msg": "Мы пытаетесь создать напоминание для пользователя, которого не существует.",
+	"bs-reminder-create-title": "Напоминание",
+	"bs-reminder-create-success": "Ваше напоминание было успешно создано.",
 	"bs-reminder-header-pagename": "Страница",
 	"bs-reminder-header-username": "Участник",
 	"bs-reminder-title-delete": "Удалить напоминание",
@@ -30,7 +33,9 @@
 	"bs-reminder-navigation-link-text": "Напоминание",
 	"bs-reminder-nav-link-title-reminder": "Напоминание",
 	"bs-reminder-flyout-title": "Напоминание",
-	"echo-category-title-notification-bs-reminder-cat": "Напоминания",
+	"bs-reminder-flyout-manager-btn-label": "Управление напоминаниями",
+	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мои напоминания",
+	"bs-reminder-repeat-label": "Повтор",
 	"bs-reminder-ordinal-first": "первый",
 	"bs-reminder-ordinal-second": "второй",
 	"bs-reminder-ordinal-third": "третий",
@@ -48,10 +53,8 @@
 	"bs-reminder-type-page": "Страница",
 	"bs-reminder-dialog-page-action-my-reminders": "Мои напоминания",
 	"bs-reminder-dialog-page-action-all-reminders": "Все напоминания",
-	"bs-reminder-create-title": "Напоминание",
-	"bs-reminder-create-success": "Ваше напоминание было успешно создано.",
-	"bs-reminder-flyout-manager-btn-label": "Управление напоминаниями",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мои напоминания",
-	"bs-reminder-repeat-label": "Повтор",
-	"bs-reminder-info-dialog": "Напоминание"
+	"bs-reminder-info-dialog": "Напоминание",
+	"bs-reminder-event-today-desc": "Напоминание, срок действия которого истекает сегодня",
+	"bs-reminder-event-one-week": "ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю",
+	"bs-reminder-event-one-week-with-comment": "Ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю.<br><br> Прокомментируйте напоминание:<br> <b>$3</b>"
 }

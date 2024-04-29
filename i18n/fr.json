@@ -7,7 +7,8 @@
 			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Alien333"
 		]
 	},
 	"bs-reminder-extension-description": "Donne à l’utilisateur la possibilité de créer des rappels.",
@@ -68,14 +69,6 @@
 	"bs-reminder-flyout-manager-btn-label": "Gérer les rappels",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mes rappels",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder : rappel pour la page $1 du $2 avec le commentaire : $3",
-	"echo-category-title-notification-bs-reminder-cat": "Rappels",
-	"echo-pref-tooltip-bs-reminder-cat": "Me notifier quand mes rappels tombent aujourd’hui ou dans une semaine",
-	"notification-bs-reminder-one-week-subject": "Souvenez-vous de l’article « $1 »",
-	"notification-bs-reminder-one-week-email-body": "Vous avez défini un rappel pour l’article « $1 ». Ce rappel va arriver dans une semaine.\n\nVotre commentaire :\n$2",
-	"notification-bs-reminder-one-week-web-body": "Vous avez défini un rappel pour l’article « $1 » avec le commentaire « $2 ». Ce rappel arrivera dans une semaine.",
-	"notification-bs-reminder-today-subject": "Souvenez-vous de l’article « $1 » aujourd’hui",
-	"notification-bs-reminder-today-email-body": "Vous avez défini un rappel pour l’article « $1 ». Ce rappel est dû pour aujourd’hui.\n\nVotre commentaire :\n$2",
-	"notification-bs-reminder-today-web-body": "Vous avez défini un rappel pour l’article « $1 » avec le commentaire « $2 ». Ce rappel est pour aujourd’hui.",
 	"apihelp-bs-reminder-store-summary": "Fournit un stockage pour les rappel, qui peut être interrogé.",
 	"apihelp-bs-reminder-tasks-summary": "Fournir des tâches telles que modifier ou supprimer des rappels",
 	"right-remindereditall": "Modifier les rappels des autres",
@@ -114,7 +107,15 @@
 	"bs-reminder-info-dialog": "Rappel",
 	"bs-reminder-info-dialog-button-label": "Gérer les rappels",
 	"bs-reminder-actionmenuentry-setreminder-label": "Définir le rappel",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Définir une activité de rappel",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nom d’utilisateur",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commentaire"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Rappeler le",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commentaire",
+	"bs-reminder-event-today-desc": "Rappel aujourd'hui",
+	"bs-reminder-event-one-week-desc": "Rapper dans une semaine",
+	"bs-reminder-event-today": "votre rappel pour la page [$1 $2] est dû aujourd'hui",
+	"bs-reminder-event-today-with-comment": "votre rappel pour la page [ $1 $2 ] est dû aujourd'hui.<br><br>Commenter le rappel:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "votre rappel pour la page [ $1 $2 ] est dû dans une semaine",
+	"bs-reminder-event-one-week-with-comment": "votre rappel pour la page [ $1 $2 ] est dû dans une semaine.<br><br>Commenter le rappel:<br><b>$3</b>"
 }
