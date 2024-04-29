@@ -6,17 +6,17 @@
 			"Mehtab ahmed"
 		]
 	},
-	"bs-reminder-create-reminder-label": "يادگيري ٺاھيو",
-	"bs-reminder-header-pagename": "صفحو",
-	"bs-reminder-save-error": "ڪا چُڪَ پيش آئي: $1",
-	"bs-reminder-comment-label": "راءِ",
-	"bs-reminder-article-label": "صفحو",
-	"echo-category-title-notification-bs-reminder-cat": "يادگيريون",
-	"bs-reminder-repeat-interval-day": "ڏينھن",
-	"bs-reminder-repeat-interval-week": "ھفتو(ھفتا)",
-	"bs-reminder-repeat-interval-month": "مھينو(مھينا)",
-	"bs-reminder-dialog-page-action-my-reminders": "منھنجون يادگيريون",
-	"bs-reminder-dialog-page-action-all-reminders": "سڀ يادگيريون",
-	"bs-reminder-dialog-page-action-page-reminders": "ھن صفحي لاءِ يادگيريون",
-	"bs-reminder-info-dialog": "يادگيري"
+	"bs-reminder-create-reminder-label": "\u064a\u0627\u062f\u06af\u064a\u0631\u064a \u067a\u0627\u06be\u064a\u0648",
+	"bs-reminder-header-pagename": "\u0635\u0641\u062d\u0648",
+	"bs-reminder-save-error": "\u06aa\u0627 \u0686\u064f\u06aa\u064e \u067e\u064a\u0634 \u0622\u0626\u064a: $1",
+	"bs-reminder-comment-label": "\u0631\u0627\u0621\u0650",
+	"bs-reminder-article-label": "\u0635\u0641\u062d\u0648",
+	"echo-category-title-notification-bs-reminder-cat": "\u064a\u0627\u062f\u06af\u064a\u0631\u064a\u0648\u0646",
+	"bs-reminder-repeat-interval-day": "\u068f\u064a\u0646\u06be\u0646",
+	"bs-reminder-repeat-interval-week": "\u06be\u0641\u062a\u0648(\u06be\u0641\u062a\u0627)",
+	"bs-reminder-repeat-interval-month": "\u0645\u06be\u064a\u0646\u0648(\u0645\u06be\u064a\u0646\u0627)",
+	"bs-reminder-dialog-page-action-my-reminders": "\u0645\u0646\u06be\u0646\u062c\u0648\u0646 \u064a\u0627\u062f\u06af\u064a\u0631\u064a\u0648\u0646",
+	"bs-reminder-dialog-page-action-all-reminders": "\u0633\u0680 \u064a\u0627\u062f\u06af\u064a\u0631\u064a\u0648\u0646",
+	"bs-reminder-dialog-page-action-page-reminders": "\u06be\u0646 \u0635\u0641\u062d\u064a \u0644\u0627\u0621\u0650 \u064a\u0627\u062f\u06af\u064a\u0631\u064a\u0648\u0646",
+	"bs-reminder-info-dialog": "\u064a\u0627\u062f\u06af\u064a\u0631\u064a"
 }

@@ -4,17 +4,17 @@
 			"ElangoRamanujam"
 		]
 	},
-	"reminder": "நினைவூட்டு",
-	"specialreminder": "நினைவூட்டு",
-	"prefs-reminder": "நினைவூட்டு",
-	"bs-reminder-menu_entry-show": "நினைவூட்டுகள்",
-	"bs-reminder-create-title": "நினைவூட்டு",
-	"bs-reminder-header-pagename": "பக்கம்",
-	"bs-reminder-header-username": "பயனர்",
-	"bs-reminder-article-label": "பக்கம்",
-	"bs-reminder-navigation-link-title": "நினைவூட்டு",
-	"bs-reminder-navigation-link-text": "நினைவூட்டு",
-	"bs-reminder-nav-link-title-reminder": "நினைவூட்டு",
-	"bs-reminder-flyout-title": "நினைவூட்டு",
-	"echo-category-title-notification-bs-reminder-cat": "நினைவூட்டுகள்"
+	"reminder": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"specialreminder": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"prefs-reminder": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"bs-reminder-menu_entry-show": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd",
+	"bs-reminder-create-title": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"bs-reminder-header-pagename": "\u0baa\u0b95\u0bcd\u0b95\u0bae\u0bcd",
+	"bs-reminder-header-username": "\u0baa\u0baf\u0ba9\u0bb0\u0bcd",
+	"bs-reminder-article-label": "\u0baa\u0b95\u0bcd\u0b95\u0bae\u0bcd",
+	"bs-reminder-navigation-link-title": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"bs-reminder-navigation-link-text": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"bs-reminder-nav-link-title-reminder": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"bs-reminder-flyout-title": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1",
+	"echo-category-title-notification-bs-reminder-cat": "\u0ba8\u0bbf\u0ba9\u0bc8\u0bb5\u0bc2\u0b9f\u0bcd\u0b9f\u0bc1\u0b95\u0bb3\u0bcd"
 }
