@@ -37,7 +37,7 @@
 	"bs-reminder-save-error": "An error occurred: $1",
 	"bs-reminder-save-error-unkown": "Reminder could not be saved.",
 	"bs-reminder-date-format": "Y-m-d",
-	"bs-reminder-specialpage-subtitle": "← $1",
+	"bs-reminder-specialpage-subtitle": "\u2190 $1",
 	"bs-reminder-create-no-actions": "Some parameters are missing. Please try again.",
 	"bs-reminder-save-success": "The Reminder has been created successfully.",
 	"bs-reminder-user-label": "Assign to user",
@@ -110,5 +110,11 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Username",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Page",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Remind on",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment",
+	"bs-reminder-event-today-desc": "Reminder due today",
+	"bs-reminder-event-one-week-desc": "Reminder due in one week",
+	"bs-reminder-event-today": "your reminder for page [$1 $2] is due today",
+	"bs-reminder-event-today-with-comment": "your reminder for page [$1 $2] is due today.<br><br>Comment on the reminder:<br><b>$3<\/b>",
+	"bs-reminder-event-one-week": "your reminder for page [$1 $2] is due in one week",
+	"bs-reminder-event-one-week-with-comment": "your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3<\/b>"
 }
