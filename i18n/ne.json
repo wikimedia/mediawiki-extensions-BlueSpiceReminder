@@ -2,16 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
-			"\u0939\u093f\u092e\u093e\u0932 \u0938\u0941\u092c\u0947\u0926\u0940"
+			"हिमाल सुबेदी"
 		]
 	},
-	"bs-reminder-header-pagename": "\u092a\u0943\u0937\u094d\u0920",
-	"bs-reminder-header-username": "\u092a\u094d\u0930\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e",
-	"bs-reminder-delete-error": "\u090f\u0909\u091f\u093e \u0924\u094d\u0930\u0941\u091f\u0940 \u0926\u0947\u0916\u093f\u092f\u094b $1",
-	"bs-reminder-save-error": "\u090f\u0909\u091f\u093e \u0924\u094d\u0930\u0941\u091f\u0940 \u0926\u0947\u0916\u093f\u092f\u094b $1",
+	"bs-reminder-header-pagename": "पृष्ठ",
+	"bs-reminder-header-username": "प्रयोगकर्ता",
+	"bs-reminder-delete-error": "एउटा त्रुटी देखियो $1",
+	"bs-reminder-save-error": "एउटा त्रुटी देखियो $1",
 	"bs-reminder-date-format": "Y-m-d",
-	"bs-reminder-specialpage-subtitle": "\u2190 $1",
-	"bs-reminder-comment-label": "\u091f\u093f\u092a\u094d\u092a\u0923\u0940",
-	"bs-reminder-header-comment": "\u091f\u093f\u092a\u094d\u092a\u0923\u0940",
-	"bs-reminder-article-label": "\u092a\u0943\u0937\u094d\u0920"
+	"bs-reminder-specialpage-subtitle": "← $1",
+	"bs-reminder-comment-label": "टिप्पणी",
+	"bs-reminder-header-comment": "टिप्पणी",
+	"bs-reminder-article-label": "पृष्ठ"
 }

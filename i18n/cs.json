@@ -4,15 +4,15 @@
 			"Fraxinus.cs"
 		]
 	},
-	"bs-reminder-unknown-page-msg": "Pokou\u0161\u00edte se vytvo\u0159it upozorn\u011bn\u00ed pro \u010dl\u00e1nek, kter\u00fd neexistuje.",
-	"bs-reminder-unknown-user-msg": "Pokou\u0161\u00edte se vytvo\u0159it upozorn\u011bn\u00ed pro u\u017eivatele, kter\u00fd neexistuje.",
-	"echo-pref-tooltip-bs-reminder-cat": "Informovat m\u011b, kdy\u017e m\u00e1 upozorn\u011bn\u00ed nastanou dnes nebo za jeden t\u00fdden",
-	"notification-bs-reminder-one-week-email-body": "Nastavili jste upozorn\u011bn\u00ed pro \u010dl\u00e1nek \"$1\". Toto upozorn\u011bn\u00ed se uk\u00e1\u017ee za jeden t\u00fdden.\n\nV\u00e1\u0161 koment\u00e1\u0159:\n$2",
-	"notification-bs-reminder-one-week-web-body": "Nastavili jste upozorn\u011bn\u00ed pro \u010dl\u00e1nek \"$1\" s koment\u00e1\u0159em \"$2\". Toto upozorn\u011bn\u00ed se zobraz\u00ed za jeden t\u00fdden.",
-	"bs-reminder-start-date-greater-end-date": "Datum konce upozorn\u011bn\u00ed nelze nastavit na term\u00edn p\u0159ed za\u010d\u00e1tkem",
-	"bs-reminder-dialog-page-action-my-reminders": "Moje upozorn\u011bn\u00ed",
-	"bs-reminder-dialog-page-action-all-reminders": "V\u0161echna upozorn\u011bn\u00ed",
-	"bs-reminder-dialog-page-action-page-reminders": "Upozorn\u011bn\u00ed na tento \u010dl\u00e1nek",
-	"bs-reminder-info-dialog": "Upozorn\u011bn\u00ed",
-	"bs-reminder-info-dialog-button-label": "Spr\u00e1va upozorn\u011bn\u00ed"
+	"bs-reminder-unknown-page-msg": "Pokoušíte se vytvořit upozornění pro článek, který neexistuje.",
+	"bs-reminder-unknown-user-msg": "Pokoušíte se vytvořit upozornění pro uživatele, který neexistuje.",
+	"echo-pref-tooltip-bs-reminder-cat": "Informovat mě, když má upozornění nastanou dnes nebo za jeden týden",
+	"notification-bs-reminder-one-week-email-body": "Nastavili jste upozornění pro článek \"$1\". Toto upozornění se ukáže za jeden týden.\n\nVáš komentář:\n$2",
+	"notification-bs-reminder-one-week-web-body": "Nastavili jste upozornění pro článek \"$1\" s komentářem \"$2\". Toto upozornění se zobrazí za jeden týden.",
+	"bs-reminder-start-date-greater-end-date": "Datum konce upozornění nelze nastavit na termín před začátkem",
+	"bs-reminder-dialog-page-action-my-reminders": "Moje upozornění",
+	"bs-reminder-dialog-page-action-all-reminders": "Všechna upozornění",
+	"bs-reminder-dialog-page-action-page-reminders": "Upozornění na tento článek",
+	"bs-reminder-info-dialog": "Upozornění",
+	"bs-reminder-info-dialog-button-label": "Správa upozornění"
 }
