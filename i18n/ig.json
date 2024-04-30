@@ -4,8 +4,8 @@
 			"Olugold"
 		]
 	},
-	"echo-pref-tooltip-bs-reminder-cat": "Gwa m mgbe ihe ncheta m ruru taa ma \u1ecd b\u1ee5 n'otu izu",
-	"notification-bs-reminder-one-week-email-body": "\u1ecat\u1ecdla ihe ncheta n'edemede \"$1\". Ihe ncheta a na -ab\u1ecba n'ime otu izu. \n\nOkwu g\u1ecb:\n$2",
+	"echo-pref-tooltip-bs-reminder-cat": "Gwa m mgbe ihe ncheta m ruru taa ma ọ bụ n'otu izu",
+	"notification-bs-reminder-one-week-email-body": "Ịtọla ihe ncheta n'edemede \"$1\". Ihe ncheta a na -abịa n'ime otu izu. \n\nOkwu gị:\n$2",
 	"bs-reminder-dialog-page-action-my-reminders": "Ihe ncheta m",
 	"bs-reminder-dialog-page-action-all-reminders": "Ihe ncheta niile",
 	"bs-reminder-info-dialog": "Ihe ncheta",
