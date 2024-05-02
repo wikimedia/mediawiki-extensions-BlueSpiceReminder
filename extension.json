@@ -339,9 +339,6 @@
 			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddSetReminderOnCreate::callback",
 			"\\BlueSpice\\Reminder\\Hook\\GetPreferences\\AddDisableReminderForNS::callback"
 		],
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Reminder\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddFlyout::callback"
-		],
 		"SkinTemplateNavigation::Universal": [
 			"addReminderUrl",
 			"addReminderEntry"
