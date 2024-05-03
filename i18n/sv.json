@@ -46,8 +46,6 @@
 	"bs-reminder-pref-DisableReminderForNS": "Skapa inte påminnelser för följande namnrymder:",
 	"bs-reminder-navigation-link-title": "Påminnelse",
 	"bs-reminder-navigation-link-text": "Påminnelse",
-	"bs-reminder-nav-link-title-reminder": "Påminnelse",
-	"bs-reminder-flyout-title": "Påminnelse",
 	"bs-reminder-flyout-upcoming": "Det finns en påminnelse för denna sida som förfaller {{PLURAL:$1|i morgon|om $1 dagar}}",
 	"bs-reminder-flyout-upcoming-due": "Påminnelsen för denna sida har förfallit",
 	"bs-reminder-flyout-upcoming-none": "Det finns inga kommande påminnelser för denna sida",

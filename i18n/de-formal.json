@@ -19,6 +19,5 @@
 	"bs-reminder-error-valid-reminder": "Sie versuchen eine ungültige Erinnerung zu löschen.",
 	"bs-reminder-error-owner-reminder": "Sie können nur Ihre eigenen Erinnerungen löschen.",
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuchen Sie es erneut.",
-	"bs-reminder-other-user-not-allowed": "Sie können keine Erinnerung für einen anderen Nutzer erstellen",
-	"bs-reminder-flyout-intro": "Hier können Sie sich an diese Seite erinnern lassen. Zum angegebenen Datum werden Sie entsprechend Ihrer Einstellungen benachrichtigt."
+	"bs-reminder-other-user-not-allowed": "Sie können keine Erinnerung für einen anderen Nutzer erstellen"
 }
