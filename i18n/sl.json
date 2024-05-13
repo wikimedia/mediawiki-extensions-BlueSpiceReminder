@@ -93,5 +93,16 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Opomniki za to stran",
 	"bs-reminder-info-dialog": "Opomnik",
 	"bs-reminder-info-dialog-button-label": "Upravljaj opomnike",
-	"bs-reminder-actionmenuentry-setreminder-label": "Nastavi opomnik"
+	"bs-reminder-actionmenuentry-setreminder-label": "Nastavi opomnik",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Nastavitev aktivnosti opomnika",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Uporabniško ime",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Stran",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Opomni dne",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Komentar",
+	"bs-reminder-event-today-desc": "Opomnik danes",
+	"bs-reminder-event-one-week-desc": "Opomnik čez en teden",
+	"bs-reminder-event-today": "Vaš opomnik za stran [$1 $2] preteče danes",
+	"bs-reminder-event-today-with-comment": "Vaš opomnik za stran [$1 $2] preteče danes.<br><br>Komentar opomnika:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Vaš opomnik za stran [$1 $2] preteče čez en teden",
+	"bs-reminder-event-one-week-with-comment": "Vaš opomnik za stran [$1 $2] preteče čez en teden.<br><br>Komentar opomnika:<br><b>$3</b>"
 }
