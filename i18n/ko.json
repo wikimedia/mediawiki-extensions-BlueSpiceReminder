@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Codenstory",
+			"Suleiman the Magnificent Television",
 			"Ykhwong"
 		]
 	},
+	"reminder": "알림",
+	"specialreminder": "알림",
+	"prefs-reminder": "알림",
 	"bs-reminder-header-pagename": "문서",
 	"bs-reminder-header-username": "사용자",
 	"bs-reminder-delete-error": "오류가 발생했습니다: $1",
