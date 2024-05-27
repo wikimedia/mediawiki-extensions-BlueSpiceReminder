@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Codenstory",
-			"Ykhwong"
+			"Ykhwong",
+			"Suleiman the Magnificent Television"
 		]
 	},
+	"reminder": "알림",
+	"specialreminder": "알림",
+	"prefs-reminder": "알림",
 	"bs-reminder-header-pagename": "문서",
 	"bs-reminder-header-username": "사용자",
 	"bs-reminder-delete-error": "오류가 발생했습니다: $1",
@@ -12,8 +16,6 @@
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-user-label": "사용자에 할당",
 	"bs-reminder-article-label": "문서",
-	"echo-pref-tooltip-bs-reminder-cat": "내 리마인더의 만기일이 오늘이거나 1주일 전이면 내게 알립니다",
-	"notification-bs-reminder-today-subject": "오늘 \"$1\" 문서를 기억하기",
 	"bs-reminder-repeat-label": "반복",
 	"bs-reminder-repeat-every-title": "반복 주기:",
 	"bs-reminder-repeat-on-title": "반복",
