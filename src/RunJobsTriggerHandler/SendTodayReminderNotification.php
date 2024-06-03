@@ -8,6 +8,7 @@ use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use Title;
 
 class SendTodayReminderNotification extends SendNotificationBase {
+	/** @var string[] */
 	protected $queryConds = [
 		'rem_date = CURDATE()'
 	];
@@ -22,5 +23,6 @@ class SendTodayReminderNotification extends SendNotificationBase {
 		return new ReminderToday( $user, $title, $comment );
 	}
 
+	/** @var bool */
 	protected $doUpdateRepeatingRemindersDate = true;
 }

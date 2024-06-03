@@ -8,6 +8,7 @@ use MWStake\MediaWiki\Component\Events\INotificationEvent;
 use Title;
 
 class SendInOneWeekReminderNotification extends SendNotificationBase {
+	/** @var string[] */
 	protected $queryConds = [
 		'rem_date = CURDATE() + INTERVAL 7 DAY'
 	];

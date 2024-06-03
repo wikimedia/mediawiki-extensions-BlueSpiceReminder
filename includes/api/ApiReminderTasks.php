@@ -5,6 +5,7 @@ use BlueSpice\Reminder\Factory;
 use Wikimedia\Rdbms\DBError;
 
 class ApiReminderTasks extends BSApiTasksBase {
+	/** @var string[] */
 	protected $aTasks = [ 'deleteReminder', 'saveReminder' ];
 
 	/**

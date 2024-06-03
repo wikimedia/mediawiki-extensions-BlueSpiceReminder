@@ -131,7 +131,7 @@
 		"BlueSpice\\Reminder\\Tests\\": "tests/phpunit"
 	},
 	"AutoloadClasses": {
-		"SpecialReminder": "includes/specials/SpecialReminder.class.php",
+		"SpecialReminder": "includes/specials/SpecialReminder.php",
 		"ApiReminderStore": "includes/api/ApiReminderStore.php",
 		"ApiReminderTasks": "includes/api/ApiReminderTasks.php"
 	},
