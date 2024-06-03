@@ -7,6 +7,7 @@ use BlueSpice\Privacy\Module\Transparency;
 use Wikimedia\Rdbms\IDatabase;
 
 class Handler implements IPrivacyHandler {
+	/** @var IDatabase */
 	protected $db;
 
 	/**
