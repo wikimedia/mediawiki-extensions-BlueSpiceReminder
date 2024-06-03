@@ -14,6 +14,7 @@ class RepeatingReminderDateCalculator {
 	public const MONTHLY_INTERVAL_DAY_OF_MONTH = 'dayOfTheMonth';
 	public const MONTHLY_INTERVAL_DAY_OF_WEEK = 'dayOfTheWeek';
 
+	/** @var array */
 	private $dayNames = [
 		0 => 'sunday',
 		1 => 'monday',
@@ -24,6 +25,7 @@ class RepeatingReminderDateCalculator {
 		6 => 'saturday'
 	];
 
+	/** @var array */
 	private $ordinals = [
 		-1 => 'last',
 		1 => 'first',
