@@ -67,7 +67,7 @@
 	"bs-reminder-thursday-abbr": "四",
 	"bs-reminder-friday-abbr": "五",
 	"bs-reminder-saturday-abbr": "六",
-	"bs-reminder-date-repeat-ends-on-label": "重复结束于",
+	"bs-reminder-date-repeat-ends-on-label": "重复结束时间",
 	"bs-reminder-start-date-greater-end-date": "提醒的结束日期不得设置于起始日期之前",
 	"bs-reminder-header-is-repeating": "正在重复",
 	"bs-reminder-no": "否",
