@@ -3,6 +3,7 @@
 namespace BlueSpice\Reminder\Event;
 
 use Message;
+use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 
 class ReminderInOneWeek extends ReminderToday {
 
@@ -21,9 +22,10 @@ class ReminderInOneWeek extends ReminderToday {
 	}
 
 	/**
+	 * @param IChannel $forChannel
 	 * @return Message|null
 	 */
-	public function getLinksIntroMessage(): ?Message {
+	public function getLinksIntroMessage( IChannel $forChannel ): ?Message {
 		return Message::newFromKey( 'ext-notifications-notification-generic-links-intro' );
 	}
 
