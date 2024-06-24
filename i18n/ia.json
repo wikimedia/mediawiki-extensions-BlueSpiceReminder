@@ -50,9 +50,6 @@
 	"bs-reminder-pref-DisableReminderForNS": "Non crear rememorationes pro le sequente spatios de nomines:",
 	"bs-reminder-navigation-link-title": "Rememoration",
 	"bs-reminder-navigation-link-text": "Rememoration",
-	"bs-reminder-nav-link-title-reminder": "Rememoration",
-	"bs-reminder-flyout-title": "Rememoration",
-	"bs-reminder-flyout-intro": "Tu pote definir hic un rememoration pro iste pagina. Al data indicate, tu recipera un notification de accordo con tu preferentias de notificationes.",
 	"bs-reminder-flyout-upcoming": "Un rememoration pro iste pagina se emittera {{PLURAL:$1|deman|in $1 dies}}.",
 	"bs-reminder-flyout-upcoming-due": "Un rememoration pro iste pagina es imminente.",
 	"bs-reminder-flyout-upcoming-none": "Il non ha rememorationes a venir pro iste pagina.",
@@ -106,8 +103,8 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Commento",
 	"bs-reminder-event-today-desc": "Rememoration pro hodie",
 	"bs-reminder-event-one-week-desc": "Rememoration in un septimana",
-	"bs-reminder-event-today": "tu rememoration pro le pagina [$1 $2] es pro hodie",
-	"bs-reminder-event-today-with-comment": "tu rememoration pro le pagina [$1 $2] es pro hodie.<br><br>Commento sur le rememoration:<br><b>$3</b>",
-	"bs-reminder-event-one-week": "tu rememoration pro le pagina [$1 $2] apparera in un septimana",
-	"bs-reminder-event-one-week-with-comment": "tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>"
+	"bs-reminder-event-today": "Tu rememoration pro le pagina [$1 $2] es pro hodie",
+	"bs-reminder-event-today-with-comment": "Tu rememoration pro le pagina [$1 $2] es pro hodie.<br><br>Commento sur le rememoration:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana",
+	"bs-reminder-event-one-week-with-comment": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>"
 }
