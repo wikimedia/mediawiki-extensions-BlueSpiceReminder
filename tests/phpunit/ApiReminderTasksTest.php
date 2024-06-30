@@ -219,7 +219,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			: [];
 		$GLOBALS['wgHooks']['BsReminderOnUpdate'][]
 			= 'ApiReminderTasksTest::onBsReminderOnUpdate';
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -244,7 +244,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	public function testSaveReminder_checksDbExistenceCheckFailure() {
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -259,7 +259,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'id' => 3
 			] )
 		],  null, null );
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -268,7 +268,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	public function testSaveReminder_checksDbInsertFailure() {
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
@@ -282,7 +282,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'userName' => 'Apitestsysop'
 			] )
 		],  null, null );
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
@@ -291,7 +291,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	public function testSaveReminder_checksDbUpdateFailure() {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -301,7 +301,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_comment' => 'Testing Reminder'
 			]
 		);
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
@@ -316,7 +316,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'id' => 3
 			] )
 		],  null, null );
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
@@ -395,7 +395,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @dataProvider provideEditReminderData
 	 */
 	public function testSaveReminder_editReminder( $aTaskData, $aExpected ) {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -483,7 +483,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	public function testDeleteReminder_checksDeleteHookFailure() {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -510,7 +510,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	}
 
 	public function testDeleteReminder_checksDbDeleteFailure() {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -520,7 +520,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_comment' => 'Testing Reminder'
 			]
 		);
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -530,7 +530,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'deleteReminder',
 			'taskData' => json_encode( [ 'reminderId' => 3 ] )
 		],  null, null );
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -542,7 +542,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * @dataProvider provideDeleteReminderData
 	 */
 	public function testDeleteReminder_deleteReminder( $aTaskData ) {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
@@ -598,7 +598,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 
 	public function testGetDetailsForReminder_checksDbReadFailure() {
 		$this->addTestReminderToDb();
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -608,7 +608,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'task' => 'getDetailsForReminder',
 			'taskData' => json_encode( [ 'articleId' => 1 ] )
 		],  null, null );
-		$this->db->query(
+		$this->getDB()->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
 			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
@@ -749,7 +749,7 @@ class ApiReminderTasksTest extends ApiTestCase {
 	 * Adds one reminder entry to the database for testing
 	 */
 	private function addTestReminderToDb() {
-		$this->db->insert(
+		$this->getDB()->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
