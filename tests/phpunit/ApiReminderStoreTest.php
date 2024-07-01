@@ -79,7 +79,7 @@ class ApiReminderStoreTest extends ApiTestCase {
 	 * Adds one reminder entry to the database for testing
 	 */
 	private function addTestReminderToDb() {
-		$this->getDb()->insert(
+		$this->db->insert(
 			'bs_reminder',
 			[
 				'rem_id' => 3,
