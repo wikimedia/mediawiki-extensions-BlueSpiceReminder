@@ -42,8 +42,6 @@
 	"bs-reminder-other-user-not-allowed": "Non è permesso assegnare promemoria ad un altro utente",
 	"bs-reminder-navigation-link-title": "Promemoria",
 	"bs-reminder-navigation-link-text": "Promemoria",
-	"bs-reminder-nav-link-title-reminder": "Promemoria",
-	"bs-reminder-flyout-title": "Promemoria",
 	"bs-reminder-flyout-form-title": "Creazione promemoria",
 	"bs-reminder-flyout-grid-title": "Promemoria di altri utenti",
 	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
@@ -74,7 +72,7 @@
 	"bs-reminder-type-page": "Pagina",
 	"bs-reminder-event-today-desc": "Promemoria in scadenza oggi",
 	"bs-reminder-event-one-week-desc": "Promemoria in scadenza tra una settimana",
-	"bs-reminder-event-today": "il tuo promemoria per la pagina [$1 $2] è in scadenza oggi",
-	"bs-reminder-event-today-with-comment": "il tuo promemoria per la pagina [$1 $2] è in scadenza oggi.<br><br>Commento sul promemoria:<br><b>$3</b>",
-	"bs-reminder-event-one-week": "il tuo promemoria per la pagina [$1 $2] è in scadenza tra una settimana"
+	"bs-reminder-event-today": "Il tuo promemoria per la pagina [$1 $2] è in scadenza oggi",
+	"bs-reminder-event-today-with-comment": "Il tuo promemoria per la pagina [$1 $2] è in scadenza oggi.<br><br>Commento sul promemoria:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Il tuo promemoria per la pagina [$1 $2] è in scadenza tra una settimana"
 }
