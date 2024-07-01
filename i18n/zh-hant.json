@@ -97,5 +97,16 @@
 	"bs-reminder-dialog-page-action-page-reminders": "此頁面的提醒",
 	"bs-reminder-info-dialog": "提醒",
 	"bs-reminder-info-dialog-button-label": "管理提醒",
-	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒"
+	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "設定提醒活動",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "使用者名稱",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "頁面",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "提醒於",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "註解",
+	"bs-reminder-event-today-desc": "今天到期的提醒",
+	"bs-reminder-event-one-week-desc": "一週內到期的提醒",
+	"bs-reminder-event-today": "您對頁面[$1 $2]的提醒將於今天到期",
+	"bs-reminder-event-today-with-comment": "您對頁面[$1 $2]的提醒將於今天到期。<br><br>對提醒的註解：<br><b>$3</b>",
+	"bs-reminder-event-one-week": "您對頁面[$1 $2]的提醒將於一週內到期",
+	"bs-reminder-event-one-week-with-comment": "您對頁面[$1 $2]的提醒將於一週內到期。<br><br>對提醒的註解：<br><b>$3</b>"
 }
