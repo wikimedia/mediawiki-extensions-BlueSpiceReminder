@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Codenstory",
+			"Suleiman the Magnificent Television",
 			"Ykhwong"
 		]
 	},
@@ -41,5 +42,8 @@
 	"bs-reminder-no": "아니오",
 	"bs-reminder-invalid-type": "잘못된 유형",
 	"bs-reminder-header-type": "유형",
-	"bs-reminder-type-page": "문서"
+	"bs-reminder-type-page": "문서",
+	"reminder": "알림",
+	"specialreminder": "알림",
+	"prefs-reminder": "알림"
 }
