@@ -110,8 +110,8 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comment",
 	"bs-reminder-event-today-desc": "Reminder due today",
 	"bs-reminder-event-one-week-desc": "Reminder due in one week",
-	"bs-reminder-event-today": "your reminder for page [$1 $2] is due today",
-	"bs-reminder-event-today-with-comment": "your reminder for page [$1 $2] is due today.<br><br>Comment on the reminder:<br><b>$3</b>",
-	"bs-reminder-event-one-week": "your reminder for page [$1 $2] is due in one week",
-	"bs-reminder-event-one-week-with-comment": "your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>"
+	"bs-reminder-event-today": "Your reminder for page [$1 $2] is due today",
+	"bs-reminder-event-today-with-comment": "Your reminder for page [$1 $2] is due today.<br><br>Comment on the reminder:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Your reminder for page [$1 $2] is due in one week",
+	"bs-reminder-event-one-week-with-comment": "Your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>"
 }
