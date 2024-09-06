@@ -4,6 +4,7 @@
 			"Ameisenigel",
 			"Ferdinand0101",
 			"Fulla07",
+			"Justman10000",
 			"Killarnee",
 			"Mglaser",
 			"MrFraggle",
@@ -64,7 +65,7 @@
 	"bs-reminder-flyout-intro": "Hier kannst du dich an diese Seite erinnern lassen. Zum angegebenen Datum wirst du entsprechend deiner Einstellungen benachrichtigt.",
 	"bs-reminder-flyout-upcoming": "Eine Erinnerung für diese Seite steht {{PLURAL:$1|morgen|in $1 Tagen}} an",
 	"bs-reminder-flyout-upcoming-due": "Es steht eine Erinnerung für diese Seite an",
-	"bs-reminder-flyout-upcoming-none": "Es gibt keine anstehenden Erinnerungen für diese Seite",
+	"bs-reminder-flyout-upcoming-none": "Es existieren keine anstehenden Erinnerungen für diese Seite",
 	"bs-reminder-flyout-form-title": "Erinnerung erstellen",
 	"bs-reminder-flyout-grid-title": "Erinnerungen anderer Benutzer",
 	"bs-reminder-flyout-manager-btn-label": "Erinnerungen verwalten",
@@ -114,8 +115,9 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Kommentar",
 	"bs-reminder-event-today-desc": "Erinnerung heute fällig",
 	"bs-reminder-event-one-week-desc": "Erinnerung fällig in einer Woche",
-	"bs-reminder-event-today": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig",
-	"bs-reminder-event-today-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist heute fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>",
-	"bs-reminder-event-one-week": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig",
-	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für die Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentar zur Erinnerung:<br><b>$3</b>"
+	"bs-reminder-event-today": "Deine Erinnerung für Seite [$1 $2] ist heute fällig",
+	"bs-reminder-event-today-with-comment": "Deine Erinnerung für Seite [$1 $2] ist heute fällig.<br><br>Kommentiere die Erinnerung:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "Deine Erinnerung für Seite [$1 $2] ist in einer Woche fällig",
+	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentiere die Erinnerung:<br><b>$3</b>",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Erinnerungsaktivität festlegen"
 }
