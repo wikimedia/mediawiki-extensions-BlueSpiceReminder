@@ -27,7 +27,7 @@ class SpecialReminder extends ManagerBase {
 	 * Constructor of SpecialReminder class
 	 */
 	public function __construct() {
-		parent::__construct( 'Reminder', 'read' );
+		parent::__construct( 'Reminder', 'edit' );
 	}
 
 	/**

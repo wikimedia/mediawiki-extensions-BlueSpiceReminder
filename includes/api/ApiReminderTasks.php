@@ -246,6 +246,9 @@ class ApiReminderTasks extends BSApiTasksBase {
 			'rem_page_id' => $title->getArticleID(),
 			'rem_date' => $sFormattedFieldValue,
 			'rem_comment' => addslashes( $sComment ),
+			'rem_is_repeating' => 0,
+			'rem_repeat_date_end' => '',
+			'rem_repeat_config' => '',
 			'rem_type' => $type,
 		];
 

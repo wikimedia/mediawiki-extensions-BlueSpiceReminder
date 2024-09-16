@@ -2,6 +2,7 @@ bs.reminder.ui.ReminderPage = function( name, cfg ) {
 	cfg = cfg || {};
 	name = name || 'create-reminder';
 	this.canCreateForOthers = cfg.canCreateForOthers || false;
+	this.skipActionDefinitions = cfg.skipActionDefinitions || false;
 
 	bs.reminder.ui.ReminderPage.parent.call( this, name, cfg );
 	bs.reminder.ui.mixin.RepeatLayout.call( this );
@@ -144,6 +145,10 @@ bs.reminder.ui.ReminderPage.prototype.getAbilities = function() {
 };
 
 bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function() {
+	if ( this.skipActionDefinitions ) {
+		return {};
+	}
+
 	var defs = {
 		'page-reminders': {
 			action: 'page-reminders', label: mw.message( "bs-reminder-dialog-page-action-page-reminders" ).text()
