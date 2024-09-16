@@ -110,7 +110,8 @@
 		"remindereditall"
 	],
 	"SpecialPages": {
-		"Reminder": "SpecialReminder"
+		"Reminder": "SpecialReminder",
+		"MyReminder": "\\BlueSpice\\Reminder\\Special\\MyReminder"
 	},
 	"APIModules": {
 		"bs-reminder-store": "ApiReminderStore",
@@ -301,6 +302,31 @@
 				"ext.bluespice",
 				"ext.workflows.editor.inspector.bootstrap",
 				"ext.workflows.editor.customElements.bootstrap"
+			]
+		},
+		"ext.bluespice.reminder.specialMyReminder": {
+			"scripts": [
+				"ext.bluespice.rating.specialMyReminder.js",
+				"ui/panel/SpecialMyReminderPanel.js"
+			],
+			"messages": [
+				"bs-reminder-header-pagename",
+				"bs-reminder-header-type",
+				"bs-reminder-header-date",
+				"bs-reminder-header-comment",
+				"bs-reminder-header-is-repeating",
+				"bs-reminder-date-repeat-ends-on-label",
+				"bs-reminder-no",
+				"bs-reminder-title-delete",
+				"bs-reminder-text-delete",
+				"bs-reminder-title-edit",
+				"bs-reminder-title-add"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data",
+				"ext.bluespice.extjs",
+				"ext.bluespice.reminder.dialog.pages"
 			]
 		}
 	},
