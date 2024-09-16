@@ -17,9 +17,11 @@ $specialPageAliases = [];
 /** English (English) */
 $specialPageAliases['en'] = [
 	'Reminder' => [ 'Reminder' ],
+	'MyReminder' => [ 'My Reminder' ],
 ];
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'Reminder' => [ 'Erinnerung' ],
+	'MyReminder' => [ 'Meine Erinnerung' ],
 ];
