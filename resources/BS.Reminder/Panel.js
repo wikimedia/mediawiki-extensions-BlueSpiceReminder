@@ -84,7 +84,7 @@ Ext.define( 'BS.Reminder.Panel', {
 			filter: {
 				type: 'list',
 				options: filter,
-				value: 'page'
+				value: Object.keys( mw.config.get( 'bsgReminderRegisteredTypes' ) ).filter( ( i ) => i !== '' )
 			}
 		});
 		this.colReminderDate = Ext.create( 'Ext.grid.column.Column', {
