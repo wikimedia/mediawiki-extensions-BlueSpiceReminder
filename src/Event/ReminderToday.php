@@ -65,7 +65,7 @@ class ReminderToday extends TitleEvent {
 	 * @inheritDoc
 	 */
 	public function getLinksIntroMessage( IChannel $forChannel ): ?Message {
-		return Message::newFromKey( 'ext-notifications-notification-generic-links-intro' );
+		return Message::newFromKey( 'ext-notifyme-notification-generic-links-intro' );
 	}
 
 	/**

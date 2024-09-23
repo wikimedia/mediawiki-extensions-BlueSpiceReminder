@@ -77,7 +77,7 @@
 				"ext.bluespice.reminder.workflows.editor.customElements"
 			]
 		},
-		"Notifications": {
+		"NotifyMe": {
 			"Events": {
 				"bs-reminder-today": {
 					"spec": {
