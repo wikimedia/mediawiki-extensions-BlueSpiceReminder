@@ -18,15 +18,14 @@ class AddReminderUrl implements SkinTemplateNavigation__UniversalHook {
 		}
 
 		$reminder = MediaWikiServices::getInstance()->getSpecialPageFactory()
-			->getPage( 'Reminder' );
+			->getPage( 'MyReminder' );
 		if ( !$reminder ) {
 			return;
 		}
 
 		$links['user-menu']['my_reminder'] = [
 			'id' => 'pt-my_reminder',
-			'href' => $reminder->getPageTitle()->getLocalURL() . '/'
-			. $user->getName(),
+			'href' => $reminder->getPageTitle()->getLocalURL(),
 			'text' => $sktemplate->msg( 'bs-reminder-menu_entry-show' )->plain(),
 			'position' => 50,
 			'data' => [ 'attentionindicator' => 'reminder' ],
