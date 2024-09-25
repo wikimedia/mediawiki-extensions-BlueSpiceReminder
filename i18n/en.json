@@ -56,6 +56,7 @@
 	"bs-reminder-flyout-grid-title": "Other user's reminder",
 	"bs-reminder-flyout-manager-btn-label": "Manage reminders",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "My reminders",
+	"myreminder": "My reminders",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Reminder for page $1 on $2 with comment: $3",
 	"apihelp-bs-reminder-store-summary": "Provides a store for reminders, that can be queried",
 	"apihelp-bs-reminder-tasks-summary": "Provides tasks such as editing or deleting reminders",
