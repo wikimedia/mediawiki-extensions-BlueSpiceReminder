@@ -59,6 +59,7 @@
 	"bs-reminder-flyout-grid-title": "Title of the grid showing other user's reminders for this page",
 	"bs-reminder-flyout-manager-btn-label": "Label for the button leading to Reminder special page",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Label for the button leading to user's Reminder special page",
+	"myreminder": "Link name for the Special:My_Reminder page that is listed in Special:SpecialPages",
 	"bs-reminder-privacy-transparency-working-reminder": "Privacy handler export for reminder of a user\n* $1 - Full page title of the page, the reminder is set on\n* $2 - Date of the reminder\n* $3 - Comment of the reminder",
 	"apihelp-bs-reminder-store-summary": "{{doc-apihelp-summary|bs-reminder-store}}",
 	"apihelp-bs-reminder-tasks-summary": "{{doc-apihelp-summary|bs-reminder-tasks}}",
