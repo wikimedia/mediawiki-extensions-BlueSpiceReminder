@@ -191,7 +191,7 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 	} else if ( action === 'manage-all' ) {
 		window.location.href = mw.util.getUrl( 'Special:Reminder' );
 	} else if ( action === 'my-reminders' ) {
-		window.location.href =  mw.util.getUrl( 'Special:Reminder', { user: mw.user.getName() } );
+		window.location.href =  mw.util.getUrl( 'Special:MyReminder' );
 	} else {
 		return bs.reminder.ui.ReminderPage.parent.prototype.onAction.call( this, action );
 	}

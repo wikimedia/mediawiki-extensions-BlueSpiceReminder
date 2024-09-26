@@ -216,68 +216,16 @@
 				"mediawiki.widgets"
 			]
 		},
-		"ext.bluespice.reminder.flyout": {
-			"scripts": "bluespice.reminder.flyout.js",
-			"messages": [
-				"bs-reminder-header-pagename",
-				"bs-reminder-header-username",
-				"bs-reminder-header-date",
-				"bs-reminder-flyout-upcoming",
-				"bs-reminder-flyout-upcoming-due",
-				"bs-reminder-flyout-upcoming-none",
-				"bs-reminder-flyout-form-title",
-				"bs-reminder-flyout-grid-title",
-				"bs-reminder-flyout-manager-btn-label",
-				"bs-reminder-flyout-manager-my-reminder-btn-label",
-				"bs-reminder-date-label",
-				"bs-reminder-create-title",
-				"bs-reminder-user-label",
-				"bs-reminder-comment-label",
-				"bs-reminder-header-comment",
-				"bs-reminder-article-label",
-				"bs-reminder-dlg-btn-manager-label",
-				"bs-reminder-create-reminder-label",
-				"bs-reminder-repeat-label",
-				"bs-reminder-repeat-every-title",
-				"bs-reminder-repeat-on-title",
-				"bs-reminder-ordinal-first",
-				"bs-reminder-ordinal-second",
-				"bs-reminder-ordinal-third",
-				"bs-reminder-ordinal-fourth",
-				"bs-reminder-ordinal-last",
-				"bs-reminder-monthly-on-the-prefix",
-				"bs-reminder-monthly-on-day-prefix",
-				"bs-reminder-repeat-interval-day",
-				"bs-reminder-repeat-interval-week",
-				"bs-reminder-repeat-interval-month",
-				"bs-reminder-repeat-interval-year",
-				"bs-reminder-sunday-abbr",
-				"bs-reminder-monday-abbr",
-				"bs-reminder-tuesday-abbr",
-				"bs-reminder-wednesday-abbr",
-				"bs-reminder-thursday-abbr",
-				"bs-reminder-friday-abbr",
-				"bs-reminder-saturday-abbr",
-				"bs-reminder-date-repeat-ends-on-label",
-				"bs-reminder-header-type"
-			],
-			"dependencies": [
-				"mediawiki.jqueryMsg",
-				"ext.bluespice.reminder",
-				"ext.bluespice.extjs",
-				"ext.bluespice"
-			]
-		},
 		"ext.bluespice.reminder.infodialog": {
 			"scripts": [
 				"bluespice.reminder.ReminderInformationPage.js"
 			],
-			"styles": [
-				"bluespice.reminder.css"
-			],
 			"messages": [
 				"bs-reminder-info-dialog",
-				"bs-reminder-info-dialog-button-label"
+				"bs-reminder-info-dialog-button-label",
+				"bs-reminder-header-username",
+				"bs-reminder-header-date",
+				"bs-reminder-header-comment"
 			],
 			"dependencies": [
 				"ext.bluespice"
