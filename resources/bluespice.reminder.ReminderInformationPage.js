@@ -1,4 +1,4 @@
-(function( mw, $, bs, undefined ) {
+( ( mw, bs ) => {
 	bs.util.registerNamespace( 'bs.reminder.info' );
 
 	bs.reminder.info.ReminderInformationPage = function ReminderInformationPage( name, config ) {
@@ -6,7 +6,7 @@
 		bs.reminder.info.ReminderInformationPage.super.call( this, name, config );
 	};
 
-	OO.inheritClass( bs.reminder.info.ReminderInformationPage, StandardDialogs.ui.BasePage );
+	OO.inheritClass( bs.reminder.info.ReminderInformationPage, StandardDialogs.ui.BasePage ); // eslint-disable-line no-undef
 
 	bs.reminder.info.ReminderInformationPage.prototype.setupOutlineItem = function () {
 		bs.reminder.info.ReminderInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
@@ -20,37 +20,51 @@
 		return;
 	};
 
-	bs.reminder.info.ReminderInformationPage.prototype.onInfoPanelSelect = function () {
-		var me = this;
-		if ( me.reminderGrid === null ) {
-			mw.loader.using( 'ext.bluespice.extjs').done( function () {
-				Ext.onReady( function( ) {
-					me.reminderGrid = Ext.create( 'BS.Reminder.flyout.grid.ReminderPanel', {
-						title: false,
-						renderTo: me.$element[0],
-						width: me.$element.width()
-						});
-				}, me );
-				this.specialPageButton = new OO.ui.ButtonWidget( {
-					label: mw.message( 'bs-reminder-info-dialog-button-label' ).plain(),
-					href: mw.util.getUrl( "Special:Reminder" )
-				} );
-				me.$element.append( this.specialPageButton.$element );
-			});
-		}
-	}
+	bs.reminder.info.ReminderInformationPage.prototype.onInfoPanelSelect = async function () {
+		if ( !this.reminderGrid ) {
+			await mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] );
 
-	bs.reminder.info.ReminderInformationPage.prototype.getData = function () {
-		var dfd = new $.Deferred();
-		mw.loader.using( 'ext.bluespice.extjs').done( function () {
-			Ext.require( 'BS.Reminder.flyout.grid.ReminderPanel', function() {
-				dfd.resolve();
-			});
-		});
-		return dfd.promise();
+			const reminderStore = new OOJSPlus.ui.data.store.RemoteStore( {
+				action: 'bs-reminder-store',
+				pageSize: 25
+			} );
+			reminderStore.filter( new OOJSPlus.ui.data.filter.String( {
+				value: mw.config.get( 'wgPageName' ),
+				operator: 'eq',
+				type: 'string'
+			} ), 'page_title' );
+
+			const specialPageButton = new OO.ui.ButtonWidget( {
+				label: mw.message( 'bs-reminder-info-dialog-button-label' ).text(),
+				href: mw.util.getUrl( 'Special:Reminder' )
+			} );
+
+			this.reminderGrid = new OOJSPlus.ui.data.GridWidget( {
+				style: 'differentiate-rows',
+				columns: {
+					user_name: { // eslint-disable-line camelcase
+						headerText: mw.message( 'bs-reminder-header-username' ).text(),
+						type: 'user',
+						showImage: true
+					},
+					reminder_date: { // eslint-disable-line camelcase
+						headerText: mw.message( 'bs-reminder-header-date' ).text(),
+						type: 'text'
+
+					},
+					rem_comment: { // eslint-disable-line camelcase
+						headerText: mw.message( 'bs-reminder-header-comment' ).text(),
+						type: 'text'
+					}
+				},
+				store: reminderStore,
+				tools: [ specialPageButton ]
+			} );
+
+			this.$element.append( this.reminderGrid.$element );
+		}
 	};
 
-	// register
-	registryPageInformation.register( 'reminder_infos', bs.reminder.info.ReminderInformationPage );
+	registryPageInformation.register( 'reminder_infos', bs.reminder.info.ReminderInformationPage ); // eslint-disable-line no-undef
 
-})( mediaWiki, jQuery, blueSpice );
+} )( mediaWiki, blueSpice );
