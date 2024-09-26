@@ -6,10 +6,15 @@
 		"wikimedia/mediawiki"
 	],
 	"globals": {
+		"blueSpice": "readonly",
 		"ext": "readonly",
 		"bs": "readonly",
 		"jQuery": "readonly",
+		"mediaWiki": "readonly",
 		"OOJSPlus": "readonly"
+	},
+	"rules": {
+		"max-len": "off"
 	},
 	"parserOptions": {
 		"ecmaVersion": 8
