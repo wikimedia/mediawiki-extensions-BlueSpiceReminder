@@ -55,6 +55,7 @@
 	"bs-reminder-flyout-grid-title": "Opomnik drugega uporabnika",
 	"bs-reminder-flyout-manager-btn-label": "Upravljaj opomnike",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "Moji opomniki",
+	"myreminder": "Moji opomniki",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Opomnik za stran $1 dne $2 s komentarjem: $3",
 	"apihelp-bs-reminder-store-summary": "Zagotavlja shrambo za opomnike, ki jih je mogoče poizvedovati",
 	"apihelp-bs-reminder-tasks-summary": "Omogoča opravila, kot je urejanje ali brisanje opomnikov",

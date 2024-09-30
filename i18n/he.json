@@ -58,6 +58,7 @@
 	"bs-reminder-flyout-grid-title": "תזכורת של משתמש אחר",
 	"bs-reminder-flyout-manager-btn-label": "לנהל תזכורות",
 	"bs-reminder-flyout-manager-my-reminder-btn-label": "התזכורות שלי",
+	"myreminder": "התזכורות שלי",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: תזכורת לדף $1 ב־$2 עם הערה: $3",
 	"apihelp-bs-reminder-store-summary": "אספקת אחסון תזכורות שאפשר להריץ עליו שאילתות",
 	"apihelp-bs-reminder-tasks-summary": "אספקת משימות כגון עריכה או מחיקה של תזכורות",
