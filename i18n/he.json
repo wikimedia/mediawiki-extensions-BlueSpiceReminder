@@ -53,9 +53,6 @@
 	"bs-reminder-pref-DisableReminderForNS": "לא ליצור תזכורת עבור מרחבי השמות הבאים:",
 	"bs-reminder-navigation-link-title": "תזכורת",
 	"bs-reminder-navigation-link-text": "תזכורת",
-	"bs-reminder-nav-link-title-reminder": "תזכורת",
-	"bs-reminder-flyout-title": "תזכורת",
-	"bs-reminder-flyout-intro": "באפשרותך להגדיר תזכורת עבור הדף הזה כאן. בתאריך שצוין, {{GENDER:|תקבל|תקבלי}} התראה בהתאם להגדרות ההתראות שלך.",
 	"bs-reminder-flyout-upcoming": "זאת תזכורת לכך שהדף הזה מיועד {{PLURAL:$1|למחר|למוחרתיים|3=לעוד יומיים|לעוד $1 יום|לעוד $1 ימים}}",
 	"bs-reminder-flyout-upcoming-due": "הגיע זמן התזכורת לדף הזה",
 	"bs-reminder-flyout-upcoming-none": "אין תזכורות קרובות לדף הזה",
@@ -112,5 +109,8 @@
 	"bs-reminder-event-today": "זמן התזכורת שלך לדף [$1 $2] יגיע היום",
 	"bs-reminder-event-today-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע היום.<br><br>הערה על התזכורת:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע",
-	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>",
+	"bs-reminder-special-myreminder-heading": "התזכורות שלי",
+	"bs-reminder-title-edit": "עריכת תזכורת",
+	"bs-reminder-title-add": "הוספת תזכורת"
 }
