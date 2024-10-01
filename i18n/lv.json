@@ -20,8 +20,5 @@
 	"bs-reminder-header-comment": "Komentārs",
 	"bs-reminder-article-label": "Lapa",
 	"bs-reminder-navigation-link-title": "Atgādinājums",
-	"bs-reminder-navigation-link-text": "Atgādinājums",
-	"bs-reminder-flyout-form-title": "Izveidot atgādinājumu",
-	"bs-reminder-flyout-manager-btn-label": "Pārvaldīt atgādinājumus",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Mani atgādinājumi"
+	"bs-reminder-navigation-link-text": "Atgādinājums"
 }
