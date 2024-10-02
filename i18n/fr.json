@@ -6,6 +6,7 @@
 			"MacOS Weed",
 			"McDutchie",
 			"SleaY",
+			"Terio legale",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -117,5 +118,8 @@
 	"bs-reminder-event-today": "Votre rappel pour la page [$1 $2] est dû aujourd'hui",
 	"bs-reminder-event-today-with-comment": "Votre rappel pour la page [ $1 $2 ] est dû aujourd'hui.<br><br>Commenter le rappel:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Votre rappel pour la page [ $1 $2 ] est dû dans une semaine",
-	"bs-reminder-event-one-week-with-comment": "Votre rappel pour la page [ $1 $2 ] est dû dans une semaine.<br><br>Commenter le rappel:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Votre rappel pour la page [ $1 $2 ] est dû dans une semaine.<br><br>Commenter le rappel:<br><b>$3</b>",
+	"bs-reminder-special-myreminder-heading": "Mon rappel",
+	"bs-reminder-title-edit": "Modifier le rappel",
+	"bs-reminder-title-add": "Ajouter un rappel"
 }
