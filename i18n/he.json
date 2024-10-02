@@ -112,5 +112,6 @@
 	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "התזכורות שלי",
 	"bs-reminder-title-edit": "עריכת תזכורת",
-	"bs-reminder-title-add": "הוספת תזכורת"
+	"bs-reminder-title-add": "הוספת תזכורת",
+	"myreminder": "התזכורות שלי"
 }

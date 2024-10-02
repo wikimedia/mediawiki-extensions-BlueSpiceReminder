@@ -106,5 +106,6 @@
 	"bs-reminder-event-today": "Vaš opomnik za stran [$1 $2] preteče danes",
 	"bs-reminder-event-today-with-comment": "Vaš opomnik za stran [$1 $2] preteče danes.<br><br>Komentar opomnika:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Vaš opomnik za stran [$1 $2] preteče čez en teden",
-	"bs-reminder-event-one-week-with-comment": "Vaš opomnik za stran [$1 $2] preteče čez en teden.<br><br>Komentar opomnika:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Vaš opomnik za stran [$1 $2] preteče čez en teden.<br><br>Komentar opomnika:<br><b>$3</b>",
+	"myreminder": "Moji opomniki"
 }
