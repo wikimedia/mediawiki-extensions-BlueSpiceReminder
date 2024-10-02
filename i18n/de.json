@@ -127,5 +127,9 @@
 	"bs-reminder-event-today-with-comment": "Deine Erinnerung für Seite [$1 $2] ist heute fällig.<br><br>Kommentiere die Erinnerung:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Deine Erinnerung für Seite [$1 $2] ist in einer Woche fällig",
 	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentiere die Erinnerung:<br><b>$3</b>",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Erinnerungsaktivität festlegen"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Erinnerungsaktivität festlegen",
+	"myreminder": "Meine Erinnerungen",
+	"bs-reminder-special-myreminder-heading": "Meine Erinnerungen",
+	"bs-reminder-title-edit": "Erinnerung bearbeiten",
+	"bs-reminder-title-add": "Erinnerung hinzufügen"
 }

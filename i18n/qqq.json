@@ -118,5 +118,9 @@
 	"bs-reminder-event-today": "Notification message when reminder is due today.\n$1 - page full url\n$2 - page display text",
 	"bs-reminder-event-today-with-comment": "Notification message when reminder is due today.\n$1 - page full url\n$2 - page display text\n$3 - comment",
 	"bs-reminder-event-one-week": "Notification message when reminder is due in one week.\n$1 - page full url\n$2 - page display text",
-	"bs-reminder-event-one-week-with-comment": "Notification message when reminder is due in one week.\n$1 - page full url\n$2 - page display text\n$3 - comment"
+	"bs-reminder-event-one-week-with-comment": "Notification message when reminder is due in one week.\n$1 - page full url\n$2 - page display text\n$3 - comment",
+	"myreminder": "Link name for the Special:My_Reminder page that is listed in Special:SpecialPages",
+	"bs-reminder-special-myreminder-heading": "Heading for [[Special:MyReminder]] special page",
+	"bs-reminder-title-edit": "Title for 'Edit reminder' icon",
+	"bs-reminder-title-add": "Title for 'Add reminder' icon"
 }

@@ -78,5 +78,8 @@
 	"bs-reminder-event-one-week-desc": "Promemoria in scadenza tra una settimana",
 	"bs-reminder-event-today": "Il tuo promemoria per la pagina [$1 $2] è in scadenza oggi",
 	"bs-reminder-event-today-with-comment": "Il tuo promemoria per la pagina [$1 $2] è in scadenza oggi.<br><br>Commento sul promemoria:<br><b>$3</b>",
-	"bs-reminder-event-one-week": "Il tuo promemoria per la pagina [$1 $2] è in scadenza tra una settimana"
+	"bs-reminder-event-one-week": "Il tuo promemoria per la pagina [$1 $2] è in scadenza tra una settimana",
+	"bs-reminder-special-myreminder-heading": "Il mio promemoria",
+	"bs-reminder-title-edit": "Modifica promemoria",
+	"bs-reminder-title-add": "Aggiungi promemoria"
 }

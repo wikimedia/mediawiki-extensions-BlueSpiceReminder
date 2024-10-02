@@ -113,5 +113,9 @@
 	"bs-reminder-event-today": "Your reminder for page [$1 $2] is due today",
 	"bs-reminder-event-today-with-comment": "Your reminder for page [$1 $2] is due today.<br><br>Comment on the reminder:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Your reminder for page [$1 $2] is due in one week",
-	"bs-reminder-event-one-week-with-comment": "Your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>",
+	"myreminder": "My reminders",
+	"bs-reminder-special-myreminder-heading": "My reminder",
+	"bs-reminder-title-edit": "Edit reminder",
+	"bs-reminder-title-add": "Add reminder"
 }
