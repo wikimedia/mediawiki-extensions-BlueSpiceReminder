@@ -52,6 +52,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "不要建立以下命名空間的提醒：",
 	"bs-reminder-navigation-link-title": "提醒",
 	"bs-reminder-navigation-link-text": "提醒",
+	"myreminder": "我的提醒",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder：於$2帶有註釋$3的頁面$1提醒",
 	"apihelp-bs-reminder-store-summary": "提供用於提醒的可查詢貯存",
 	"apihelp-bs-reminder-tasks-summary": "提供像是編輯或刪除提醒的任務",

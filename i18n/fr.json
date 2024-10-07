@@ -57,6 +57,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "Ne pas créer de rappel pour les espaces de noms suivants :",
 	"bs-reminder-navigation-link-title": "Rappel",
 	"bs-reminder-navigation-link-text": "Rappel",
+	"myreminder": "Mes rappels",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder : rappel pour la page $1 du $2 avec le commentaire : $3",
 	"apihelp-bs-reminder-store-summary": "Fournit un stockage pour les rappel, qui peut être interrogé.",
 	"apihelp-bs-reminder-tasks-summary": "Fournir des tâches telles que modifier ou supprimer des rappels",
