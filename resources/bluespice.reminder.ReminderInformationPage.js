@@ -34,9 +34,12 @@
 				type: 'string'
 			} ), 'page_title' );
 
+			const rights = await mw.user.getRights();
 			const specialPageButton = new OO.ui.ButtonWidget( {
 				label: mw.message( 'bs-reminder-info-dialog-button-label' ).text(),
-				href: mw.util.getUrl( 'Special:Reminder' )
+				href: rights.includes( 'remindereditall' ) ?
+					mw.util.getUrl( 'Special:Reminder' ) :
+					mw.util.getUrl( 'Special:MyReminder' )
 			} );
 
 			this.reminderGrid = new OOJSPlus.ui.data.GridWidget( {
