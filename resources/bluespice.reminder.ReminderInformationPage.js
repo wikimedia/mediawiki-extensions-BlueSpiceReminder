@@ -29,7 +29,7 @@
 				pageSize: 25
 			} );
 			reminderStore.filter( new OOJSPlus.ui.data.filter.String( {
-				value: mw.config.get( 'wgPageName' ),
+				value: this.pageName,
 				operator: 'eq',
 				type: 'string'
 			} ), 'page_title' );
