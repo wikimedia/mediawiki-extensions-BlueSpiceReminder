@@ -4,6 +4,7 @@
 			"DDPAT",
 			"Diman Russkov",
 			"Dirruw'o",
+			"Firapinch",
 			"Ice bulldog",
 			"Kareyac",
 			"McDutchie",
@@ -68,5 +69,8 @@
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Комментарий",
 	"bs-reminder-event-today-desc": "Напоминание, срок действия которого истекает сегодня",
 	"bs-reminder-event-one-week": "ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю",
-	"bs-reminder-event-one-week-with-comment": "Ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю.<br><br> Прокомментируйте напоминание:<br> <b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю.<br><br> Прокомментируйте напоминание:<br> <b>$3</b>",
+	"bs-reminder-special-myreminder-heading": "Мои напоминания",
+	"bs-reminder-title-edit": "Изменить напоминание",
+	"bs-reminder-title-add": "Добавить напоминание"
 }
