@@ -93,7 +93,7 @@ ext.bluespice.reminder.ui.panel.SpecialMyReminderPanel.prototype.setupGridConfig
 				filter: { type: 'boolean' },
 				valueParser: ( value, row ) => {
 					return new OO.ui.HtmlSnippet(
-						value == 1 ? // eslint-disable-line eqeqeq
+						value ? // eslint-disable-line eqeqeq
 							`${mw.message( 'bs-reminder-date-repeat-ends-on-label' )} ${row.rem_repeat_date_end}` :
 							mw.message( 'bs-reminder-no' ).plain()
 					);
