@@ -110,5 +110,7 @@
 	"bs-reminder-event-one-week-with-comment": "Deine Erinnerung für Seite [$1 $2] ist in einer Woche fällig.<br><br>Kommentiere die Erinnerung:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "Meine Erinnerungen",
 	"bs-reminder-title-edit": "Erinnerung bearbeiten",
-	"bs-reminder-title-add": "Erinnerung hinzufügen"
+	"bs-reminder-title-add": "Erinnerung hinzufügen",
+	"bs-reminder-header-action-edit": "Bearbeiten",
+	"bs-reminder-header-action-delete": "Löschen"
 }
