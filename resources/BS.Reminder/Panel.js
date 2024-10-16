@@ -115,10 +115,10 @@ Ext.define( 'BS.Reminder.Panel', {
 			sortable: false,
 			dataIndex: 'rem_is_repeating',
 			filter: {
-				type: 'string'
+				type: 'boolean'
 			},
 			renderer: function(value, metaData, record, rowIndex, colIndex, store) {
-				if ( parseInt( value ) === 1) {
+				if ( value ) {
 					return mw.message('bs-reminder-date-repeat-ends-on-label') +
 						' ' + record.get( 'rem_repeat_date_end' );
 				} else {
