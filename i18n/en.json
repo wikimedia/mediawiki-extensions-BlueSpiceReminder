@@ -102,5 +102,7 @@
 	"bs-reminder-event-one-week-with-comment": "Your reminder for page [$1 $2] is due in one week.<br><br>Comment on the reminder:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "My reminder",
 	"bs-reminder-title-edit": "Edit reminder",
-	"bs-reminder-title-add": "Add reminder"
+	"bs-reminder-title-add": "Add reminder",
+	"bs-reminder-header-action-edit": "Edit",
+	"bs-reminder-header-action-delete": "Delete"
 }

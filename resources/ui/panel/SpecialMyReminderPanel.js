@@ -103,13 +103,17 @@ ext.bluespice.reminder.ui.panel.SpecialMyReminderPanel.prototype.setupGridConfig
 				type: 'action',
 				title: mw.message( 'bs-reminder-title-edit' ).text(),
 				actionId: 'edit',
-				icon: 'settings'
+				icon: 'settings',
+				headerText: mw.message( 'bs-reminder-header-action-edit' ).text(),
+				invisibleHeader: true
 			},
 			delete: {
 				type: 'action',
 				title: mw.message( 'bs-reminder-title-delete' ).text(),
 				actionId: 'delete',
-				icon: 'trash'
+				icon: 'trash',
+				headerText: mw.message( 'bs-reminder-header-action-delete' ).text(),
+				invisibleHeader: true
 			}
 		},
 		store: this.store,
