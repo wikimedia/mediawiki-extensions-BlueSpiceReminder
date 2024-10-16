@@ -292,7 +292,7 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 					'reminder_date' => $row->rem_date,
 					'article_id' => $row->rem_page_id,
 					'rem_comment' => $row->rem_comment,
-					'rem_is_repeating' => $row->rem_is_repeating,
+					'rem_is_repeating' => $row->rem_is_repeating === '1',
 					'rem_repeat_date_end' => $row->rem_repeat_date_end,
 					'rem_type' => $row->rem_type,
 					'rem_repeat_config' => $row->rem_repeat_config
