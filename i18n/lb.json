@@ -58,5 +58,7 @@
 	"bs-reminder-info-dialog-button-label": "Erënnerunge geréieren",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Benotzernumm",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Säit",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Erënnerung de(n)"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Erënnerung de(n)",
+	"bs-reminder-header-action-edit": "Änneren",
+	"bs-reminder-header-action-delete": "Läschen"
 }
