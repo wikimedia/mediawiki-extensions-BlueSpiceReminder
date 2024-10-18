@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"San1joy23",
 			"Sibabrata Banerjee",
 			"আফতাবুজ্জামান"
 		]
@@ -12,5 +13,8 @@
 	"bs-reminder-invalid-type": "অবৈধ ধরন",
 	"bs-reminder-header-type": "ধরন",
 	"bs-reminder-type-page": "পাতা",
-	"bs-reminder-info-dialog": "অনুস্মারক"
+	"bs-reminder-info-dialog": "অনুস্মারক",
+	"myreminder": "আমার অনুস্মারক",
+	"bs-reminder-special-myreminder-heading": "আমার অনুস্মারক",
+	"bs-reminder-title-edit": "অনুস্মারক সম্পাদনা করুন"
 }
