@@ -4,5 +4,7 @@
 			"Cabal"
 		]
 	},
-	"bs-reminder-header-username": "ਵਰਤੋਂਕਾਰ"
+	"bs-reminder-header-username": "ਵਰਤੋਂਕਾਰ",
+	"bs-reminder-header-action-edit": "ਸੋਧੋ",
+	"bs-reminder-header-action-delete": "ਮਿਟਾਓ"
 }
