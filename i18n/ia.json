@@ -109,5 +109,9 @@
 	"bs-reminder-event-today": "Tu rememoration pro le pagina [$1 $2] es pro hodie",
 	"bs-reminder-event-today-with-comment": "Tu rememoration pro le pagina [$1 $2] es pro hodie.<br><br>Commento sur le rememoration:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana",
-	"bs-reminder-event-one-week-with-comment": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>",
+	"myreminder": "Mi rememorationes",
+	"bs-reminder-special-myreminder-heading": "Mi rememoration",
+	"bs-reminder-title-edit": "Modificar rememoration",
+	"bs-reminder-title-add": "Adder rememoration"
 }

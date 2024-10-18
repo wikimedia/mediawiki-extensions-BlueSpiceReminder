@@ -4,6 +4,7 @@
 			"DDPAT",
 			"Diman Russkov",
 			"Dirruw'o",
+			"Firapinch",
 			"Ice bulldog",
 			"Kareyac",
 			"McDutchie",
@@ -72,5 +73,8 @@
 	"bs-reminder-actionmenuentry-setreminder-label": "Установить напоминание",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Страница",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Напомнить",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Комментарий"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Комментарий",
+	"bs-reminder-special-myreminder-heading": "Мои напоминания",
+	"bs-reminder-title-edit": "Изменить напоминание",
+	"bs-reminder-title-add": "Добавить напоминание"
 }
