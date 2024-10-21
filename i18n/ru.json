@@ -73,5 +73,6 @@
 	"bs-reminder-special-myreminder-heading": "Мои напоминания",
 	"bs-reminder-title-edit": "Изменить напоминание",
 	"bs-reminder-title-add": "Добавить напоминание",
+	"bs-reminder-header-action-edit": "Править",
 	"bs-reminder-header-action-delete": "Удалить"
 }
