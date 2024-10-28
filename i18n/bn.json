@@ -10,11 +10,12 @@
 	"bs-reminder-comment-label": "মন্তব্য",
 	"bs-reminder-header-comment": "মন্তব্য",
 	"bs-reminder-article-label": "পাতা",
+	"myreminder": "আমার অনুস্মারক",
 	"bs-reminder-invalid-type": "অবৈধ ধরন",
 	"bs-reminder-header-type": "ধরন",
 	"bs-reminder-type-page": "পাতা",
 	"bs-reminder-info-dialog": "অনুস্মারক",
-	"myreminder": "আমার অনুস্মারক",
 	"bs-reminder-special-myreminder-heading": "আমার অনুস্মারক",
-	"bs-reminder-title-edit": "অনুস্মারক সম্পাদনা করুন"
+	"bs-reminder-title-edit": "অনুস্মারক সম্পাদনা করুন",
+	"bs-reminder-header-action-edit": "সম্পাদনা"
 }

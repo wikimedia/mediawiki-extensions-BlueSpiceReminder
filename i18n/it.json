@@ -42,10 +42,6 @@
 	"bs-reminder-other-user-not-allowed": "Non è permesso assegnare promemoria ad un altro utente",
 	"bs-reminder-navigation-link-title": "Promemoria",
 	"bs-reminder-navigation-link-text": "Promemoria",
-	"bs-reminder-flyout-form-title": "Creazione promemoria",
-	"bs-reminder-flyout-grid-title": "Promemoria di altri utenti",
-	"bs-reminder-flyout-manager-btn-label": "Gestione promemoria",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "I miei promemoria",
 	"right-remindereditall": "Modifica i promemoria degli altri utenti",
 	"action-remindereditall": "modificare i promemoria degli altri utenti",
 	"bs-reminder-repeat-label": "Ripeti",
@@ -78,5 +74,6 @@
 	"bs-reminder-special-myreminder-heading": "Il mio promemoria",
 	"bs-reminder-title-edit": "Modifica promemoria",
 	"bs-reminder-title-add": "Aggiungi promemoria",
-	"bs-reminder-header-action-edit": "Modifica"
+	"bs-reminder-header-action-edit": "Modifica",
+	"bs-reminder-header-action-delete": "Cancella"
 }

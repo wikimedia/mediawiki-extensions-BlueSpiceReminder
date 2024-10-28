@@ -37,8 +37,6 @@
 	"bs-reminder-dlg-btn-manager-label": "Управление напоминаниями",
 	"bs-reminder-navigation-link-title": "Напоминание",
 	"bs-reminder-navigation-link-text": "Напоминание",
-	"bs-reminder-flyout-manager-btn-label": "Управление напоминаниями",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Мои напоминания",
 	"bs-reminder-repeat-label": "Повтор",
 	"bs-reminder-ordinal-first": "первый",
 	"bs-reminder-ordinal-second": "второй",
@@ -75,5 +73,6 @@
 	"bs-reminder-special-myreminder-heading": "Мои напоминания",
 	"bs-reminder-title-edit": "Изменить напоминание",
 	"bs-reminder-title-add": "Добавить напоминание",
+	"bs-reminder-header-action-edit": "Править",
 	"bs-reminder-header-action-delete": "Удалить"
 }
