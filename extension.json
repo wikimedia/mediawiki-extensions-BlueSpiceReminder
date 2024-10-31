@@ -161,10 +161,12 @@
 			"scripts": [
 				"bluespice.reminder.js"
 			],
-			"styles": "bluespice.reminder.css",
 			"dependencies": [
 				"ext.bluespice"
 			]
+		},
+		"ext.bluespice.reminder.styles": {
+			"styles": "bluespice.reminder.css"
 		},
 		"ext.bluespice.reminder.dialog.pages": {
 			"scripts": [
