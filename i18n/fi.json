@@ -13,9 +13,7 @@
 	"bs-reminder-header-username": "Käyttäjä",
 	"bs-reminder-navigation-link-title": "Muistutus",
 	"bs-reminder-navigation-link-text": "Muistutus",
-	"bs-reminder-nav-link-title-reminder": "Muistutus",
-	"bs-reminder-flyout-title": "Muistutus",
-	"bs-reminder-flyout-form-title": "Luo muistutus",
+	"bs-reminder-no": "ei",
 	"bs-reminder-header-type": "Tyyppi",
 	"bs-reminder-type-page": "Sivu",
 	"bs-reminder-dialog-page-action-my-reminders": "Muistutukseni",
@@ -23,6 +21,5 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Tämän sivun muistutukset",
 	"bs-reminder-info-dialog": "Muistutus",
 	"bs-reminder-info-dialog-button-label": "Hallinnoi muistutuksia",
-	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus",
-	"bs-reminder-no": "ei"
+	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus"
 }

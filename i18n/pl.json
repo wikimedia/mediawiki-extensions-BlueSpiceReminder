@@ -5,8 +5,8 @@
 			"Rail"
 		]
 	},
+	"myreminder": "Moje przypomnienia",
 	"bs-reminder-invalid-type": "Nieprawidłowy typ",
 	"bs-reminder-header-type": "Typ",
-	"bs-reminder-type-page": "Strona",
-	"myreminder": "Moje przypomnienia"
+	"bs-reminder-type-page": "Strona"
 }

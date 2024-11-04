@@ -50,13 +50,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "Ne ustvari opomnika za naslednje imenske prostore:",
 	"bs-reminder-navigation-link-title": "Opomnik",
 	"bs-reminder-navigation-link-text": "Opomnik",
-	"bs-reminder-flyout-upcoming": "Za to stran obstaja opomnik za {{PLURAL:$1|jutri|čez $1 dni}}",
-	"bs-reminder-flyout-upcoming-due": "Opomnik za to stran je zapadel",
-	"bs-reminder-flyout-upcoming-none": "Za to stran ni prihajajočih opomnikov",
-	"bs-reminder-flyout-form-title": "Ustvari opomnik",
-	"bs-reminder-flyout-grid-title": "Opomnik drugega uporabnika",
-	"bs-reminder-flyout-manager-btn-label": "Upravljaj opomnike",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Moji opomniki",
+	"myreminder": "Moji opomniki",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Opomnik za stran $1 dne $2 s komentarjem: $3",
 	"apihelp-bs-reminder-store-summary": "Zagotavlja shrambo za opomnike, ki jih je mogoče poizvedovati",
 	"apihelp-bs-reminder-tasks-summary": "Omogoča opravila, kot je urejanje ali brisanje opomnikov",
@@ -106,6 +100,5 @@
 	"bs-reminder-event-today": "Vaš opomnik za stran [$1 $2] preteče danes",
 	"bs-reminder-event-today-with-comment": "Vaš opomnik za stran [$1 $2] preteče danes.<br><br>Komentar opomnika:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Vaš opomnik za stran [$1 $2] preteče čez en teden",
-	"bs-reminder-event-one-week-with-comment": "Vaš opomnik za stran [$1 $2] preteče čez en teden.<br><br>Komentar opomnika:<br><b>$3</b>",
-	"myreminder": "Moji opomniki"
+	"bs-reminder-event-one-week-with-comment": "Vaš opomnik za stran [$1 $2] preteče čez en teden.<br><br>Komentar opomnika:<br><b>$3</b>"
 }

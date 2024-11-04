@@ -4,6 +4,5 @@
 			"ToniSant"
 		]
 	},
-	"bs-reminder-pref-DefaultReminderPeriod-help": "Daħħal in-numru ta' jiem għall-perjodu tat-tfakkira.",
-	"bs-reminder-flyout-upcoming": "Hemm tfakkira għal din il-paġna għal {{PLURAL:$1|għada|$1 jiem oħra}}"
+	"bs-reminder-pref-DefaultReminderPeriod-help": "Daħħal in-numru ta' jiem għall-perjodu tat-tfakkira."
 }

@@ -13,8 +13,5 @@
 	"bs-reminder-header-username": "பயனர்",
 	"bs-reminder-article-label": "பக்கம்",
 	"bs-reminder-navigation-link-title": "நினைவூட்டு",
-	"bs-reminder-navigation-link-text": "நினைவூட்டு",
-	"bs-reminder-nav-link-title-reminder": "நினைவூட்டு",
-	"bs-reminder-flyout-title": "நினைவூட்டு",
-	"echo-category-title-notification-bs-reminder-cat": "நினைவூட்டுகள்"
+	"bs-reminder-navigation-link-text": "நினைவூட்டு"
 }

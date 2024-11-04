@@ -27,12 +27,5 @@
 	"bs-reminder-dlg-btn-manager-label": "Gestiona els recordatoris",
 	"bs-reminder-navigation-link-title": "Recordatori",
 	"bs-reminder-navigation-link-text": "Recordatori",
-	"bs-reminder-nav-link-title-reminder": "Recordatori",
-	"bs-reminder-flyout-title": "Recordatori",
-	"bs-reminder-flyout-form-title": "Crea un recordatori",
-	"bs-reminder-flyout-manager-btn-label": "Gestiona els recordatoris",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "Els meus recordatoris",
-	"echo-category-title-notification-bs-reminder-cat": "Recordatoris",
-	"notification-bs-reminder-one-week-subject": "Recordeu l’article «$1»",
 	"bs-reminder-no": "no"
 }

@@ -53,13 +53,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "לא ליצור תזכורת עבור מרחבי השמות הבאים:",
 	"bs-reminder-navigation-link-title": "תזכורת",
 	"bs-reminder-navigation-link-text": "תזכורת",
-	"bs-reminder-flyout-upcoming": "זאת תזכורת לכך שהדף הזה מיועד {{PLURAL:$1|למחר|למוחרתיים|3=לעוד יומיים|לעוד $1 יום|לעוד $1 ימים}}",
-	"bs-reminder-flyout-upcoming-due": "הגיע זמן התזכורת לדף הזה",
-	"bs-reminder-flyout-upcoming-none": "אין תזכורות קרובות לדף הזה",
-	"bs-reminder-flyout-form-title": "ליצור תזכורת",
-	"bs-reminder-flyout-grid-title": "תזכורת של משתמש אחר",
-	"bs-reminder-flyout-manager-btn-label": "לנהל תזכורות",
-	"bs-reminder-flyout-manager-my-reminder-btn-label": "התזכורות שלי",
+	"myreminder": "התזכורות שלי",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: תזכורת לדף $1 ב־$2 עם הערה: $3",
 	"apihelp-bs-reminder-store-summary": "אספקת אחסון תזכורות שאפשר להריץ עליו שאילתות",
 	"apihelp-bs-reminder-tasks-summary": "אספקת משימות כגון עריכה או מחיקה של תזכורות",
@@ -112,6 +106,5 @@
 	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "התזכורות שלי",
 	"bs-reminder-title-edit": "עריכת תזכורת",
-	"bs-reminder-title-add": "הוספת תזכורת",
-	"myreminder": "התזכורות שלי"
+	"bs-reminder-title-add": "הוספת תזכורת"
 }
