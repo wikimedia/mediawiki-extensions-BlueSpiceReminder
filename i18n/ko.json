@@ -45,5 +45,7 @@
 	"bs-reminder-type-page": "문서",
 	"reminder": "알림",
 	"specialreminder": "알림",
-	"prefs-reminder": "알림"
+	"prefs-reminder": "알림",
+	"bs-reminder-header-action-edit": "편집",
+	"bs-reminder-header-action-delete": "삭제"
 }

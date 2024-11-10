@@ -116,5 +116,7 @@
 	"myreminder": "התזכורות שלי",
 	"bs-reminder-special-myreminder-heading": "התזכורות שלי",
 	"bs-reminder-title-edit": "עריכת תזכורת",
-	"bs-reminder-title-add": "הוספת תזכורת"
+	"bs-reminder-title-add": "הוספת תזכורת",
+	"bs-reminder-header-action-edit": "עריכה",
+	"bs-reminder-header-action-delete": "מחיקה"
 }

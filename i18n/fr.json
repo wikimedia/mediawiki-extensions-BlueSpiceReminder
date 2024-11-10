@@ -4,6 +4,7 @@
 			"Alien333",
 			"Gomoko",
 			"MacOS Weed",
+			"Mahabarata",
 			"McDutchie",
 			"SleaY",
 			"Terio legale",
@@ -122,5 +123,7 @@
 	"bs-reminder-special-myreminder-heading": "Mon rappel",
 	"bs-reminder-title-edit": "Modifier le rappel",
 	"bs-reminder-title-add": "Ajouter un rappel",
-	"myreminder": "Mes rappels"
+	"myreminder": "Mes rappels",
+	"bs-reminder-header-action-edit": "Modifier",
+	"bs-reminder-header-action-delete": "Supprimer"
 }

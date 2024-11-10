@@ -125,5 +125,7 @@
 	"bs-reminder-special-myreminder-heading": "我的提醒",
 	"bs-reminder-title-edit": "編輯提醒",
 	"bs-reminder-title-add": "新增提醒",
-	"myreminder": "我的提醒"
+	"myreminder": "我的提醒",
+	"bs-reminder-header-action-edit": "編輯",
+	"bs-reminder-header-action-delete": "刪除"
 }
