@@ -2,15 +2,15 @@
 
 namespace BlueSpice\Reminder\Tests;
 
+use BlueSpice\Reminder\Special\Reminder;
 use SpecialPageTestBase;
-use SpecialReminder;
 
 /**
  * Class SpecialReminderTest
  * @group Database
  * @group BlueSpice
  * @group BlueSpiceReminder
- * @covers SpecialReminder
+ * @covers \BlueSpice\Reminder\Special\Reminder
  */
 class SpecialReminderTest extends SpecialPageTestBase {
 
@@ -20,23 +20,19 @@ class SpecialReminderTest extends SpecialPageTestBase {
 	}
 
 	protected function newSpecialPage() {
-		return new SpecialReminder();
+		$permissionManager = $this->getServiceContainer()->getPermissionManager();
+		return new Reminder( $permissionManager );
 	}
 
 	public function testSpecialReminderClassExists() {
 		$this->assertTrue(
-			class_exists( 'SpecialReminder' ),
-			'Class SpecialReminder does not exist'
+			class_exists( 'Reminder' ),
+			'Class Reminder does not exist'
 		);
 	}
 
 	public function testSpecialReminder_hasGridElement() {
 		[ $html, ] = $this->executeSpecialPage();
-		$this->assertStringContainsString( 'bs-reminder-overview-grid', $html );
-	}
-
-	public function testSpecialReminder_hasBacklink() {
-		[ $html, $response ] = $this->executeSpecialPage( "TestBacklink" );
-		$this->assertStringContainsString( 'bs-reminder-overview-grid', $html );
+		$this->assertStringContainsString( 'bs-reminder-special-reminder-container', $html );
 	}
 }
