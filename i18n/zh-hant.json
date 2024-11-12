@@ -105,5 +105,7 @@
 	"bs-reminder-event-one-week-with-comment": "您對頁面[$1 $2]的提醒將於一週內到期。<br><br>對提醒的註解：<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "我的提醒",
 	"bs-reminder-title-edit": "編輯提醒",
-	"bs-reminder-title-add": "新增提醒"
+	"bs-reminder-title-add": "新增提醒",
+	"bs-reminder-header-action-edit": "編輯",
+	"bs-reminder-header-action-delete": "刪除"
 }
