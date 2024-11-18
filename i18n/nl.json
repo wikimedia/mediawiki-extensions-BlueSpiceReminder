@@ -57,6 +57,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "Maak geen herinnering voor de volgende naamruimten:",
 	"bs-reminder-navigation-link-title": "Herinnering",
 	"bs-reminder-navigation-link-text": "Herinnering",
+	"myreminder": "Mijn herinneringen",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: Herinnering voor pagina $1 op $2 met opmerking: $3",
 	"apihelp-bs-reminder-store-summary": "Voorziet in opslag voor herinneringen en maakt het mogelijk deze op te vragen",
 	"apihelp-bs-reminder-tasks-summary": "Voorziet in taken zoals het bewerken of verwijderen van herinneringen",
@@ -106,5 +107,10 @@
 	"bs-reminder-event-today": "Uw herinnering voor de pagina [$1 $2] vervalt vandaag",
 	"bs-reminder-event-today-with-comment": "Uw herinnering voor pagina [$1 $2] vervalt vandaag.<br><br>Opmerking bij de herinnering:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "Uw herinnering voor de pagina [$1 $2] vervalt over een week",
-	"bs-reminder-event-one-week-with-comment": "Uw herinnering voor pagina [$1 $2] vervalt over een week.<br><br>Opmerking bij de herinnering:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "Uw herinnering voor pagina [$1 $2] vervalt over een week.<br><br>Opmerking bij de herinnering:<br><b>$3</b>",
+	"bs-reminder-special-myreminder-heading": "Mijn herinnering",
+	"bs-reminder-title-edit": "Herinnering bewerken",
+	"bs-reminder-title-add": "Herinnering toevoegen",
+	"bs-reminder-header-action-edit": "Bewerken",
+	"bs-reminder-header-action-delete": "Verwijderen"
 }
