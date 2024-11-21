@@ -33,9 +33,8 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 			'remindereditall'
 		);
 		if ( $isAllowed ) {
-			$this->out->addJsConfigVars( "BSReminderShowUserColumn", true );
+			$this->out->addJsConfigVars( 'remindereditall', true );
 		}
-		$this->out->addModuleStyles( 'ext.bluespice.reminder.styles' );
 		$this->out->addModules( 'ext.bluespice.reminder' );
 
 		return true;
