@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Reminder\Special;
 
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\Permissions\PermissionManager;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class Reminder extends SpecialPage {
 
