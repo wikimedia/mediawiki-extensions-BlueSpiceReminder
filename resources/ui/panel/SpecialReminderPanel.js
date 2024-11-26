@@ -1,11 +1,7 @@
-ext.bluespice = ext.bluespice || {};
-ext.bluespice.reminder = ext.bluespice.reminder || {};
-ext.bluespice.reminder.ui = ext.bluespice.reminder.ui || {};
-ext.bluespice.reminder.ui.panel = ext.bluespice.reminder.ui.panel || {};
+bs.util.registerNamespace( 'ext.bluespice.reminder.ui.panel' );
 
 ext.bluespice.reminder.ui.panel.SpecialReminderPanel = function ( cfg ) {
-	ext.bluespice.reminder.ui.panel.SpecialReminderPanel.super.apply( this, cfg );
-	this.$element = $( '<div>' );
+	cfg = cfg || {};
 
 	/** @description Stores the username if set; otherwise, the value indicates that the user has `remindereditall` permission. */
 	this.username = mw.config.get( 'BSReminderUsername' );
@@ -36,43 +32,23 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel = function ( cfg ) {
 		);
 	}
 
-	this.setup();
+	cfg.grid = this.setupGridConfig();
+
+	ext.bluespice.reminder.ui.panel.SpecialReminderPanel.parent.call( this, cfg );
 };
 
-OO.inheritClass( ext.bluespice.reminder.ui.panel.SpecialReminderPanel, OO.ui.PanelLayout );
-
-ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setup = function () {
-	const addReminderButton = new OO.ui.ButtonWidget( {
-		icon: 'add',
-		title: mw.message( 'bs-reminder-title-add' ).plain(),
-		framed: false
-	} );
-	addReminderButton.connect( this, {
-		click: () => this.showReminderDialog( {
-			user: mw.config.get( 'wgUserName' ),
-			date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 )
-		} )
-	} );
-
-	this.tools = [ addReminderButton ];
-
-	const gridCfg = this.setupGridConfig();
-	this.grid = new OOJSPlus.ui.data.GridWidget( gridCfg );
-	this.grid.connect( this, {
-		action: 'doActionOnRow'
-	} );
-
-	this.$element.append( this.grid.$element );
-};
+OO.inheritClass( ext.bluespice.reminder.ui.panel.SpecialReminderPanel, OOJSPlus.ui.panel.ManagerGrid );
 
 ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig = function () {
 	const gridCfg = {
+		multiSelect: false,
 		exportable: true,
 		style: 'differentiate-rows',
 		columns: {
 			user_name: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-reminder-header-username' ).plain(),
 				type: 'user',
+				showImage: true,
 				sortable: true,
 				filter: { type: 'user' },
 				hidden: this.username
@@ -132,8 +108,9 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				title: mw.message( 'bs-reminder-title-edit' ).text(),
 				type: 'action',
 				actionId: 'edit',
-				icon: 'settings',
+				icon: 'edit',
 				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			},
 			delete: {
@@ -143,11 +120,11 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				actionId: 'delete',
 				icon: 'trash',
 				invisibleHeader: true,
+				visibleOnHover: true,
 				width: 30
 			}
 		},
 		store: this.store,
-		tools: this.tools,
 		provideExportData: () => {
 			const deferred = $.Deferred();
 
@@ -155,43 +132,41 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				try {
 					this.store.setPageSize( 99999 );
 					const response = await this.store.reload();
-
 					const $table = $( '<table>' );
-					let $row = $( '<tr>' );
 
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-username' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-pagename' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-type' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-date' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-comment' ).text() ) );
-					$row.append( $( '<td>' ).text( mw.message( 'bs-reminder-header-is-repeating' ).text() ) );
+					const $thead = $( '<thead>' )
+						.append( $( '<tr>' )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-username' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-pagename' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-type' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-date' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-comment' ).text() ) )
+							.append( $( '<th>' ).text( mw.message( 'bs-reminder-header-is-repeating' ).text() ) )
+						);
 
-					$table.append( $row );
-
+					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
 						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
 							const record = response[ id ];
-							$row = $( '<tr>' );
-
-							$row.append( $( '<td>' ).text( record.user_name ) );
-							$row.append( $( '<td>' ).text( record.page_title ) );
-
 							const type = record.rem_type || 'page';
-							$row.append( $( '<td>' ).text( mw.config.get( 'bsgReminderRegisteredTypes' )[ type ].LabelMsg ) );
-
-							$row.append( $( '<td>' ).text( record.reminder_date ) );
-							$row.append( $( '<td>' ).text( record.rem_comment ) );
-
+							const messageType = mw.config.get( 'bsgReminderRegisteredTypes' )[ type ].LabelMsg;
 							const formattedDate = record.rem_repeat_date_end.replace( ',', ' -' ); // CSV comma delimiter
-							$row.append( $( '<td>' ).text(
-								record.rem_is_repeating == 1 ? // eslint-disable-line eqeqeq
-									`${mw.message( 'bs-reminder-date-repeat-ends-on-label' ).plain()} ${formattedDate}` :
-									mw.message( 'bs-reminder-no' ).plain()
-							) );
+							const messageRepeating = record.rem_is_repeating == 1 ? // eslint-disable-line eqeqeq
+								`${mw.message( 'bs-reminder-date-repeat-ends-on-label' ).plain()} ${formattedDate}` :
+								mw.message( 'bs-reminder-no' ).plain();
 
-							$table.append( $row );
+							$tbody.append( $( '<tr>' )
+								.append( $( '<td>' ).text( record.user_name ) )
+								.append( $( '<td>' ).text( record.page_title ) )
+								.append( $( '<td>' ).text( messageType ) )
+								.append( $( '<td>' ).text( record.reminder_date ) )
+								.append( $( '<td>' ).text( record.rem_comment ) )
+								.append( $( '<td>' ).text( messageRepeating ) )
+							);
 						}
 					}
+
+					$table.append( $thead, $tbody );
 
 					deferred.resolve( `<table>${$table.html()}</table>` );
 				} catch ( error ) {
@@ -206,7 +181,19 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 	return gridCfg;
 };
 
-ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.doActionOnRow = function ( action, row ) {
+ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.getToolbarActions = function () {
+	return [
+		this.getAddAction( { icon: 'add' } )
+	];
+};
+
+ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.onAction = function ( action, row ) {
+	if ( action === 'add' ) {
+		this.showReminderDialog( {
+			user: mw.config.get( 'wgUserName' ),
+			date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 )
+		} );
+	}
 	if ( action === 'edit' ) {
 		const dialogData = {
 			id: row.id,
@@ -240,7 +227,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.doActionOnRow = f
 };
 
 ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.onRemoveReminderOk = async function ( id ) {
-	await bs.api.tasks.exec(
+	await bs.api.tasks.execSilent(
 		'reminder',
 		'deleteReminder',
 		{

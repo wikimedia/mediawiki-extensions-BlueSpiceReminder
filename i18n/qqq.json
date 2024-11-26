@@ -105,7 +105,6 @@
 	"bs-reminder-event-one-week-with-comment": "Notification message when reminder is due in one week.\n$1 - page full url\n$2 - page display text\n$3 - comment",
 	"bs-reminder-special-myreminder-heading": "Heading for [[Special:MyReminder]] special page",
 	"bs-reminder-title-edit": "Title for 'Edit reminder' icon",
-	"bs-reminder-title-add": "Title for 'Add reminder' icon",
 	"bs-reminder-header-action-edit": "Header text for column which allows to edit a reminder\n{{Identical|Edit}}",
 	"bs-reminder-header-action-delete": "Header text for column which allows to delete a reminder\n{{Identical|Delete}}"
 }

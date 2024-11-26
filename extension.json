@@ -155,14 +155,13 @@
 				"bs-reminder-title-delete",
 				"bs-reminder-text-delete",
 				"bs-reminder-title-edit",
-				"bs-reminder-title-add",
 				"bs-reminder-header-action-edit",
 				"bs-reminder-header-action-delete"
 			],
 			"dependencies": [
-				"ext.bluespice.extjs",
 				"oojs-ui",
 				"ext.oOJSPlus.data",
+				"ext.oOJSPlus.managerPanel",
 				"ext.bluespice.reminder.dialog.pages"
 			]
 		},
