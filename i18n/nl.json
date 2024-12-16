@@ -108,7 +108,6 @@
 	"bs-reminder-event-one-week-with-comment": "Uw herinnering voor pagina [$1 $2] vervalt over een week.<br><br>Opmerking bij de herinnering:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "Mijn herinnering",
 	"bs-reminder-title-edit": "Herinnering bewerken",
-	"bs-reminder-title-add": "Herinnering toevoegen",
 	"bs-reminder-header-action-edit": "Bewerken",
 	"bs-reminder-header-action-delete": "Verwijderen"
 }

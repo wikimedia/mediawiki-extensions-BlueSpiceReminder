@@ -72,7 +72,6 @@
 	"bs-reminder-event-one-week-with-comment": "Ваше напоминание для страницы [ $1 $2 ] должно быть сделано через неделю.<br><br> Прокомментируйте напоминание:<br> <b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "Мои напоминания",
 	"bs-reminder-title-edit": "Изменить напоминание",
-	"bs-reminder-title-add": "Добавить напоминание",
 	"bs-reminder-header-action-edit": "Править",
 	"bs-reminder-header-action-delete": "Удалить"
 }
