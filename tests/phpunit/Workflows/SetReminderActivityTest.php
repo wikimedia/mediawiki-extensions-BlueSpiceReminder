@@ -11,6 +11,7 @@ use MediaWiki\User\UserFactory;
 use MediaWikiIntegrationTestCase;
 use TitleFactory;
 use User;
+use Wikimedia\Rdbms\Database;
 use Wikimedia\Rdbms\LoadBalancer;
 
 /**
@@ -41,7 +42,7 @@ class SetReminderActivityTest extends MediaWikiIntegrationTestCase {
 		$user->method( 'isRegistered' )->willReturn( true );
 		$userFactoryMock->method( 'newFromName' )->willReturn( $user );
 
-		$connectionMock = $this->createMock( \Database::class );
+		$connectionMock = $this->createMock( Database::class );
 		$connectionMock->method( 'insert' )->willReturnCallback(
 			function ( $table, $data, $method ) use ( $expectedDbData ) {
 				$this->assertArrayEquals( $data, $expectedDbData );
