@@ -183,7 +183,11 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 
 ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.getToolbarActions = function () {
 	return [
-		this.getAddAction( { icon: 'add' } )
+		this.getAddAction( {
+			icon: 'add',
+			title: mw.message( 'bs-reminder-create-reminder-label' ).plain(),
+			displayBothIconAndLabel: true
+		} )
 	];
 };
 

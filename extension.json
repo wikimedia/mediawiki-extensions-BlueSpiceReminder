@@ -154,6 +154,7 @@
 				"bs-reminder-no",
 				"bs-reminder-title-delete",
 				"bs-reminder-text-delete",
+				"bs-reminder-create-reminder-label",
 				"bs-reminder-title-edit",
 				"bs-reminder-header-action-edit",
 				"bs-reminder-header-action-delete"
@@ -187,7 +188,6 @@
 				"bs-reminder-header-comment",
 				"bs-reminder-article-label",
 				"bs-reminder-dlg-btn-manager-label",
-				"bs-reminder-create-reminder-label",
 				"bs-reminder-repeat-label",
 				"bs-reminder-repeat-every-title",
 				"bs-reminder-repeat-on-title",
