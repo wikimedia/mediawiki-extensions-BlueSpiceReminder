@@ -1,4 +1,7 @@
 <?php /** @noinspection LongInheritanceChainInspection */
+
+use MediaWiki\Tests\Api\ApiTestCase;
+
 /**
  * Class ApiReminderTasksTest
  * @group Broken

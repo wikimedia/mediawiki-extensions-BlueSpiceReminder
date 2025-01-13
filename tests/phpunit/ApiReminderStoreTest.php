@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\Tests\Api\ApiTestCase;
+
 /**
  * Class ApiReminderStoreTest
  * @group Broken
