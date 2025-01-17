@@ -3,9 +3,9 @@
 namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 
 use BlueSpice\Reminder\Event\ReminderToday;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
-use Title;
 
 class SendTodayReminderNotification extends SendNotificationBase {
 	/** @var string[] */

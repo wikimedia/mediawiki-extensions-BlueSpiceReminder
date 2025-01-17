@@ -7,6 +7,7 @@ use MediaWiki\Extension\Workflows\Definition\DefinitionContext;
 use MediaWiki\Extension\Workflows\Definition\Element\Task;
 use MediaWiki\Extension\Workflows\WorkflowContext;
 use MediaWiki\Extension\Workflows\WorkflowContextMutable;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 use MediaWikiIntegrationTestCase;
 use TitleFactory;
@@ -31,7 +32,7 @@ class SetReminderActivityTest extends MediaWikiIntegrationTestCase {
 	 */
 	public function testCompleteItem( $data, $expectedDbData ) {
 		$titleFactoryMock = $this->createMock( TitleFactory::class );
-		$titleMock = $this->createMock( \Title::class );
+		$titleMock = $this->createMock( Title::class );
 		$titleMock->method( 'getArticleId' )->willReturn( 1 );
 		$titleMock->method( 'exists' )->willReturn( true );
 		$titleFactoryMock->method( 'newFromText' )->willReturn( $titleMock );

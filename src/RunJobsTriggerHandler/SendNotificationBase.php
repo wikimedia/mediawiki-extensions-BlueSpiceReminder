@@ -5,9 +5,9 @@ namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 use BlueSpice\RunJobsTriggerHandler;
 use DateTime;
 use FormatJson;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
-use Title;
 
 abstract class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
