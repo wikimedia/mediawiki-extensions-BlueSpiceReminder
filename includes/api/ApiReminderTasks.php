@@ -2,6 +2,7 @@
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Reminder\Factory;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\DBError;
 
 class ApiReminderTasks extends BSApiTasksBase {

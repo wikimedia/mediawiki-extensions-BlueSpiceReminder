@@ -3,9 +3,9 @@
 namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 
 use BlueSpice\Reminder\Event\ReminderInOneWeek;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
-use Title;
 
 class SendInOneWeekReminderNotification extends SendNotificationBase {
 	/** @var string[] */
