@@ -1,6 +1,7 @@
 <?php /** @noinspection LongInheritanceChainInspection */
 
 use MediaWiki\Tests\Api\ApiTestCase;
+use MediaWiki\User\User;
 
 /**
  * Class ApiReminderTasksTest

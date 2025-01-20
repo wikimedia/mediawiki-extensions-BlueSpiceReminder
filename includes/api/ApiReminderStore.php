@@ -2,6 +2,7 @@
 
 use BlueSpice\Reminder\Factory;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
