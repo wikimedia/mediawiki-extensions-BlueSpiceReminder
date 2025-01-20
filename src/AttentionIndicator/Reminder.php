@@ -6,8 +6,8 @@ use BlueSpice\Discovery\AttentionIndicator;
 use BlueSpice\Discovery\IAttentionIndicator;
 use Config;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 use TitleFactory;
-use User;
 use Wikimedia\Rdbms\LoadBalancer;
 
 class Reminder extends AttentionIndicator {
