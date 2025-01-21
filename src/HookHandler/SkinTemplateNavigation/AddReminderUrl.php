@@ -2,9 +2,9 @@
 
 namespace BlueSpice\Reminder\HookHandler\SkinTemplateNavigation;
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 
 class AddReminderUrl implements SkinTemplateNavigation__UniversalHook {
 

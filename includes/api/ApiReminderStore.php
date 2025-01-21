@@ -1,6 +1,7 @@
 <?php
 
 use BlueSpice\Reminder\Factory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
