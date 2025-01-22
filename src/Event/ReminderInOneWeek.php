@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Reminder\Event;
 
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\Events\Delivery\IChannel;
 
 class ReminderInOneWeek extends ReminderToday {
