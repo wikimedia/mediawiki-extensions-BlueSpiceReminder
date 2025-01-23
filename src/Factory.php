@@ -3,7 +3,7 @@
 namespace BlueSpice\Reminder;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
-use Config;
+use MediaWiki\Config\Config;
 
 class Factory {
 

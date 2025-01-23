@@ -4,7 +4,7 @@ namespace BlueSpice\Reminder\AttentionIndicator;
 
 use BlueSpice\Discovery\AttentionIndicator;
 use BlueSpice\Discovery\IAttentionIndicator;
-use Config;
+use MediaWiki\Config\Config;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;

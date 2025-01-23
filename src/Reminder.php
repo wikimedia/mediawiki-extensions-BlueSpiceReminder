@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Reminder;
 
-use Config;
+use MediaWiki\Config\Config;
 
 abstract class Reminder implements IReminder {
 	/**
