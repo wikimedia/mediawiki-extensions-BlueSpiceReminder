@@ -29,7 +29,7 @@
 				pageSize: 25
 			} );
 			reminderStore.filter( new OOJSPlus.ui.data.filter.String( {
-				value: this.pageName,
+				value: this.pageName.replace( /_/g, ' ' ),
 				operator: 'eq',
 				type: 'string'
 			} ), 'page_title' );
