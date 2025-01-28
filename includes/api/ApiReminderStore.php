@@ -2,6 +2,7 @@
 
 use BlueSpice\Reminder\Factory;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 

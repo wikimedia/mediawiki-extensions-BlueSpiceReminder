@@ -5,7 +5,7 @@ namespace BlueSpice\Reminder;
 use BlueSpice\IAdminTool;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class AdminTool implements IAdminTool {
 
