@@ -4,7 +4,7 @@ namespace BlueSpice\Reminder\RunJobsTriggerHandler;
 
 use BlueSpice\RunJobsTriggerHandler;
 use DateTime;
-use FormatJson;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
