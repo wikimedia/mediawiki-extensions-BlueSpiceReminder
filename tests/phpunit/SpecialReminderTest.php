@@ -14,11 +14,6 @@ use SpecialPageTestBase;
  */
 class SpecialReminderTest extends SpecialPageTestBase {
 
-	protected function setUp(): void {
-		parent::setUp();
-		$this->tablesUsed[] = 'bs_reminder';
-	}
-
 	protected function newSpecialPage() {
 		$permissionManager = $this->getServiceContainer()->getPermissionManager();
 		return new Reminder( $permissionManager );
