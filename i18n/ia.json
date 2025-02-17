@@ -113,5 +113,7 @@
 	"myreminder": "Mi rememorationes",
 	"bs-reminder-special-myreminder-heading": "Mi rememoration",
 	"bs-reminder-title-edit": "Modificar rememoration",
-	"bs-reminder-title-add": "Adder rememoration"
+	"bs-reminder-title-add": "Adder rememoration",
+	"bs-reminder-header-action-edit": "Modificar",
+	"bs-reminder-header-action-delete": "Deler"
 }
