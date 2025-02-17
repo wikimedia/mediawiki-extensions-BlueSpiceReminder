@@ -100,5 +100,7 @@
 	"bs-reminder-event-one-week": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana",
 	"bs-reminder-event-one-week-with-comment": "Tu rememoration pro le pagina [$1 $2] apparera in un septimana.<br><br>Commento sur le rememoration:<br><b>$3</b>",
 	"bs-reminder-special-myreminder-heading": "Mi rememoration",
-	"bs-reminder-title-edit": "Modificar rememoration"
+	"bs-reminder-title-edit": "Modificar rememoration",
+	"bs-reminder-header-action-edit": "Modificar",
+	"bs-reminder-header-action-delete": "Deler"
 }
