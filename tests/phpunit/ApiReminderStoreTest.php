@@ -16,11 +16,6 @@ use MediaWiki\User\User;
  */
 class ApiReminderStoreTest extends ApiTestCase {
 
-	protected function setUp(): void {
-		parent::setUp();
-		$this->tablesUsed[] = 'bs_reminder';
-	}
-
 	protected function getTokens() {
 		return $this->getTokenList( self::$users['sysop'] );
 	}
