@@ -3,6 +3,7 @@
 namespace BlueSpice\Reminder\Tests;
 
 use BlueSpice\Reminder\Special\Reminder;
+use MediaWiki\SpecialPage\SpecialPage;
 use SpecialPageTestBase;
 
 /**
@@ -19,10 +20,14 @@ class SpecialReminderTest extends SpecialPageTestBase {
 		return new Reminder( $permissionManager );
 	}
 
-	public function testSpecialReminderClassExists() {
-		$this->assertTrue(
-			class_exists( 'Reminder' ),
-			'Class Reminder does not exist'
+	public function testSpecialReminderPageExists() {
+		$specialPage = $this->getServiceContainer()->getSpecialPageFactory()
+			->getPage( 'Reminder' );
+
+		$this->assertInstanceOf(
+			SpecialPage::class,
+			$specialPage,
+			'Special page "Reminder" does not exist'
 		);
 	}
 
