@@ -4,9 +4,9 @@ namespace BlueSpice\Reminder\Special;
 
 use MediaWiki\Html\Html;
 use MediaWiki\Permissions\PermissionManager;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class Reminder extends SpecialPage {
+class Reminder extends OOJSGridSpecialPage {
 
 	/** @var PermissionManager */
 	protected $permissionManager;
@@ -22,9 +22,7 @@ class Reminder extends SpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
-
+	public function doExecute( $subPage ) {
 		$out = $this->getOutput();
 		$username = '';
 		$page = '';
