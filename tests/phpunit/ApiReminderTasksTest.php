@@ -246,7 +246,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE  `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -261,7 +262,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$this->assertTrue( isset( $data[0]['errors']['noactions'] ) );
 	}
@@ -270,7 +272,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
+			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;',
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -284,7 +287,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
+			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;',
+			__METHOD__
 		);
 		$this->assertTrue( isset( $data[0]['errors']['createerror'] ) );
 	}
@@ -303,7 +307,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;'
+			. 'bs_reminder` CHANGE  `rem_user_id` `rem_user_id_disabled` INT(10) NOT NULL;',
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -318,7 +323,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;'
+			. 'bs_reminder` CHANGE  `rem_user_id_disabled` `rem_user_id` INT(10) NOT NULL;',
+			__METHOD__
 		);
 		$this->assertTrue( isset( $data[0]['errors']['updateerror'] ) );
 	}
@@ -522,7 +528,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -532,7 +539,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$this->assertTrue( isset( $data[0]['errors']['saving'] ) );
 	}
@@ -600,7 +608,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE `rem_id` `rem_id_disabled` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -610,7 +619,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 		$this->db->query(
 			'ALTER TABLE `'
 			. $this->dbPrefix()
-			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;'
+			. 'bs_reminder` CHANGE  `rem_id_disabled` `rem_id` INT(10) NOT NULL AUTO_INCREMENT;',
+			__METHOD__
 		);
 		$this->assertTrue( isset( $data[0]['errors']['reminderId'] ) );
 	}
