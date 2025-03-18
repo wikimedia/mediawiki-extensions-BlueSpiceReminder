@@ -29,7 +29,8 @@ abstract class SendNotificationBase extends RunJobsTriggerHandler {
 		$res = $dbr->select(
 			'bs_reminder',
 			'*',
-			$this->queryConds
+			$this->queryConds,
+			__METHOD__
 		);
 
 		$repeatingReminders = [];
