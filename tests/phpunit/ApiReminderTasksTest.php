@@ -226,7 +226,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -302,7 +303,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$this->db->query(
 			'ALTER TABLE `'
@@ -408,7 +410,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -496,7 +499,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$originalHookList = isset( $GLOBALS['wgHooks']['BsReminderDeleteReminder'] )
 			? $GLOBALS['wgHooks']['BsReminderDeleteReminder']
@@ -523,7 +527,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$this->db->query(
 			'ALTER TABLE `'
@@ -557,7 +562,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 		$data = $this->doApiRequestWithToken( [
 			'action' => 'bs-reminder-tasks',
@@ -766,7 +772,8 @@ class ApiReminderTasksTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 	}
 

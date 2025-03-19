@@ -86,7 +86,8 @@ class ApiReminderStoreTest extends ApiTestCase {
 				'rem_page_id' => 1,
 				'rem_date' => '2016-11-25',
 				'rem_comment' => 'Testing Reminder'
-			]
+			],
+			__METHOD__
 		);
 	}
 }
