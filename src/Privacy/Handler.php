@@ -40,7 +40,8 @@ class Handler implements IPrivacyHandler {
 	public function delete( User $userToDelete, User $deletedUser ) {
 		$this->db->delete(
 			'bs_reminder',
-			[ 'rem_user_id' => $userToDelete->getId() ]
+			[ 'rem_user_id' => $userToDelete->getId() ],
+			__METHOD__
 		);
 
 		return Status::newGood();
