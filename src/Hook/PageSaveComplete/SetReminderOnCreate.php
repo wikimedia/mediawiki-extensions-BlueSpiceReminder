@@ -62,7 +62,9 @@ class SetReminderOnCreate extends PageSaveComplete {
 				'rem_user_id' => $this->user->getId(),
 				'rem_page_id' => $this->wikiPage->getId(),
 				'rem_date' => $sFormattedFieldValue
-			] );
+			],
+			__METHOD__
+		);
 		if ( !$res ) {
 			return true;
 		}
