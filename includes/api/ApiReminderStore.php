@@ -179,8 +179,10 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	 * @param User|null $requestedUser
 	 * @return array
 	 */
-	protected function getReminders( User $oUser, $iOffset = 0, $iLimit = 25, $sSortField = 'rem_date',
-		$sSortDirection = 'ASC', $iDate = 0, User $requestedUser = null ) {
+	protected function getReminders(
+		User $oUser, $iOffset = 0, $iLimit = 25, $sSortField = 'rem_date',
+		$sSortDirection = 'ASC', $iDate = 0, ?User $requestedUser = null
+	) {
 		$aData = [
 			'results' => [],
 			'total' => 0
