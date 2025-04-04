@@ -24,7 +24,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
-	public function task_deleteReminder( $oTaskData, $aParams ) {
+	public function task_deleteReminder( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		if ( $oUser->isAnon() ) {
@@ -140,7 +140,7 @@ class ApiReminderTasks extends BSApiTasksBase {
 	 * @param array $aParams
 	 * @return Standard
 	 */
-	public function task_saveReminder( $oTaskData, $aParams ) {
+	public function task_saveReminder( $oTaskData, $aParams ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oResult = $this->makeStandardReturn();
 		$oUser = $this->getUser();
 		$sComment = '';
