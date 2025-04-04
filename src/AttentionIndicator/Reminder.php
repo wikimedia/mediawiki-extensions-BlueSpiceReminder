@@ -45,9 +45,10 @@ class Reminder extends AttentionIndicator {
 	 * @param TitleFactory|null $titleFactory
 	 * @return IAttentionIndicator
 	 */
-	public static function factory( string $key, Config $config, User $user,
-		MediaWikiServices $services, LoadBalancer $lb = null,
-		TitleFactory $titleFactory = null ) {
+	public static function factory(
+		string $key, Config $config, User $user, MediaWikiServices $services,
+		?LoadBalancer $lb = null, ?TitleFactory $titleFactory = null
+	) {
 		if ( !$lb ) {
 			$lb = $services->getDBLoadBalancer();
 		}
