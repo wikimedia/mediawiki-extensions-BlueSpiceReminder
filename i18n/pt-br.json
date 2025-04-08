@@ -5,7 +5,8 @@
 			"Eduardoaddad",
 			"Juan90264",
 			"McDutchie",
-			"Tiagoquix"
+			"Tiagoquix",
+			"TheEduGobi"
 		]
 	},
 	"bs-reminder-extension-description": "Dá ao usuário a oportunidade de criar lembretes.",
@@ -80,7 +81,7 @@
 	"bs-reminder-saturday-abbr": "sab",
 	"bs-reminder-date-repeat-ends-on-label": "A repetição termina em",
 	"bs-reminder-start-date-greater-end-date": "A data de término do lembrete não pode ser definida antes da data de início",
-	"bs-reminder-header-is-repeating": "Mensalmente no",
+	"bs-reminder-header-is-repeating": "Se repete",
 	"bs-reminder-no": "não",
 	"bs-reminder-invalid-type": "Tipo inválido",
 	"bs-reminder-header-type": "Tipo",
