@@ -1,12 +1,12 @@
-(function( mw, $, d, bs, undefined ){
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.reminder.ui' );
 	bs.util.registerNamespace( 'bs.reminder.ui.mixin' );
 
-	function _showDialog() {
-		var dfd = $.Deferred();
-		bs.reminder.canEditAll().done( function() {
-				dfd.resolve( getPages( true ) );
-		} ).fail( function() {
+	function _showDialog() { // eslint-disable-line no-underscore-dangle
+		const dfd = $.Deferred();
+		bs.reminder.canEditAll().done( () => {
+			dfd.resolve( getPages( true ) );
+		} ).fail( () => {
 			dfd.resolve( getPages( false ) );
 		} );
 
@@ -16,27 +16,27 @@
 					data: {
 						page: mw.config.get( 'wgPageName' ),
 						user: mw.config.get( 'wgUserName' ),
-						date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 ),
+						date: new Date( mw.config.get( 'DefaultReminderPeriod' ) * 1000 )
 					},
 					canCreateForOthers: canEditAll
 				} )
 			];
 		}
 
-		var dialog = new OOJSPlus.ui.dialog.BookletDialog( {
+		const dialog = new OOJSPlus.ui.dialog.BookletDialog( {
 			id: 'bs-reminder-dialog-create',
-			pages: function() {
+			pages: function () {
 				return dfd.promise();
 			}
 		} );
 
 		dialog.show();
-	};
+	}
 
-	bs.reminder.canEditAll = function() {
-		var dfd = $.Deferred();
+	bs.reminder.canEditAll = function () {
+		const dfd = $.Deferred();
 
-		mw.user.getRights().done( function( rights ) {
+		mw.user.getRights().done( ( rights ) => {
 			if ( rights.indexOf( 'remindereditall' ) !== -1 ) {
 				dfd.resolve();
 			} else {
@@ -47,8 +47,8 @@
 		return dfd.promise();
 	};
 
-	$( d ).on( 'click', "#ca-reminderCreate, .ca-reminderCreate", function ( e ) {
+	$( d ).on( 'click', '#ca-reminderCreate, .ca-reminderCreate', ( e ) => {
 		e.preventDefault();
 		mw.loader.using( 'ext.bluespice.reminder.dialog.pages' ).done( _showDialog );
 	} );
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

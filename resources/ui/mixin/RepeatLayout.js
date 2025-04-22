@@ -1,8 +1,8 @@
-bs.reminder.ui.mixin.RepeatLayout = function() {};
+bs.reminder.ui.mixin.RepeatLayout = function () {};
 
 OO.initClass( bs.reminder.ui.mixin.RepeatLayout );
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
+bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function () {
 	this.repeatValue = new OO.ui.NumberInputWidget( { min: 1, value: 1 } );
 	this.repeatValue.$element.css( 'width', '200px' );
 	this.repeatInterval = new OO.ui.DropdownInputWidget( {
@@ -10,12 +10,12 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
 			{ data: 'd', label: mw.message( 'bs-reminder-repeat-interval-day' ).plain() },
 			{ data: 'w', label: mw.message( 'bs-reminder-repeat-interval-week' ).plain() },
 			{ data: 'm', label: mw.message( 'bs-reminder-repeat-interval-month' ).plain() },
-			{ data: 'y', label: mw.message( 'bs-reminder-repeat-interval-year' ).plain() },
+			{ data: 'y', label: mw.message( 'bs-reminder-repeat-interval-year' ).plain() }
 		]
 	} );
 	this.repeatInterval.$element.css( 'width', '200px' );
 	this.repeatInterval.connect( this, {
-		change: function( value ) {
+		change: function ( value ) {
 			this.repeatMonthInterval.$element.hide();
 			this.repeatDaysOfWeekLayout.$element.hide();
 			if ( value === 'w' ) {
@@ -68,17 +68,17 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
 			new OO.ui.ToggleButtonWidget( {
 				label: mw.message( 'bs-reminder-saturday-abbr' ).plain(),
 				data: 6
-			} ),
+			} )
 		]
 	} );
 	this.repeatDaysOfWeekLayout = new OO.ui.FieldLayout( this.repeatDaysOfWeek, {
-		label: mw.message( "bs-reminder-repeat-on-title" ).text(),
+		label: mw.message( 'bs-reminder-repeat-on-title' ).text(),
 		align: 'left'
 	} );
 	this.repeatDaysOfWeekLayout.$element.hide();
 
 	this.repeatMonthInterval = new OO.ui.DropdownInputWidget( {
-		options: [],
+		options: []
 	} );
 	this.repeatMonthInterval.$element.hide();
 
@@ -98,41 +98,39 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatLayout = function() {
 	} );
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatValue = function() {
+bs.reminder.ui.mixin.RepeatLayout.prototype.getRepeatValue = function () {
 	return {
 		intervalType: this.repeatInterval.getValue(),
 		intervalValue: this.repeatValue.getValue(),
 		repeatDateEnd: this.repeatEnd.getValue(),
-		weekdaysToRepeat: this.repeatDaysOfWeek.items.map( function( button ) {
+		weekdaysToRepeat: this.repeatDaysOfWeek.items.map( ( button ) => {
 			if ( button.getValue() ) {
 				return button.getData();
 			}
 			return null;
-		} ).filter( function( value ) {
-			return value !== null;
-		} ),
+		} ).filter( ( value ) => value !== null ),
 		monthlyRepeatInterval: this.repeatMonthInterval.getValue()
 	};
 
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatData = function( data ) {
-	var repeatConfig = data.repeatConfig || {};
+bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatData = function ( data ) {
+	const repeatConfig = data.repeatConfig || {};
 	if ( repeatConfig.hasOwnProperty( 'intervalValue' ) ) {
 		this.repeatValue.setValue( parseInt( repeatConfig.intervalValue ) );
 	}
 	if ( repeatConfig.hasOwnProperty( 'intervalType' ) ) {
 		this.repeatInterval.setValue( repeatConfig.intervalType );
 	}
-	var date = repeatConfig.repeatDateEnd || data.date;
+	let date = repeatConfig.repeatDateEnd || data.date;
 	if ( date ) {
 		date = this.dateFromValue( date );
 		this.repeatEnd.setValue( this.formatDateForInput( this.getDataForInterval( date, repeatConfig.repeatInterval || 'd' ) ) );
 	}
 	if ( repeatConfig.hasOwnProperty( 'weekdaysToRepeat' ) ) {
-		var daysToRepeat = repeatConfig.weekdaysToRepeat || [];
-		for ( var i = 0; i < daysToRepeat.length; i++ ) {
-			var item = this.repeatDaysOfWeek.findItemFromData( daysToRepeat[i] );
+		const daysToRepeat = repeatConfig.weekdaysToRepeat || [];
+		for ( let i = 0; i < daysToRepeat.length; i++ ) {
+			const item = this.repeatDaysOfWeek.findItemFromData( daysToRepeat[ i ] );
 			if ( item ) {
 				item.setValue( true );
 			}
@@ -143,7 +141,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.setRepeatData = function( data ) {
 	}
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function( date, repeatInterval ) {
+bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function ( date, repeatInterval ) {
 	if ( !date ) {
 		return '';
 	}
@@ -163,7 +161,7 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDataForInterval = function( date,
 	return date;
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheMonthIntervalOption = function( date ) {
+bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheMonthIntervalOption = function ( date ) {
 	return {
 		data: 'dayOfTheMonth',
 		label: mw.message( 'bs-reminder-monthly-on-day-prefix' ).plain() + ' ' +
@@ -171,14 +169,14 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheMonthIntervalOption = fun
 	};
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheWeekIntervalOption = function( date ) {
-	var currentDayNumeric = date.getDay();
-	var currentDayText = date.toLocaleString( mw.config.get( 'wgUserLanguage' ), {
+bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheWeekIntervalOption = function ( date ) {
+	const currentDayNumeric = date.getDay();
+	const currentDayText = date.toLocaleString( mw.config.get( 'wgUserLanguage' ), {
 		weekday: 'long'
 	} );
-	var daysInCurrentMonth = new Date( date.getYear(), date.getMonth(), 0 ).getDate();
-	var weekOrderNum = Math.ceil( currentDayNumeric / 7 );
-	var weekOrder;
+	const daysInCurrentMonth = new Date( date.getYear(), date.getMonth(), 0 ).getDate();
+	let weekOrderNum = Math.ceil( currentDayNumeric / 7 );
+	let weekOrder;
 
 	if ( daysInCurrentMonth - currentDayNumeric < 7 ) {
 		weekOrder = mw.message( 'bs-reminder-ordinal-last' ).plain();
@@ -197,8 +195,8 @@ bs.reminder.ui.mixin.RepeatLayout.prototype.getDayOfTheWeekIntervalOption = func
 	};
 };
 
-bs.reminder.ui.mixin.RepeatLayout.prototype.mapNumbersToOrdinals = function( number ) {
-	switch( number ) {
+bs.reminder.ui.mixin.RepeatLayout.prototype.mapNumbersToOrdinals = function ( number ) {
+	switch ( number ) {
 		case 1:
 			return mw.message( 'bs-reminder-ordinal-first' ).plain();
 		case 2:

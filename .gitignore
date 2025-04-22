@@ -1,8 +1,4 @@
-/BlueSpiceReminder.php
-Thumbs.db
-/nbproject/private/
-composer.lock
-vendor
-nbproject/
-node_modules
-/.eslintcache
+/composer.lock
+/vendor
+/node_modules
+.eslintcache
