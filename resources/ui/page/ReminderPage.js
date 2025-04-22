@@ -1,4 +1,4 @@
-bs.reminder.ui.ReminderPage = function( name, cfg ) {
+bs.reminder.ui.ReminderPage = function ( name, cfg ) {
 	cfg = cfg || {};
 	name = name || 'create-reminder';
 	this.canCreateForOthers = cfg.canCreateForOthers || false;
@@ -13,16 +13,16 @@ bs.reminder.ui.ReminderPage = function( name, cfg ) {
 OO.inheritClass( bs.reminder.ui.ReminderPage, OOJSPlus.ui.booklet.DialogBookletPage );
 OO.mixinClass( bs.reminder.ui.ReminderPage, bs.reminder.ui.mixin.RepeatLayout );
 
-bs.reminder.ui.ReminderPage.prototype.init = function() {
+bs.reminder.ui.ReminderPage.prototype.init = function () {
 	bs.reminder.ui.ReminderPage.parent.prototype.init.call( this );
 	if ( !this.canCreateForOthers ) {
 		this.userSelectorLayout.$element.hide();
 	}
-}
+};
 
-bs.reminder.ui.ReminderPage.prototype.getItems = function() {
-	var today = new Date();
-	var currentDate = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
+bs.reminder.ui.ReminderPage.prototype.getItems = function () {
+	const today = new Date();
+	const currentDate = today.getFullYear() + '-' + ( today.getMonth() + 1 ) + '-' + today.getDate();
 	this.datePicker = new mw.widgets.DateInputWidget( {
 		$overlay: this.dialog.$overlay,
 		required: true,
@@ -37,7 +37,7 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 
 	this.repeatSwitch = new OO.ui.CheckboxInputWidget();
 	this.repeatSwitch.connect( this, {
-		change: function( selected ) {
+		change: function ( selected ) {
 			if ( selected ) {
 				this.repeatLayout.$element.show();
 			} else {
@@ -87,15 +87,15 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function() {
 	];
 };
 
-bs.reminder.ui.ReminderPage.prototype.getTitle = function() {
+bs.reminder.ui.ReminderPage.prototype.getTitle = function () {
 	return mw.message( 'bs-reminder-create-title' ).plain();
 };
 
-bs.reminder.ui.ReminderPage.prototype.getSize = function() {
+bs.reminder.ui.ReminderPage.prototype.getSize = function () {
 	return 'medium';
 };
 
-bs.reminder.ui.ReminderPage.prototype.setData = function( data ) {
+bs.reminder.ui.ReminderPage.prototype.setData = function ( data ) {
 	data = data || {};
 	if ( data.hasOwnProperty( 'user' ) ) {
 		this.userSelector.setValue( data.user );
@@ -124,8 +124,8 @@ bs.reminder.ui.ReminderPage.prototype.setData = function( data ) {
 	this.updateDialogSize();
 };
 
-bs.reminder.ui.ReminderPage.prototype.getActionKeys = function() {
-	var actions = [ 'cancel', 'done', 'page-reminders' ];
+bs.reminder.ui.ReminderPage.prototype.getActionKeys = function () {
+	const actions = [ 'cancel', 'done', 'page-reminders' ];
 	if ( this.canCreateForOthers ) {
 		actions.push( 'manage-all' );
 	}
@@ -136,53 +136,53 @@ bs.reminder.ui.ReminderPage.prototype.getActionKeys = function() {
 	return actions;
 };
 
-bs.reminder.ui.ReminderPage.prototype.getAbilities = function() {
-	var abilities = { cancel: true, done: true, 'my-reminders': true, 'page-reminders': true };
+bs.reminder.ui.ReminderPage.prototype.getAbilities = function () {
+	const abilities = { cancel: true, done: true, 'my-reminders': true, 'page-reminders': true };
 	if ( this.canCreateForOthers ) {
-		abilities['manage-all'] = true;
+		abilities[ 'manage-all' ] = true;
 	}
 	return abilities;
 };
 
-bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function() {
+bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function () {
 	if ( this.skipActionDefinitions ) {
 		return {};
 	}
 
-	var defs = {
+	const defs = {
 		'page-reminders': {
-			action: 'page-reminders', label: mw.message( "bs-reminder-dialog-page-action-page-reminders" ).text()
+			action: 'page-reminders', label: mw.message( 'bs-reminder-dialog-page-action-page-reminders' ).text()
 		}
 	};
 	if ( this.canCreateForOthers ) {
-		defs['manage-all'] = {
-			action: 'manage-all', label: mw.message( "bs-reminder-dialog-page-action-all-reminders" ).text()
+		defs[ 'manage-all' ] = {
+			action: 'manage-all', label: mw.message( 'bs-reminder-dialog-page-action-all-reminders' ).text()
 		};
 	}
 	if ( !mw.user.isAnon() ) {
-		defs['my-reminders'] = {
-			action: 'my-reminders', label: mw.message( "bs-reminder-dialog-page-action-my-reminders" ).text()
+		defs[ 'my-reminders' ] = {
+			action: 'my-reminders', label: mw.message( 'bs-reminder-dialog-page-action-my-reminders' ).text()
 		};
 	}
 
 	return defs;
 };
 
-bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
-	var dfd = $.Deferred();
+bs.reminder.ui.ReminderPage.prototype.onAction = function ( action ) {
+	const dfd = $.Deferred();
 
 	if ( action === 'done' ) {
 		this.checkValidity( [
 			this.userSelector,
 			this.pagePicker,
 			this.datePicker
-		] ).done( function() {
-			this.createReminder().done( function() {
+		] ).done( () => {
+			this.createReminder().done( () => {
 				dfd.resolve( { action: 'close', data: { success: true } } );
-			}.bind( this ) ).fail( function( error ) {
+			} ).fail( ( error ) => {
 				dfd.reject( error );
 			} );
-		}.bind( this ) ).fail( function() {
+		} ).fail( () => {
 			// Do nothing
 			dfd.resolve( {} );
 		} );
@@ -191,7 +191,7 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 	} else if ( action === 'manage-all' ) {
 		window.location.href = mw.util.getUrl( 'Special:Reminder' );
 	} else if ( action === 'my-reminders' ) {
-		window.location.href =  mw.util.getUrl( 'Special:Reminder', { user: mw.config.get( 'wgUserName' ) } );
+		window.location.href = mw.util.getUrl( 'Special:Reminder', { user: mw.config.get( 'wgUserName' ) } );
 	} else {
 		return bs.reminder.ui.ReminderPage.parent.prototype.onAction.call( this, action );
 	}
@@ -199,17 +199,17 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function( action ) {
 	return dfd.promise();
 };
 
-bs.reminder.ui.ReminderPage.prototype.createReminder = function() {
-	var dfd = $.Deferred();
+bs.reminder.ui.ReminderPage.prototype.createReminder = function () {
+	const dfd = $.Deferred();
 
 	blueSpice.api.tasks.exec(
 		'reminder',
 		'saveReminder',
 		this.getValue(), {
-			success: function() {
+			success: function () {
 				dfd.resolve();
 			},
-			failure: function( response ) {
+			failure: function ( response ) {
 				dfd.reject( response.message );
 			}
 		}
@@ -218,7 +218,7 @@ bs.reminder.ui.ReminderPage.prototype.createReminder = function() {
 	return dfd.promise();
 };
 
-bs.reminder.ui.ReminderPage.prototype.formatDateForInput = function( date ) {
+bs.reminder.ui.ReminderPage.prototype.formatDateForInput = function ( date ) {
 	if ( !date ) {
 		return '';
 	}
@@ -227,14 +227,14 @@ bs.reminder.ui.ReminderPage.prototype.formatDateForInput = function( date ) {
 	const month = String( date.getMonth() + 1 ).padStart( 2, '0' );
 	const day = String( date.getDate() ).padStart( 2, '0' );
 
-	return `${year}-${month}-${day}`;
+	return `${ year }-${ month }-${ day }`;
 };
 
-bs.reminder.ui.ReminderPage.prototype.dateFromValue = function( value ) {
+bs.reminder.ui.ReminderPage.prototype.dateFromValue = function ( value ) {
 	return new Date( Date.parse( value ) );
 };
 
-bs.reminder.ui.ReminderPage.prototype.getValue = function() {
+bs.reminder.ui.ReminderPage.prototype.getValue = function () {
 	return {
 		page: this.pagePicker.getValue(),
 		userName: this.userSelector.getValue(),
