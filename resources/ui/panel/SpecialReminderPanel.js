@@ -58,15 +58,13 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return new OO.ui.HtmlSnippet( mw.html.element(
-						'a',
-						{
-							href: mw.util.getUrl( value )
-						},
-						value
-					) );
-				}
+				valueParser: ( value ) => new OO.ui.HtmlSnippet( mw.html.element(
+					'a',
+					{
+						href: mw.util.getUrl( value )
+					},
+					value
+				) )
 			},
 			rem_type: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-reminder-header-type' ).plain(),
@@ -95,13 +93,11 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				type: 'text',
 				sortable: true,
 				filter: { type: 'boolean' },
-				valueParser: ( value, row ) => {
-					return new OO.ui.HtmlSnippet(
-						value ?
-							`${mw.message( 'bs-reminder-date-repeat-ends-on-label' )} ${row.rem_repeat_date_end}` :
-							mw.message( 'bs-reminder-no' ).plain()
-					);
-				}
+				valueParser: ( value, row ) => new OO.ui.HtmlSnippet(
+					value ?
+						`${ mw.message( 'bs-reminder-date-repeat-ends-on-label' ) } ${ row.rem_repeat_date_end }` :
+						mw.message( 'bs-reminder-no' ).plain()
+				)
 			},
 			edit: {
 				headerText: mw.message( 'bs-reminder-header-action-edit' ).text(),
@@ -146,13 +142,13 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 
 					const $tbody = $( '<tbody>' );
 					for ( const id in response ) {
-						if ( response.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
+						if ( response.hasOwnProperty( id ) ) {
 							const record = response[ id ];
 							const type = record.rem_type || 'page';
 							const messageType = mw.config.get( 'bsgReminderRegisteredTypes' )[ type ].LabelMsg;
 							const formattedDate = record.rem_repeat_date_end.replace( ',', ' -' ); // CSV comma delimiter
 							const messageRepeating = record.rem_is_repeating == 1 ? // eslint-disable-line eqeqeq
-								`${mw.message( 'bs-reminder-date-repeat-ends-on-label' ).plain()} ${formattedDate}` :
+								`${ mw.message( 'bs-reminder-date-repeat-ends-on-label' ).plain() } ${ formattedDate }` :
 								mw.message( 'bs-reminder-no' ).plain();
 
 							$tbody.append( $( '<tr>' )
@@ -168,7 +164,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}
@@ -224,7 +220,9 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.onAction = functi
 				text: mw.message( 'bs-reminder-text-delete', 1 ).text()
 			},
 			{
-				ok: () => { this.onRemoveReminderOk( row.id ); }
+				ok: () => {
+					this.onRemoveReminderOk( row.id );
+				}
 			}
 		);
 	}
