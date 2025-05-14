@@ -187,10 +187,13 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function ( action ) {
 			dfd.resolve( {} );
 		} );
 	} else if ( action === 'page-reminders' ) {
+		dfd.resolve( {} );
 		window.location.href = mw.util.getUrl( 'Special:Reminder', { page: mw.config.get( 'wgPageName' ) } );
 	} else if ( action === 'manage-all' ) {
+		dfd.resolve( {} );
 		window.location.href = mw.util.getUrl( 'Special:Reminder' );
 	} else if ( action === 'my-reminders' ) {
+		dfd.resolve( {} );
 		window.location.href = mw.util.getUrl( 'Special:Reminder', { user: mw.config.get( 'wgUserName' ) } );
 	} else {
 		return bs.reminder.ui.ReminderPage.parent.prototype.onAction.call( this, action );
