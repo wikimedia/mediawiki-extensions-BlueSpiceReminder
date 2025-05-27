@@ -28,7 +28,6 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function () {
 		required: true,
 		mustBeAfter: currentDate
 	} );
-	this.datePicker.$element.css( 'width', '250px' );
 
 	this.pagePicker = new OOJSPlus.ui.widget.TitleInputWidget( {
 		required: true, mustExist: true, $overlay: this.dialog.$overlay
@@ -57,7 +56,7 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function () {
 	} );
 
 	this.userSelectorLayout = new OO.ui.FieldLayout( this.userSelector, {
-		label: mw.message( 'bs-reminder-user-label' ).text(),
+		label: mw.message( 'bs-reminder-assign-user-label' ).text(),
 		align: 'top'
 	} );
 
@@ -67,17 +66,13 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function () {
 			align: 'top'
 		} ),
 		this.userSelectorLayout,
-		new OO.ui.HorizontalLayout( {
-			items: [
-				new OO.ui.FieldLayout( this.datePicker, {
-					label: mw.message( 'bs-reminder-date-label' ).text(),
-					align: 'top'
-				} ),
-				new OO.ui.FieldLayout( this.repeatSwitch, {
-					label: mw.message( 'bs-reminder-repeat-label' ).text(),
-					align: 'top'
-				} )
-			]
+		new OO.ui.FieldLayout( this.datePicker, {
+			label: mw.message( 'bs-reminder-date-label' ).text(),
+			align: 'top'
+		} ),
+		new OO.ui.FieldLayout( this.repeatSwitch, {
+			label: mw.message( 'bs-reminder-repeat-label' ).text(),
+			align: 'inline'
 		} ),
 		this.repeatLayout,
 		new OO.ui.FieldLayout( this.comment, {
@@ -125,47 +120,11 @@ bs.reminder.ui.ReminderPage.prototype.setData = function ( data ) {
 };
 
 bs.reminder.ui.ReminderPage.prototype.getActionKeys = function () {
-	const actions = [ 'cancel', 'done', 'page-reminders' ];
-	if ( this.canCreateForOthers ) {
-		actions.push( 'manage-all' );
-	}
-	if ( !mw.user.isAnon() ) {
-		actions.push( 'my-reminders' );
-	}
-
-	return actions;
+	return [ 'cancel', 'done' ];
 };
 
 bs.reminder.ui.ReminderPage.prototype.getAbilities = function () {
-	const abilities = { cancel: true, done: true, 'my-reminders': true, 'page-reminders': true };
-	if ( this.canCreateForOthers ) {
-		abilities[ 'manage-all' ] = true;
-	}
-	return abilities;
-};
-
-bs.reminder.ui.ReminderPage.prototype.getActionDefinitions = function () {
-	if ( this.skipActionDefinitions ) {
-		return {};
-	}
-
-	const defs = {
-		'page-reminders': {
-			action: 'page-reminders', label: mw.message( 'bs-reminder-dialog-page-action-page-reminders' ).text()
-		}
-	};
-	if ( this.canCreateForOthers ) {
-		defs[ 'manage-all' ] = {
-			action: 'manage-all', label: mw.message( 'bs-reminder-dialog-page-action-all-reminders' ).text()
-		};
-	}
-	if ( !mw.user.isAnon() ) {
-		defs[ 'my-reminders' ] = {
-			action: 'my-reminders', label: mw.message( 'bs-reminder-dialog-page-action-my-reminders' ).text()
-		};
-	}
-
-	return defs;
+	return { cancel: true, done: true };
 };
 
 bs.reminder.ui.ReminderPage.prototype.onAction = function ( action ) {
@@ -186,15 +145,6 @@ bs.reminder.ui.ReminderPage.prototype.onAction = function ( action ) {
 			// Do nothing
 			dfd.resolve( {} );
 		} );
-	} else if ( action === 'page-reminders' ) {
-		dfd.resolve( {} );
-		window.location.href = mw.util.getUrl( 'Special:Reminder', { page: mw.config.get( 'wgPageName' ) } );
-	} else if ( action === 'manage-all' ) {
-		dfd.resolve( {} );
-		window.location.href = mw.util.getUrl( 'Special:Reminder' );
-	} else if ( action === 'my-reminders' ) {
-		dfd.resolve( {} );
-		window.location.href = mw.util.getUrl( 'Special:Reminder', { user: mw.config.get( 'wgUserName' ) } );
 	} else {
 		return bs.reminder.ui.ReminderPage.parent.prototype.onAction.call( this, action );
 	}
