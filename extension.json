@@ -181,7 +181,7 @@
 			"messages": [
 				"bs-reminder-date-label",
 				"bs-reminder-create-title",
-				"bs-reminder-user-label",
+				"bs-reminder-assign-user-label",
 				"bs-reminder-comment-label",
 				"bs-reminder-header-comment",
 				"bs-reminder-article-label",
@@ -208,10 +208,7 @@
 				"bs-reminder-friday-abbr",
 				"bs-reminder-saturday-abbr",
 				"bs-reminder-date-repeat-ends-on-label",
-				"bs-reminder-header-type",
-				"bs-reminder-dialog-page-action-my-reminders",
-				"bs-reminder-dialog-page-action-all-reminders",
-				"bs-reminder-dialog-page-action-page-reminders"
+				"bs-reminder-header-type"
 			],
 			"dependencies": [
 				"ext.bluespice",

@@ -51,6 +51,7 @@
 	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte {{#FORMAL:versuche|versuchen Sie}} es erneut.",
 	"bs-reminder-save-success": "Die Erinnerung wurde erfolgreich erstellt.",
 	"bs-reminder-user-label": "Einem Benutzer zuweisen",
+	"bs-reminder-assign-user-label": "Erinnerung zuweisen an",
 	"bs-reminder-comment-label": "Kommentar",
 	"bs-reminder-header-comment": "Kommentar",
 	"bs-reminder-article-label": "Seite",
