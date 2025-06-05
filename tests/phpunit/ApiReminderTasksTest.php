@@ -777,12 +777,24 @@ class ApiReminderTasksTest extends ApiTestCase {
 		);
 	}
 
+	/**
+	 * @param stdClass $oTaskData
+	 * @param int $iReminderId
+	 * @param int $iArticleId
+	 * @param int $iUserId
+	 * @throws LogicException
+	 */
 	public static function onBsReminderOnSave( $oTaskData, $iReminderId, $iArticleId, $iUserId ) {
-		throw new MWException();
+		throw new LogicException();
 	}
 
+	/**
+	 * @param stdClass $oTaskData
+	 * @param int $iReminderId
+	 * @throws LogicException
+	 */
 	public static function onBsReminderOnUpdate( $oTaskData, $iReminderId ) {
-		throw new MWException();
+		throw new LogicException();
 	}
 
 	public static function onBsReminderDeleteReminder( $oTaskData, &$oResult ) {
