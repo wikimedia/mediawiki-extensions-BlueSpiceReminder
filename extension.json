@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpiceReminder",
-	"version": "5.1.0",
+	"version": "5.2.0-alpha",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:BlueSpiceReminder",
 	"author": [ "Sebastian Ulbricht", "Stephan Muggli", "Tobias Weichart", "Markus Glaser", "Peter Böhm" ],
 	"descriptionmsg": "bs-reminder-extension-description",
