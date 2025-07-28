@@ -83,5 +83,11 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Podsetnici za ovu stranicu",
 	"bs-reminder-info-dialog": "Podsetnik",
 	"bs-reminder-info-dialog-button-label": "Upravljaj podsetnicima",
-	"bs-reminder-actionmenuentry-setreminder-label": "Postavi podsetnike"
+	"bs-reminder-actionmenuentry-setreminder-label": "Postavi podsetnike",
+	"myreminder": "Moji podsetnici",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Korisničko ime",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Stranica",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Komentar",
+	"bs-reminder-header-action-edit": "Izmeni",
+	"bs-reminder-header-action-delete": "Obriši"
 }
