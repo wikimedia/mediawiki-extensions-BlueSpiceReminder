@@ -3,17 +3,31 @@
 namespace BlueSpice\Reminder\Hook\GetPreferences;
 
 use BlueSpice\Hook\GetPreferences;
-use BlueSpice\Html\FormField\NamespaceMultiselect;
 
 class AddDisableReminderForNS extends GetPreferences {
 	protected function doProcess() {
+		$excludeNS = [
+			NS_MEDIAWIKI,
+			NS_MEDIAWIKI_TALK
+		];
+
+		$namespaces = $this->getContext()->getLanguage()->getNamespaces();
+		foreach ( $namespaces as $namespaceId => $namespace ) {
+			if ( in_array( $namespaceId, $excludeNS ) || $namespaceId < 0 ) {
+				continue;
+			}
+
+			if ( $namespaceId === NS_MAIN ) {
+				$namespace = wfMessage( 'bs-ns_main' )->plain();
+			}
+
+			$namespaceValues[$namespace] = $namespaceId;
+		}
 		$this->preferences['bs-reminder-forns'] = [
-			'class' => NamespaceMultiselect::class,
+			'type' => 'multiselect',
 			'label-message' => 'bs-reminder-pref-DisableReminderForNS',
 			'section' => 'editing/reminder',
-			NamespaceMultiselect::OPTION_BLACKLIST => [
-				NS_MEDIAWIKI, NS_MEDIAWIKI_TALK
-			]
+			'options' => $namespaceValues
 		];
 		return true;
 	}
