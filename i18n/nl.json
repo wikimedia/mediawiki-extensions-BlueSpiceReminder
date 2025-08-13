@@ -114,7 +114,7 @@
 	"bs-reminder-info-dialog": "Herinnering",
 	"bs-reminder-info-dialog-button-label": "Herinneringen beheren",
 	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Herinneringsactiviteit instellen",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "Activiteit “Herinnering instellen”",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Gebruikersnaam",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Pagina",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Herinneren op",
