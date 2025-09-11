@@ -7,17 +7,5 @@
 	},
 	"reminder": "Erinnerung",
 	"specialreminder": "Erinnerung",
-	"prefs-reminder": "Erinnerung",
-	"bs-reminder-pref-DefaultReminderPeriod-help": "Geben Sie hier die Anzahl der Tage ein.",
-	"bs-reminder-unknown-page-msg": "Sie versuchen eine Erinnerung für eine Seite anzulegen, welche nicht existiert.",
-	"bs-reminder-unknown-user-msg": "Sie versuchen eine Erinnerung für einen Benutzer anzulegen, der nicht existiert.",
-	"bs-reminder-create-success": "Ihre Erinnerung wurde erfolgreich erstellt.",
-	"bs-reminder-create-error": "Ihre Erinnerung konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
-	"bs-reminder-update-success": "Ihre Erinnerung wurde erfolgreich aktualisiert.",
-	"bs-reminder-update-error": "Ihre Erinnerung konnte nicht aktualisiert werden. Bitte versuchen Sie erneut.",
-	"bs-reminder-text-delete": "Sind Sie sicher, dass Sie {{PLURAL:$1|diese Erinnerung|diese $1 Erinnerungen}} löschen wollen?",
-	"bs-reminder-error-valid-reminder": "Sie versuchen eine ungültige Erinnerung zu löschen.",
-	"bs-reminder-error-owner-reminder": "Sie können nur Ihre eigenen Erinnerungen löschen.",
-	"bs-reminder-create-no-actions": "Einige Parameter fehlen. Bitte versuchen Sie es erneut.",
-	"bs-reminder-other-user-not-allowed": "Sie können keine Erinnerung für einen anderen Nutzer erstellen"
+	"prefs-reminder": "Erinnerung"
 }
