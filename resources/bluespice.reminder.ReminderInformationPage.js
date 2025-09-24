@@ -40,7 +40,9 @@
 			} );
 
 			this.reminderGrid = new OOJSPlus.ui.data.GridWidget( {
-				style: 'differentiate-rows',
+				selectable: false,
+				sortable: false,
+				orderable: false,
 				columns: {
 					user_name: { // eslint-disable-line camelcase
 						headerText: mw.message( 'bs-reminder-header-username' ).text(),
