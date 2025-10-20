@@ -92,7 +92,7 @@
 	"bs-reminder-info-dialog": "提醒",
 	"bs-reminder-info-dialog-button-label": "管理提醒",
 	"bs-reminder-actionmenuentry-setreminder-label": "設定提醒",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "設定提醒活動",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "「設定提醒」活動",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "使用者名稱",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "頁面",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "提醒於",
