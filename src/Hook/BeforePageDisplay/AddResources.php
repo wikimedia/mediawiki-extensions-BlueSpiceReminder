@@ -21,7 +21,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 			$remRegistry[$type] = (object)[
 				'type' => $rem->getType(),
 				'LabelMsgKey' => $rem->getLabelMsgKey(),
-				'LabelMsg' => $this->msg( $rem->getLabelMsgKey() )->plain(),
+				'LabelMsg' => $this->msg( $rem->getLabelMsgKey() )->text(),
 			];
 		}
 		$this->out->addJsConfigVars(
