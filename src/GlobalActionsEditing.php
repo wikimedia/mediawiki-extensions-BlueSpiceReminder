@@ -20,12 +20,9 @@ class GlobalActionsEditing extends RestrictedTextLink {
 		return 'ga-bs-reminder';
 	}
 
-	/**
-	 *
-	 * @return array
-	 */
+	/** @inheritDoc */
 	public function getPermissions(): array {
-		return [ 'edit' ];
+		return [ 'read' ];
 	}
 
 	/**
