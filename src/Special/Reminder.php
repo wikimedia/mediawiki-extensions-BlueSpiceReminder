@@ -40,7 +40,7 @@ class Reminder extends OOJSGridSpecialPage {
 		}
 
 		if ( $username === $this->getUser()->getName() ) {
-			$out->setPageTitle( $this->msg( 'bs-reminder-special-myreminder-heading' )->plain() );
+			$out->setPageTitle( $this->msg( 'bs-reminder-special-myreminder-heading' )->text() );
 		}
 
 		$this->getOutput()->addJsConfigVars(

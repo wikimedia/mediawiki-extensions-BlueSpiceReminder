@@ -40,7 +40,7 @@ class AddReminderEntry implements SkinTemplateNavigation__UniversalHook {
 
 		$links['actions']['reminderCreate'] = [
 			"class" => '',
-			"text" => $sktemplate->msg( 'bs-reminder-actionmenuentry-setreminder-label' )->plain(),
+			"text" => $sktemplate->msg( 'bs-reminder-actionmenuentry-setreminder-label' )->text(),
 			"href" => "#",
 			"bs-group" => "hidden",
 			'position' => 30,

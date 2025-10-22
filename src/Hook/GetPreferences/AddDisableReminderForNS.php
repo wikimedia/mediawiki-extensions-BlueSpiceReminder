@@ -18,7 +18,7 @@ class AddDisableReminderForNS extends GetPreferences {
 			}
 
 			if ( $namespaceId === NS_MAIN ) {
-				$namespace = wfMessage( 'bs-ns_main' )->plain();
+				$namespace = wfMessage( 'bs-ns_main' )->text();
 			}
 
 			$namespaceValues[$namespace] = $namespaceId;
