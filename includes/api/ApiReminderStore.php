@@ -109,32 +109,32 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 		);
 		if ( $isAllowed ) {
 			$aMetadata['columns'][] = [
-				'header' => wfMessage( 'bs-reminder-header-username' )->plain(),
+				'header' => wfMessage( 'bs-reminder-header-username' )->text(),
 				'dataIndex' => 'user_name',
 				'render' => 'raw',
 				'sortable' => true
 			];
 		}
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-reminder-header-pagename' )->plain(),
+			'header' => wfMessage( 'bs-reminder-header-pagename' )->text(),
 			'dataIndex' => 'page_title',
 			'render' => 'page',
 			'sortable' => true
 		];
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-reminder-header-date' )->plain(),
+			'header' => wfMessage( 'bs-reminder-header-date' )->text(),
 			'dataIndex' => 'rem_date',
 			'render' => 'date',
 			'sortable' => true
 		];
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-reminder-header-comment' )->plain(),
+			'header' => wfMessage( 'bs-reminder-header-comment' )->text(),
 			'dataIndex' => 'rem_comment',
 			'render' => 'comment',
 			'sortable' => false
 		];
 		$aMetadata['columns'][] = [
-			'header' => wfMessage( 'bs-reminder-header-type' )->plain(),
+			'header' => wfMessage( 'bs-reminder-header-type' )->text(),
 			'dataIndex' => 'rem_type',
 			'render' => 'type',
 			'sortable' => false

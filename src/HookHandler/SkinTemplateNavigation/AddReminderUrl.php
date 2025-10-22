@@ -27,7 +27,7 @@ class AddReminderUrl implements SkinTemplateNavigation__UniversalHook {
 		$links['user-menu']['my_reminder'] = [
 			'id' => 'pt-my_reminder',
 			'href' => $reminder->getPageTitle()->getLocalURL( "user={$user->getName()}" ),
-			'text' => $sktemplate->msg( 'bs-reminder-menu_entry-show' )->plain(),
+			'text' => $sktemplate->msg( 'bs-reminder-menu_entry-show' )->text(),
 			'position' => 50,
 			'data' => [ 'attentionindicator' => 'reminder' ],
 		];

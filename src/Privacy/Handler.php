@@ -78,7 +78,7 @@ class Handler implements IPrivacyHandler {
 				$title->getPrefixedText(),
 				$row->rem_date,
 				$row->rem_comment ?: '-'
-			)->plain();
+			)->text();
 		}
 
 		return Status::newGood( [
