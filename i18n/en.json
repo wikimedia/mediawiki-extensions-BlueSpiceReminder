@@ -4,7 +4,6 @@
 	},
 	"bs-reminder-extension-description": "Gives the user the opportunity to create reminders.",
 	"reminder": "Reminder",
-	"specialreminder": "Reminder",
 	"prefs-reminder": "Reminder",
 	"bs-reminder-text": "Reminders",
 	"bs-reminder-pref-DefaultReminderPeriod": "Default reminder period",
