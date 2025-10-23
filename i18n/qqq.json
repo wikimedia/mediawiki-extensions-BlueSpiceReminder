@@ -9,7 +9,6 @@
 	},
 	"bs-reminder-extension-description": "Describes the Reminder extension",
 	"reminder": "Page title for special page of reminder manager",
-	"specialreminder": "Name of the special page for reminder\n{{Identical|Reminder}}",
 	"prefs-reminder": "Used in [{{canonicalurl:Special:Preferences}} Special:Preferences], headline for reminder section in preferences.\n{{Identical|Reminder}}",
 	"bs-reminder-text": "Label for global actions entry",
 	"bs-reminder-pref-DefaultReminderPeriod": "Label for the setting of default reminder period",
