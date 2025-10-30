@@ -12,7 +12,7 @@
 		bs.reminder.info.ReminderInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
 
 		if ( this.outlineItem ) {
-			this.outlineItem.setLabel( mw.message( 'bs-reminder-info-dialog' ).plain() );
+			this.outlineItem.setLabel( mw.message( 'bs-reminder-info-dialog' ).text() );
 		}
 	};
 
