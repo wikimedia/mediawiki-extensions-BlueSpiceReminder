@@ -46,7 +46,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 		style: 'differentiate-rows',
 		columns: {
 			user_name: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-username' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-username' ).text(),
 				type: 'user',
 				showImage: true,
 				sortable: true,
@@ -54,7 +54,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				hidden: this.username
 			},
 			page_title: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-pagename' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-pagename' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
@@ -67,7 +67,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				) )
 			},
 			rem_type: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-type' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-type' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
@@ -77,26 +77,26 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 				}
 			},
 			reminder_date: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-date' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-date' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'date' }
 			},
 			rem_comment: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-comment' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-comment' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' }
 			},
 			rem_is_repeating: { // eslint-disable-line camelcase
-				headerText: mw.message( 'bs-reminder-header-is-repeating' ).plain(),
+				headerText: mw.message( 'bs-reminder-header-is-repeating' ).text(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'boolean' },
 				valueParser: ( value, row ) => new OO.ui.HtmlSnippet(
 					value ?
 						`${ mw.message( 'bs-reminder-date-repeat-ends-on-label' ) } ${ row.rem_repeat_date_end }` :
-						mw.message( 'bs-reminder-no' ).plain()
+						mw.message( 'bs-reminder-no' ).text()
 				)
 			},
 			edit: {
@@ -148,8 +148,8 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.setupGridConfig =
 							const messageType = mw.config.get( 'bsgReminderRegisteredTypes' )[ type ].LabelMsg;
 							const formattedDate = record.rem_repeat_date_end.replace( ',', ' -' ); // CSV comma delimiter
 							const messageRepeating = record.rem_is_repeating == 1 ? // eslint-disable-line eqeqeq
-								`${ mw.message( 'bs-reminder-date-repeat-ends-on-label' ).plain() } ${ formattedDate }` :
-								mw.message( 'bs-reminder-no' ).plain();
+								`${ mw.message( 'bs-reminder-date-repeat-ends-on-label' ).text() } ${ formattedDate }` :
+								mw.message( 'bs-reminder-no' ).text();
 
 							$tbody.append( $( '<tr>' )
 								.append( $( '<td>' ).text( record.user_name ) )
@@ -181,7 +181,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.getToolbarActions
 	return [
 		this.getAddAction( {
 			icon: 'add',
-			title: mw.message( 'bs-reminder-create-reminder-label' ).plain(),
+			title: mw.message( 'bs-reminder-create-reminder-label' ).text(),
 			displayBothIconAndLabel: true
 		} )
 	];
@@ -216,7 +216,7 @@ ext.bluespice.reminder.ui.panel.SpecialReminderPanel.prototype.onAction = functi
 		bs.util.confirm(
 			'REremove',
 			{
-				title: mw.message( 'bs-reminder-title-delete' ).plain(),
+				title: mw.message( 'bs-reminder-title-delete' ).text(),
 				text: mw.message( 'bs-reminder-text-delete', 1 ).text()
 			},
 			{

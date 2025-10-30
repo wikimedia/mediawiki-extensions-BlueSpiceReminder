@@ -63,32 +63,32 @@ bs.reminder.ui.ReminderPage.prototype.getItems = function () {
 
 	return [
 		new OO.ui.FieldLayout( this.pagePicker, {
-			label: mw.message( 'bs-reminder-article-label' ).plain(),
+			label: mw.message( 'bs-reminder-article-label' ).text(),
 			align: 'top'
 		} ),
 		this.userSelectorLayout,
 		new OO.ui.HorizontalLayout( {
 			items: [
 				new OO.ui.FieldLayout( this.datePicker, {
-					label: mw.message( 'bs-reminder-date-label' ).plain(),
+					label: mw.message( 'bs-reminder-date-label' ).text(),
 					align: 'top'
 				} ),
 				new OO.ui.FieldLayout( this.repeatSwitch, {
-					label: mw.message( 'bs-reminder-repeat-label' ).plain(),
+					label: mw.message( 'bs-reminder-repeat-label' ).text(),
 					align: 'top'
 				} )
 			]
 		} ),
 		this.repeatLayout,
 		new OO.ui.FieldLayout( this.comment, {
-			label: mw.message( 'bs-reminder-comment-label' ).plain(),
+			label: mw.message( 'bs-reminder-comment-label' ).text(),
 			align: 'top'
 		} )
 	];
 };
 
 bs.reminder.ui.ReminderPage.prototype.getTitle = function () {
-	return mw.message( 'bs-reminder-create-title' ).plain();
+	return mw.message( 'bs-reminder-create-title' ).text();
 };
 
 bs.reminder.ui.ReminderPage.prototype.getSize = function () {
