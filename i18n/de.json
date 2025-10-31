@@ -127,5 +127,6 @@
 	"bs-reminder-title-edit": "Erinnerung bearbeiten",
 	"bs-reminder-title-add": "Erinnerung hinzufügen",
 	"bs-reminder-header-action-edit": "Bearbeiten",
-	"bs-reminder-header-action-delete": "Löschen"
+	"bs-reminder-header-action-delete": "Löschen",
+	"bs-reminder-assign-user-label": "Erinnerung zuweisen an"
 }

@@ -104,5 +104,6 @@
 	"bs-reminder-title-edit": "Edit reminder",
 	"bs-reminder-title-add": "Add reminder",
 	"bs-reminder-header-action-edit": "Edit",
-	"bs-reminder-header-action-delete": "Delete"
+	"bs-reminder-header-action-delete": "Delete",
+	"bs-reminder-assign-user-label": "Assign reminder to"
 }
