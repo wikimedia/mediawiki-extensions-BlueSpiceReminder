@@ -8,7 +8,8 @@
 			"McDutchie",
 			"Nickthijssen1994",
 			"Romaine",
-			"Rots61"
+			"Rots61",
+			"Siebrand"
 		]
 	},
 	"bs-reminder-extension-description": "Geeft de gebruiker de mogelijkheid herinneringen in te stellen.",
@@ -109,5 +110,6 @@
 	"bs-reminder-special-myreminder-heading": "Mijn herinnering",
 	"bs-reminder-title-edit": "Herinnering bewerken",
 	"bs-reminder-header-action-edit": "Bewerken",
-	"bs-reminder-header-action-delete": "Verwijderen"
+	"bs-reminder-header-action-delete": "Verwijderen",
+	"bs-reminder-assign-user-label": "Herinnering toewijzen aan"
 }
