@@ -18,7 +18,6 @@
 		]
 	},
 	"reminder": "提醒",
-	"specialreminder": "提醒",
 	"prefs-reminder": "提醒",
 	"bs-reminder-text": "提醒",
 	"bs-reminder-menu_entry-create": "创建提醒",
@@ -34,7 +33,6 @@
 	"bs-reminder-save-error": "发生错误：$1",
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "丢失了某些参数，请重试。",
-	"bs-reminder-user-label": "指定给用户",
 	"bs-reminder-comment-label": "评论",
 	"bs-reminder-header-comment": "评论",
 	"bs-reminder-article-label": "页面",
@@ -70,9 +68,6 @@
 	"bs-reminder-invalid-type": "无效类型",
 	"bs-reminder-header-type": "类型",
 	"bs-reminder-type-page": "页面",
-	"bs-reminder-dialog-page-action-my-reminders": "我的提醒",
-	"bs-reminder-dialog-page-action-all-reminders": "所有提醒",
-	"bs-reminder-dialog-page-action-page-reminders": "此页面的提醒",
 	"bs-reminder-info-dialog": "提醒",
 	"bs-reminder-info-dialog-button-label": "管理提醒",
 	"bs-reminder-actionmenuentry-setreminder-label": "设置提醒"

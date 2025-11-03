@@ -16,9 +16,6 @@
 	"bs-reminder-no": "ei",
 	"bs-reminder-header-type": "Tyyppi",
 	"bs-reminder-type-page": "Sivu",
-	"bs-reminder-dialog-page-action-my-reminders": "Muistutukseni",
-	"bs-reminder-dialog-page-action-all-reminders": "Kaikki muistutukset",
-	"bs-reminder-dialog-page-action-page-reminders": "Tämän sivun muistutukset",
 	"bs-reminder-info-dialog": "Muistutus",
 	"bs-reminder-info-dialog-button-label": "Hallinnoi muistutuksia",
 	"bs-reminder-actionmenuentry-setreminder-label": "Asta muistutus"

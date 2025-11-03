@@ -8,12 +8,12 @@
 			"McDutchie",
 			"Nickthijssen1994",
 			"Romaine",
-			"Rots61"
+			"Rots61",
+			"Siebrand"
 		]
 	},
 	"bs-reminder-extension-description": "Geeft de gebruiker de mogelijkheid herinneringen in te stellen.",
 	"reminder": "Herinnering",
-	"specialreminder": "Herinnering",
 	"prefs-reminder": "Herinnering",
 	"bs-reminder-text": "Herinneringen",
 	"bs-reminder-pref-DefaultReminderPeriod": "Standaard herinneringsperiode",
@@ -46,7 +46,7 @@
 	"bs-reminder-date-format": "j-n-Y",
 	"bs-reminder-create-no-actions": "Enkele parameters ontbreken. Probeer opnieuw.",
 	"bs-reminder-save-success": "De herinnering is met succes gemaakt.",
-	"bs-reminder-user-label": "Toewijzen aan gebruiker",
+	"bs-reminder-assign-user-label": "Herinnering toewijzen aan",
 	"bs-reminder-comment-label": "Opmerking",
 	"bs-reminder-header-comment": "Opmerking",
 	"bs-reminder-article-label": "Pagina",
@@ -89,9 +89,6 @@
 	"bs-reminder-invalid-type": "Ongeldig type",
 	"bs-reminder-header-type": "Soort",
 	"bs-reminder-type-page": "Pagina",
-	"bs-reminder-dialog-page-action-my-reminders": "Mijn herinneringen",
-	"bs-reminder-dialog-page-action-all-reminders": "Alle herinneringen",
-	"bs-reminder-dialog-page-action-page-reminders": "Herinneringen voor deze pagina",
 	"bs-reminder-info-dialog": "Herinnering",
 	"bs-reminder-info-dialog-button-label": "Herinneringen beheren",
 	"bs-reminder-actionmenuentry-setreminder-label": "Herinnering instellen",

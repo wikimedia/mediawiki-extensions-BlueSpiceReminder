@@ -14,7 +14,6 @@
 		]
 	},
 	"reminder": "Напоминание",
-	"specialreminder": "Напоминание",
 	"prefs-reminder": "Напоминание",
 	"bs-reminder-text": "Напоминания",
 	"bs-reminder-menu_entry-show": "Напоминания",
@@ -60,8 +59,6 @@
 	"bs-reminder-no": "нет",
 	"bs-reminder-header-type": "Тип",
 	"bs-reminder-type-page": "Страница",
-	"bs-reminder-dialog-page-action-my-reminders": "Мои напоминания",
-	"bs-reminder-dialog-page-action-all-reminders": "Все напоминания",
 	"bs-reminder-info-dialog": "Напоминание",
 	"bs-reminder-actionmenuentry-setreminder-label": "Установить напоминание",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Страница",

@@ -7,7 +7,6 @@
 		]
 	},
 	"reminder": "Påmindelse",
-	"specialreminder": "Påmindelse",
 	"prefs-reminder": "Påmindelse",
 	"bs-reminder-text": "Påmindelser",
 	"bs-reminder-menu_entry-create": "Opret påmindelse",
@@ -21,7 +20,6 @@
 	"bs-reminder-delete-error-unkown": "Påmindelsen kunne ikke blive slettet.",
 	"bs-reminder-save-error": "Der opstod en fejl: $1",
 	"bs-reminder-date-format": "Y-m-d",
-	"bs-reminder-user-label": "Tildel til bruger",
 	"bs-reminder-comment-label": "Kommentar",
 	"bs-reminder-header-comment": "Kommentar",
 	"bs-reminder-article-label": "Side",
@@ -49,8 +47,5 @@
 	"bs-reminder-invalid-type": "Ugyldig type",
 	"bs-reminder-header-type": "Type",
 	"bs-reminder-type-page": "Side",
-	"bs-reminder-dialog-page-action-my-reminders": "Mine påmindelser",
-	"bs-reminder-dialog-page-action-all-reminders": "Alle påmindelser",
-	"bs-reminder-dialog-page-action-page-reminders": "Påmindelser for denne side",
 	"bs-reminder-info-dialog": "Påmindelse"
 }
