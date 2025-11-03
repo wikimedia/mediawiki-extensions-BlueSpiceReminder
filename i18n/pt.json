@@ -109,5 +109,13 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Avisos para esta página",
 	"bs-reminder-info-dialog": "Aviso",
 	"bs-reminder-info-dialog-button-label": "Gerir avisos",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso",
+	"myreminder": "Meus lembretes",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nome de utilizador",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Página",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comentário",
+	"bs-reminder-special-myreminder-heading": "Meus lembrete",
+	"bs-reminder-title-edit": "Editar lembrete",
+	"bs-reminder-header-action-edit": "Editar",
+	"bs-reminder-header-action-delete": "Eliminar"
 }

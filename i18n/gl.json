@@ -102,5 +102,6 @@
 	"bs-reminder-special-myreminder-heading": "O meu recordatorio",
 	"bs-reminder-title-edit": "Editar o recordatorio",
 	"bs-reminder-header-action-edit": "Editar",
-	"bs-reminder-header-action-delete": "Eliminar"
+	"bs-reminder-header-action-delete": "Eliminar",
+	"bs-reminder-assign-user-label": "Asignar o recordatorio a"
 }
