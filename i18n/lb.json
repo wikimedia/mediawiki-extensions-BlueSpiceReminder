@@ -7,7 +7,6 @@
 		]
 	},
 	"reminder": "Erënnerung",
-	"specialreminder": "Erënnerung",
 	"prefs-reminder": "Erënnerung",
 	"bs-reminder-text": "Erënnerungen",
 	"bs-reminder-menu_entry-create": "Erënnerung uleeën",
@@ -64,9 +63,6 @@
 	"bs-reminder-invalid-type": "Ongültegen Typ",
 	"bs-reminder-header-type": "Typ",
 	"bs-reminder-type-page": "Säit",
-	"bs-reminder-dialog-page-action-my-reminders": "Meng Erënnerungen",
-	"bs-reminder-dialog-page-action-all-reminders": "All Erënnerungen",
-	"bs-reminder-dialog-page-action-page-reminders": "Erënnerunge fir dës Säit",
 	"bs-reminder-info-dialog": "Erënnerung",
 	"bs-reminder-info-dialog-button-label": "Erënnerunge geréieren",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Benotzernumm",
