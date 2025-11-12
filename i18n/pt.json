@@ -53,6 +53,7 @@
 	"bs-reminder-pref-DisableReminderForNS": "Não criar aviso para os seguintes espaços nominais:",
 	"bs-reminder-navigation-link-title": "Aviso",
 	"bs-reminder-navigation-link-text": "Aviso",
+	"myreminder": "Meus lembretes",
 	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: aviso para a página $1 em $2 com o comentário: $3",
 	"apihelp-bs-reminder-store-summary": "Fornece um repositório de avisos, que pode ser consultado",
 	"apihelp-bs-reminder-tasks-summary": "Fornece tarefas como editar ou eliminar avisos",
@@ -91,5 +92,12 @@
 	"bs-reminder-dialog-page-action-page-reminders": "Avisos para esta página",
 	"bs-reminder-info-dialog": "Aviso",
 	"bs-reminder-info-dialog-button-label": "Gerir avisos",
-	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso"
+	"bs-reminder-actionmenuentry-setreminder-label": "Definir aviso",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Nome de utilizador",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Página",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Comentário",
+	"bs-reminder-special-myreminder-heading": "Meus lembrete",
+	"bs-reminder-title-edit": "Editar lembrete",
+	"bs-reminder-header-action-edit": "Editar",
+	"bs-reminder-header-action-delete": "Eliminar"
 }
