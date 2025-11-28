@@ -42,6 +42,7 @@
 	"bs-reminder-date-format": "Y-m-d",
 	"bs-reminder-create-no-actions": "缺少一些參數，請重試。",
 	"bs-reminder-save-success": "提醒已成功建立。",
+	"bs-reminder-assign-user-label": "分配提醒給",
 	"bs-reminder-comment-label": "註釋",
 	"bs-reminder-header-comment": "註釋",
 	"bs-reminder-article-label": "頁面",
