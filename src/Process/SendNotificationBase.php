@@ -1,31 +1,47 @@
 <?php
 
-namespace BlueSpice\Reminder\RunJobsTriggerHandler;
+namespace BlueSpice\Reminder\Process;
 
-use BlueSpice\RunJobsTriggerHandler;
+use BlueSpice\Reminder\RepeatingReminderDateCalculator;
 use DateTime;
+use Exception;
 use MediaWiki\Json\FormatJson;
-use MediaWiki\Status\Status;
 use MediaWiki\Title\Title;
+use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
+use MWStake\MediaWiki\Component\Events\Notifier;
+use MWStake\MediaWiki\Component\ProcessManager\IProcessStep;
+use Wikimedia\Rdbms\ILoadBalancer;
 
-abstract class SendNotificationBase extends RunJobsTriggerHandler {
-	/**
-	 *
-	 * @var array
-	 */
+abstract class SendNotificationBase implements IProcessStep {
+
+	/** @var array */
 	protected $queryConds = [];
 
-	/**
-	 * @var bool
-	 */
+	/** @var bool */
 	protected $doUpdateRepeatingRemindersDate = false;
 
-	protected function doRun() {
-		$status = Status::newGood();
+	/**
+	 * @param ILoadBalancer $loadBalancer
+	 * @param UserFactory $userFactory
+	 * @param Notifier $notifier
+	 * @param RepeatingReminderDateCalculator $reminderService
+	 */
+	public function __construct(
+		private readonly ILoadBalancer $loadBalancer,
+		private readonly UserFactory $userFactory,
+		private readonly Notifier $notifier,
+		private readonly RepeatingReminderDateCalculator $reminderService
+	) {
+	}
 
-		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+	/**
+	 * @inheritDoc
+	 * @throws Exception
+	 */
+	public function execute( $data = [] ): array {
+		$dbr = $this->loadBalancer->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'bs_reminder',
 			'*',
@@ -36,14 +52,13 @@ abstract class SendNotificationBase extends RunJobsTriggerHandler {
 		$repeatingReminders = [];
 
 		if ( $res && $res->numRows() ) {
-			$userFactory = $this->services->getUserFactory();
 			foreach ( $res as $row ) {
-				$user = $userFactory->newFromId( $row->rem_user_id );
+				$user = $this->userFactory->newFromId( $row->rem_user_id );
 				$title = Title::newFromID( $row->rem_page_id );
 				$comment = $row->rem_comment;
 				if ( $user && $title ) {
 					$event = $this->getEvent( $user, $title, $comment );
-					$this->services->getService( 'MWStake.Notifier' )->emit( $event );
+					$this->notifier->emit( $event );
 
 					if ( $this->doUpdateRepeatingRemindersDate === true && (int)$row->rem_is_repeating === 1 ) {
 						$repeatingReminders[] = $row;
@@ -56,7 +71,7 @@ abstract class SendNotificationBase extends RunJobsTriggerHandler {
 			$this->updateRepeatingRemindersDate( $repeatingReminders );
 		}
 
-		return $status;
+		return [];
 	}
 
 	/**
@@ -70,12 +85,11 @@ abstract class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
 	 * @param array $repeatingReminders
 	 */
-	protected function updateRepeatingRemindersDate( array $repeatingReminders ) {
+	protected function updateRepeatingRemindersDate( array $repeatingReminders ): void {
 		if ( count( $repeatingReminders ) > 0 ) {
-			$reminderService = $this->services->getService( 'BSRepeatingReminderDateCalculator' );
 			foreach ( $repeatingReminders as $reminder ) {
 				$currentDate = new DateTime();
-				$nextReminderDate = $reminderService->getNextReminderDateFromGivenDate(
+				$nextReminderDate = $this->reminderService->getNextReminderDateFromGivenDate(
 					$currentDate,
 					FormatJson::decode( $reminder->rem_repeat_config )
 				);

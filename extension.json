@@ -30,10 +30,6 @@
 						"maintenanceadmin"
 					]
 				}
-			},
-			"RunJobsTriggerHandlerRegistry": {
-				"bs-reminder-send-daily": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendTodayReminderNotification::factory",
-				"bs-reminder-send-weekly": "BlueSpice\\Reminder\\RunJobsTriggerHandler\\SendInOneWeekReminderNotification::factory"
 			}
 		},
 		"BlueSpiceEchoConnector": {
@@ -122,6 +118,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionFunctions": [
+		"BlueSpice\\Reminder\\ReminderNotificationCron::register"
+	],
 	"ExtensionMessagesFiles": {
 		"ReminderAlias": "languages/SpecialReminder.alias.php"
 	},

@@ -1,16 +1,16 @@
 <?php
 
-namespace BlueSpice\Reminder\RunJobsTriggerHandler;
+namespace BlueSpice\Reminder\Process;
 
-use BlueSpice\Reminder\Event\ReminderInOneWeek;
+use BlueSpice\Reminder\Event\ReminderToday;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Events\INotificationEvent;
 
-class SendInOneWeekReminderNotification extends SendNotificationBase {
+class SendTodayReminderNotification extends SendNotificationBase {
 	/** @var string[] */
 	protected $queryConds = [
-		'rem_date = CURDATE() + INTERVAL 7 DAY'
+		'rem_date = CURDATE()'
 	];
 
 	/**
@@ -20,6 +20,9 @@ class SendInOneWeekReminderNotification extends SendNotificationBase {
 	 * @return INotificationEvent
 	 */
 	protected function getEvent( UserIdentity $user, Title $title, string $comment ): INotificationEvent {
-		return new ReminderInOneWeek( $user, $title, $comment );
+		return new ReminderToday( $user, $title, $comment );
 	}
+
+	/** @var bool */
+	protected $doUpdateRepeatingRemindersDate = true;
 }
