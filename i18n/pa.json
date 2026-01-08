@@ -6,5 +6,8 @@
 	},
 	"bs-reminder-header-username": "ਵਰਤੋਂਕਾਰ",
 	"bs-reminder-header-action-edit": "ਸੋਧੋ",
-	"bs-reminder-header-action-delete": "ਮਿਟਾਓ"
+	"bs-reminder-header-action-delete": "ਮਿਟਾਓ",
+	"bs-reminder-header-pagename": "ਵਰਕਾ",
+	"bs-reminder-article-label": "ਵਰਕਾ",
+	"bs-reminder-type-page": "ਵਰਕਾ"
 }
