@@ -9,5 +9,6 @@
 	"bs-reminder-header-action-delete": "ਮਿਟਾਓ",
 	"bs-reminder-header-pagename": "ਵਰਕਾ",
 	"bs-reminder-article-label": "ਵਰਕਾ",
-	"bs-reminder-type-page": "ਵਰਕਾ"
+	"bs-reminder-type-page": "ਵਰਕਾ",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "ਵਰਕਾ"
 }
