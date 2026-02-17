@@ -3,6 +3,7 @@
 		"authors": [
 			"Mjälten",
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -14,8 +15,8 @@
 	"bs-reminder-pref-SetReminderOnCreate": "Skapa påminnelse när sida skapas",
 	"bs-reminder-menu_entry-create": "Skapa påminnelse",
 	"bs-reminder-menu_entry-show": "Påminnelser",
-	"bs-reminder-unknown-page-msg": "Du försökte skapa en påminnelse för en sida som inte finns.",
-	"bs-reminder-unknown-user-msg": "Du försökte skapa en påminnelse för en användare som inte finns.",
+	"bs-reminder-unknown-page-msg": "Du försöker skapa en påminnelse för en sida som inte finns.",
+	"bs-reminder-unknown-user-msg": "Du försöker skapa en påminnelse för en användare som inte finns.",
 	"bs-reminder-date-label": "Påminnelse",
 	"bs-reminder-create-reminder-label": "Skapa påminnelse",
 	"bs-reminder-create-title": "Påminnelse",
