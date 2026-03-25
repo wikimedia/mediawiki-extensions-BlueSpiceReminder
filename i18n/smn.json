@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Seipinne"
+			"Seipinne",
+			"Yupik"
 		]
 	},
-	"bs-reminder-type-page": "Sijđo"
+	"bs-reminder-type-page": "Sijđo",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Kevtteenommâ"
 }

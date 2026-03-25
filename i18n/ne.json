@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
+			"पर्वत सुबेदी",
 			"हिमाल सुबेदी"
 		]
 	},
@@ -13,5 +14,6 @@
 	"bs-reminder-specialpage-subtitle": "← $1",
 	"bs-reminder-comment-label": "टिप्पणी",
 	"bs-reminder-header-comment": "टिप्पणी",
-	"bs-reminder-article-label": "पृष्ठ"
+	"bs-reminder-article-label": "पृष्ठ",
+	"bs-reminder-ordinal-last": "पछिल्लो"
 }

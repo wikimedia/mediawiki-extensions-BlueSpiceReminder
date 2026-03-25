@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Codenstory",
+			"Suleiman the Magnificent Television",
 			"Ykhwong"
 		]
 	},
@@ -41,5 +42,9 @@
 	"bs-reminder-invalid-type": "잘못된 유형",
 	"bs-reminder-header-type": "유형",
 	"bs-reminder-type-page": "문서",
-	"echo-pref-tooltip-bs-reminder-cat": "내 리마인더의 만기일이 오늘이거나 1주일 전이면 내게 알립니다"
+	"echo-pref-tooltip-bs-reminder-cat": "내 리마인더의 만기일이 오늘이거나 1주일 전이면 내게 알립니다",
+	"reminder": "알림",
+	"prefs-reminder": "알림",
+	"bs-reminder-header-action-edit": "편집",
+	"bs-reminder-header-action-delete": "삭제"
 }

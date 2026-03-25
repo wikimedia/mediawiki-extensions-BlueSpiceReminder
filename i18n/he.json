@@ -109,5 +109,21 @@
 	"bs-reminder-repeat-interval-year": "שנה",
 	"right-remindereditall": "ערוך תזכורות של אחרים",
 	"action-remindereditall": "לערוך תזכורות של אחרים",
-	"bs-reminder-specialpage-subtitle": "→ $1"
+	"bs-reminder-specialpage-subtitle": "→ $1",
+	"myreminder": "התזכורות שלי",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "פעילות \"הגדרת תזכורת\"",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "שם משתמש",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "דף",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "להזכיר ב־",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "הערה",
+	"bs-reminder-event-today-desc": "זמן התזכורת לדף הזה מגיע היום",
+	"bs-reminder-event-one-week-desc": "הגיע זמן התזכורת לדף הזה מגיע בעוד שבוע",
+	"bs-reminder-event-today": "זמן התזכורת שלך לדף [$1 $2] יגיע היום",
+	"bs-reminder-event-today-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע היום.<br><br>הערה על התזכורת:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע",
+	"bs-reminder-event-one-week-with-comment": "זמן התזכורת שלך לדף [$1 $2] יגיע בעוד שבוע.<br><br>הערה על התזכורת:<br><b>$3</b>",
+	"bs-reminder-special-myreminder-heading": "התזכורות שלי",
+	"bs-reminder-title-edit": "עריכת תזכורת",
+	"bs-reminder-header-action-edit": "עריכה",
+	"bs-reminder-header-action-delete": "מחיקה"
 }

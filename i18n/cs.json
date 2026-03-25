@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fraxinus.cs"
+			"Fraxinus.cs",
+			"Jrobicek"
 		]
 	},
 	"bs-reminder-unknown-page-msg": "Pokoušíte se vytvořit upozornění pro článek, který neexistuje.",
@@ -14,5 +15,10 @@
 	"bs-reminder-dialog-page-action-all-reminders": "Všechna upozornění",
 	"bs-reminder-dialog-page-action-page-reminders": "Upozornění na tento článek",
 	"bs-reminder-info-dialog": "Upozornění",
-	"bs-reminder-info-dialog-button-label": "Správa upozornění"
+	"bs-reminder-info-dialog-button-label": "Správa upozornění",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Uživatelské jméno",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Stránka",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Připomenout dne",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Komentář",
+	"bs-reminder-header-action-edit": "Upravit"
 }

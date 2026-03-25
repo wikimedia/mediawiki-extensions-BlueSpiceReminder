@@ -25,5 +25,7 @@
 	"bs-reminder-sunday-abbr": "վ",
 	"bs-reminder-no": "ոչ",
 	"bs-reminder-header-type": "Տեսակ",
-	"bs-reminder-type-page": "Էջ"
+	"bs-reminder-type-page": "Էջ",
+	"bs-reminder-header-action-edit": "Խմբագրել",
+	"bs-reminder-header-action-delete": "Ջնջել"
 }

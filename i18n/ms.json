@@ -4,5 +4,8 @@
 			"Tofeiku"
 		]
 	},
-	"bs-reminder-text": "Peringatan"
+	"bs-reminder-text": "Peringatan",
+	"myreminder": "Peringatan saya",
+	"bs-reminder-special-myreminder-heading": "Peringatan saya",
+	"bs-reminder-title-edit": "Sunting peringatan"
 }

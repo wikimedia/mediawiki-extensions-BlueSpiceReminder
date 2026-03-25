@@ -17,5 +17,6 @@
 	"bs-reminder-dialog-page-action-my-reminders": "منھنجون يادگيريون",
 	"bs-reminder-dialog-page-action-all-reminders": "سڀ يادگيريون",
 	"bs-reminder-dialog-page-action-page-reminders": "ھن صفحي لاءِ يادگيريون",
-	"bs-reminder-info-dialog": "يادگيري"
+	"bs-reminder-info-dialog": "يادگيري",
+	"bs-reminder-repeat-interval-day": "ڏينھن"
 }

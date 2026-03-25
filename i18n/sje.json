@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Olve Utne"
+			"Olve Utne",
+			"Yupik"
 		]
 	},
-	"bs-reminder-comment-label": "Målgedibme"
+	"bs-reminder-comment-label": "Målgedibme",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Adnejnamma"
 }
