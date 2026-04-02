@@ -3,6 +3,7 @@
 		"authors": [
 			"McDutchie",
 			"Renessaince",
+			"Ucukor",
 			"W"
 		]
 	},
@@ -28,5 +29,6 @@
 	"action-remindereditall": "правіць іншыя напаміны",
 	"bs-reminder-repeat-label": "Паўтарыць",
 	"bs-reminder-header-type": "Від",
-	"bs-reminder-type-page": "Старонка"
+	"bs-reminder-type-page": "Старонка",
+	"bs-reminder-header-action-edit": "Рэдагаваць"
 }
