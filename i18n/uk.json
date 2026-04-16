@@ -6,6 +6,7 @@
 			"McDutchie",
 			"Piramidion",
 			"Samflint",
+			"Vlad5250",
 			"Ата"
 		]
 	},
@@ -85,5 +86,14 @@
 	"bs-reminder-type-page": "Сторінка",
 	"bs-reminder-info-dialog": "Нагадування",
 	"bs-reminder-info-dialog-button-label": "Керувати нагадуваннями",
-	"bs-reminder-actionmenuentry-setreminder-label": "Встановити нагадування"
+	"bs-reminder-actionmenuentry-setreminder-label": "Встановити нагадування",
+	"myreminder": "Мої нагадування",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "Ім'я користувача",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "Сторінка",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "Нагадати",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-comment": "Коментар",
+	"bs-reminder-special-myreminder-heading": "Моє нагадування",
+	"bs-reminder-title-edit": "Редагувати нагадування",
+	"bs-reminder-header-action-edit": "Редагувати",
+	"bs-reminder-header-action-delete": "Вилучити"
 }
