@@ -6,7 +6,7 @@
 	"descriptionmsg": "bs-reminder-extension-description",
 	"license-name": "GPL-3.0-only",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.46.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.0.0",
 			"OOJSPlus": ">= 3.0.0"

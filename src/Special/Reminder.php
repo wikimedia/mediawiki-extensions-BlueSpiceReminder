@@ -15,8 +15,13 @@ class Reminder extends OOJSGridSpecialPage {
 	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct( PermissionManager $permissionManager ) {
-		parent::__construct( 'Reminder', 'read' );
+		parent::__construct( 'Reminder' );
 		$this->permissionManager = $permissionManager;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'read';
 	}
 
 	/**
