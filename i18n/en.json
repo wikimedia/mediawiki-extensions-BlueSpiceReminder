@@ -97,5 +97,6 @@
 	"bs-reminder-special-myreminder-heading": "My reminder",
 	"bs-reminder-title-edit": "Edit reminder",
 	"bs-reminder-header-action-edit": "Edit",
-	"bs-reminder-header-action-delete": "Delete"
+	"bs-reminder-header-action-delete": "Delete",
+	"bs-reminder-notification-generic-links-intro": "You can visit the page directly by using the following link"
 }
