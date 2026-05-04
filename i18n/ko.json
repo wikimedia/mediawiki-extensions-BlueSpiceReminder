@@ -3,6 +3,7 @@
 		"authors": [
 			"Codenstory",
 			"Suleiman the Magnificent Television",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -45,5 +46,18 @@
 	"bs-reminder-header-type": "유형",
 	"bs-reminder-type-page": "문서",
 	"bs-reminder-header-action-edit": "편집",
-	"bs-reminder-header-action-delete": "삭제"
+	"bs-reminder-header-action-delete": "삭제",
+	"bs-reminder-text": "알림",
+	"bs-reminder-menu_entry-create": "알림 만들기",
+	"bs-reminder-menu_entry-show": "알림",
+	"bs-reminder-create-reminder-label": "알림 만들기",
+	"bs-reminder-create-title": "알림",
+	"bs-reminder-title-delete": "알림 삭제",
+	"bs-reminder-dlg-btn-manager-label": "알림 관리",
+	"bs-reminder-navigation-link-title": "알림",
+	"bs-reminder-navigation-link-text": "알림",
+	"myreminder": "내 알림",
+	"bs-reminder-info-dialog": "알림",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-username": "사용자 이름",
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-page": "문서"
 }
