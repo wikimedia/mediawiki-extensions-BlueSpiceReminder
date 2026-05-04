@@ -101,5 +101,6 @@
 	"bs-reminder-title-edit": "Edit reminder",
 	"bs-reminder-header-action-edit": "Edit",
 	"bs-reminder-header-action-delete": "Delete",
-	"bs-reminder-assign-user-label": "Assign reminder to"
+	"bs-reminder-assign-user-label": "Assign reminder to",
+	"bs-reminder-notification-generic-links-intro": "You can visit the page directly by using the following link"
 }

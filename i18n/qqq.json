@@ -106,5 +106,6 @@
 	"bs-reminder-title-edit": "Title for 'Edit reminder' icon",
 	"bs-reminder-header-action-edit": "Header text for column which allows to edit a reminder\n{{Identical|Edit}}",
 	"bs-reminder-header-action-delete": "Header text for column which allows to delete a reminder\n{{Identical|Delete}}",
-	"bs-reminder-assign-user-label": "Label for user field in create/edit dialoge"
+	"bs-reminder-assign-user-label": "Label for user field in create/edit dialoge",
+	"bs-reminder-notification-generic-links-intro": "Introduction text for generic links in notifications.\n{{Identical|You can visit the page directly by using the following link}}"
 }
