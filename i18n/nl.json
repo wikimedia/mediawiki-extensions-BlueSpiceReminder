@@ -106,5 +106,6 @@
 	"bs-reminder-special-myreminder-heading": "Mijn herinnering",
 	"bs-reminder-title-edit": "Herinnering bewerken",
 	"bs-reminder-header-action-edit": "Bewerken",
-	"bs-reminder-header-action-delete": "Verwijderen"
+	"bs-reminder-header-action-delete": "Verwijderen",
+	"bs-reminder-notification-generic-links-intro": "U kunt de pagina rechtstreeks bezoeken via de volgende koppeling"
 }
