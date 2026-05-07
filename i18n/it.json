@@ -71,5 +71,6 @@
 	"bs-reminder-special-myreminder-heading": "Il mio promemoria",
 	"bs-reminder-title-edit": "Modifica promemoria",
 	"bs-reminder-header-action-edit": "Modifica",
-	"bs-reminder-header-action-delete": "Cancella"
+	"bs-reminder-header-action-delete": "Cancella",
+	"bs-reminder-notification-generic-links-intro": "Puoi visitare la pagina direttamente utilizzando il seguente collegamento"
 }
