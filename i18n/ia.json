@@ -103,5 +103,6 @@
 	"bs-reminder-title-edit": "Modificar rememoration",
 	"bs-reminder-header-action-edit": "Modificar",
 	"bs-reminder-header-action-delete": "Deler",
-	"bs-reminder-assign-user-label": "Assignar rememoration a"
+	"bs-reminder-assign-user-label": "Assignar rememoration a",
+	"bs-reminder-notification-generic-links-intro": "Tu pote visitar directemente le pagina con le sequente ligamine"
 }
