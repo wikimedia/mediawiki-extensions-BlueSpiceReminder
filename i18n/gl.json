@@ -103,5 +103,6 @@
 	"bs-reminder-title-edit": "Editar o recordatorio",
 	"bs-reminder-header-action-edit": "Editar",
 	"bs-reminder-header-action-delete": "Eliminar",
-	"bs-reminder-assign-user-label": "Asignar o recordatorio a"
+	"bs-reminder-assign-user-label": "Asignar o recordatorio a",
+	"bs-reminder-notification-generic-links-intro": "Podes visitar a páxina directamente usando a seguinte ligazón"
 }
