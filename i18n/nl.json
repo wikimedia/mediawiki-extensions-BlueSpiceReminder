@@ -86,7 +86,7 @@
 	"bs-reminder-start-date-greater-end-date": "Einddatum herinnering kan niet voor de startdatum liggen",
 	"bs-reminder-header-is-repeating": "Herhaalt zich",
 	"bs-reminder-no": "nee",
-	"bs-reminder-invalid-type": "Ongeldig type",
+	"bs-reminder-invalid-type": "Onjuist type",
 	"bs-reminder-header-type": "Soort",
 	"bs-reminder-type-page": "Pagina",
 	"bs-reminder-info-dialog": "Herinnering",
