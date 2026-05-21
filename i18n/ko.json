@@ -85,5 +85,17 @@
 	"bs-reminder-info-dialog-button-label": "알림 관리",
 	"bs-reminder-actionmenuentry-setreminder-label": "알림 설정",
 	"bs-reminder-ui-workflows-inspector-activity-set-reminder-title": "\"알림 설정\" 활동",
-	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "알림 날짜"
+	"bs-reminder-ui-workflows-inspector-activity-set-reminder-property-date": "알림 날짜",
+	"bs-reminder-pref-DefaultReminderPeriod": "기본 알림 주기",
+	"bs-reminder-pref-DefaultReminderPeriod-help": "알림 주기 일 수를 입력하세요.",
+	"bs-reminder-pref-SetReminderOnCreate": "문서 생성 시 알림을 설정",
+	"bs-reminder-assign-user-label": "알림을 할당할 사용자",
+	"bs-reminder-other-user-not-allowed": "다른 사용자에게 알림을 할당할 수 없습니다",
+	"bs-reminder-pref-DisableReminderForNS": "다음 이름공간에 대해서는 알림을 생성하지 마세요:",
+	"bs-reminder-event-today-desc": "알림이 오늘 까지입니다",
+	"bs-reminder-event-one-week-desc": "알림이 1주일 뒤 까지입니다",
+	"bs-reminder-event-today": "[$1 $2] 문서에 대한 알림이 오늘 까지입니다",
+	"bs-reminder-event-today-with-comment": "[$1 $2] 문서에 대한 알림이 오늘 까지입니다.<br><br>알림에 대한 의견:<br><b>$3</b>",
+	"bs-reminder-event-one-week": "[$1 $2] 문서에 대한 알림이 1주일 뒤 까지입니다",
+	"bs-reminder-event-one-week-with-comment": "[$1 $2] 문서에 대한 알림이 1주일 뒤 까지입니다.<br><br>알림에 대한 의견:<br><b>$3</b>"
 }
