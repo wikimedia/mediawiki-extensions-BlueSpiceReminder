@@ -99,5 +99,10 @@
 	"bs-reminder-event-today": "[$1 $2] 문서에 대한 알림이 오늘 까지입니다",
 	"bs-reminder-event-today-with-comment": "[$1 $2] 문서에 대한 알림이 오늘 까지입니다.<br><br>알림에 대한 의견:<br><b>$3</b>",
 	"bs-reminder-event-one-week": "[$1 $2] 문서에 대한 알림이 1주일 뒤 까지입니다",
-	"bs-reminder-event-one-week-with-comment": "[$1 $2] 문서에 대한 알림이 1주일 뒤 까지입니다.<br><br>알림에 대한 의견:<br><b>$3</b>"
+	"bs-reminder-event-one-week-with-comment": "[$1 $2] 문서에 대한 알림이 1주일 뒤 까지입니다.<br><br>알림에 대한 의견:<br><b>$3</b>",
+	"bs-reminder-extension-description": "사용자가 알림을 생성할 수 있는 기회를 제공합니다.",
+	"bs-reminder-privacy-transparency-working-reminder": "BlueSpiceReminder: $2에 $1 문서에 대한 알림, 의견: $3",
+	"apihelp-bs-reminder-store-summary": "알림을 위한 저장소를 제공하여, 알림을 조회할 수 있게끔 합니다",
+	"apihelp-bs-reminder-tasks-summary": "알림을 편집하거나 삭제하는 등의 작업을 제공합니다",
+	"bs-reminder-notification-generic-links-intro": "다음 링크를 이용하면 해당 문서로 바로 이동하실 수 있습니다"
 }
