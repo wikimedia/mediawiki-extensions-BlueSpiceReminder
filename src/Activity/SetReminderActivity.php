@@ -16,12 +16,6 @@ use MediaWiki\User\UserFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class SetReminderActivity extends GenericActivity {
-	/** @var TitleFactory */
-	private $titleFactory;
-	/** @var UserFactory */
-	private $userFactory;
-	/** @var ILoadBalancer */
-	private $loadBalancer;
 	/** @var Title */
 	private $title;
 	/** @var User */
@@ -31,19 +25,13 @@ class SetReminderActivity extends GenericActivity {
 	/** @var string */
 	private $comment;
 
-	/**
-	 * @param TitleFactory $titleFactory
-	 * @param UserFactory $userFactory
-	 * @param ILoadBalancer $lb
-	 * @param ITask $task
-	 */
 	public function __construct(
-		TitleFactory $titleFactory, UserFactory $userFactory, ILoadBalancer $lb, ITask $task
+		private readonly TitleFactory $titleFactory,
+		private readonly UserFactory $userFactory,
+		private readonly ILoadBalancer $loadBalancer,
+		ITask $task,
 	) {
 		parent::__construct( $task );
-		$this->titleFactory = $titleFactory;
-		$this->userFactory = $userFactory;
-		$this->loadBalancer = $lb;
 	}
 
 	/**

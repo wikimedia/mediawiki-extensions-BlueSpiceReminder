@@ -10,15 +10,9 @@ use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
 
 class Handler implements IPrivacyHandler {
-	/** @var IDatabase */
-	protected $db;
-
-	/**
-	 *
-	 * @param IDatabase $db
-	 */
-	public function __construct( IDatabase $db ) {
-		$this->db = $db;
+	public function __construct(
+		protected readonly IDatabase $db,
+	) {
 	}
 
 	/**

@@ -12,27 +12,13 @@ use Wikimedia\Rdbms\LoadBalancer;
 
 class Reminder extends AttentionIndicator {
 
-	/**
-	 * @var LoadBalancer
-	 */
-	protected $lb = null;
-
-	/**
-	 * @var TitleFactory
-	 */
-	protected $titleFactory = null;
-
-	/**
-	 * @param string $key
-	 * @param Config $config
-	 * @param User $user
-	 * @param LoadBalancer $lb
-	 * @param TitleFactory $titleFactory
-	 */
-	public function __construct( string $key, Config $config, User $user,
-		LoadBalancer $lb, TitleFactory $titleFactory ) {
-		$this->lb = $lb;
-		$this->titleFactory = $titleFactory;
+	public function __construct(
+		string $key,
+		Config $config,
+		User $user,
+		protected readonly LoadBalancer $lb,
+		protected readonly TitleFactory $titleFactory,
+	) {
 		parent::__construct( $key, $config, $user );
 	}
 

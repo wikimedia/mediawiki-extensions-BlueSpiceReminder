@@ -5,43 +5,17 @@ namespace BlueSpice\Reminder;
 use MediaWiki\Config\Config;
 
 abstract class Reminder implements IReminder {
-	/**
-	 *
-	 * @var string
-	 */
-	protected $type = '';
-
-	/**
-	 *
-	 * @var Config
-	 */
-	protected $config = null;
-
-	/**
-	 *
-	 * @return string
-	 */
-	public function getType() {
+	public function getType(): string {
 		return $this->type;
 	}
 
-	/**
-	 *
-	 * @param string $type
-	 * @param Config $config
-	 */
-	protected function __construct( $type, Config $config ) {
-		$this->type = $type;
-		$this->config = $config;
+	protected function __construct(
+		protected readonly string $type,
+		protected readonly Config $config,
+	) {
 	}
 
-	/**
-	 *
-	 * @param string $type
-	 * @param Config $config
-	 * @return IReminder
-	 */
-	public static function factory( $type, Config $config ) {
+	public static function factory( string $type, Config $config ): IReminder {
 		return new static( $type, $config );
 	}
 }

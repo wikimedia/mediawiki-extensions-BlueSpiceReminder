@@ -7,26 +7,10 @@ use MediaWiki\Config\Config;
 
 class Factory {
 
-	/**
-	 *
-	 * @var ExtensionAttributeBasedRegistry
-	 */
-	protected $registry = null;
-
-	/**
-	 *
-	 * @var Config
-	 */
-	protected $config = null;
-
-	/**
-	 *
-	 * @param ExtensionAttributeBasedRegistry $registry
-	 * @param Config $config
-	 */
-	public function __construct( ExtensionAttributeBasedRegistry $registry, Config $config ) {
-		$this->registry = $registry;
-		$this->config = $config;
+	public function __construct(
+		protected readonly ExtensionAttributeBasedRegistry $registry,
+		protected readonly Config $config,
+	) {
 	}
 
 	/**

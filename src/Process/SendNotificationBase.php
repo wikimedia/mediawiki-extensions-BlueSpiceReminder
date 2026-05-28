@@ -22,17 +22,11 @@ abstract class SendNotificationBase implements IProcessStep {
 	/** @var bool */
 	protected $doUpdateRepeatingRemindersDate = false;
 
-	/**
-	 * @param ILoadBalancer $loadBalancer
-	 * @param UserFactory $userFactory
-	 * @param Notifier $notifier
-	 * @param RepeatingReminderDateCalculator $reminderService
-	 */
 	public function __construct(
 		private readonly ILoadBalancer $loadBalancer,
 		private readonly UserFactory $userFactory,
 		private readonly Notifier $notifier,
-		private readonly RepeatingReminderDateCalculator $reminderService
+		private readonly RepeatingReminderDateCalculator $reminderService,
 	) {
 	}
 

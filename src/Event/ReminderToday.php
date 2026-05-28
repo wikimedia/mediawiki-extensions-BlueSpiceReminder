@@ -12,21 +12,12 @@ use MWStake\MediaWiki\Component\Events\TitleEvent;
 
 class ReminderToday extends TitleEvent {
 
-	/** @var UserIdentity */
-	protected $targetUser;
-
-	/** @var string */
-	protected $comment;
-
-	/**
-	 * @param UserIdentity $target
-	 * @param PageIdentity $title
-	 * @param string $comment
-	 */
-	public function __construct( UserIdentity $target, PageIdentity $title, string $comment ) {
+	public function __construct(
+		protected readonly UserIdentity $targetUser,
+		PageIdentity $title,
+		protected readonly string $comment,
+	) {
 		parent::__construct( new BotAgent(), $title );
-		$this->targetUser = $target;
-		$this->comment = $comment;
 	}
 
 	/**

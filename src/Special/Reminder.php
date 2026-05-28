@@ -8,15 +8,10 @@ use OOJSPlus\Special\OOJSGridSpecialPage;
 
 class Reminder extends OOJSGridSpecialPage {
 
-	/** @var PermissionManager */
-	protected $permissionManager;
-
-	/**
-	 * @param PermissionManager $permissionManager
-	 */
-	public function __construct( PermissionManager $permissionManager ) {
+	public function __construct(
+		protected readonly PermissionManager $permissionManager,
+	) {
 		parent::__construct( 'Reminder' );
-		$this->permissionManager = $permissionManager;
 	}
 
 	/** @inheritDoc */
