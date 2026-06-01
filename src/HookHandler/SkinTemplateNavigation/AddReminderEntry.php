@@ -3,10 +3,15 @@
 namespace BlueSpice\Reminder\HookHandler\SkinTemplateNavigation;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Permissions\PermissionManager;
 use SkinTemplate;
 
 class AddReminderEntry implements SkinTemplateNavigation__UniversalHook {
+
+	public function __construct(
+		private readonly PermissionManager $permissionManager,
+	) {
+	}
 
 	/**
 	 * @param SkinTemplate $sktemplate
@@ -21,9 +26,7 @@ class AddReminderEntry implements SkinTemplateNavigation__UniversalHook {
 		if ( !$title->exists() || $title->isSpecialPage() ) {
 			return true;
 		}
-		if ( !MediaWikiServices::getInstance()->getPermissionManager()
-			->userCan( 'read', $user, $title )
-		) {
+		if ( !$this->permissionManager->userCan( 'read', $user, $title ) ) {
 			return true;
 		}
 		return false;
