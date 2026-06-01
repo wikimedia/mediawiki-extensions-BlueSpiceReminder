@@ -277,10 +277,16 @@
 			"class": "\\BlueSpice\\Reminder\\HookHandler\\StandardDialogs"
 		},
 		"addReminderUrl": {
-			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderUrl"
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderUrl",
+			"services": [
+				"SpecialPageFactory"
+			]
 		},
 		"addReminderEntry": {
-			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderEntry"
+			"class": "\\BlueSpice\\Reminder\\HookHandler\\SkinTemplateNavigation\\AddReminderEntry",
+			"services": [
+				"PermissionManager"
+			]
 		}
 	},
 	"Hooks": {
