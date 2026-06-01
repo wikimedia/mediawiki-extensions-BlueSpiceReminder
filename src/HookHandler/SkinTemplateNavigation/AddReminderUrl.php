@@ -4,9 +4,14 @@ namespace BlueSpice\Reminder\HookHandler\SkinTemplateNavigation;
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPageFactory;
 
 class AddReminderUrl implements SkinTemplateNavigation__UniversalHook {
+
+	public function __construct(
+		private readonly SpecialPageFactory $specialPageFactory,
+	) {
+	}
 
 	/**
 	 * // phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
@@ -18,8 +23,7 @@ class AddReminderUrl implements SkinTemplateNavigation__UniversalHook {
 			return;
 		}
 
-		$reminder = MediaWikiServices::getInstance()->getSpecialPageFactory()
-			->getPage( 'Reminder' );
+		$reminder = $this->specialPageFactory->getPage( 'Reminder' );
 		if ( !$reminder ) {
 			return;
 		}
