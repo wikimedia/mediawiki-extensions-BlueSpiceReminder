@@ -349,16 +349,15 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'API returned no reminder ID'
 		);
 		$iReminderId = $data[0]['payload']['id'];
-		$this->assertSelect(
-			'bs_reminder',
-			[ 'rem_user_id', 'rem_page_id', 'rem_comment' ],
-			[ 'rem_id' => $iReminderId ],
-			[ [
+		$this->newSelectQueryBuilder()
+			->select( [ 'rem_user_id', 'rem_page_id', 'rem_comment' ] )
+			->from( 'bs_reminder' )
+			->where( [ 'rem_id' => $iReminderId ] )
+			->assertRowValue( [
 				static::$users[ $aExpected[0] ]->getUser()->getId(),
 				$aExpected[1],
 				$aExpected[2]
-			] ]
-		);
+			] );
 	}
 
 	public function provideCreateReminderData() {
@@ -427,16 +426,15 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'API returned no reminder ID'
 		);
 		$iReminderId = $data[0]['payload']['id'];
-		$this->assertSelect(
-			'bs_reminder',
-			[ 'rem_user_id', 'rem_page_id', 'rem_comment' ],
-			[ 'rem_id' => $iReminderId ],
-			[ [
+		$this->newSelectQueryBuilder()
+			->select( [ 'rem_user_id', 'rem_page_id', 'rem_comment' ] )
+			->from( 'bs_reminder' )
+			->where( [ 'rem_id' => $iReminderId ] )
+			->assertRowValue( [
 				static::$users[ $aExpected[0] ]->getUser()->getId(),
 				$aExpected[1],
 				$aExpected[2]
-			] ]
-		);
+			] );
 	}
 
 	public function provideEditReminderData() {
@@ -579,12 +577,11 @@ class ApiReminderTasksTest extends ApiTestCase {
 			'API returned no reminder ID'
 		);
 		$iReminderId = $data[0]['payload']['id'];
-		$this->assertSelect(
-			'bs_reminder',
-			[ 'rem_user_id', 'rem_page_id', 'rem_comment' ],
-			[ 'rem_id' => $iReminderId ],
-			[]
-		);
+		$this->newSelectQueryBuilder()
+			->select( [ 'rem_user_id', 'rem_page_id', 'rem_comment' ] )
+			->from( 'bs_reminder' )
+			->where( [ 'rem_id' => $iReminderId ] )
+			->assertEmptyResult();
 	}
 
 	public function testGetDetailsForReminder_catchAnonUser() {
