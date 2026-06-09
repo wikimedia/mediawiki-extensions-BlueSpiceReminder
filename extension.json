@@ -213,7 +213,6 @@
 				"ext.bluespice",
 				"ext.oOJSPlus.dialogs",
 				"ext.oOJSPlus.widgets",
-				"mediawiki.widgets.DateInputWidget",
 				"mediawiki.widgets"
 			]
 		},
