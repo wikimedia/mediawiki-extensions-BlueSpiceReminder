@@ -23,8 +23,7 @@ bs.reminder.ui.ReminderPage.prototype.init = function () {
 bs.reminder.ui.ReminderPage.prototype.getItems = function () {
 	const today = new Date();
 	const currentDate = today.getFullYear() + '-' + ( today.getMonth() + 1 ) + '-' + today.getDate();
-	this.datePicker = new mw.widgets.DateInputWidget( {
-		$overlay: this.dialog.$overlay,
+	this.datePicker = new OOJSPlus.ui.widget.DateInputWidget( {
 		required: true,
 		mustBeAfter: currentDate
 	} );
