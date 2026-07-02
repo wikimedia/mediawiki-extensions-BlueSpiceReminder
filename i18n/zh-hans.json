@@ -113,5 +113,6 @@
 	"bs-reminder-special-myreminder-heading": "我的提醒",
 	"bs-reminder-title-edit": "编辑提醒",
 	"bs-reminder-header-action-edit": "编辑",
-	"bs-reminder-header-action-delete": "删除"
+	"bs-reminder-header-action-delete": "删除",
+	"bs-reminder-notification-generic-links-intro": "您可以通过以下链接直接访问该页面"
 }
