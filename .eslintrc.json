@@ -22,6 +22,7 @@
 		"es-x/no-async-functions": "off",
 		"es-x/no-string-prototype-padstart-padend": "off",
 		"max-len": "off",
+		"mediawiki/no-unlabeled-buttonwidget": "off",
 		"no-prototype-builtins": "off"
 	}
 }
