@@ -62,7 +62,6 @@ class AddReminderTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getExtensionPath() {

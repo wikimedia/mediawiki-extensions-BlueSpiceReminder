@@ -13,7 +13,6 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getId(): string {
@@ -26,7 +25,6 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHref(): string {
@@ -35,7 +33,6 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getText(): Message {
@@ -43,7 +40,6 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getTitle(): Message {
@@ -51,7 +47,6 @@ class GlobalActionsEditing extends RestrictedTextLink {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {

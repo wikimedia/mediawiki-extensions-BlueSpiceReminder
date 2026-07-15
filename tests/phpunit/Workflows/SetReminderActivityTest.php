@@ -22,13 +22,11 @@ use Wikimedia\Rdbms\LoadBalancer;
 class SetReminderActivityTest extends MediaWikiIntegrationTestCase {
 
 	/**
-	 *
 	 * @param array $data
 	 * @param array $expectedDbData
 	 *
 	 * @covers \BlueSpice\Reminder\Activity\SetReminderActivity::execute
 	 * @dataProvider provideCompleteItemData
-	 *
 	 */
 	public function testCompleteItem( $data, $expectedDbData ) {
 		$titleFactoryMock = $this->createMock( TitleFactory::class );
@@ -64,7 +62,6 @@ class SetReminderActivityTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function provideCompleteItemData() {

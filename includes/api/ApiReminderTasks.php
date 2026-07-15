@@ -11,7 +11,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 	protected $aTasks = [ 'deleteReminder', 'saveReminder' ];
 
 	/**
-	 *
 	 * @return Factory
 	 */
 	protected function getFactory() {
@@ -19,7 +18,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
@@ -135,7 +133,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @param \stdClass $oTaskData
 	 * @param array $aParams
 	 * @return Standard
@@ -343,7 +340,6 @@ class ApiReminderTasks extends BSApiTasksBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {

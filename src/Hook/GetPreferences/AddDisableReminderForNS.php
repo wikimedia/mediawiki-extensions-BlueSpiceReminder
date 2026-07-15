@@ -5,6 +5,10 @@ namespace BlueSpice\Reminder\Hook\GetPreferences;
 use BlueSpice\Hook\GetPreferences;
 
 class AddDisableReminderForNS extends GetPreferences {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$excludeNS = [
 			NS_MEDIAWIKI,
