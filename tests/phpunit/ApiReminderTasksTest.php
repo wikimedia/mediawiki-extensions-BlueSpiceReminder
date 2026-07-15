@@ -29,7 +29,6 @@ use MediaWiki\User\User;
  *
  * TODO
  * - check results of working examples
- *
  */
 class ApiReminderTasksTest extends ApiTestCase {
 

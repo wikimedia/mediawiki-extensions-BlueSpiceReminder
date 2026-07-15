@@ -5,6 +5,10 @@ namespace BlueSpice\Reminder\Hook\GetPreferences;
 use BlueSpice\Hook\GetPreferences;
 
 class AddDefaultReminderPeriod extends GetPreferences {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->preferences['bs-reminder-period'] = [
 			'type' => 'int',

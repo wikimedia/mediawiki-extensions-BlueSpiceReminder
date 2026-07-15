@@ -12,7 +12,6 @@ use MWStake\MediaWiki\Component\Events\INotificationEvent;
 
 abstract class SendNotificationBase extends RunJobsTriggerHandler {
 	/**
-	 *
 	 * @var array
 	 */
 	protected $queryConds = [];
@@ -22,6 +21,9 @@ abstract class SendNotificationBase extends RunJobsTriggerHandler {
 	 */
 	protected $doUpdateRepeatingRemindersDate = false;
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function doRun() {
 		$status = Status::newGood();
 

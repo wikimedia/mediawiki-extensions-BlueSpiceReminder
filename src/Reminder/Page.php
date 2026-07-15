@@ -7,7 +7,6 @@ use BlueSpice\Reminder\Reminder;
 class Page extends Reminder {
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMsgKey() {

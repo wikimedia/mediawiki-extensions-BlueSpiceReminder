@@ -6,19 +6,16 @@ use MediaWiki\Config\Config;
 
 abstract class Reminder implements IReminder {
 	/**
-	 *
 	 * @var string
 	 */
 	protected $type = '';
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getType() {
@@ -26,7 +23,6 @@ abstract class Reminder implements IReminder {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param Config $config
 	 */
@@ -36,7 +32,6 @@ abstract class Reminder implements IReminder {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param Config $config
 	 * @return IReminder
