@@ -5,6 +5,10 @@ namespace BlueSpice\Reminder\Hook\GetPreferences;
 use BlueSpice\Hook\GetPreferences;
 
 class AddSetReminderOnCreate extends GetPreferences {
+
+	/**
+	 * @inheritDoc
+	 */
 	protected function doProcess() {
 		$this->preferences['bs-reminder-oncreate'] = [
 			'type' => 'check',

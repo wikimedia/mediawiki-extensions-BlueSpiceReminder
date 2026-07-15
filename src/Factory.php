@@ -8,19 +8,16 @@ use MediaWiki\Config\Config;
 class Factory {
 
 	/**
-	 *
 	 * @var ExtensionAttributeBasedRegistry
 	 */
 	protected $registry = null;
 
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config = null;
 
 	/**
-	 *
 	 * @param ExtensionAttributeBasedRegistry $registry
 	 * @param Config $config
 	 */
@@ -30,7 +27,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @return IReminder|null
 	 */
@@ -47,7 +43,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @return bool
 	 */
@@ -59,7 +54,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getRegisteredTypes() {

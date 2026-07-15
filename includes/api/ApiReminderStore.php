@@ -8,7 +8,6 @@ use MediaWiki\User\User;
 class ApiReminderStore extends BSApiExtJSStoreBase {
 
 	/**
-	 *
 	 * @return Factory
 	 */
 	protected function getFactory() {
@@ -16,7 +15,6 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @return array
 	 */
@@ -59,7 +57,6 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function isReadMode() {
@@ -67,7 +64,6 @@ class ApiReminderStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param string $sQuery
 	 * @return array
 	 */

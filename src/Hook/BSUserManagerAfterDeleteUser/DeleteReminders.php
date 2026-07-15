@@ -7,7 +7,6 @@ use BlueSpice\UserManager\Hook\BSUserManagerAfterDeleteUser;
 class DeleteReminders extends BSUserManagerAfterDeleteUser {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
