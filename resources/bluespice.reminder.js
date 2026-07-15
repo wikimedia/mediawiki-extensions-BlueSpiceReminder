@@ -37,7 +37,7 @@
 		const dfd = $.Deferred();
 
 		mw.user.getRights().done( ( rights ) => {
-			if ( rights.indexOf( 'remindereditall' ) !== -1 ) {
+			if ( rights.indexOf( 'remindereditall' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 				dfd.resolve();
 			} else {
 				dfd.reject();
