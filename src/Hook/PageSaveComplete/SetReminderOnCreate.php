@@ -10,7 +10,6 @@ use Exception;
  */
 class SetReminderOnCreate extends PageSaveComplete {
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipProcessing() {
@@ -46,7 +45,6 @@ class SetReminderOnCreate extends PageSaveComplete {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function doProcess() {
@@ -82,7 +80,6 @@ class SetReminderOnCreate extends PageSaveComplete {
 	}
 
 	/**
-	 *
 	 * @return int[]
 	 */
 	private function getNSBlacklist() {

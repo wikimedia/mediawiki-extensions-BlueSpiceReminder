@@ -1,15 +1,3 @@
--- Database definition for Reminder
---
--- Part of BlueSpice MediaWiki
---
--- @author     Sebastian Ulbricht <sebastian.ulbricht@dragon-network.hk>
--- @version    $Id: review.sql 5929 2012-07-25 13:03:19Z rvogel $
--- @package    BlueSpice_Extensions
--- @subpackage Reminder
--- @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
--- @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
--- @filesource
-
 CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/bs_reminder (
   `rem_id`              int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `rem_user_id`         INT(10) NOT NULL ,

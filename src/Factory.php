@@ -14,7 +14,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @return IReminder|null
 	 */
@@ -31,7 +30,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @return bool
 	 */
@@ -43,7 +41,6 @@ class Factory {
 	}
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getRegisteredTypes() {

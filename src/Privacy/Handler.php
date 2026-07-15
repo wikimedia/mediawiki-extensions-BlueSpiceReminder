@@ -16,7 +16,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param string $oldUsername
 	 * @param string $newUsername
 	 * @return Status
@@ -26,7 +25,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param User $userToDelete
 	 * @param User $deletedUser
 	 * @return Status
@@ -42,7 +40,6 @@ class Handler implements IPrivacyHandler {
 	}
 
 	/**
-	 *
 	 * @param array $types
 	 * @param string $format
 	 * @param User $user
