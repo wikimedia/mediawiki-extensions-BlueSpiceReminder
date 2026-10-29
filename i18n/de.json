@@ -109,5 +109,6 @@
 	"bs-reminder-special-myreminder-heading": "Meine Erinnerungen",
 	"bs-reminder-title-edit": "Erinnerung bearbeiten",
 	"bs-reminder-header-action-edit": "Bearbeiten",
-	"bs-reminder-header-action-delete": "Löschen"
+	"bs-reminder-header-action-delete": "Löschen",
+	"bs-reminder-notification-generic-links-intro": "{{#FORMAL:Du kannst|Sie können}} die Seite direkt über den folgenden Link aufrufen"
 }
