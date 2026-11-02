@@ -4,7 +4,7 @@ namespace BlueSpice\Reminder\HookHandler\SkinTemplateNavigation;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\Permissions\PermissionManager;
-use SkinTemplate;
+use MediaWiki\Skin\SkinTemplate;
 
 class AddReminderEntry implements SkinTemplateNavigation__UniversalHook {
 
